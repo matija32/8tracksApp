@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <id>2676245</id>
+  <path>/mix_sets/2676245</path>
+  <restful-url>http://8tracks.com/mix_sets/2676245</restful-url>
+  <total-entries>435032</total-entries>
+  <page>1</page>
+  <per-page>12</per-page>
+  <next-page>2</next-page>
+  <previous-page nil="false">0</previous-page>
+  <total-pages>36253</total-pages>
+  <canonical-path>/</canonical-path>
+  <name>All mixes</name>
+  <mixes>
+    <mix>
+      <id>733042</id>
+      <name>Contemplate The Universe Inside You Pt2</name>
+      <published>true</published>
+      <description>Through the sheer amount of people messaging me to make another mix, I just had to put another one together!
+
+I'm so glad that so many people could stop for just a moment &amp; reflect upon themselves &amp; the universe in its entirety.. 
+Stop again momentarily &amp; look up &amp; into space; &amp; know that the universe you reside in.. is a beautiful mysterious place.. don't be afraid by it.. Enjoy it.
+
+Part 1 here: http://8tracks.com/cosmicapathy/contemplate-the-universe-inside-you
+</description>
+      <plays-count>9657</plays-count>
+      <likes-count>3701</likes-count>
+      <slug>contemplate-the-universe-inside-you-pt2</slug>
+      <path>/cosmicapathy/contemplate-the-universe-inside-you-pt2</path>
+      <cover-urls>
+        <sq56>http://cf2.8tracks.us/mix_covers/000/733/042/6833.sq56.jpg</sq56>
+        <sq100>http://cf2.8tracks.us/mix_covers/000/733/042/6833.sq100.jpg</sq100>
+        <sq133>http://cf2.8tracks.us/mix_covers/000/733/042/6833.sq133.jpg</sq133>
+        <max133w>http://cf2.8tracks.us/mix_covers/000/733/042/6833.max133w.jpg</max133w>
+        <max200>http://cf2.8tracks.us/mix_covers/000/733/042/6833.max200.jpg</max200>
+        <sq250>http://cf2.8tracks.us/mix_covers/000/733/042/6833.sq250.jpg</sq250>
+        <sq500>http://cf2.8tracks.us/mix_covers/000/733/042/6833.sq500.jpg</sq500>
+        <max1024>http://cf2.8tracks.us/mix_covers/000/733/042/6833.max1024.jpg</max1024>
+        <original>http://cf2.8tracks.us/mix_covers/000/733/042/6833.original.jpg</original>
+      </cover-urls>
+      <restful-url>http://8tracks.com/mixes/733042</restful-url>
+      <tag-list-cache>motivation, science, sleep, study, thinking</tag-list-cache>
+      <first-published-at>2012-04-23T15:54:25Z</first-published-at>
+      <liked-by-current-user>false</liked-by-current-user>
+      <nsfw>false</nsfw>
+      <user>
+        <id>833187</id>
+        <login>cosmicapathy</login>
+        <slug>cosmicapathy</slug>
+        <avatar-urls>
+          <sq56>http://cf3.8tracks.us/avatars/000/833/187/86256.sq56.jpg</sq56>
+          <sq72>http://cf3.8tracks.us/avatars/000/833/187/86256.sq72.jpg</sq72>
+          <sq100>http://cf3.8tracks.us/avatars/000/833/187/86256.sq100.jpg</sq100>
+          <max200>http://cf3.8tracks.us/avatars/000/833/187/86256.max200.jpg</max200>
+          <max250w>http://cf3.8tracks.us/avatars/000/833/187/86256.max250w.jpg</max250w>
+        </avatar-urls>
+        <followed-by-current-user>false</followed-by-current-user>
+      </user>
+    </mix>
+    <mix>
+      <id>739550</id>
+      <name>Young &amp; Reckless</name>
+      <published>true</published>
+      <description>#that shit cray</description>
+      <plays-count>11359</plays-count>
+      <likes-count>1897</likes-count>
+      <slug>young-reckless</slug>
+      <path>/dj-jelin/young-reckless</path>
+      <cover-urls>
+        <sq56>http://cf2.8tracks.us/mix_covers/000/739/550/15996.sq56.jpg</sq56>
+        <sq100>http://cf2.8tracks.us/mix_covers/000/739/550/15996.sq100.jpg</sq100>
+        <sq133>http://cf2.8tracks.us/mix_covers/000/739/550/15996.sq133.jpg</sq133>
+        <max133w>http://cf2.8tracks.us/mix_covers/000/739/550/15996.max133w.jpg</max133w>
+        <max200>http://cf2.8tracks.us/mix_covers/000/739/550/15996.max200.jpg</max200>
+        <sq250>http://cf2.8tracks.us/mix_covers/000/739/550/15996.sq250.jpg</sq250>
+        <sq500>http://cf2.8tracks.us/mix_covers/000/739/550/15996.sq500.jpg</sq500>
+        <max1024>http://cf2.8tracks.us/mix_covers/000/739/550/15996.max1024.jpg</max1024>
+        <original>http://cf2.8tracks.us/mix_covers/000/739/550/15996.original.jpg</original>
+      </cover-urls>
+      <restful-url>http://8tracks.com/mixes/739550</restful-url>
+      <tag-list-cache>dance, party, mashup, workout, electronic</tag-list-cache>
+      <first-published-at>2012-04-26T18:27:48Z</first-published-at>
+      <liked-by-current-user>false</liked-by-current-user>
+      <nsfw>false</nsfw>
+      <user>
+        <id>725893</id>
+        <login>DJ Jelin </login>
+        <slug>dj-jelin</slug>
+        <avatar-urls>
+          <sq56>http://cf1.8tracks.us/avatars/000/725/893/31051.sq56.jpg</sq56>
+          <sq72>http://cf1.8tracks.us/avatars/000/725/893/31051.sq72.jpg</sq72>
+          <sq100>http://cf1.8tracks.us/avatars/000/725/893/31051.sq100.jpg</sq100>
+          <max200>http://cf1.8tracks.us/avatars/000/725/893/31051.max200.jpg</max200>
+          <max250w>http://cf1.8tracks.us/avatars/000/725/893/31051.max250w.jpg</max250w>
+        </avatar-urls>
+        <followed-by-current-user>false</followed-by-current-user>
+      </user>
+    </mix>
+    <mix>
+      <id>732045</id>
+      <name>Home, Let me come Home.</name>
+      <published>true</published>
+      <description>A collection of 15 indie/folk based tracks bound in such scattered recurring themes as the yearning for home, desperate infatuation, general nostalgia, and who cares what they're saying, I've got finals all week and I really need to mellow out right now. All &quot;favorite song&quot; material..If you're still searching for one, you'll find it here.
+This will be my 25th and last playlist of the semester. Thank you everybody everywhere for listening, &amp; stay tuned for the summer mixes! It's been fun. Love ya</description>
+      <plays-count>26146</plays-count>
+      <likes-count>4982</likes-count>
+      <slug>home-let-me-come-home</slug>
+      <path>/shelteredbeats/home-let-me-come-home</path>
+      <cover-urls>
+        <sq56>http://cf1.8tracks.us/mix_covers/000/732/045/64264.sq56.jpg</sq56>
+        <sq100>http://cf1.8tracks.us/mix_covers/000/732/045/64264.sq100.jpg</sq100>
+        <sq133>http://cf1.8tracks.us/mix_covers/000/732/045/64264.sq133.jpg</sq133>
+        <max133w>http://cf1.8tracks.us/mix_covers/000/732/045/64264.max133w.jpg</max133w>
+        <max200>http://cf1.8tracks.us/mix_covers/000/732/045/64264.max200.jpg</max200>
+        <sq250>http://cf1.8tracks.us/mix_covers/000/732/045/64264.sq250.jpg</sq250>
+        <sq500>http://cf1.8tracks.us/mix_covers/000/732/045/64264.sq500.jpg</sq500>
+        <max1024>http://cf1.8tracks.us/mix_covers/000/732/045/64264.max1024.jpg</max1024>
+        <original>http://cf1.8tracks.us/mix_covers/000/732/045/64264.original.jpg</original>
+      </cover-urls>
+      <restful-url>http://8tracks.com/mixes/732045</restful-url>
+      <tag-list-cache>indie, folk, indie folk, alternative rock, alternative</tag-list-cache>
+      <first-published-at>2012-04-24T17:33:51Z</first-published-at>
+      <liked-by-current-user>false</liked-by-current-user>
+      <nsfw>false</nsfw>
+      <user>
+        <id>617724</id>
+        <login>ShelteredBeats</login>
+        <slug>shelteredbeats</slug>
+        <avatar-urls>
+          <sq56>http://cf0.8tracks.us/avatars/000/617/724/147.sq56.jpg</sq56>
+          <sq72>http://cf0.8tracks.us/avatars/000/617/724/147.sq72.jpg</sq72>
+          <sq100>http://cf0.8tracks.us/avatars/000/617/724/147.sq100.jpg</sq100>
+          <max200>http://cf0.8tracks.us/avatars/000/617/724/147.max200.jpg</max200>
+          <max250w>http://cf0.8tracks.us/avatars/000/617/724/147.max250w.jpg</max250w>
+        </avatar-urls>
+        <followed-by-current-user>false</followed-by-current-user>
+      </user>
+    </mix>
+    <mix>
+      <id>737380</id>
+      <name>One More Rep</name>
+      <published>true</published>
+      <description>&quot;They say if it isn't broken, do not fix it. Well if it could be better, then it is as good as broken&quot; - Greg Plitt. 
+
+This mix was made to provide the motivation, inspiration, and stimulation to give it that one more rep you didn't think you could do.
+
+This mix starts with motivational speeches to get ready for that intense workout then goes into music to keep up the tempo and push past your limits.
+
+- Thanks for listening</description>
+      <plays-count>1816</plays-count>
+      <likes-count>508</likes-count>
+      <slug>one-more-rep</slug>
+      <path>/mkhlmnn/one-more-rep</path>
+      <cover-urls>
+        <sq56>http://cf0.8tracks.us/mix_covers/000/737/380/1920.sq56.jpg</sq56>
+        <sq100>http://cf0.8tracks.us/mix_covers/000/737/380/1920.sq100.jpg</sq100>
+        <sq133>http://cf0.8tracks.us/mix_covers/000/737/380/1920.sq133.jpg</sq133>
+        <max133w>http://cf0.8tracks.us/mix_covers/000/737/380/1920.max133w.jpg</max133w>
+        <max200>http://cf0.8tracks.us/mix_covers/000/737/380/1920.max200.jpg</max200>
+        <sq250>http://cf0.8tracks.us/mix_covers/000/737/380/1920.sq250.jpg</sq250>
+        <sq500>http://cf0.8tracks.us/mix_covers/000/737/380/1920.sq500.jpg</sq500>
+        <max1024>http://cf0.8tracks.us/mix_covers/000/737/380/1920.max1024.jpg</max1024>
+        <original>http://cf0.8tracks.us/mix_covers/000/737/380/1920.original.jpg</original>
+      </cover-urls>
+      <restful-url>http://8tracks.com/mixes/737380</restful-url>
+      <tag-list-cache>motivation, workout, fitness, hardcore</tag-list-cache>
+      <first-published-at>2012-04-25T19:07:03Z</first-published-at>
+      <liked-by-current-user>false</liked-by-current-user>
+      <nsfw>false</nsfw>
+      <user>
+        <id>1370921</id>
+        <login>MKhlmnn</login>
+        <slug>mkhlmnn</slug>
+        <avatar-urls>
+          <sq56>http://cf1.8tracks.us/avatars/001/370/921/497.sq56.jpg</sq56>
+          <sq72>http://cf1.8tracks.us/avatars/001/370/921/497.sq72.jpg</sq72>
+          <sq100>http://cf1.8tracks.us/avatars/001/370/921/497.sq100.jpg</sq100>
+          <max200>http://cf1.8tracks.us/avatars/001/370/921/497.max200.jpg</max200>
+          <max250w>http://cf1.8tracks.us/avatars/001/370/921/497.max250w.jpg</max250w>
+        </avatar-urls>
+        <followed-by-current-user>false</followed-by-current-user>
+      </user>
+    </mix>
+    <mix>
+      <id>729189</id>
+      <name>Jazz Covers</name>
+      <published>true</published>
+      <description>Smooth Jazz Covers of well known songs by artist like Oasis, Michael Jackson, Radiohead, etc Zip file: http://www.adrive.com/public/MY9WKq.html</description>
+      <plays-count>16935</plays-count>
+      <likes-count>4358</likes-count>
+      <slug>jazz-covers</slug>
+      <path>/joannekim/jazz-covers</path>
+      <cover-urls>
+        <sq56>http://cf1.8tracks.us/mix_covers/000/729/189/4773.sq56.jpg</sq56>
+        <sq100>http://cf1.8tracks.us/mix_covers/000/729/189/4773.sq100.jpg</sq100>
+        <sq133>http://cf1.8tracks.us/mix_covers/000/729/189/4773.sq133.jpg</sq133>
+        <max133w>http://cf1.8tracks.us/mix_covers/000/729/189/4773.max133w.jpg</max133w>
+        <max200>http://cf1.8tracks.us/mix_covers/000/729/189/4773.max200.jpg</max200>
+        <sq250>http://cf1.8tracks.us/mix_covers/000/729/189/4773.sq250.jpg</sq250>
+        <sq500>http://cf1.8tracks.us/mix_covers/000/729/189/4773.sq500.jpg</sq500>
+        <max1024>http://cf1.8tracks.us/mix_covers/000/729/189/4773.max1024.jpg</max1024>
+        <original>http://cf1.8tracks.us/mix_covers/000/729/189/4773.original.jpg</original>
+      </cover-urls>
+      <restful-url>http://8tracks.com/mixes/729189</restful-url>
+      <tag-list-cache>jazz, chill, smooth jazz, 80s, sexy</tag-list-cache>
+      <first-published-at>2012-04-21T17:41:30Z</first-published-at>
+      <liked-by-current-user>false</liked-by-current-user>
+      <nsfw>false</nsfw>
+      <user>
+        <id>785371</id>
+        <login>JoanneKim</login>
+        <slug>joannekim</slug>
+        <avatar-urls>
+          <sq56>http://cf3.8tracks.us/avatars/000/785/371/51771.sq56.jpg</sq56>
+          <sq72>http://cf3.8tracks.us/avatars/000/785/371/51771.sq72.jpg</sq72>
+          <sq100>http://cf3.8tracks.us/avatars/000/785/371/51771.sq100.jpg</sq100>
+          <max200>http://cf3.8tracks.us/avatars/000/785/371/51771.max200.jpg</max200>
+          <max250w>http://cf3.8tracks.us/avatars/000/785/371/51771.max250w.jpg</max250w>
+        </avatar-urls>
+        <followed-by-current-user>false</followed-by-current-user>
+      </user>
+    </mix>
+    <mix>
+      <id>742333</id>
+      <name>So Mainstream</name>
+      <published>true</published>
+      <description>Music from the chart you've probably heard already. Playlist covering all genre (mostly hip hop), 68 tracks including Wiz Khalifa, Carly Rae Jepsen, Rihanna, Tyga etc. Zip File: http://www.adrive.com/public/VyetEF.html</description>
+      <plays-count>389</plays-count>
+      <likes-count>117</likes-count>
+      <slug>so-mainstream</slug>
+      <path>/joannekim/so-mainstream</path>
+      <cover-urls>
+        <sq56>http://cf1.8tracks.us/mix_covers/000/742/333/99483.sq56.jpg</sq56>
+        <sq100>http://cf1.8tracks.us/mix_covers/000/742/333/99483.sq100.jpg</sq100>
+        <sq133>http://cf1.8tracks.us/mix_covers/000/742/333/99483.sq133.jpg</sq133>
+        <max133w>http://cf1.8tracks.us/mix_covers/000/742/333/99483.max133w.jpg</max133w>
+        <max200>http://cf1.8tracks.us/mix_covers/000/742/333/99483.max200.jpg</max200>
+        <sq250>http://cf1.8tracks.us/mix_covers/000/742/333/99483.sq250.jpg</sq250>
+        <sq500>http://cf1.8tracks.us/mix_covers/000/742/333/99483.sq500.jpg</sq500>
+        <max1024>http://cf1.8tracks.us/mix_covers/000/742/333/99483.max1024.jpg</max1024>
+        <original>http://cf1.8tracks.us/mix_covers/000/742/333/99483.original.jpg</original>
+      </cover-urls>
+      <restful-url>http://8tracks.com/mixes/742333</restful-url>
+      <tag-list-cache>pop, hip hop, mainstream, chart, party</tag-list-cache>
+      <first-published-at>2012-04-28T05:37:17Z</first-published-at>
+      <liked-by-current-user>false</liked-by-current-user>
+      <nsfw>false</nsfw>
+      <user>
+        <id>785371</id>
+        <login>JoanneKim</login>
+        <slug>joannekim</slug>
+        <avatar-urls>
+          <sq56>http://cf3.8tracks.us/avatars/000/785/371/51771.sq56.jpg</sq56>
+          <sq72>http://cf3.8tracks.us/avatars/000/785/371/51771.sq72.jpg</sq72>
+          <sq100>http://cf3.8tracks.us/avatars/000/785/371/51771.sq100.jpg</sq100>
+          <max200>http://cf3.8tracks.us/avatars/000/785/371/51771.max200.jpg</max200>
+          <max250w>http://cf3.8tracks.us/avatars/000/785/371/51771.max250w.jpg</max250w>
+        </avatar-urls>
+        <followed-by-current-user>false</followed-by-current-user>
+      </user>
+    </mix>
+    <mix>
+      <id>729948</id>
+      <name>The Ultimate Disney Playlist </name>
+      <published>true</published>
+      <description>prepare to sing along, dance and cry to over 80 of the best Disney tracks, ranging from favorites to the somewhat underrated.
+
+disclaimer: Anastasia and Prince of Egypt are pretty much honorary Disney, don't you think? </description>
+      <plays-count>11741</plays-count>
+      <likes-count>2971</likes-count>
+      <slug>the-ultimate-disney-playlist</slug>
+      <path>/iridescently/the-ultimate-disney-playlist</path>
+      <cover-urls>
+        <sq56>http://cf0.8tracks.us/mix_covers/000/729/948/48515.sq56.jpg</sq56>
+        <sq100>http://cf0.8tracks.us/mix_covers/000/729/948/48515.sq100.jpg</sq100>
+        <sq133>http://cf0.8tracks.us/mix_covers/000/729/948/48515.sq133.jpg</sq133>
+        <max133w>http://cf0.8tracks.us/mix_covers/000/729/948/48515.max133w.jpg</max133w>
+        <max200>http://cf0.8tracks.us/mix_covers/000/729/948/48515.max200.jpg</max200>
+        <sq250>http://cf0.8tracks.us/mix_covers/000/729/948/48515.sq250.jpg</sq250>
+        <sq500>http://cf0.8tracks.us/mix_covers/000/729/948/48515.sq500.jpg</sq500>
+        <max1024>http://cf0.8tracks.us/mix_covers/000/729/948/48515.max1024.jpg</max1024>
+        <original>http://cf0.8tracks.us/mix_covers/000/729/948/48515.original.jpg</original>
+      </cover-urls>
+      <restful-url>http://8tracks.com/mixes/729948</restful-url>
+      <tag-list-cache>disney, study, fun</tag-list-cache>
+      <first-published-at>2012-04-22T08:22:54Z</first-published-at>
+      <liked-by-current-user>false</liked-by-current-user>
+      <nsfw>false</nsfw>
+      <user>
+        <id>1363951</id>
+        <login>iridescently</login>
+        <slug>iridescently</slug>
+        <avatar-urls>
+          <sq56>http://cf3.8tracks.us/avatars/001/363/951/26712.sq56.jpg</sq56>
+          <sq72>http://cf3.8tracks.us/avatars/001/363/951/26712.sq72.jpg</sq72>
+          <sq100>http://cf3.8tracks.us/avatars/001/363/951/26712.sq100.jpg</sq100>
+          <max200>http://cf3.8tracks.us/avatars/001/363/951/26712.max200.jpg</max200>
+          <max250w>http://cf3.8tracks.us/avatars/001/363/951/26712.max250w.jpg</max250w>
+        </avatar-urls>
+        <followed-by-current-user>false</followed-by-current-user>
+      </user>
+    </mix>
+    <mix>
+      <id>734977</id>
+      <name>Early Mornings &amp; Chill Days</name>
+      <published>true</published>
+      <description>Really chill hiphop for when you're tired, stressed, or lazy. 
+Drake, The Weeknd, J. Cole, Cudi, etc.</description>
+      <plays-count>20136</plays-count>
+      <likes-count>3701</likes-count>
+      <slug>early-mornings-chill-days</slug>
+      <path>/lesshipstermorehypesir/early-mornings-chill-days</path>
+      <cover-urls>
+        <sq56>http://cf1.8tracks.us/mix_covers/000/734/977/17331.sq56.jpg</sq56>
+        <sq100>http://cf1.8tracks.us/mix_covers/000/734/977/17331.sq100.jpg</sq100>
+        <sq133>http://cf1.8tracks.us/mix_covers/000/734/977/17331.sq133.jpg</sq133>
+        <max133w>http://cf1.8tracks.us/mix_covers/000/734/977/17331.max133w.jpg</max133w>
+        <max200>http://cf1.8tracks.us/mix_covers/000/734/977/17331.max200.jpg</max200>
+        <sq250>http://cf1.8tracks.us/mix_covers/000/734/977/17331.sq250.jpg</sq250>
+        <sq500>http://cf1.8tracks.us/mix_covers/000/734/977/17331.sq500.jpg</sq500>
+        <max1024>http://cf1.8tracks.us/mix_covers/000/734/977/17331.max1024.jpg</max1024>
+        <original>http://cf1.8tracks.us/mix_covers/000/734/977/17331.original.jpg</original>
+      </cover-urls>
+      <restful-url>http://8tracks.com/mixes/734977</restful-url>
+      <tag-list-cache>chill, study, drive, hip hop, rap</tag-list-cache>
+      <first-published-at>2012-04-24T12:03:03Z</first-published-at>
+      <liked-by-current-user>false</liked-by-current-user>
+      <nsfw>false</nsfw>
+      <user>
+        <id>663585</id>
+        <login>lessHIPSTERmoreHYPEsir</login>
+        <slug>lesshipstermorehypesir</slug>
+        <avatar-urls>
+          <sq56>http://cf1.8tracks.us/avatars/000/663/585/97042.sq56.jpg</sq56>
+          <sq72>http://cf1.8tracks.us/avatars/000/663/585/97042.sq72.jpg</sq72>
+          <sq100>http://cf1.8tracks.us/avatars/000/663/585/97042.sq100.jpg</sq100>
+          <max200>http://cf1.8tracks.us/avatars/000/663/585/97042.max200.jpg</max200>
+          <max250w>http://cf1.8tracks.us/avatars/000/663/585/97042.max250w.jpg</max250w>
+        </avatar-urls>
+        <followed-by-current-user>false</followed-by-current-user>
+      </user>
+    </mix>
+    <mix>
+      <id>740704</id>
+      <name>Mashup Heaven </name>
+      <published>true</published>
+      <description>If you like your tunes all mashed together like me then you will love this. </description>
+      <plays-count>361</plays-count>
+      <likes-count>122</likes-count>
+      <slug>mashup-heaven</slug>
+      <path>/blokinsmunts/mashup-heaven</path>
+      <cover-urls>
+        <sq56>http://cf0.8tracks.us/mix_covers/000/740/704/12924.sq56.jpg</sq56>
+        <sq100>http://cf0.8tracks.us/mix_covers/000/740/704/12924.sq100.jpg</sq100>
+        <sq133>http://cf0.8tracks.us/mix_covers/000/740/704/12924.sq133.jpg</sq133>
+        <max133w>http://cf0.8tracks.us/mix_covers/000/740/704/12924.max133w.jpg</max133w>
+        <max200>http://cf0.8tracks.us/mix_covers/000/740/704/12924.max200.jpg</max200>
+        <sq250>http://cf0.8tracks.us/mix_covers/000/740/704/12924.sq250.jpg</sq250>
+        <sq500>http://cf0.8tracks.us/mix_covers/000/740/704/12924.sq500.jpg</sq500>
+        <max1024>http://cf0.8tracks.us/mix_covers/000/740/704/12924.max1024.jpg</max1024>
+        <original>http://cf0.8tracks.us/mix_covers/000/740/704/12924.original.jpg</original>
+      </cover-urls>
+      <restful-url>http://8tracks.com/mixes/740704</restful-url>
+      <tag-list-cache>mashup, mash-up, chill, hip hop, electronic</tag-list-cache>
+      <first-published-at>2012-04-27T05:14:23Z</first-published-at>
+      <liked-by-current-user>false</liked-by-current-user>
+      <nsfw>false</nsfw>
+      <user>
+        <id>552715</id>
+        <login>blokinsmunts</login>
+        <slug>blokinsmunts</slug>
+        <avatar-urls>
+          <sq56>http://cf3.8tracks.us/avatars/000/552/715/53471.sq56.jpg</sq56>
+          <sq72>http://cf3.8tracks.us/avatars/000/552/715/53471.sq72.jpg</sq72>
+          <sq100>http://cf3.8tracks.us/avatars/000/552/715/53471.sq100.jpg</sq100>
+          <max200>http://cf3.8tracks.us/avatars/000/552/715/53471.max200.jpg</max200>
+          <max250w>http://cf3.8tracks.us/avatars/000/552/715/53471.max250w.jpg</max250w>
+        </avatar-urls>
+        <followed-by-current-user>false</followed-by-current-user>
+      </user>
+    </mix>
+    <mix>
+      <id>737154</id>
+      <name>Your Body is An Instrument - Not an Ornament</name>
+      <published>true</published>
+      <description>Some great songs to power through your workout: Crush your with cardio with new Swedish House, Afrojack, and Tiesto; wail out on the weights with some Bob Sinclair, Asher Roth, and Dirty South. With this mix, you're gonna kill it. </description>
+      <plays-count>8054</plays-count>
+      <likes-count>1544</likes-count>
+      <slug>your-body-is-an-instrument-not-an-ornament</slug>
+      <path>/kerrizma88/your-body-is-an-instrument-not-an-ornament</path>
+      <cover-urls>
+        <sq56>http://cf2.8tracks.us/mix_covers/000/737/154/47550.sq56.jpg</sq56>
+        <sq100>http://cf2.8tracks.us/mix_covers/000/737/154/47550.sq100.jpg</sq100>
+        <sq133>http://cf2.8tracks.us/mix_covers/000/737/154/47550.sq133.jpg</sq133>
+        <max133w>http://cf2.8tracks.us/mix_covers/000/737/154/47550.max133w.jpg</max133w>
+        <max200>http://cf2.8tracks.us/mix_covers/000/737/154/47550.max200.jpg</max200>
+        <sq250>http://cf2.8tracks.us/mix_covers/000/737/154/47550.sq250.jpg</sq250>
+        <sq500>http://cf2.8tracks.us/mix_covers/000/737/154/47550.sq500.jpg</sq500>
+        <max1024>http://cf2.8tracks.us/mix_covers/000/737/154/47550.max1024.jpg</max1024>
+        <original>http://cf2.8tracks.us/mix_covers/000/737/154/47550.original.jpeg</original>
+      </cover-urls>
+      <restful-url>http://8tracks.com/mixes/737154</restful-url>
+      <tag-list-cache>workout, club, pregame, party, remix</tag-list-cache>
+      <first-published-at>2012-04-25T13:42:20Z</first-published-at>
+      <liked-by-current-user>false</liked-by-current-user>
+      <nsfw>false</nsfw>
+      <user>
+        <id>610880</id>
+        <login>kerrizma88</login>
+        <slug>kerrizma88</slug>
+        <avatar-urls>
+          <sq56>http://cf0.8tracks.us/avatars/000/610/880/64990.sq56.jpg</sq56>
+          <sq72>http://cf0.8tracks.us/avatars/000/610/880/64990.sq72.jpg</sq72>
+          <sq100>http://cf0.8tracks.us/avatars/000/610/880/64990.sq100.jpg</sq100>
+          <max200>http://cf0.8tracks.us/avatars/000/610/880/64990.max200.jpg</max200>
+          <max250w>http://cf0.8tracks.us/avatars/000/610/880/64990.max250w.jpg</max250w>
+        </avatar-urls>
+        <followed-by-current-user>false</followed-by-current-user>
+      </user>
+    </mix>
+    <mix>
+      <id>741042</id>
+      <name>Epic Workouts</name>
+      <published>true</published>
+      <description>&quot;Failing to prepare is preparing to fail&quot;. 
+
+Over 4 hours worth of tracks from my Gym iPod that'll get your pulse racing and help you power through the pain of your workout. Including tracks from artists such as Avicii, Alesso and David Guetta</description>
+      <plays-count>1161</plays-count>
+      <likes-count>245</likes-count>
+      <slug>epic-workouts</slug>
+      <path>/calumhunter/epic-workouts</path>
+      <cover-urls>
+        <sq56>http://cf2.8tracks.us/mix_covers/000/741/042/92797.sq56.jpg</sq56>
+        <sq100>http://cf2.8tracks.us/mix_covers/000/741/042/92797.sq100.jpg</sq100>
+        <sq133>http://cf2.8tracks.us/mix_covers/000/741/042/92797.sq133.jpg</sq133>
+        <max133w>http://cf2.8tracks.us/mix_covers/000/741/042/92797.max133w.jpg</max133w>
+        <max200>http://cf2.8tracks.us/mix_covers/000/741/042/92797.max200.jpg</max200>
+        <sq250>http://cf2.8tracks.us/mix_covers/000/741/042/92797.sq250.jpg</sq250>
+        <sq500>http://cf2.8tracks.us/mix_covers/000/741/042/92797.sq500.jpg</sq500>
+        <max1024>http://cf2.8tracks.us/mix_covers/000/741/042/92797.max1024.jpg</max1024>
+        <original>http://cf2.8tracks.us/mix_covers/000/741/042/92797.original.bmp</original>
+      </cover-urls>
+      <restful-url>http://8tracks.com/mixes/741042</restful-url>
+      <tag-list-cache>workout, electronic, dance, mashup, remix</tag-list-cache>
+      <first-published-at>2012-04-27T13:41:16Z</first-published-at>
+      <liked-by-current-user>false</liked-by-current-user>
+      <nsfw>false</nsfw>
+      <user>
+        <id>861353</id>
+        <login>calumhunter</login>
+        <slug>calumhunter</slug>
+        <avatar-urls>
+          <sq56>http://cf1.8tracks.us/avatars/000/861/353/81027.sq56.jpg</sq56>
+          <sq72>http://cf1.8tracks.us/avatars/000/861/353/81027.sq72.jpg</sq72>
+          <sq100>http://cf1.8tracks.us/avatars/000/861/353/81027.sq100.jpg</sq100>
+          <max200>http://cf1.8tracks.us/avatars/000/861/353/81027.max200.jpg</max200>
+          <max250w>http://cf1.8tracks.us/avatars/000/861/353/81027.max250w.jpg</max250w>
+        </avatar-urls>
+        <followed-by-current-user>false</followed-by-current-user>
+      </user>
+    </mix>
+    <mix>
+      <id>727552</id>
+      <name>breakfast in paris</name>
+      <published>true</published>
+      <description>this makes me crave wine and croissants </description>
+      <plays-count>19377</plays-count>
+      <likes-count>4620</likes-count>
+      <slug>breakfast-in-paris</slug>
+      <path>/fireeyedgirl/breakfast-in-paris</path>
+      <cover-urls>
+        <sq56>http://cf0.8tracks.us/mix_covers/000/727/552/3939.sq56.jpg</sq56>
+        <sq100>http://cf0.8tracks.us/mix_covers/000/727/552/3939.sq100.jpg</sq100>
+        <sq133>http://cf0.8tracks.us/mix_covers/000/727/552/3939.sq133.jpg</sq133>
+        <max133w>http://cf0.8tracks.us/mix_covers/000/727/552/3939.max133w.jpg</max133w>
+        <max200>http://cf0.8tracks.us/mix_covers/000/727/552/3939.max200.jpg</max200>
+        <sq250>http://cf0.8tracks.us/mix_covers/000/727/552/3939.sq250.jpg</sq250>
+        <sq500>http://cf0.8tracks.us/mix_covers/000/727/552/3939.sq500.jpg</sq500>
+        <max1024>http://cf0.8tracks.us/mix_covers/000/727/552/3939.max1024.jpg</max1024>
+        <original>http://cf0.8tracks.us/mix_covers/000/727/552/3939.original.jpg</original>
+      </cover-urls>
+      <restful-url>http://8tracks.com/mixes/727552</restful-url>
+      <tag-list-cache>paris, french, europe, jazz, love</tag-list-cache>
+      <first-published-at>2012-04-20T17:53:47Z</first-published-at>
+      <liked-by-current-user>false</liked-by-current-user>
+      <nsfw>false</nsfw>
+      <user>
+        <id>251532</id>
+        <login>fireeyedgirl</login>
+        <slug>fireeyedgirl</slug>
+        <avatar-urls>
+          <sq56>http://cf0.8tracks.us/avatars/000/251/532/88758.sq56.jpg</sq56>
+          <sq72>http://cf0.8tracks.us/avatars/000/251/532/88758.sq72.jpg</sq72>
+          <sq100>http://cf0.8tracks.us/avatars/000/251/532/88758.sq100.jpg</sq100>
+          <max200>http://cf0.8tracks.us/avatars/000/251/532/88758.max200.jpg</max200>
+          <max250w>http://cf0.8tracks.us/avatars/000/251/532/88758.max250w.jpg</max250w>
+        </avatar-urls>
+        <followed-by-current-user>false</followed-by-current-user>
+      </user>
+    </mix>
+  </mixes>
+  <status>200 OK</status>
+  <errors nil="false">This is an error.</errors>
+  <notices nil="false">This is a notice.</notices>
+  <logged-in>false</logged-in>
+  <api-warning>
+    <api-warning>You didn't pass an API version, defaulting to api_version=2.</api-warning>
+  </api-warning>
+  <api-version>2</api-version>
+</response>

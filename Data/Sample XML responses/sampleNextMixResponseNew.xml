@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <next-mix>
+    <id>965992</id>
+    <name>Electro Swing #2</name>
+    <published>true</published>
+    <description>Electro Swing is a musical genre fusing swing styles with modern production techniques... Enjoy! (24 tracks)
+
+Djs from US, UK, France and Belgium.
+
+Part.1 -&gt; http://8tracks.com/dopestephan/electro-swing</description>
+    <plays-count>7554</plays-count>
+    <likes-count>1500</likes-count>
+    <slug>electro-swing-2</slug>
+    <path>/dopestephan/electro-swing-2</path>
+    <cover-urls>
+      <sq56>http://imgix.8tracks.com/mix_covers/000/965/992/12394.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=56&amp;h=56&amp;fit=crop</sq56>
+      <sq100>http://imgix.8tracks.com/mix_covers/000/965/992/12394.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=100&amp;h=100&amp;fit=crop</sq100>
+      <sq133>http://imgix.8tracks.com/mix_covers/000/965/992/12394.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=133&amp;h=133&amp;fit=crop</sq133>
+      <max133w>http://imgix.8tracks.com/mix_covers/000/965/992/12394.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=133&amp;fit=max</max133w>
+      <max200>http://imgix.8tracks.com/mix_covers/000/965/992/12394.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=200&amp;h=200&amp;fit=max</max200>
+      <sq250>http://imgix.8tracks.com/mix_covers/000/965/992/12394.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=250&amp;h=250&amp;fit=crop</sq250>
+      <sq500>http://imgix.8tracks.com/mix_covers/000/965/992/12394.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=500&amp;h=500&amp;fit=crop</sq500>
+      <max1024>http://imgix.8tracks.com/mix_covers/000/965/992/12394.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=1024&amp;h=1024&amp;fit=max</max1024>
+      <original>http://imgix.8tracks.com/mix_covers/000/965/992/12394.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;</original>
+    </cover-urls>
+    <restful-url>http://8tracks.com/mixes/965992</restful-url>
+    <tag-list-cache>electro swing, swing, nu jazz, funky, electronic</tag-list-cache>
+    <first-published-at>2012-08-29T09:59:36Z</first-published-at>
+    <liked-by-current-user>false</liked-by-current-user>
+    <nsfw>false</nsfw>
+    <user>
+      <id>1278710</id>
+      <login>DopeStephan</login>
+      <slug>dopestephan</slug>
+      <avatar-urls>
+        <sq56>http://cf2.8tracks.us/avatars/001/278/710/60019.sq56.jpg</sq56>
+        <sq72>http://cf2.8tracks.us/avatars/001/278/710/60019.sq72.jpg</sq72>
+        <sq100>http://cf2.8tracks.us/avatars/001/278/710/60019.sq100.jpg</sq100>
+        <max200>http://cf2.8tracks.us/avatars/001/278/710/60019.max200.jpg</max200>
+        <max250w>http://cf2.8tracks.us/avatars/001/278/710/60019.max250w.jpg</max250w>
+      </avatar-urls>
+      <followed-by-current-user>false</followed-by-current-user>
+    </user>
+  </next-mix>
+  <mix-set-id>51072906</mix-set-id>
+  <status>200 OK</status>
+  <errors nil="true"></errors>
+  <notices nil="true"></notices>
+  <api-warning>
+    <api-warning>You didn't pass an API version, defaulting to api_version=2.</api-warning>
+  </api-warning>
+  <api-version>2</api-version>
+</response>

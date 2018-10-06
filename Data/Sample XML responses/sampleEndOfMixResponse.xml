@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <set>
+    <at-beginning>false</at-beginning>
+    <at-end>true</at-end>
+    <at-last-track>false</at-last-track>
+    <skip-allowed>true</skip-allowed>
+    <track>
+    </track>
+  </set>
+  <status>200 OK</status>
+  <errors nil="true"></errors>
+  <notices></notices>
+  <api-warning>
+    <api-warning>You didn't pass an API version, defaulting to api_version=2.</api-warning>
+  </api-warning>
+  <api-version>2</api-version>
+</response>

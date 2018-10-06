@@ -1,0 +1,639 @@
+﻿<Window x:Class="EightTracksWpfPlayer.Views.MainWindow" 
+        x:Name="Window" 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" 
+        DataContext="{Binding RelativeSource={RelativeSource Self}}" 
+        Style="{DynamicResource SkinWindowStyle}" 
+        UseLayoutRounding="True" 
+        Icon="..\Resources\Icon8tracks.ico" 
+        Title="8tracks player 1.4" 
+        SizeToContent="Manual" 
+        Height="{Binding Settings[Height], Mode=TwoWay, Converter={StaticResource SettingConv}}" 
+        Width="{Binding Settings[Width], Converter={StaticResource SettingConv}}" 
+        Left="{Binding Settings[Left], Mode=TwoWay, Converter={StaticResource SettingConv}}" 
+        Top="{Binding Settings[Top], Mode=TwoWay, Converter={StaticResource SettingConv}}"
+        mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        xmlns:ViewModels="clr-namespace:EightTracksPlayer.ViewModels;assembly=EightTracksPlayer" 
+        xmlns:ViewExtensions="clr-namespace:EightTracksPlayer.Utils.ViewExtensions;assembly=EightTracksPlayer" 
+        d:DesignHeight="500" d:DesignWidth="1100">
+
+	<Window.Resources>
+
+		<!--        <CollectionViewSource x:Key="SortedTracks" -->
+		<!--                              Source="{Binding  ElementName=Window, -->
+		<!--                                                Path=ViewModel.PlaybackViewModel.CurrentMixViewModel.Tracks}">-->
+		<!--            <CollectionViewSource.SortDescriptions>-->
+		<!--                <scm:SortDescription PropertyName="SortIndex"/>-->
+		<!--            </CollectionViewSource.SortDescriptions>-->
+		<!--        </CollectionViewSource>-->
+        
+		<!--        <SolidColorBrush x:Key="BrushWatermarkBackground" Color="White" />-->
+		<!--        <SolidColorBrush x:Key="BrushWatermarkForeground" Color="LightSteelBlue" />-->
+		<!--        <SolidColorBrush x:Key="BrushWatermarkBorder" Color="#FF000000" />-->
+		<!--        -->
+		<!--        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />-->
+		<ViewExtensions:WatermarkHelper x:Key="WatermarkHelper" />
+
+		<Style x:Key="EntryFieldStyle" TargetType="Grid">
+			<Setter Property="HorizontalAlignment" Value="Stretch" />
+			<Setter Property="VerticalAlignment" Value="Center" />
+		</Style>
+
+		<Style x:Key="NoChromeButton" TargetType="{x:Type Button}">
+			<Setter Property="Background" Value="Transparent" />
+			<Setter Property="BorderThickness" Value="1" />
+			<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" />
+			<Setter Property="HorizontalContentAlignment" Value="Center" />
+			<Setter Property="VerticalContentAlignment" Value="Center" />
+			<Setter Property="Padding" Value="1" />
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type Button}">
+						<Grid x:Name="Chrome" Background="{TemplateBinding Background}" SnapsToDevicePixels="true">
+							<ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+						</Grid>
+						<ControlTemplate.Triggers>
+							<Trigger Property="IsEnabled" Value="false">
+								<!--                                <Setter Property="Foreground" Value="#ADADAD"/>-->
+								<Setter Property="Opacity" TargetName="Chrome" Value="0.5" />
+							</Trigger>
+							<Trigger Property="IsPressed" Value="True">
+								<Setter Property="Opacity" TargetName="Chrome" Value="0.75" />
+							</Trigger>
+						</ControlTemplate.Triggers>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+
+		<!-- data templates and style for the mixes list box items-->
+		<DataTemplate x:Key="MixItemThumbTemplate">
+			<StackPanel Orientation="Vertical" VerticalAlignment="Top" Width="120" Height="170">
+				<Border BorderBrush="Gray" BorderThickness="2" CornerRadius="4" Margin="5">
+					<Image Source="{Binding Path=CoverUri}" Stretch="Fill" Height="120" VerticalAlignment="Top" />
+				</Border>
+				<TextBlock Text="{Binding Path=Name}" Height="40" TextAlignment="Center" TextWrapping="Wrap" TextTrimming="CharacterEllipsis" Foreground="White" />
+			</StackPanel>
+		</DataTemplate>
+
+
+		<Style TargetType="{x:Type Button}" x:Key="HoveredMixItemButtonStyle" BasedOn="{StaticResource NoChromeButton}">
+			<Setter Property="Height" Value="50" />
+			<Setter Property="Width" Value="50" />
+			<Style.Triggers>
+				<Trigger Property="IsMouseOver" Value="False">
+					<Setter Property="Opacity" Value="0.3" />
+					<Setter Property="Background" Value="Transparent" />
+					<Setter Property="BorderThickness" Value="0" />
+					<Setter Property="BorderBrush" Value="Transparent" />
+				</Trigger>
+			</Style.Triggers>
+		</Style>
+
+		<Style TargetType="{x:Type Image}" x:Key="LikeMixImageStyle">
+			<Setter Property="Source" Value="../Resources/NotLike.png" />
+			<Style.Triggers>
+				<DataTrigger Binding="{Binding Path=LikedByCurrentUser}" Value="True">
+					<Setter Property="Source" Value="../Resources/Like.png" />
+				</DataTrigger>
+			</Style.Triggers>
+		</Style>
+
+		<DataTemplate x:Key="HoveredMixItemThumbTemplate">
+			<StackPanel>
+				<Border>
+					<DockPanel Width="120" Height="130">
+
+						<StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="5,0,0,0">
+							<Image Source="../Resources/PlaysCount.png" Height="16" Width="16" Margin="0,0,4,0" />
+							<Label Content="{Binding PlaysCount}" Margin="0,0,4,0" />
+							<Image Source="../Resources/LikesCount.png" Height="16" Width="16" Margin="0,0,4,0" />
+							<Label Content="{Binding LikesCount}" Margin="0,0,4,0" />
+						</StackPanel>
+
+						<TextBlock Margin="5,0,5,5" Text="{Binding Path=Name}" TextAlignment="Left" TextWrapping="Wrap" DockPanel.Dock="Top" TextTrimming="CharacterEllipsis" Foreground="White" Height="55" ToolTip="{Binding Path=Name}" />
+
+
+						<StackPanel Orientation="Horizontal" DockPanel.Dock="Bottom">
+							<Button Margin="5,0,5,5" VerticalAlignment="Bottom" Style="{StaticResource HoveredMixItemButtonStyle}" Command="{Binding Play}">
+								<Image Source="../Resources/Play64.png" />
+							</Button>
+							<Button Margin="5,0,5,5" VerticalAlignment="Bottom" Style="{StaticResource HoveredMixItemButtonStyle}" Command="{Binding ToggleLike}">
+								<Image Style="{StaticResource LikeMixImageStyle}" />
+							</Button>
+						</StackPanel>
+					</DockPanel>
+				</Border>
+				<DockPanel Width="120" Height="40" />
+			</StackPanel>
+		</DataTemplate>
+
+		<Style TargetType="{x:Type ListBoxItem}" x:Key="ListBoxBackgroundStyle">
+			<Style.Resources>
+				<!-- Background of selected item when focussed -->
+				<SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="LimeGreen" />
+				<!-- Background of selected item when not focussed -->
+				<SolidColorBrush x:Key="{x:Static SystemColors.ControlBrushKey}" Color="DarkGreen" />
+			</Style.Resources>
+		</Style>
+
+		<Style TargetType="{x:Type ListBoxItem}" x:Key="MixItemThumbContainerStyle" BasedOn="{StaticResource ListBoxBackgroundStyle}">
+			<Setter Property="ContentTemplate" Value="{StaticResource MixItemThumbTemplate}" />
+			<Setter Property="Focusable" Value="False" />
+			<Style.Triggers>
+				<Trigger Property="IsMouseOver" Value="True">
+					<Setter Property="ContentTemplate" Value="{StaticResource HoveredMixItemThumbTemplate}" />
+				</Trigger>
+			</Style.Triggers>
+		</Style>
+
+
+		<DataTemplate x:Key="MixItemDetailsTemplate">
+			<DockPanel Height="130" Margin="0,0,0,10">
+
+				<StackPanel Orientation="Vertical" VerticalAlignment="Top" Width="120" MinWidth="120">
+					<Border DockPanel.Dock="Left" BorderBrush="Gray" BorderThickness="2" CornerRadius="4" Margin="5">
+						<Image Source="{Binding Path=CoverUri}" Stretch="Fill" Height="120" VerticalAlignment="Top" />
+					</Border>
+				</StackPanel>
+
+				<StackPanel MinWidth="60" DockPanel.Dock="Right" Margin="5,5,5,5" Orientation="Vertical" HorizontalAlignment="Right">
+					<Button Margin="5,5,5,5" Style="{StaticResource HoveredMixItemButtonStyle}" HorizontalAlignment="Right" Command="{Binding Play}">
+						<Image Source="../Resources/Play64.png" />
+					</Button>
+					<Button HorizontalAlignment="Right" Margin="5,5,5,5" Style="{StaticResource HoveredMixItemButtonStyle}" Command="{Binding ToggleLike}">
+						<Image Style="{StaticResource LikeMixImageStyle}" />
+					</Button>
+				</StackPanel>
+
+				<StackPanel Orientation="Vertical" DockPanel.Dock="Bottom" Margin="5,5,5,5">
+					<StackPanel Orientation="Horizontal">
+						<Image Source="../Resources/PlaysCount.png" Height="16" Width="16" Margin="0,0,5,0" />
+						<Label Content="{Binding Path=PlaysCount}" Margin="0,0,10,0" />
+						<Image Source="../Resources/LikesCount.png" Height="16" Width="16" Margin="0,0,5,0" />
+						<Label Content="{Binding Path=LikesCount}" Margin="0,0,10,0" />
+                        <Image Source="../Resources/DurationInfo.gif" Height="16" Width="16" Margin="0,0,5,0" />
+                        <Label Content="{Binding Path=TotalNumberOfTracks}" Margin="0,0,0,0" />
+                        <Label Content=" tracks (" />
+                        <Label Content="{Binding Path=TotalDurationAsString}" />
+                        <Label Content=")" />
+                    </StackPanel>
+					<StackPanel Orientation="Horizontal">
+						<Label Content="Tags: " />
+						<Label Content="{Binding Path=TagList}" ToolTip="{Binding Path=TagList}" />
+					</StackPanel>
+				</StackPanel>
+
+				<StackPanel Margin="5,5,5,5" Orientation="Vertical">
+					<TextBlock Cursor="Hand">
+						<Hyperlink NavigateUri="{Binding Path=RestfulUri}" RequestNavigate="RequestNavigateHandler" Foreground="Transparent">
+							<TextBlock Text="{Binding Path=Name}" TextTrimming="CharacterEllipsis" Foreground="White" FontWeight="Bold" ToolTip="{Binding Path=RestfulUri}" />
+						</Hyperlink>
+					</TextBlock>
+					<StackPanel Orientation="Horizontal">
+						<Label Content="Published by " />
+						<Label Content="{Binding Path=Author}" Foreground="White" />
+						<Label Content=" on " />
+						<Label Content="{Binding Path=FirstPublishedAt}" />
+					</StackPanel>
+					<TextBlock MaxHeight="50" Text="{Binding Path=Description}" TextTrimming="CharacterEllipsis" TextWrapping="Wrap" Height="50" Foreground="White" FontStyle="Italic" ToolTip="{Binding Path=Description}" />
+				</StackPanel>
+
+			</DockPanel>
+		</DataTemplate>
+
+		<Style TargetType="{x:Type ListBoxItem}" x:Key="MixItemDetailsContainerStyle" BasedOn="{StaticResource ListBoxBackgroundStyle}">
+			<Setter Property="ContentTemplate" Value="{StaticResource MixItemDetailsTemplate}" />
+			<Setter Property="HorizontalContentAlignment" Value="Stretch" />
+			<Setter Property="Focusable" Value="False" />
+			<Style.Resources>
+				<!-- Background of selected item when focussed -->
+				<SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="Green" />
+				<!-- Background of selected item when not focussed -->
+				<SolidColorBrush x:Key="{x:Static SystemColors.ControlBrushKey}" Color="LightGray" />
+			</Style.Resources>
+		</Style>
+
+		<!-- style and data templates for the list box-->
+		<Style TargetType="{x:Type ListBox}" x:Key="MixListBoxItemsStyle">
+			<!-- Set the ItemTemplate of the ListBox to a DataTemplate which explains how to display an object of type BitmapImage. -->
+
+			<Setter Property="ItemContainerStyle" Value="{StaticResource MixItemDetailsContainerStyle}" />
+			<Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Disabled" />
+
+			<Style.Triggers>
+				<DataTrigger Binding="{Binding Path=MixDisplayMode}" Value="{x:Static ViewModels:MixDisplayMode.Thumbs}">
+					<Setter Property="ItemContainerStyle" Value="{StaticResource MixItemThumbContainerStyle}" />
+					<Setter Property="ItemsPanel">
+						<Setter.Value>
+							<ItemsPanelTemplate>
+								<WrapPanel />
+							</ItemsPanelTemplate>
+						</Setter.Value>
+					</Setter>
+
+				</DataTrigger>
+			</Style.Triggers>
+		</Style>
+		
+		
+		<!-- data templates and styles for the login form-->
+		<DataTemplate x:Key="UserNotLoggedInDataTemplate">
+			<StackPanel Width="150" Orientation="Vertical" Background="{DynamicResource WindowBackgroundBrush}">
+				<Label Height="18" VerticalAlignment="Center" Content="Username:" />
+				<TextBox Height="24" Name="txtUserName" VerticalAlignment="Top" ViewExtensions:FocusExtension.IsFocused="{Binding IsUsernameFieldFocused, Mode=TwoWay}" Text="{Binding UsernameField, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+				<Label Height="18" VerticalAlignment="Center" Content="Password:" />
+				<PasswordBox x:Name="txtPassWord" Height="24" VerticalAlignment="Top" ViewExtensions:FocusExtension.IsFocused="{Binding IsPasswordFieldFocused, Mode=TwoWay}" ViewExtensions:PasswordBoxAssistant.BindPassword="true" ViewExtensions:PasswordBoxAssistant.BoundPassword="{Binding Path=PasswordField, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+					<PasswordBox.InputBindings>
+						<KeyBinding Command="{Binding LogIn}" Key="Enter" />
+					</PasswordBox.InputBindings>
+				</PasswordBox>
+				<DockPanel>
+					<Button DockPanel.Dock="Right" Content="Log in" Name="loginButton" Command="{Binding LogIn}" />
+					<TextBlock Cursor="Hand">
+						<Hyperlink NavigateUri="http://8tracks.com/signup" RequestNavigate="RequestNavigateHandler" Foreground="Orange">
+							<TextBlock Text="No account?" TextTrimming="CharacterEllipsis" ToolTip="Create an account on 8tracks. Click to go to http://8tracks.com/signup" />
+						</Hyperlink>
+					</TextBlock>
+				</DockPanel>
+			</StackPanel>
+		</DataTemplate>
+
+		<DataTemplate x:Key="UserLoggedInDataTemplate">
+			<StackPanel Orientation="Vertical" MinWidth="50" Background="{DynamicResource WindowBackgroundBrush}">
+				<StackPanel Orientation="Horizontal">
+					<Label Content="Hi " />
+					<Label Content="{Binding Path=UserData.Username}" />
+				</StackPanel>
+
+				<Button Content="Log out" Margin="0,5,0,0" Name="logoutButton" Command="{Binding Path=LogOut}" HorizontalAlignment="Right" />
+			</StackPanel>
+		</DataTemplate>
+
+		<Style x:Key="NoFocusVisualStyle">
+			<Setter Property="Control.Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type Control}">
+						<Border>
+							<Rectangle Margin="0" StrokeThickness="0" Stroke="Transparent" StrokeDashArray="1 2" />
+						</Border>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+
+		<Style TargetType="{x:Type Expander}" x:Key="LoginFormStyle" BasedOn="{StaticResource {x:Type Expander}}">
+			<Setter Property="Header" Value="Log in" />
+			<Setter Property="ContentTemplate" Value="{StaticResource UserNotLoggedInDataTemplate}" />
+			<Setter Property="FocusVisualStyle" Value="{DynamicResource NoFocusVisualStyle}" />
+			<Style.Triggers>
+				<DataTrigger Binding="{Binding Path=UserLoggedIn}" Value="true">
+					<Setter Property="Header" Value="Profile" />
+					<Setter Property="ContentTemplate" Value="{StaticResource UserLoggedInDataTemplate}" />
+				</DataTrigger>
+			</Style.Triggers>
+		</Style>
+
+		<!--tracks templates and styles-->
+        <Style TargetType="{x:Type Button}" x:Key="DownloadTrackButtonStyle" BasedOn="{StaticResource {x:Type Button}}">
+			<Setter Property="Content" Value="Download" />
+			<Setter Property="Visibility" Value="{Binding DebugModeOn, ElementName=Window}" />
+            <Style.Triggers>
+				<DataTrigger Binding="{Binding Path=TrackLocation}" Value="Downloading">
+					<Setter Property="Content" Value="Downloading" />
+					<Setter Property="IsEnabled" Value="False" />
+				</DataTrigger>
+				<DataTrigger Binding="{Binding Path=TrackLocation}" Value="Downloaded">
+					<Setter Property="Content" Value="Download" />
+					<Setter Property="IsEnabled" Value="True" />
+					<Setter Property="Foreground" Value="LightSkyBlue" />
+				</DataTrigger>
+			</Style.Triggers>
+		</Style>
+
+		<Style TargetType="{x:Type TextBlock}" x:Key="TrackItemColoring">
+			<Style.Triggers>
+				<DataTrigger Binding="{Binding IsCurrentlyPlayed}" Value="True">
+					<Setter Property="FontWeight" Value="Bold" />
+				</DataTrigger>
+
+				<DataTrigger Binding="{Binding IsLast}" Value="True">
+					<Setter Property="ToolTip" Value="This is the last song of the mix." />
+				</DataTrigger>
+
+			</Style.Triggers>
+		</Style>
+
+		<Style TargetType="{x:Type Label}" x:Key="LastSongColoring" BasedOn="{StaticResource {x:Type Label}}">
+			<Style.Triggers>
+				<DataTrigger Binding="{Binding IsLast}" Value="True">
+					<Setter Property="Foreground" Value="Red" />
+				</DataTrigger>
+			</Style.Triggers>
+		</Style>
+
+		<DataTemplate x:Key="TrackItemTemplate">
+			<DockPanel LastChildFill="True">
+
+                <Button Command="{Binding Download}" Width="{Binding Path=DebugModeButtonWidth, ElementName=Window}" Margin="5,0,5,0" DockPanel.Dock="Right" Style="{StaticResource DownloadTrackButtonStyle}" />
+                <Label DockPanel.Dock="Right" Content="{Binding Duration}" Margin="2" />
+				<StackPanel Orientation="Horizontal">
+					<TextBlock Height="20" Style="{StaticResource TrackItemColoring}" TextWrapping="Wrap" TextTrimming="CharacterEllipsis">
+						<Label Content="{Binding Path=Performer}" Style="{StaticResource LastSongColoring}" />
+						<Label Content=" - " Style="{StaticResource LastSongColoring}" />
+						<Label Content="{Binding Path=Name}" Style="{StaticResource LastSongColoring}" />
+					</TextBlock>
+				</StackPanel>
+			</DockPanel>
+		</DataTemplate>
+
+		<Style TargetType="{x:Type ListBoxItem}" x:Key="TrackItemContainerStyle" BasedOn="{StaticResource ListBoxBackgroundStyle}">
+			<Setter Property="ContentTemplate" Value="{StaticResource TrackItemTemplate}" />
+			<!--<Setter Property="Focusable" Value="False" />-->
+			<Setter Property="HorizontalContentAlignment" Value="Stretch" />
+
+		</Style>
+
+
+
+		<!-- style and data templates for the track list box-->
+		<Style TargetType="{x:Type ListBox}" x:Key="TrackListBoxItemsStyle">
+			<!-- Set the ItemTemplate of the ListBox to a DataTemplate which explains how to display an object of type BitmapImage. -->
+			<Setter Property="ItemContainerStyle" Value="{StaticResource TrackItemContainerStyle}" />
+			<Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Disabled" />
+		</Style>
+
+
+	</Window.Resources>
+
+
+	<Grid Background="{DynamicResource WindowBackgroundBrush}" DataContext="{Binding ElementName=Window, Path=ViewModel}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Focusable="True">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="55*" MinWidth="200" />
+			<ColumnDefinition Width="Auto" />
+			<ColumnDefinition Width="45*" MinWidth="200" />
+		</Grid.ColumnDefinitions>
+		<GridSplitter VerticalAlignment="Stretch" HorizontalAlignment="Right" ResizeBehavior="PreviousAndNext" Name="gridSplitter1" Width="5" Grid.Column="1" Background="{DynamicResource WindowBackgroundBrush}" />
+
+		<DockPanel LastChildFill="True" Grid.Column="0" Background="{DynamicResource WindowBackgroundBrush}" DataContext="{Binding Path=MediaBrowserViewModel}">
+			<DockPanel Height="Auto" Margin="5,5,5,5" DockPanel.Dock="Top" LastChildFill="False">
+				<Button Command="{Binding GetRecentlyMadeMixes}" Margin="2,0,2,0">
+					<StackPanel>
+						<Image Source="../Resources/RecentMixes.png" Height="40" />
+						<Label Content="Recent" HorizontalAlignment="Center" />
+					</StackPanel>
+				</Button>
+				<Button Command="{Binding GetHotMixes}" Margin="2,0,2,0">
+					<StackPanel>
+						<Image Source="../Resources/HotMixes.png" Height="40" Width="40" />
+						<Label Content="Hot" HorizontalAlignment="Center" />
+					</StackPanel>
+				</Button>
+				<Button Command="{Binding GetPopularMixes}" Margin="2,0,2,0">
+					<StackPanel>
+						<Image Source="../Resources/PopularMixes.png" Height="40" Width="40" />
+						<Label Content="Popular" HorizontalAlignment="Center" />
+					</StackPanel>
+				</Button>
+				<Button Command="{Binding GetLikedMixes}" Margin="2,0,2,0">
+					<StackPanel>
+						<Image Source="../Resources/LikedMixes.png" Height="40" Width="40" Opacity="0.7" />
+						<Label Content="Liked" HorizontalAlignment="Center" />
+					</StackPanel>
+				</Button>
+				<Button Command="{Binding GetFeedMixes}" Margin="2,0,2,0">
+					<StackPanel>
+						<Image Source="../Resources/FeedMixes.png" Height="40" Width="40" />
+						<Label Content="Feed" HorizontalAlignment="Center" />
+					</StackPanel>
+				</Button>
+                <Button Command="{Binding GetHistoryMixes}" Margin="2,0,2,0">
+                    <StackPanel>
+                        <Image Source="../Resources/Headphones.png" Height="40" Width="40" />
+                        <Label Content="History" HorizontalAlignment="Center" />
+                    </StackPanel>
+                </Button>
+                <Button Command="{Binding GetRecommendedMixes}" Margin="2,0,2,0">
+                    <StackPanel>
+                        <Image Source="../Resources/Stamp.png" Height="40" Width="40" />
+                        <Label Content="Suggested" HorizontalAlignment="Center" />
+                    </StackPanel>
+                </Button>
+
+                <Button Command="{Binding SetMixDisplayMode}" CommandParameter="{x:Static ViewModels:MixDisplayMode.Thumbs}" Margin="2,0,2,0" DockPanel.Dock="Right">
+					<StackPanel>
+						<Image Source="../Resources/ThumbnailView.png" Height="40" Width="40" />
+						<Label Content="Thumbs" HorizontalAlignment="Center" />
+					</StackPanel>
+				</Button>
+				<Button Command="{Binding SetMixDisplayMode}" CommandParameter="{x:Static ViewModels:MixDisplayMode.Detailed}" Margin="2,0,2,0" DockPanel.Dock="Right">
+					<StackPanel>
+						<Image Source="../Resources/ListView.png" Height="40" Width="40" />
+						<Label Content="Detailed" HorizontalAlignment="Center" />
+					</StackPanel>
+				</Button>
+			</DockPanel>
+			<Grid Margin="5,5,5,5" DockPanel.Dock="Top">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="6.7*" />
+					<ColumnDefinition Width="3.3*" />
+				</Grid.ColumnDefinitions>
+
+				<StackPanel Orientation="Horizontal" Margin="0,0,9,0">
+					<Label Content="Filter" VerticalAlignment="Center" Margin="2,0,0,0" />
+
+					<Grid Margin="10,0,0,0" ToolTip="Put tags in square brackets. Example: [jazz][hiphop] covers =&gt; searches for mixes that contain &quot;covers&quot; and tagged with jazz and hiphop" Grid.Row="1" Background="#FF333333" Style="{StaticResource EntryFieldStyle}">
+						<TextBlock Margin="0,2" Width="250" Text=" Filter the results. Put tags in square brackets." Foreground="Gray">
+							<TextBlock.Visibility>
+								<MultiBinding Converter="{StaticResource WatermarkHelper}">
+									<Binding ElementName="txtUserEntry2" Path="Text.IsEmpty" />
+									<Binding ElementName="txtUserEntry2" Path="IsFocused" />
+								</MultiBinding>
+							</TextBlock.Visibility>
+                            <TextBlock.InputBindings>
+                                <KeyBinding Command="{Binding ApplyFilter}" Key="Enter" />
+                            </TextBlock.InputBindings>
+						</TextBlock>
+						<TextBox Name="txtUserEntry2" Width="250" Background="Transparent" BorderBrush="Black" CaretBrush="White" Text="{Binding Filter, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                            <TextBox.InputBindings>
+                                <KeyBinding Command="{Binding ApplyFilter}" Key="Enter" />
+                            </TextBox.InputBindings>
+                        </TextBox>
+					</Grid>
+
+
+				</StackPanel>
+
+				<StackPanel Orientation="Horizontal" Grid.Column="1" HorizontalAlignment="Right">
+					<Label Content="Number of mixes:" Margin="5,5,5,5" VerticalAlignment="Center" />
+					<ComboBox SelectedIndex="0" TextElement.Foreground="White" Width="45" SelectedValue="{Binding MixesBatchSize, Mode=TwoWay}" SelectedValuePath="Content">
+						<ComboBoxItem Content="10" />
+						<ComboBoxItem Content="20" />
+						<ComboBoxItem Content="100" />
+					</ComboBox>
+				</StackPanel>
+			</Grid>
+
+			<StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" Margin="5,5,5,5">
+				<Button Command="{Binding GetMoreMixes}" Width="110" Height="30" DockPanel.Dock="Right" Margin="5,0,10,0">
+					<StackPanel Orientation="Horizontal">
+						<Image Source="../Resources/MoreMixes.png" Height="25" VerticalAlignment="Center" Margin="0,0,5,0" />
+						<Label Content="More mixes" HorizontalAlignment="Center" VerticalAlignment="Center" />
+					</StackPanel>
+				</Button>
+                <Label Content="{Binding MixBrowsingMessage}" VerticalAlignment="Center" ToolTip="{Binding MixBrowsingMessage}" />
+			</StackPanel>
+
+			<ListBox Width="Auto" Background="{DynamicResource WindowBackgroundBrush}" Name="mixesList" ItemsSource="{Binding BrowsedMixes}" Style="{StaticResource MixListBoxItemsStyle}" DockPanel.Dock="Top"></ListBox>
+		</DockPanel>
+
+		<DockPanel DataContext="{Binding Path=PlaybackViewModel}" Grid.Column="2" Background="{DynamicResource WindowBackgroundBrush}" LastChildFill="True">
+			<DockPanel LastChildFill="True" DockPanel.Dock="Top">
+				<StackPanel Orientation="Vertical" Width="170">
+					<Border BorderBrush="Gray" BorderThickness="2" CornerRadius="4" Margin="5">
+						<Image DockPanel.Dock="Left" HorizontalAlignment="Left" VerticalAlignment="Top" Source="{Binding CurrentMixViewModel.CoverUri}" Width="160" Height="160" />
+					</Border>
+					<StackPanel Orientation="Horizontal" Margin="5,0,0,0">
+						<Image Source="..\Resources\PlaysCount.png" Height="16" Width="16" Margin="0,0,5,0" />
+						<Label Content="{Binding CurrentMixViewModel.PlaysCount}" Margin="0,0,10,0" />
+						<Image Source="../Resources/LikesCount.png" Height="16" Width="16" Margin="0,0,5,0" />
+						<Label Content="{Binding CurrentMixViewModel.LikesCount}" Margin="0,0,10,0" />
+					</StackPanel>
+					<TextBlock Text="{Binding CurrentMixViewModel.TagList}" TextTrimming="CharacterEllipsis" TextWrapping="Wrap" Foreground="White" MaxHeight="40" Margin="5" ToolTip="{Binding CurrentMixViewModel.TagList}" />
+				</StackPanel>
+
+				<StackPanel DockPanel.Dock="Right" DataContext="{Binding ElementName=Window, Path=ViewModel.LoginFormViewModel}" Background="Transparent">
+					<Expander ExpandDirection="Right" Height="190" VerticalAlignment="Top" HorizontalAlignment="Right" IsExpanded="{Binding IsLoginFormExpanded, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Content="{Binding}" Style="{StaticResource LoginFormStyle}" Background="{DynamicResource WindowBackgroundBrush}" />
+				</StackPanel>
+
+				<StackPanel Orientation="Vertical" HorizontalAlignment="Left" Panel.ZIndex="1" Margin="5" Height="230" MaxHeight="230">
+					<TextBlock Cursor="Hand">
+						<Hyperlink NavigateUri="{Binding CurrentMixViewModel.RestfulUri}" RequestNavigate="RequestNavigateHandler" Foreground="Transparent">
+							<TextBlock Text="{Binding CurrentMixViewModel.Name}" ToolTip="{Binding CurrentMixViewModel.RestfulUri}" FontSize="22" TextTrimming="CharacterEllipsis" TextWrapping="Wrap" Foreground="White" FontWeight="SemiBold" MaxHeight="170" />
+						</Hyperlink>
+					</TextBlock>
+					<Label Content="{Binding CurrentMixViewModel.Author}" FontSize="16" />
+					<TextBlock Text="{Binding CurrentMixViewModel.Description}" FontStyle="Italic" TextTrimming="CharacterEllipsis" TextWrapping="Wrap" Foreground="White" />
+				</StackPanel>
+			</DockPanel>
+
+
+			<Grid HorizontalAlignment="Stretch" Margin="5,5,5,5" DockPanel.Dock="Top">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="180" />
+				</Grid.ColumnDefinitions>
+				<Slider Grid.Column="0" VerticalAlignment="Center" IsEnabled="{Binding IsPositionSliderEnabled}" Margin="0,0,15,0" IsMoveToPointEnabled="True" Value="{Binding CurrentPosition, Mode=TwoWay}" Maximum="{Binding CurrentTrackDuration}" />
+				<DockPanel Grid.Column="1" LastChildFill="True" VerticalAlignment="Center">
+					<Label Content="{Binding CurrentPositionAsString}" DockPanel.Dock="Left" VerticalAlignment="Center" />
+					<Label Content="/" DockPanel.Dock="Left" VerticalAlignment="Center" />
+					<Label Content="{Binding CurrentTrackDurationAsString}" DockPanel.Dock="Left" VerticalAlignment="Center" />
+					<Image Source="../Resources/Volume.png" DockPanel.Dock="Left" Height="20" Width="25" Margin="0,0,3,0" />
+					<Slider HorizontalAlignment="Stretch" VerticalAlignment="Center" DockPanel.Dock="Right" Maximum="100" SmallChange="2" LargeChange="10" Value="{Binding Volume, Mode=TwoWay}" IsMoveToPointEnabled="True" />
+				</DockPanel>
+
+			</Grid>
+
+			<DockPanel Margin="5,5,5,5" LastChildFill="False" DockPanel.Dock="Top">
+				<Button Command="{Binding Continue}" Margin="2,2,0,2">
+					<Image Source="../Resources/Play.png" Height="25" Width="25" />
+				</Button>
+				<Button Command="{Binding Pause}" Margin="2,2,0,2">
+					<Image Source="../Resources/Pause.png" Height="25" Width="25" />
+				</Button>
+
+				<Button Command="{Binding Stop}" Margin="2,2,0,2">
+					<Image Source="../Resources/Stop.png" Height="25" Width="25" />
+				</Button>
+				<Button Command="{Binding NextSong}" Margin="2,2,0,2">
+					<Image Source="../Resources/NextTrack.png" Height="25" Width="25" />
+				</Button>
+                
+				<Button Command="{Binding NextMix}" Margin="2,2,2,2" DockPanel.Dock="Right">
+					<StackPanel Orientation="Horizontal">
+						<Image Source="../Resources/NextMix.png" Height="25" Width="25" />
+						<Label Content="Next Mix" VerticalAlignment="Center" Margin="3,0,3,0" />
+					</StackPanel>
+				</Button>
+                
+                <StackPanel Orientation="Horizontal" DockPanel.Dock="Right" Margin="10,0,10,0">
+                    <Label Content="Track " VerticalAlignment="Center"/>
+                    <Label Content="{Binding CurrentMixViewModel.CurrentTrackIndexAsString}" VerticalAlignment="Center"/>
+                    <Label Content=" of " VerticalAlignment="Center"/>
+                    <Label Content="{Binding CurrentMixViewModel.TotalNumberOfTracks}" VerticalAlignment="Center"/>
+                    <Label Content=" (" VerticalAlignment="Center"/>
+                    <Label Content="{Binding CurrentMixViewModel.TotalDurationAsString}" VerticalAlignment="Center"/>
+                    <Label Content=")" VerticalAlignment="Center"/>
+                </StackPanel>
+			</DockPanel>
+
+            <DockPanel DockPanel.Dock="Bottom" LastChildFill="False" Margin="4">
+
+                <Button Command="{Binding CurrentMixViewModel.ToggleLike}" Margin="2,2,2,2" DockPanel.Dock="Left">
+					<StackPanel Orientation="Horizontal" DataContext="{Binding CurrentMixViewModel}">
+						<Image Style="{StaticResource LikeMixImageStyle}" Height="24" Width="24" />
+						<Label Content="Toggle like" VerticalAlignment="Center" Margin="5,0,3,0" />
+					</StackPanel>
+				</Button>
+
+                <Button Command="{Binding CurrentMixViewModel.Download}" Visibility="{Binding DebugModeOn, ElementName=Window}" Margin="2,2,2,2" DockPanel.Dock="Left">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="../Resources/Record.png" Height="25" Width="25" />
+                        <Label Content="Download all" VerticalAlignment="Center" Margin="3,0,3,0" />
+                    </StackPanel>
+                </Button>
+
+                <TextBlock Cursor="Hand" DockPanel.Dock="Right" VerticalAlignment="Center" Margin="0,0,5,0">
+				    <Hyperlink Click="ShowAboutWindow" Foreground="White">
+                        <Label Content="About..." ToolTip="Click to see the information about the played and its author."/>
+				    </Hyperlink>
+                </TextBlock>
+
+                <TextBlock Cursor="Hand" DockPanel.Dock="Right" VerticalAlignment="Center" Margin="0,0,5,0">
+				    <Hyperlink NavigateUri="mailto://matija32@gmail.com?subject=[8tracks App]" RequestNavigate="RequestNavigateHandler" Foreground="Orange">
+                        <Label Content="Bugs? Suggestions?" ToolTip="Send an email to the author of the application - matija32@gmail.com" Foreground="Orange" />
+				    </Hyperlink>
+                </TextBlock>
+                
+            </DockPanel>
+
+			<ListBox Margin="5,0,5,0" Background="{DynamicResource WindowBackgroundBrush}" ItemsSource="{Binding CurrentMixViewModel.Tracks}" Style="{StaticResource TrackListBoxItemsStyle}" ViewExtensions:ListBoxExtensions.FocusedItem="{Binding CurrentMixViewModel.CurrentTrackIndex}" SelectedIndex="{Binding SelectedTrackIndex}">
+
+				<ListBox.InputBindings>
+					<KeyBinding Command="{Binding GoToTrack}" Key="Enter" />
+				</ListBox.InputBindings>
+				<i:Interaction.Triggers>
+					<i:EventTrigger EventName="MouseDoubleClick">
+						<i:InvokeCommandAction Command="{Binding GoToTrack}" />
+					</i:EventTrigger>
+				</i:Interaction.Triggers>
+
+			</ListBox>
+
+		</DockPanel>
+		<Grid.InputBindings>
+			<KeyBinding Command="{Binding PlaybackViewModel.Continue}" Gesture="CTRL+1" />
+			<KeyBinding Command="{Binding PlaybackViewModel.Pause}" Gesture="CTRL+2" />
+			<KeyBinding Command="{Binding PlaybackViewModel.Stop}" Gesture="CTRL+3" />
+			<KeyBinding Command="{Binding PlaybackViewModel.NextSong}" Gesture="CTRL+4" />
+			<KeyBinding Command="{Binding PlaybackViewModel.NextMix}" Gesture="CTRL+9" />
+
+            <KeyBinding Command="{Binding MediaBrowserViewModel.GetRecentlyMadeMixes}" Gesture="CTRL+R" />
+            <KeyBinding Command="{Binding MediaBrowserViewModel.GetHotMixes}" Gesture="CTRL+H" />
+            <KeyBinding Command="{Binding MediaBrowserViewModel.GetPopularMixes}" Gesture="CTRL+P" />
+            <KeyBinding Command="{Binding MediaBrowserViewModel.GetLikedMixes}" Gesture="CTRL+L" />
+            <KeyBinding Command="{Binding MediaBrowserViewModel.GetFeedMixes}" Gesture="CTRL+F" />
+            <KeyBinding Command="{Binding MediaBrowserViewModel.GetMoreMixes}" Gesture="CTRL+Plus" />
+            
+			<KeyBinding Command="{Binding PlaybackViewModel.Skip}" CommandParameter="5" Gesture="CTRL+Right" />
+			<KeyBinding Command="{Binding PlaybackViewModel.Skip}" CommandParameter="-5" Gesture="CTRL+Left" />
+			<KeyBinding Command="{Binding PlaybackViewModel.ChangeVolume}" CommandParameter="3" Gesture="CTRL+Up" />
+			<KeyBinding Command="{Binding PlaybackViewModel.ChangeVolume}" CommandParameter="-3" Gesture="CTRL+Down" />
+            
+            
+		</Grid.InputBindings>
+
+	</Grid>
+</Window>

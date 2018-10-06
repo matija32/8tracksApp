@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EB805A31-9271-469E-B2F3-F17516D7FEE0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EightTracksWpfPlayer</RootNamespace>
+    <AssemblyName>EightTracksWpfPlayer</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\Icon8tracks.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\Libs\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Expression.Interactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="NLog.Targets.GrowlNotify">
+      <HintPath>..\Libs\NLog.Targets.GrowlNotify.dll</HintPath>
+    </Reference>
+    <Reference Include="policy.2.0.taglib-sharp">
+      <HintPath>..\Libs\policy.2.0.taglib-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework.Aero" />
+    <Reference Include="ReactiveUI">
+      <HintPath>..\Libs\ReactiveUI\ReactiveUI.dll</HintPath>
+    </Reference>
+    <Reference Include="ReactiveUI.Blend">
+      <HintPath>..\Libs\ReactiveUI\ReactiveUI.Blend.dll</HintPath>
+    </Reference>
+    <Reference Include="ReactiveUI.Xaml">
+      <HintPath>..\Libs\ReactiveUI\ReactiveUI.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.CoreEx">
+      <HintPath>..\Libs\ReactiveUI\System.CoreEx.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Interactive">
+      <HintPath>..\Libs\ReactiveUI\System.Interactive.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive">
+      <HintPath>..\Libs\ReactiveUI\System.Reactive.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\Libs\ReactiveUI\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="taglib-sharp">
+      <HintPath>..\Libs\taglib-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WMPLib">
+      <HintPath>..\Libs\WMPLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Views\AboutWindow.xaml.cs">
+      <DependentUpon>AboutWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Themes\WindowResizer.cs" />
+    <Compile Include="Views\Themes\WindowStyle.xaml.cs">
+      <DependentUpon>WindowStyle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Views\AboutWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Themes\Skins\BureauBlack.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Themes\Skins\BureauBlue.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Themes\Skins\ExpressionDark.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Themes\Skins\ExpressionLight.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Themes\Skins\None.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Themes\Skins\ShinyBlue.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Themes\Skins\ShinyRed.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Themes\Skins\WhistlerBlue.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Themes\WindowStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Themes\WindowStyleWin7.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Themes\WindowStyleXP.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EightTracksPlayer\EightTracksPlayer.csproj">
+      <Project>{A96049BF-CA52-4124-B6D6-BAD5FF73D9AC}</Project>
+      <Name>EightTracksPlayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Views\Themes\Images\highlighted close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Views\Themes\Images\highlighted maximize.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Views\Themes\Images\highlighted minimize.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Views\Themes\Images\normal close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Views\Themes\Images\normal maximize.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Views\Themes\Images\normal minimize.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\FeedMixes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\GmailLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Headphones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Headphones2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\HotMixes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\HotMixes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Like.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\LikedMixes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\LikesCount.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\LinkedInLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ListView.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\MoreMixes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\NextMix.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\NextTrack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\NoImageAvailable.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\NotLike.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Play64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Play128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Play256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\PlaysCount.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\PopularMixes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\PopularMixes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\PopularMixes2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\PreviousTrack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\RecentMixes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Record.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Stamp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ThumbnailView.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Volume.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icon8tracks.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DurationInfo.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

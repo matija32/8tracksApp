@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <status>422 Unprocessable Entity</status>
+  <errors>Your login was unsuccessful</errors>
+  <notices nil="true"></notices>
+  <logged-in>false</logged-in>
+  <api-warning>
+    <api-warning>You didn't pass an API version, defaulting to api_version=2.</api-warning>
+  </api-warning>
+  <api-version>2</api-version>
+</response>

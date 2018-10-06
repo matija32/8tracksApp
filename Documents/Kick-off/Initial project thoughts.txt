@@ -1,0 +1,9 @@
+frontend - diferent GUI libs and making my own controls, 
+.net 4/5 - tasks, 
+Rx and Rx UI (from infoq),
+- WPF 
+plug-ins so that other radios can be used - like just putting a dll into the folder)
+- compatibility with youtube lists?
+- compatibility with offline music?
+- TDD?
+- for testing an offline server that simulates

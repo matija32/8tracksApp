@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <next-page nil="true"></next-page>
+  <previous-page nil="true"></previous-page>
+  <total-pages>1</total-pages>
+  <id>73247620</id>
+  <path>/mix_sets/73247620</path>
+  <restful-url>http://8tracks.com/mix_sets/73247620</restful-url>
+  <total-entries>1</total-entries>
+  <page>1</page>
+  <per-page>12</per-page>
+  <canonical-path>/mixes/all/liked</canonical-path>
+  <name>Liked mix</name>
+  <mixes>
+    <mix>
+      <id>860224</id>
+      <name>DML.fm &amp; Elite Daily Presents Stars, Stripes, and Surf</name>
+      <published>true</published>
+      <description>http://DML.fm &amp; http://elitedaily.com
+
+Like us of facebook https://www.facebook.com/DirtyMexicanLemonadeMusic</description>
+      <plays-count>3714</plays-count>
+      <likes-count>874</likes-count>
+      <slug>dml-fm-elite-daily-presents-stars-stripes-and-surf</slug>
+      <path>/dml-fm/dml-fm-elite-daily-presents-stars-stripes-and-surf</path>
+      <cover-urls>
+        <sq56>http://cf0.8tracks.us/mix_covers/000/860/224/84682.sq56.jpg</sq56>
+        <sq100>http://cf0.8tracks.us/mix_covers/000/860/224/84682.sq100.jpg</sq100>
+        <sq133>http://cf0.8tracks.us/mix_covers/000/860/224/84682.sq133.jpg</sq133>
+        <max133w>http://cf0.8tracks.us/mix_covers/000/860/224/84682.max133w.jpg</max133w>
+        <max200>http://cf0.8tracks.us/mix_covers/000/860/224/84682.max200.jpg</max200>
+        <sq250>http://cf0.8tracks.us/mix_covers/000/860/224/84682.sq250.jpg</sq250>
+        <sq500>http://cf0.8tracks.us/mix_covers/000/860/224/84682.sq500.jpg</sq500>
+        <max1024>http://cf0.8tracks.us/mix_covers/000/860/224/84682.max1024.jpg</max1024>
+        <original>http://cf0.8tracks.us/mix_covers/000/860/224/84682.original.jpg</original>
+      </cover-urls>
+      <restful-url>http://8tracks.com/mixes/860224</restful-url>
+      <tag-list-cache>kate upton, summer, 4th of july, dml.fm, elite daily</tag-list-cache>
+      <first-published-at>2012-06-26T21:18:58Z</first-published-at>
+      <liked-by-current-user>true</liked-by-current-user>
+      <nsfw>false</nsfw>
+      <user>
+        <id>219531</id>
+        <login>DML.fm</login>
+        <slug>dml-fm</slug>
+        <avatar-urls>
+          <sq56>http://cf3.8tracks.us/avatars/000/219/531/63753.sq56.jpg</sq56>
+          <sq72>http://cf3.8tracks.us/avatars/000/219/531/63753.sq72.jpg</sq72>
+          <sq100>http://cf3.8tracks.us/avatars/000/219/531/63753.sq100.jpg</sq100>
+          <max200>http://cf3.8tracks.us/avatars/000/219/531/63753.max200.jpg</max200>
+          <max250w>http://cf3.8tracks.us/avatars/000/219/531/63753.max250w.jpg</max250w>
+        </avatar-urls>
+        <followed-by-current-user>false</followed-by-current-user>
+      </user>
+    </mix>
+  </mixes>
+  <status>200 OK</status>
+  <errors nil="true"></errors>
+  <notices nil="true"></notices>
+  <logged-in>true</logged-in>
+  <api-warning>
+    <api-warning>You didn't pass an API version, defaulting to api_version=2.</api-warning>
+  </api-warning>
+  <api-version>2</api-version>
+</response>

@@ -1,0 +1,60 @@
+[8t]
+2012-09-18 22:34:30,887 [9] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+[8t]
+2012-09-18 23:03:06,290 [9] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+[8t]
+2012-09-18 23:04:35,521 [10] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+[8t]
+2012-09-18 23:08:08,054 [9] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+[8t]
+2012-09-18 23:11:59,339 [9] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+2012-09-18 23:12:45,177 [21] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+2012-09-18 23:12:45,177 [12] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+2012-09-18 23:12:45,444 [14] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+2012-09-18 23:12:45,444 [21] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+2012-09-18 23:12:45,502 [14] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current track duration to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentTrackDuration() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 96
+2012-09-18 23:12:45,616 [21] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current track duration to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentTrackDuration() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 96
+2012-09-18 23:12:45,686 [13] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+2012-09-18 23:12:45,686 [14] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+2012-09-18 23:12:45,924 [12] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+2012-09-18 23:12:45,914 [13] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()

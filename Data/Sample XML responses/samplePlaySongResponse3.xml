@@ -1,0 +1,50 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <mix>
+    <description-html>&lt;p&gt;Not all new but some favorite electronic stuff I've been listening to during the first half of 2007.&lt;/p&gt;</description-html>
+    <likes-count>79</likes-count>
+    <user>
+      <id>2</id>
+      <login>dp</login>
+      <path>/dp</path>
+      <restful-url>http://8tracks.com/users/2</restful-url>
+      <avatar-urls>
+        <sq56>http://cf2.8tracks.us/avatars/000/000/002/65048.sq56.jpg</sq56>
+        <sq72>http://cf2.8tracks.us/avatars/000/000/002/65048.sq72.jpg</sq72>
+        <sq100>http://cf2.8tracks.us/avatars/000/000/002/65048.sq100.jpg</sq100>
+        <max200>http://cf2.8tracks.us/avatars/000/000/002/65048.max200.jpg</max200>
+        <max250w>http://cf2.8tracks.us/avatars/000/000/002/65048.max250w.jpg</max250w>
+      </avatar-urls>
+    </user>
+    <duration>3556</duration>
+    <tracks-count>8</tracks-count>
+    <liked-by-current-user>false</liked-by-current-user>
+    <id>14</id>
+    <path>/dp/electrominimalicious</path>
+    <restful-url>http://8tracks.com/mixes/14</restful-url>
+    <name>electrominimalicious</name>
+    <user-id>2</user-id>
+    <published>true</published>
+    <cover-urls>
+      <sq56>/images/mix_covers_v3/sq56.gif</sq56>
+      <sq100>/images/mix_covers_v3/sq100.gif</sq100>
+      <sq133>/images/mix_covers_v3/sq133.gif</sq133>
+      <max133w>/images/mix_covers_v3/max133w.gif</max133w>
+      <max200>/images/mix_covers_v3/max200.gif</max200>
+      <sq250>/images/mix_covers_v3/sq250.gif</sq250>
+      <sq500>/images/mix_covers_v3/sq500.gif</sq500>
+      <max1024>/images/mix_covers_v3/max1024.gif</max1024>
+      <original>/images/mix_covers_v3/original.gif</original>
+    </cover-urls>
+    <description>Not all new but some favorite electronic stuff I've been listening to during the first half of 2007.</description>
+    <plays-count>1128</plays-count>
+    <tag-list-cache>minimal, electro</tag-list-cache>
+    <first-published-at>2007-09-06T08:56:48Z</first-published-at>
+  </mix>
+  <status>200 OK</status>
+  <errors nil="true"/>
+  <notices nil="true"/>
+  <logged-in>true</logged-in>
+  <api-version>2.1</api-version>
+</response>

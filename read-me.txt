@@ -1,0 +1,21 @@
+== Dependencies ==
+
+** Windows Operating System
+It works only for Windows. It was tested on Windows 7 (x86 and x64) and Windows 8 Release Preview (x64).
+
+** .NET version 4.0
+In case you don't have .NET 4.0 installed, download it from the following link:
+http://download.cnet.com/Microsoft-NET-Framework-4/3000-10250_4-75450154.html
+
+
+== Shortcuts ==
+
+CTRL+1 - Play/Continue
+CTRL+2 - Pause
+CTRL+3 - Stop
+CTRL+4 - Next song
+CTRL+9 - Next mix
+CTRL+Up - Volume up
+CTRL+Down - Volume down
+CTRL+Left - Skip -5 seconds
+CTRL+Right - Skip +5 seconds

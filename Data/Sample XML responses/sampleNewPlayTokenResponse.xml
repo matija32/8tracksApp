@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <play-token>760880548</play-token>
+  <status>200 OK</status>
+  <errors nil="true"></errors>
+  <notices nil="true"></notices>
+  <api-warning>
+    <api-warning>You didn't pass an API version, defaulting to api_version=2.</api-warning>
+  </api-warning>
+  <api-version>2</api-version>
+</response>

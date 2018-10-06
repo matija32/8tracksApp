@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A96049BF-CA52-4124-B6D6-BAD5FF73D9AC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EightTracksPlayer</RootNamespace>
+    <AssemblyName>EightTracksPlayer</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <Utf8Output>true</Utf8Output>
+    <ExpressionBlendVersion>4.0.20901.0</ExpressionBlendVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\Icon8tracks.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\Libs\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Drawing" />
+    <Reference Include="Microsoft.Expression.Interactions" />
+    <Reference Include="policy.2.0.taglib-sharp">
+      <HintPath>..\Libs\policy.2.0.taglib-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="PresentationFramework.Aero" />
+    <Reference Include="ReactiveUI, Version=2.1.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\ReactiveUI\ReactiveUI.dll</HintPath>
+    </Reference>
+    <Reference Include="ReactiveUI.Blend, Version=2.1.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\ReactiveUI\ReactiveUI.Blend.dll</HintPath>
+    </Reference>
+    <Reference Include="ReactiveUI.Xaml, Version=2.1.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\ReactiveUI\ReactiveUI.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.CoreEx, Version=1.0.2856.104, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\ReactiveUI\System.CoreEx.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Interactive, Version=1.0.2856.104, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\ReactiveUI\System.Interactive.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive, Version=1.0.2856.104, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\ReactiveUI\System.Reactive.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Testing, Version=1.0.2856.104, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\ReactiveUI\System.Reactive.Testing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity">
+      <HintPath>..\Libs\ReactiveUI\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="taglib-sharp">
+      <HintPath>..\Libs\taglib-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="WMPLib">
+      <HintPath>..\Libs\WMPLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="WPFToolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="WPFToolkit.Design, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="WPFToolkit.VisualStudio.Design, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Communication\Requests\MixesSortingTypes.cs" />
+    <Compile Include="Communication\Requests\NextMixRequest.cs" />
+    <Compile Include="Communication\Requests\PaginatedRequest.cs" />
+    <Compile Include="Communication\Requests\LoginRequest.cs" />
+    <Compile Include="Communication\Requests\ReportMixRequest.cs" />
+    <Compile Include="Communication\Requests\ToggleMixLikeRequest.cs" />
+    <Compile Include="Communication\Responses\LoginResponse.cs" />
+    <Compile Include="Communication\Responses\NextMixResponse.cs" />
+    <Compile Include="Communication\Responses\SupportingElements\CurrentUserElement.cs" />
+    <Compile Include="Communication\Responses\SupportingElements\LikedMixed.cs" />
+    <Compile Include="Communication\Responses\ToggleMixLikeResponse.cs" />
+    <Compile Include="Domain\Autheticator.cs" />
+    <Compile Include="Domain\Entities\MixFilter.cs" />
+    <Compile Include="Domain\ITrackReporter.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="TrackReporter.cs" />
+    <Compile Include="Utils\Browsing\FileSystemBrowser.cs" />
+    <Compile Include="Utils\Browsing\IFileSystemBrowser.cs" />
+    <Compile Include="Utils\Browsing\IWebAccessProxy.cs" />
+    <Compile Include="Utils\Browsing\FileLocation.cs" />
+    <Compile Include="Utils\StringUtils.cs" />
+    <Compile Include="Utils\ViewExtensions\ListBoxExtensions.cs" />
+    <Compile Include="Utils\ViewExtensions\WatermarkHelper.cs" />
+    <Compile Include="Utils\Browsing\WebAccessProxy.cs" />
+    <Compile Include="Domain\Entities\BrowsingSessionData.cs" />
+    <Compile Include="Domain\Entities\UserData.cs" />
+    <Compile Include="Domain\IAuthenticator.cs" />
+    <Compile Include="Domain\IMediaLibraryBrowser.cs" />
+    <Compile Include="Domain\MediaLibraryBrowser.cs" />
+    <Compile Include="Utils\ViewExtensions\PasswordBoxAssistant.cs" />
+    <Compile Include="ViewModels\Factories\IMixViewModelFactory.cs" />
+    <Compile Include="ViewModels\Factories\MixViewModelFactory.cs" />
+    <Compile Include="ViewModels\LoginFormViewModel.cs" />
+    <Compile Include="ViewModels\MediaBrowserViewModel.cs" />
+    <Compile Include="ViewModels\MixDisplayMode.cs" />
+    <Compile Include="ViewModels\MixViewModel.cs" />
+    <Compile Include="Domain\Entities\Track.cs" />
+    <Compile Include="ViewModels\PlaybackViewModel.cs" />
+    <Compile Include="ViewModels\TrackViewModel.cs" />
+    <Compile Include="Utils\ViewExtensions\FocusExtension.cs" />
+    <Compile Include="Utils\DispatchedReactiveCollection.cs" />
+    <Compile Include="Utils\Settings.cs" />
+    <Compile Include="Media\StatefullAudioPlayer.cs" />
+    <Compile Include="Communication\HttpRequestExecutor.cs" />
+    <Compile Include="Communication\IRequestExecutor.cs" />
+    <Compile Include="Communication\RequestFactory.cs" />
+    <Compile Include="Communication\Requests\IRequest.cs" />
+    <Compile Include="Communication\Requests\MixesRequest.cs" />
+    <Compile Include="Communication\Requests\NewPlayTokenRequest.cs" />
+    <Compile Include="Communication\Requests\NextSongRequest.cs" />
+    <Compile Include="Communication\Requests\PlayMixRequest.cs" />
+    <Compile Include="Communication\Requests\RequestBase.cs" />
+    <Compile Include="Communication\Responses\IResponse.cs" />
+    <Compile Include="Communication\Responses\MixesResponse.cs" />
+    <Compile Include="Communication\Responses\NewPlayTokenResponse.cs" />
+    <Compile Include="Communication\Responses\PlaySongResponse.cs" />
+    <Compile Include="Communication\Responses\ResponseBase.cs" />
+    <Compile Include="Communication\Responses\ResponseStatuses.cs" />
+    <Compile Include="Communication\Responses\SupportingElements\ApiWarningElement.cs" />
+    <Compile Include="Communication\Responses\SupportingElements\AvatarUrlsElement.cs" />
+    <Compile Include="Communication\Responses\SupportingElements\CoverUrlsElement.cs" />
+    <Compile Include="Communication\Responses\SupportingElements\ErrorElement.cs" />
+    <Compile Include="Communication\Responses\SupportingElements\MixElement.cs" />
+    <Compile Include="Communication\Responses\SupportingElements\NoticeElement.cs" />
+    <Compile Include="Communication\Responses\SupportingElements\PageElement.cs" />
+    <Compile Include="Communication\Responses\SupportingElements\SetElement.cs" />
+    <Compile Include="Communication\Responses\SupportingElements\TrackElement.cs" />
+    <Compile Include="Communication\Responses\SupportingElements\UserElement.cs" />
+    <Compile Include="Communication\Serialization\AggregatedResponseDeserializer.cs" />
+    <Compile Include="Communication\RequestExecutorAdapter.cs" />
+    <Compile Include="Domain\IPlaybackController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ViewModels\MainWindowViewModel.cs" />
+    <Compile Include="Media\MediaStatus.cs" />
+    <Compile Include="Media\DxAudioPlayerAdapter.cs" />
+    <Compile Include="Media\DxMessaging\DxMessageEventArgs.cs" />
+    <Compile Include="Media\DxMessaging\DxMessageHandler.cs" />
+    <Compile Include="Media\Events\EndOfStreamReachedEventArgs.cs" />
+    <Compile Include="Media\IAudioPlayer.cs" />
+    <Compile Include="Media\WmpAudioPlayerAdapter.cs" />
+    <Compile Include="Domain\Entities\Mix.cs" />
+    <Compile Include="Domain\PlaybackController.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="QuartzTypeLib">
+      <Guid>{56A868B0-0AD4-11CE-B03A-0020AF0BA770}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icon8tracks.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Like.png" />
+    <Resource Include="Resources\LikedMixes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Play64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Play128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Play256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\NotLike.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\FeedMixes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\HotMixes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\MoreMixes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\PopularMixes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\PopularMixes2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\RecentMixes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\HotMixes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\PopularMixes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\NextMix.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\NextTrack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\PreviousTrack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Record.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ThumbnailView.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ListView.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Volume.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\NoImageAvailable.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\PlaysCount.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\LikesCount.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\GmailLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\LinkedInLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Headphones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Headphones2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Stamp.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

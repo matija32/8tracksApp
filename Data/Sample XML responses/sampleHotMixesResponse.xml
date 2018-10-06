@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <id>3</id>
+  <path>/mix_sets/3</path>
+  <restful-url>http://8tracks.com/mix_sets/3</restful-url>
+  <total-entries>538893</total-entries>
+  <page>1</page>
+  <per-page>10</per-page>
+  <next-page>2</next-page>
+  <previous-page nil="true"></previous-page>
+  <total-pages>53890</total-pages>
+  <canonical-path>/mixes?per_page=10</canonical-path>
+  <name>All mixes</name>
+  <mixes>
+    <mix>
+      <id>1022940</id>
+      <name>Week 3</name>
+      <published>true</published>
+      <description>An eclectic mix from Nick Mangold (OL for New York), Joe Flacco (QB for Baltimore), JJ Watt (DE for Houston), and Victor Cruz (WR for New York). 8 tracks featuring Pearl Jam, Jason Aldean, and Eminem.</description>
+      <plays-count>267</plays-count>
+      <likes-count>21</likes-count>
+      <slug>week-3</slug>
+      <path>/football/week-3</path>
+      <cover-urls>
+        <sq56>http://imgix.8tracks.com/mix_covers/001/022/940/89751.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=56&amp;h=56&amp;fit=crop</sq56>
+        <sq100>http://imgix.8tracks.com/mix_covers/001/022/940/89751.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=100&amp;h=100&amp;fit=crop</sq100>
+        <sq133>http://imgix.8tracks.com/mix_covers/001/022/940/89751.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=133&amp;h=133&amp;fit=crop</sq133>
+        <max133w>http://imgix.8tracks.com/mix_covers/001/022/940/89751.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=133&amp;fit=max</max133w>
+        <max200>http://imgix.8tracks.com/mix_covers/001/022/940/89751.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=200&amp;h=200&amp;fit=max</max200>
+        <sq250>http://imgix.8tracks.com/mix_covers/001/022/940/89751.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=250&amp;h=250&amp;fit=crop</sq250>
+        <sq500>http://imgix.8tracks.com/mix_covers/001/022/940/89751.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=500&amp;h=500&amp;fit=crop</sq500>
+        <max1024>http://imgix.8tracks.com/mix_covers/001/022/940/89751.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=1024&amp;h=1024&amp;fit=max</max1024>
+        <original>http://imgix.8tracks.com/mix_covers/001/022/940/89751.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;</original>
+      </cover-urls>
+      <restful-url>http://8tracks.com/mixes/1022940</restful-url>
+      <tag-list-cache>rock, country, metal, hip hop, rap</tag-list-cache>
+      <first-published-at>2012-09-22T00:52:46Z</first-published-at>
+      <liked-by-current-user>false</liked-by-current-user>
+      <nsfw>false</nsfw>
+      <user>
+        <id>2228639</id>
+        <login>Players' Playlists</login>
+        <slug>football</slug>
+        <avatar-urls>
+          <sq56>http://cf3.8tracks.us/avatars/002/228/639/52474.sq56.jpg</sq56>
+          <sq72>http://cf3.8tracks.us/avatars/002/228/639/52474.sq72.jpg</sq72>
+          <sq100>http://cf3.8tracks.us/avatars/002/228/639/52474.sq100.jpg</sq100>
+          <max200>http://cf3.8tracks.us/avatars/002/228/639/52474.max200.jpg</max200>
+          <max250w>http://cf3.8tracks.us/avatars/002/228/639/52474.max250w.jpg</max250w>
+        </avatar-urls>
+        <followed-by-current-user>false</followed-by-current-user>
+      </user>
+    </mix>
+    <mix>
+      <id>1002276</id>
+      <name>Keep Calm and Horse Dance by DML.fm</name>
+      <published>true</published>
+      <description>Can't get enough of the K-Pop Sensation? Enjoy over twenty of the best remixes of Psy's timeless classic here.
+Download Here: http://www.sendspace.com/file/t1gl8r</description>
+      <plays-count>9574</plays-count>
+      <likes-count>1226</likes-count>
+      <slug>keep-calm-and-horse-dance-by-dml-fm</slug>
+      <path>/dml-fm/keep-calm-and-horse-dance-by-dml-fm</path>
+      <cover-urls>
+        <sq56>http://imgix.8tracks.com/mix_covers/001/002/276/68146.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=56&amp;h=56&amp;fit=crop</sq56>
+        <sq100>http://imgix.8tracks.com/mix_covers/001/002/276/68146.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=100&amp;h=100&amp;fit=crop</sq100>
+        <sq133>http://imgix.8tracks.com/mix_covers/001/002/276/68146.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=133&amp;h=133&amp;fit=crop</sq133>
+        <max133w>http://imgix.8tracks.com/mix_covers/001/002/276/68146.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=133&amp;fit=max</max133w>
+        <max200>http://imgix.8tracks.com/mix_covers/001/002/276/68146.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=200&amp;h=200&amp;fit=max</max200>
+        <sq250>http://imgix.8tracks.com/mix_covers/001/002/276/68146.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=250&amp;h=250&amp;fit=crop</sq250>
+        <sq500>http://imgix.8tracks.com/mix_covers/001/002/276/68146.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=500&amp;h=500&amp;fit=crop</sq500>
+        <max1024>http://imgix.8tracks.com/mix_covers/001/002/276/68146.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=1024&amp;h=1024&amp;fit=max</max1024>
+        <original>http://imgix.8tracks.com/mix_covers/001/002/276/68146.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;</original>
+      </cover-urls>
+      <restful-url>http://8tracks.com/mixes/1002276</restful-url>
+      <tag-list-cache>gangnam style, psy, remix, k-pop</tag-list-cache>
+      <first-published-at>2012-09-10T19:38:04Z</first-published-at>
+      <liked-by-current-user>false</liked-by-current-user>
+      <nsfw>false</nsfw>
+      <user>
+        <id>219531</id>
+        <login>DML.fm</login>
+        <slug>dml-fm</slug>
+        <avatar-urls>
+          <sq56>http://cf3.8tracks.us/avatars/000/219/531/63753.sq56.jpg</sq56>
+          <sq72>http://cf3.8tracks.us/avatars/000/219/531/63753.sq72.jpg</sq72>
+          <sq100>http://cf3.8tracks.us/avatars/000/219/531/63753.sq100.jpg</sq100>
+          <max200>http://cf3.8tracks.us/avatars/000/219/531/63753.max200.jpg</max200>
+          <max250w>http://cf3.8tracks.us/avatars/000/219/531/63753.max250w.jpg</max250w>
+        </avatar-urls>
+        <followed-by-current-user>false</followed-by-current-user>
+      </user>
+    </mix>
+    <mix>
+      <id>1008143</id>
+      <name>RCRD LBL Fall Favorites</name>
+      <published>true</published>
+      <description>Some of our picks for autumn 2012! Hip-hop, indie rock, electronica and more. Visit us over at http://www.rcrdlbl.com for free downloads of many of these tracks.
+</description>
+      <plays-count>3419</plays-count>
+      <likes-count>245</likes-count>
+      <slug>rcrd-lbl-fall-favorites</slug>
+      <path>/rcrdlbl/rcrd-lbl-fall-favorites</path>
+      <cover-urls>
+        <sq56>http://imgix.8tracks.com/mix_covers/001/008/143/23554.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=56&amp;h=56&amp;fit=crop</sq56>
+        <sq100>http://imgix.8tracks.com/mix_covers/001/008/143/23554.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=100&amp;h=100&amp;fit=crop</sq100>
+        <sq133>http://imgix.8tracks.com/mix_covers/001/008/143/23554.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=133&amp;h=133&amp;fit=crop</sq133>
+        <max133w>http://imgix.8tracks.com/mix_covers/001/008/143/23554.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=133&amp;fit=max</max133w>
+        <max200>http://imgix.8tracks.com/mix_covers/001/008/143/23554.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=200&amp;h=200&amp;fit=max</max200>
+        <sq250>http://imgix.8tracks.com/mix_covers/001/008/143/23554.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=250&amp;h=250&amp;fit=crop</sq250>
+        <sq500>http://imgix.8tracks.com/mix_covers/001/008/143/23554.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=500&amp;h=500&amp;fit=crop</sq500>
+        <max1024>http://imgix.8tracks.com/mix_covers/001/008/143/23554.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=1024&amp;h=1024&amp;fit=max</max1024>
+        <original>http://imgix.8tracks.com/mix_covers/001/008/143/23554.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;</original>
+      </cover-urls>
+      <restful-url>http://8tracks.com/mixes/1008143</restful-url>
+      <tag-list-cache>rcrd lbl, hip-hop, dance, indie rock</tag-list-cache>
+      <first-published-at>2012-09-13T19:05:48Z</first-published-at>
+      <liked-by-current-user>false</liked-by-current-user>
+      <nsfw>false</nsfw>
+      <user>
+        <id>1182537</id>
+        <login>rcrdlbl </login>
+        <slug>rcrdlbl</slug>
+        <avatar-urls>
+          <sq56>http://cf1.8tracks.us/avatars/001/182/537/73018.sq56.jpg</sq56>
+          <sq72>http://cf1.8tracks.us/avatars/001/182/537/73018.sq72.jpg</sq72>
+          <sq100>http://cf1.8tracks.us/avatars/001/182/537/73018.sq100.jpg</sq100>
+          <max200>http://cf1.8tracks.us/avatars/001/182/537/73018.max200.jpg</max200>
+          <max250w>http://cf1.8tracks.us/avatars/001/182/537/73018.max250w.jpg</max250w>
+        </avatar-urls>
+        <followed-by-current-user>false</followed-by-current-user>
+      </user>
+    </mix>
+    <mix>
+      <id>995627</id>
+      <name>AskMen x 8tracks: NYFW S/S '13</name>
+      <published>true</published>
+      <description>This playlist was made by 8tracks' awesome staff for New York Fashion Week. We teamed up with our favorite brands all week to bring you the best Fashion Week playlists. To hear them all, check out our profile on 8tracks!</description>
+      <plays-count>6668</plays-count>
+      <likes-count>525</likes-count>
+      <slug>askmen-x-8tracks-nyfw-s-s-13</slug>
+      <path>/askmen/askmen-x-8tracks-nyfw-s-s-13</path>
+      <cover-urls>
+        <sq56>http://imgix.8tracks.com/mix_covers/000/995/627/46506.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=56&amp;h=56&amp;fit=crop</sq56>
+        <sq100>http://imgix.8tracks.com/mix_covers/000/995/627/46506.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=100&amp;h=100&amp;fit=crop</sq100>
+        <sq133>http://imgix.8tracks.com/mix_covers/000/995/627/46506.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=133&amp;h=133&amp;fit=crop</sq133>
+        <max133w>http://imgix.8tracks.com/mix_covers/000/995/627/46506.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=133&amp;fit=max</max133w>
+        <max200>http://imgix.8tracks.com/mix_covers/000/995/627/46506.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=200&amp;h=200&amp;fit=max</max200>
+        <sq250>http://imgix.8tracks.com/mix_covers/000/995/627/46506.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=250&amp;h=250&amp;fit=crop</sq250>
+        <sq500>http://imgix.8tracks.com/mix_covers/000/995/627/46506.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=500&amp;h=500&amp;fit=crop</sq500>
+        <max1024>http://imgix.8tracks.com/mix_covers/000/995/627/46506.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=1024&amp;h=1024&amp;fit=max</max1024>
+        <original>http://imgix.8tracks.com/mix_covers/000/995/627/46506.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;</original>
+      </cover-urls>
+      <restful-url>http://8tracks.com/mixes/995627</restful-url>
+      <tag-list-cache>house, electronic, 8tracks, askmen, fashion</tag-list-cache>
+      <first-published-at>2012-09-10T17:46:52Z</first-published-at>
+      <liked-by-current-user>false</liked-by-current-user>
+      <nsfw>false</nsfw>
+      <user>
+        <id>2027872</id>
+        <login>AskMen</login>
+        <slug>askmen</slug>
+        <avatar-urls>
+          <sq56>http://cf0.8tracks.us/avatars/002/027/872/6160.sq56.jpg</sq56>
+          <sq72>http://cf0.8tracks.us/avatars/002/027/872/6160.sq72.jpg</sq72>
+          <sq100>http://cf0.8tracks.us/avatars/002/027/872/6160.sq100.jpg</sq100>
+          <max200>http://cf0.8tracks.us/avatars/002/027/872/6160.max200.jpg</max200>
+          <max250w>http://cf0.8tracks.us/avatars/002/027/872/6160.max250w.jpg</max250w>
+        </avatar-urls>
+        <followed-by-current-user>false</followed-by-current-user>
+      </user>
+    </mix>
+    <mix>
+      <id>1003679</id>
+      <name>RA's September Mix 2012</name>
+      <published>true</published>
+      <description>A selection from RA's top 50 most charted tracks in August... and a few other bits we thought should probably make it in there.</description>
+      <plays-count>4639</plays-count>
+      <likes-count>282</likes-count>
+      <slug>ra-s-september-mix-2012</slug>
+      <path>/ra/ra-s-september-mix-2012</path>
+      <cover-urls>
+        <sq56>http://imgix.8tracks.com/mix_covers/001/003/679/39733.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=56&amp;h=56&amp;fit=crop</sq56>
+        <sq100>http://imgix.8tracks.com/mix_covers/001/003/679/39733.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=100&amp;h=100&amp;fit=crop</sq100>
+        <sq133>http://imgix.8tracks.com/mix_covers/001/003/679/39733.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=133&amp;h=133&amp;fit=crop</sq133>
+        <max133w>http://imgix.8tracks.com/mix_covers/001/003/679/39733.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=133&amp;fit=max</max133w>
+        <max200>http://imgix.8tracks.com/mix_covers/001/003/679/39733.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=200&amp;h=200&amp;fit=max</max200>
+        <sq250>http://imgix.8tracks.com/mix_covers/001/003/679/39733.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=250&amp;h=250&amp;fit=crop</sq250>
+        <sq500>http://imgix.8tracks.com/mix_covers/001/003/679/39733.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=500&amp;h=500&amp;fit=crop</sq500>
+        <max1024>http://imgix.8tracks.com/mix_covers/001/003/679/39733.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=1024&amp;h=1024&amp;fit=max</max1024>
+        <original>http://imgix.8tracks.com/mix_covers/001/003/679/39733.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;</original>
+      </cover-urls>
+      <restful-url>http://8tracks.com/mixes/1003679</restful-url>
+      <tag-list-cache>house, techno, resident advisor, electronic music</tag-list-cache>
+      <first-published-at>2012-09-11T10:56:04Z</first-published-at>
+      <liked-by-current-user>false</liked-by-current-user>
+      <nsfw>false</nsfw>
+      <user>
+        <id>648915</id>
+        <login>RA</login>
+        <slug>ra</slug>
+        <avatar-urls>
+          <sq56>http://cf3.8tracks.us/avatars/000/648/915/99192.sq56.jpg</sq56>
+          <sq72>http://cf3.8tracks.us/avatars/000/648/915/99192.sq72.jpg</sq72>
+          <sq100>http://cf3.8tracks.us/avatars/000/648/915/99192.sq100.jpg</sq100>
+          <max200>http://cf3.8tracks.us/avatars/000/648/915/99192.max200.jpg</max200>
+          <max250w>http://cf3.8tracks.us/avatars/000/648/915/99192.max250w.jpg</max250w>
+        </avatar-urls>
+        <followed-by-current-user>false</followed-by-current-user>
+      </user>
+    </mix>
+    <mix>
+      <id>1006624</id>
+      <name>Favorite Songs</name>
+      <published>true</published>
+      <description>A few of our all time favorite songs</description>
+      <plays-count>3351</plays-count>
+      <likes-count>141</likes-count>
+      <slug>favorite-songs</slug>
+      <path>/thirdday/favorite-songs</path>
+      <cover-urls>
+        <sq56>http://imgix.8tracks.com/mix_covers/001/006/624/90274.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=56&amp;h=56&amp;fit=crop</sq56>
+        <sq100>http://imgix.8tracks.com/mix_covers/001/006/624/90274.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=100&amp;h=100&amp;fit=crop</sq100>
+        <sq133>http://imgix.8tracks.com/mix_covers/001/006/624/90274.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=133&amp;h=133&amp;fit=crop</sq133>
+        <max133w>http://imgix.8tracks.com/mix_covers/001/006/624/90274.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=133&amp;fit=max</max133w>
+        <max200>http://imgix.8tracks.com/mix_covers/001/006/624/90274.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=200&amp;h=200&amp;fit=max</max200>
+        <sq250>http://imgix.8tracks.com/mix_covers/001/006/624/90274.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=250&amp;h=250&amp;fit=crop</sq250>
+        <sq500>http://imgix.8tracks.com/mix_covers/001/006/624/90274.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=500&amp;h=500&amp;fit=crop</sq500>
+        <max1024>http://imgix.8tracks.com/mix_covers/001/006/624/90274.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=1024&amp;h=1024&amp;fit=max</max1024>
+        <original>http://imgix.8tracks.com/mix_covers/001/006/624/90274.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;</original>
+      </cover-urls>
+      <restful-url>http://8tracks.com/mixes/1006624</restful-url>
+      <tag-list-cache>third day, southern rock, rock, classic rock</tag-list-cache>
+      <first-published-at>2012-09-12T22:10:47Z</first-published-at>
+      <liked-by-current-user>false</liked-by-current-user>
+      <nsfw>false</nsfw>
+      <user>
+        <id>2273332</id>
+        <login>ThirdDay</login>
+        <slug>thirdday</slug>
+        <avatar-urls>
+          <sq56>http://8tracks.com/images/avatars/sq56.jpg</sq56>
+          <sq72>http://8tracks.com/images/avatars/sq72.jpg</sq72>
+          <sq100>http://8tracks.com/images/avatars/sq100.jpg</sq100>
+          <max200>http://8tracks.com/images/avatars/max200.jpg</max200>
+          <max250w>http://8tracks.com/images/avatars/max250w.jpg</max250w>
+        </avatar-urls>
+        <followed-by-current-user>false</followed-by-current-user>
+      </user>
+    </mix>
+    <mix>
+      <id>994029</id>
+      <name>4AM Afterparty Mix</name>
+      <published>true</published>
+      <description>Keep the party going 'til the sun comes up with our single "Keep It Cool" alongside some sweet jams from the likes of T. Rex, Iggy Pop, and the Replacements. 
+
+Our record is out now, you can check it out in any digital store, but here's the iTunes link for your convenience: 
+
+http://itunes.apple.com/us/album/no-heroes-no-honeymoons/id545883152
+
+Let's stay in touch:
+
+http://www.facebook.com/zulupearls
+http://www.twitter.com/zulupearls
+http://www.zulupearls.com
+http://www.zulupearls.bandcamp.com</description>
+      <plays-count>3296</plays-count>
+      <likes-count>183</likes-count>
+      <slug>4am-afterparty-mix</slug>
+      <path>/zulupearls/4am-afterparty-mix</path>
+      <cover-urls>
+        <sq56>http://imgix.8tracks.com/mix_covers/000/994/029/54899.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=56&amp;h=56&amp;fit=crop</sq56>
+        <sq100>http://imgix.8tracks.com/mix_covers/000/994/029/54899.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=100&amp;h=100&amp;fit=crop</sq100>
+        <sq133>http://imgix.8tracks.com/mix_covers/000/994/029/54899.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=133&amp;h=133&amp;fit=crop</sq133>
+        <max133w>http://imgix.8tracks.com/mix_covers/000/994/029/54899.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=133&amp;fit=max</max133w>
+        <max200>http://imgix.8tracks.com/mix_covers/000/994/029/54899.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=200&amp;h=200&amp;fit=max</max200>
+        <sq250>http://imgix.8tracks.com/mix_covers/000/994/029/54899.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=250&amp;h=250&amp;fit=crop</sq250>
+        <sq500>http://imgix.8tracks.com/mix_covers/000/994/029/54899.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=500&amp;h=500&amp;fit=crop</sq500>
+        <max1024>http://imgix.8tracks.com/mix_covers/000/994/029/54899.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=1024&amp;h=1024&amp;fit=max</max1024>
+        <original>http://imgix.8tracks.com/mix_covers/000/994/029/54899.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;</original>
+      </cover-urls>
+      <restful-url>http://8tracks.com/mixes/994029</restful-url>
+      <tag-list-cache>zulu pearls, rock, alternative, classic, party</tag-list-cache>
+      <first-published-at>2012-09-05T22:39:19Z</first-published-at>
+      <liked-by-current-user>false</liked-by-current-user>
+      <nsfw>false</nsfw>
+      <user>
+        <id>2228089</id>
+        <login>zulupearls</login>
+        <slug>zulupearls</slug>
+        <avatar-urls>
+          <sq56>http://cf1.8tracks.us/avatars/002/228/089/29969.sq56.jpg</sq56>
+          <sq72>http://cf1.8tracks.us/avatars/002/228/089/29969.sq72.jpg</sq72>
+          <sq100>http://cf1.8tracks.us/avatars/002/228/089/29969.sq100.jpg</sq100>
+          <max200>http://cf1.8tracks.us/avatars/002/228/089/29969.max200.jpg</max200>
+          <max250w>http://cf1.8tracks.us/avatars/002/228/089/29969.max250w.jpg</max250w>
+        </avatar-urls>
+        <followed-by-current-user>false</followed-by-current-user>
+      </user>
+    </mix>
+    <mix>
+      <id>980948</id>
+      <name>DML.fm Presents: B(l)ack(out) to School 2</name>
+      <published>true</published>
+      <description>From start to finish, pregame to blackout, this is the best compliment to a night out on the town. Following the ups and downs of one hell of a rager, this playlist should help guide you to inebriated nirvana
+Tracklist: http://www.sendspace.com/file/0xoldi</description>
+      <plays-count>63353</plays-count>
+      <likes-count>1881</likes-count>
+      <slug>dml-fm-presents-b-l-ack-out-to-school-2</slug>
+      <path>/dml-fm/dml-fm-presents-b-l-ack-out-to-school-2</path>
+      <cover-urls>
+        <sq56>http://imgix.8tracks.com/mix_covers/000/980/948/70684.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=56&amp;h=56&amp;fit=crop</sq56>
+        <sq100>http://imgix.8tracks.com/mix_covers/000/980/948/70684.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=100&amp;h=100&amp;fit=crop</sq100>
+        <sq133>http://imgix.8tracks.com/mix_covers/000/980/948/70684.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=133&amp;h=133&amp;fit=crop</sq133>
+        <max133w>http://imgix.8tracks.com/mix_covers/000/980/948/70684.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=133&amp;fit=max</max133w>
+        <max200>http://imgix.8tracks.com/mix_covers/000/980/948/70684.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=200&amp;h=200&amp;fit=max</max200>
+        <sq250>http://imgix.8tracks.com/mix_covers/000/980/948/70684.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=250&amp;h=250&amp;fit=crop</sq250>
+        <sq500>http://imgix.8tracks.com/mix_covers/000/980/948/70684.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=500&amp;h=500&amp;fit=crop</sq500>
+        <max1024>http://imgix.8tracks.com/mix_covers/000/980/948/70684.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=1024&amp;h=1024&amp;fit=max</max1024>
+        <original>http://imgix.8tracks.com/mix_covers/000/980/948/70684.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;</original>
+      </cover-urls>
+      <restful-url>http://8tracks.com/mixes/980948</restful-url>
+      <tag-list-cache>blackout, rage, party, electronic, dml.fm</tag-list-cache>
+      <first-published-at>2012-08-30T00:59:18Z</first-published-at>
+      <liked-by-current-user>true</liked-by-current-user>
+      <nsfw>false</nsfw>
+      <user>
+        <id>219531</id>
+        <login>DML.fm</login>
+        <slug>dml-fm</slug>
+        <avatar-urls>
+          <sq56>http://cf3.8tracks.us/avatars/000/219/531/63753.sq56.jpg</sq56>
+          <sq72>http://cf3.8tracks.us/avatars/000/219/531/63753.sq72.jpg</sq72>
+          <sq100>http://cf3.8tracks.us/avatars/000/219/531/63753.sq100.jpg</sq100>
+          <max200>http://cf3.8tracks.us/avatars/000/219/531/63753.max200.jpg</max200>
+          <max250w>http://cf3.8tracks.us/avatars/000/219/531/63753.max250w.jpg</max250w>
+        </avatar-urls>
+        <followed-by-current-user>false</followed-by-current-user>
+      </user>
+    </mix>
+    <mix>
+      <id>874786</id>
+      <name>Vol. 6</name>
+      <published>true</published>
+      <description>A roundup of our favourite Australian tunes currently getting us through the colder months. Featuring tracks by World's End Press, Chet Faker, Fraser A Gorman, The Walking Who and more. </description>
+      <plays-count>4539</plays-count>
+      <likes-count>414</likes-count>
+      <slug>vol-6</slug>
+      <path>/whothehellnet/vol-6</path>
+      <cover-urls>
+        <sq56>http://imgix.8tracks.com/mix_covers/000/874/786/31182.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=56&amp;h=56&amp;fit=crop</sq56>
+        <sq100>http://imgix.8tracks.com/mix_covers/000/874/786/31182.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=100&amp;h=100&amp;fit=crop</sq100>
+        <sq133>http://imgix.8tracks.com/mix_covers/000/874/786/31182.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=133&amp;h=133&amp;fit=crop</sq133>
+        <max133w>http://imgix.8tracks.com/mix_covers/000/874/786/31182.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=133&amp;fit=max</max133w>
+        <max200>http://imgix.8tracks.com/mix_covers/000/874/786/31182.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=200&amp;h=200&amp;fit=max</max200>
+        <sq250>http://imgix.8tracks.com/mix_covers/000/874/786/31182.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=250&amp;h=250&amp;fit=crop</sq250>
+        <sq500>http://imgix.8tracks.com/mix_covers/000/874/786/31182.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=500&amp;h=500&amp;fit=crop</sq500>
+        <max1024>http://imgix.8tracks.com/mix_covers/000/874/786/31182.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=1024&amp;h=1024&amp;fit=max</max1024>
+        <original>http://imgix.8tracks.com/mix_covers/000/874/786/31182.original.jpg?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;</original>
+      </cover-urls>
+      <restful-url>http://8tracks.com/mixes/874786</restful-url>
+      <tag-list-cache>australian, indie, pop, chill, folk</tag-list-cache>
+      <first-published-at>2012-07-02T06:32:37Z</first-published-at>
+      <liked-by-current-user>false</liked-by-current-user>
+      <nsfw>false</nsfw>
+      <user>
+        <id>88447</id>
+        <login>whothehellnet</login>
+        <slug>whothehellnet</slug>
+        <avatar-urls>
+          <sq56>http://cf3.8tracks.us/avatars/000/088/447/78129.sq56.jpg</sq56>
+          <sq72>http://cf3.8tracks.us/avatars/000/088/447/78129.sq72.jpg</sq72>
+          <sq100>http://cf3.8tracks.us/avatars/000/088/447/78129.sq100.jpg</sq100>
+          <max200>http://cf3.8tracks.us/avatars/000/088/447/78129.max200.jpg</max200>
+          <max250w>http://cf3.8tracks.us/avatars/000/088/447/78129.max250w.jpg</max250w>
+        </avatar-urls>
+        <followed-by-current-user>false</followed-by-current-user>
+      </user>
+    </mix>
+    <mix>
+      <id>934002</id>
+      <name>House Muzic!!</name>
+      <published>true</published>
+      <description>Dj MDMA welcomes you to this intense house mix that'll keep you awake all night. ENJOY!!
+
+
+Comment for suggestions </description>
+      <plays-count>673</plays-count>
+      <likes-count>362</likes-count>
+      <slug>house-muzic</slug>
+      <path>/first-dj-on-the-moon/house-muzic</path>
+      <cover-urls>
+        <sq56>http://imgix.8tracks.com/i/000/000/469/c/_ouse-music-girl-8457.jpg?fm=jpg&amp;q=65&amp;w=56&amp;h=56&amp;fit=max</sq56>
+        <sq100>http://imgix.8tracks.com/i/000/000/469/c/_ouse-music-girl-8457.jpg?fm=jpg&amp;q=65&amp;w=100&amp;h=100&amp;fit=max</sq100>
+        <sq133>http://imgix.8tracks.com/i/000/000/469/c/_ouse-music-girl-8457.jpg?fm=jpg&amp;q=65&amp;w=133&amp;h=133&amp;fit=max</sq133>
+        <max133w>http://imgix.8tracks.com/i/000/000/469/c/_ouse-music-girl-8457.jpg?fm=jpg&amp;q=65&amp;w=133&amp;fit=max</max133w>
+        <max200>http://imgix.8tracks.com/i/000/000/469/c/_ouse-music-girl-8457.jpg?fm=jpg&amp;q=65&amp;w=200&amp;h=200&amp;fit=max</max200>
+        <sq250>http://imgix.8tracks.com/i/000/000/469/c/_ouse-music-girl-8457.jpg?fm=jpg&amp;q=65&amp;w=250&amp;h=250&amp;fit=max</sq250>
+        <sq500>http://imgix.8tracks.com/i/000/000/469/c/_ouse-music-girl-8457.jpg?fm=jpg&amp;q=65&amp;w=500&amp;h=500&amp;fit=max</sq500>
+        <max1024>http://imgix.8tracks.com/i/000/000/469/c/_ouse-music-girl-8457.jpg?fm=jpg&amp;q=65&amp;w=1024&amp;h=1024&amp;fit=max</max1024>
+        <original>http://imgix.8tracks.com/i/000/000/469/c/_ouse-music-girl-8457.jpg?fm=jpg&amp;q=65&amp;</original>
+        <original-url>http://8tr.s3.amazonaws.com/i/000/000/469/_ouse-music-girl-1522.jpg</original-url>
+        <cropped-imgix-url>http://imgix.8tracks.com/i/000/000/469/c/_ouse-music-girl-8457.jpg?fm=jpg&amp;q=65</cropped-imgix-url>
+        <use-original-on-mixpage>false</use-original-on-mixpage>
+      </cover-urls>
+      <restful-url>http://8tracks.com/mixes/934002</restful-url>
+      <tag-list-cache>house, party, dance, dance &amp; house, club &amp; party music</tag-list-cache>
+      <first-published-at>2012-09-22T12:30:31Z</first-published-at>
+      <liked-by-current-user>false</liked-by-current-user>
+      <nsfw>false</nsfw>
+      <user>
+        <id>1870000</id>
+        <login>First DJ on the Moon</login>
+        <slug>first-dj-on-the-moon</slug>
+        <avatar-urls>
+          <sq56>http://cf0.8tracks.us/avatars/001/870/000/60752.sq56.jpg</sq56>
+          <sq72>http://cf0.8tracks.us/avatars/001/870/000/60752.sq72.jpg</sq72>
+          <sq100>http://cf0.8tracks.us/avatars/001/870/000/60752.sq100.jpg</sq100>
+          <max200>http://cf0.8tracks.us/avatars/001/870/000/60752.max200.jpg</max200>
+          <max250w>http://cf0.8tracks.us/avatars/001/870/000/60752.max250w.jpg</max250w>
+        </avatar-urls>
+        <followed-by-current-user>false</followed-by-current-user>
+      </user>
+    </mix>
+  </mixes>
+  <status>200 OK</status>
+  <errors nil="true"></errors>
+  <notices nil="true"></notices>
+  <logged-in>true</logged-in>
+  <api-warning>
+    <api-warning>You didn't pass an API version, defaulting to api_version=2.</api-warning>
+  </api-warning>
+  <api-version>2</api-version>
+</response>

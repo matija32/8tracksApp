@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <set>
+    <at-beginning>true</at-beginning>
+    <at-end>false</at-end>
+    <at-last-track>false</at-last-track>
+    <skip-allowed>true</skip-allowed>
+    <track>
+      <id>7932246</id>
+      <name>She doesn't mind (dubstep remix)</name>
+      <performer>Sean Paul</performer>
+      <release-name>zzzz</release-name>
+      <year nil="true"></year>
+      <url>http://cft.8tracks.com/tf/031/524/991/JZURpM.48k.v3.m4a</url>
+      <faved-by-current-user>false</faved-by-current-user>
+      <buy-link>http://click.linksynergy.com/fs-bin/stat?id=1Cx7A22HMKA&amp;offerid=146261&amp;type=3&amp;subid=0&amp;tmpid=1826&amp;RD_PARM1=http%253A%252F%252Fax.search.itunes.apple.com%252FWebObjects%252FMZSearch.woa%252Fwa%252FadvancedSearch%253FallArtistNames%253DSean%252BPaul%2526completeTitle%253DShe%252520doesn%2527t%252520mind%252520%2528dubstep%252520remix%2529%2526media%253Dmusic</buy-link>
+      <buy-icon>http://8tracks.com/assets/buy/itunes.png</buy-icon>
+      <you-tube-id nil="true"></you-tube-id>
+      <you-tube-status>ok</you-tube-status>
+      <play-duration>0</play-duration>
+    </track>
+  </set>
+  <status>200 OK</status>
+  <errors nil="true"></errors>
+  <notices></notices>
+  <api-warning>
+    <api-warning>You didn't pass an API version, defaulting to api_version=2.</api-warning>
+  </api-warning>
+  <api-version>2</api-version>
+</response>

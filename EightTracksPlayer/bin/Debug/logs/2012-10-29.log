@@ -1,0 +1,24 @@
+[8tracks player]
+2012-10-29 17:41:14,349 [10] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+2012-10-29 17:52:09,954 [14] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.COMException (0x8001010A): The message filter indicated that the application is busy. (Exception from HRESULT: 0x8001010A (RPC_E_SERVERCALL_RETRYLATER))
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+2012-10-29 17:52:09,965 [17] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.COMException (0x8001010A): The message filter indicated that the application is busy. (Exception from HRESULT: 0x8001010A (RPC_E_SERVERCALL_RETRYLATER))
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+2012-10-29 17:52:09,986 [16] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.COMException (0x8001010A): The message filter indicated that the application is busy. (Exception from HRESULT: 0x8001010A (RPC_E_SERVERCALL_RETRYLATER))
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+2012-10-29 17:52:09,986 [19] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.COMException (0x8001010A): The message filter indicated that the application is busy. (Exception from HRESULT: 0x8001010A (RPC_E_SERVERCALL_RETRYLATER))
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+[8tracks player]
+2012-10-29 18:00:46,592 [9] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+[8tracks player]
+2012-10-29 18:02:49,732 [9] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+[8tracks player]
+2012-10-29 18:07:44,569 [9] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.

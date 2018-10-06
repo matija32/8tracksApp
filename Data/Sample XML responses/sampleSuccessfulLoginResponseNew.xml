@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <current-user>
+    <id>538980</id>
+    <login>matija32</login>
+    <popup-prefs>ask</popup-prefs>
+    <next-mix-prefs>ask</next-mix-prefs>
+    <slug>matija32</slug>
+    <bio-html nil="true"></bio-html>
+    <location-not-nil></location-not-nil>
+    <path>/matija32</path>
+    <avatar-urls>
+      <sq56>http://8tracks.com/images/avatars/sq56.jpg</sq56>
+      <sq72>http://8tracks.com/images/avatars/sq72.jpg</sq72>
+      <sq100>http://8tracks.com/images/avatars/sq100.jpg</sq100>
+      <max200>http://8tracks.com/images/avatars/max200.jpg</max200>
+      <max250w>http://8tracks.com/images/avatars/max250w.jpg</max250w>
+    </avatar-urls>
+    <subscribed>false</subscribed>
+    <followed-by-current-user>false</followed-by-current-user>
+    <follows-count>0</follows-count>
+    <hide-nsfw>1</hide-nsfw>
+  </current-user>
+  <auth-token>538980;4335fbf339e25021881aebfad960f91de29d9feb</auth-token>
+  <user-token>538980;4335fbf339e25021881aebfad960f91de29d9feb</user-token>
+  <status>200 OK</status>
+  <errors nil="true"></errors>
+  <notices>You are now logged in as matija32</notices>
+  <logged-in>true</logged-in>
+  <api-warning>
+    <api-warning>You didn't pass an API version, defaulting to api_version=2.</api-warning>
+  </api-warning>
+  <api-version>2</api-version>
+</response>

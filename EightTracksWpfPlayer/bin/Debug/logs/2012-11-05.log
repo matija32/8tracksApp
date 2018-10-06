@@ -1,0 +1,67 @@
+[8tracks player]
+2012-11-05 23:23:57,892 [3] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+2012-11-05 23:24:02,132 [13] ERROR EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer - Deserialization error
+System.Runtime.Serialization.SerializationException: Unknown node detected while deserializing a response at 12:13. Detected node is mix-set=.
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.serializer_UnknownNode(Object sender, XmlNodeEventArgs e) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 114
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.<.ctor>b__2(Object sender, XmlNodeEventArgs args) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 58
+2012-11-05 23:24:02,159 [13] ERROR EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer - Deserialization error
+System.Runtime.Serialization.SerializationException: Unknown element detected while deserializing a response at 12:13, expected element = :errors, :notices, :api-warning, :status, :api-version, :Status, :id, :path, :restful-url, :total-entries, :page, :per-page, :next-page, :total-pages, :canonical-path, :name, :logged-in, :previous-page, :mixes. Detected element is mix-set=
+    <id>50060243</id>
+    <path>/mix_sets/50060243</path>
+    <restful-url>http://8tracks.com/mix_sets/50060243</restful-url>
+    <total-entries>311</total-entries>
+    <page>1</page>
+    <per-page>10</per-page>
+    <canonical-path>/mix_sets/50060243</canonical-path>
+    <browse-type>Listened</browse-type>
+  .
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.serializer_UnknownElement(Object sender, XmlElementEventArgs e) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 125
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.<.ctor>b__1(Object sender, XmlElementEventArgs args) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 47
+2012-11-05 23:24:08,720 [3] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.COMException (0x8001010A): The message filter indicated that the application is busy. (Exception from HRESULT: 0x8001010A (RPC_E_SERVERCALL_RETRYLATER))
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+2012-11-05 23:24:08,730 [13] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.COMException (0x8001010A): The message filter indicated that the application is busy. (Exception from HRESULT: 0x8001010A (RPC_E_SERVERCALL_RETRYLATER))
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+2012-11-05 23:24:18,689 [10] INFO  EightTracksPlayer.ViewModels.TrackViewModel - Download started. From http://cft.8tracks.com/tf/004/290/138/vR39Gc.48k.v3.m4a to C:\Users\Matija\Desktop\Z-Ro - Rolling On Swangas .m4a
+[8tracks player]
+2012-11-05 23:40:26,085 [11] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+2012-11-05 23:40:35,144 [14] ERROR EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer - Deserialization error
+System.Runtime.Serialization.SerializationException: Unknown node detected while deserializing a response at 12:13. Detected node is mix-set=.
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.serializer_UnknownNode(Object sender, XmlNodeEventArgs e) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 114
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.<.ctor>b__2(Object sender, XmlNodeEventArgs args) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 58
+2012-11-05 23:40:35,167 [14] ERROR EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer - Deserialization error
+System.Runtime.Serialization.SerializationException: Unknown element detected while deserializing a response at 12:13, expected element = :errors, :notices, :api-warning, :status, :api-version, :Status, :id, :path, :restful-url, :total-entries, :page, :per-page, :next-page, :total-pages, :canonical-path, :name, :logged-in, :previous-page, :mixes. Detected element is mix-set=
+    <id>50060243</id>
+    <path>/mix_sets/50060243</path>
+    <restful-url>http://8tracks.com/mix_sets/50060243</restful-url>
+    <total-entries>311</total-entries>
+    <page>1</page>
+    <per-page>10</per-page>
+    <canonical-path>/mix_sets/50060243</canonical-path>
+    <browse-type>Listened</browse-type>
+  .
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.serializer_UnknownElement(Object sender, XmlElementEventArgs e) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 125
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.<.ctor>b__1(Object sender, XmlElementEventArgs args) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 47
+2012-11-05 23:41:11,283 [4] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.COMException (0x8001010A): The message filter indicated that the application is busy. (Exception from HRESULT: 0x8001010A (RPC_E_SERVERCALL_RETRYLATER))
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+2012-11-05 23:41:11,309 [13] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.COMException (0x8001010A): The message filter indicated that the application is busy. (Exception from HRESULT: 0x8001010A (RPC_E_SERVERCALL_RETRYLATER))
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+[8tracks player]
+2012-11-05 23:44:59,632 [8] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+[8tracks player]
+2012-11-05 23:46:54,775 [8] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+[8tracks player]
+2012-11-05 23:47:36,377 [10] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+[8tracks player]
+2012-11-05 23:50:42,851 [10] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+[8tracks player]
+2012-11-05 23:51:23,065 [10] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+[8tracks player]
+2012-11-05 23:54:13,092 [10] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.

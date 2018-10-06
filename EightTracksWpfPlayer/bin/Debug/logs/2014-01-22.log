@@ -1,0 +1,68 @@
+[8tracks player]
+2014-01-22 21:00:32,238 [9] ERROR EightTracksPlayer.Communication.RequestExecutionAdapter - Error while executing a certain EightTracksPlayer.Communication.Requests.LoginRequest
+System.InvalidOperationException: This operation cannot be performed after the request has been submitted.
+   at System.Net.HttpWebRequest.set_Proxy(IWebProxy value)
+   at EightTracksPlayer.Communication.HttpRequestExecutor.Execute(IRequest request) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\HttpRequestExecutor.cs:line 38
+   at EightTracksPlayer.Communication.RequestExecutionAdapter.Execute(IRequest request) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\RequestExecutorAdapter.cs:line 24
+2014-01-22 21:00:32,264 [9] ERROR EightTracksPlayer.Domain.Authenticator - Unable to log in the user matija32. Error received: 
+2014-01-22 21:00:46,541 [12] ERROR EightTracksPlayer.Communication.RequestExecutionAdapter - Error while executing a certain EightTracksPlayer.Communication.Requests.LoginRequest
+System.InvalidOperationException: This operation cannot be performed after the request has been submitted.
+   at System.Net.HttpWebRequest.set_Proxy(IWebProxy value)
+   at EightTracksPlayer.Communication.HttpRequestExecutor.Execute(IRequest request) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\HttpRequestExecutor.cs:line 38
+   at EightTracksPlayer.Communication.RequestExecutionAdapter.Execute(IRequest request) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\RequestExecutorAdapter.cs:line 24
+2014-01-22 21:00:46,541 [12] ERROR EightTracksPlayer.Domain.Authenticator - Unable to log in the user matija32. Error received: 
+[8tracks player]
+2014-01-22 21:08:24,934 [10] ERROR EightTracksPlayer.Communication.RequestExecutionAdapter - Error while executing a certain EightTracksPlayer.Communication.Requests.LoginRequest
+System.InvalidOperationException: This operation cannot be performed after the request has been submitted.
+   at System.Net.HttpWebRequest.set_Proxy(IWebProxy value)
+   at EightTracksPlayer.Communication.HttpRequestExecutor.Execute(IRequest request) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\HttpRequestExecutor.cs:line 40
+   at EightTracksPlayer.Communication.RequestExecutionAdapter.Execute(IRequest request) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\RequestExecutorAdapter.cs:line 24
+2014-01-22 21:08:24,952 [10] ERROR EightTracksPlayer.Domain.Authenticator - Unable to log in the user matija32. Error received: 
+2014-01-22 21:08:35,317 [12] ERROR EightTracksPlayer.Communication.RequestExecutionAdapter - Error while executing a certain EightTracksPlayer.Communication.Requests.LoginRequest
+System.InvalidOperationException: This operation cannot be performed after the request has been submitted.
+   at System.Net.HttpWebRequest.set_Proxy(IWebProxy value)
+   at EightTracksPlayer.Communication.HttpRequestExecutor.Execute(IRequest request) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\HttpRequestExecutor.cs:line 40
+   at EightTracksPlayer.Communication.RequestExecutionAdapter.Execute(IRequest request) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\RequestExecutorAdapter.cs:line 24
+2014-01-22 21:08:35,317 [12] ERROR EightTracksPlayer.Domain.Authenticator - Unable to log in the user matija32. Error received: 
+[8tracks player]
+2014-01-22 21:08:55,042 [9] ERROR EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer - Deserialization error
+System.Runtime.Serialization.SerializationException: Unknown node detected while deserializing a response at 22:45. Detected node is web-safe-browse=.
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.serializer_UnknownNode(Object sender, XmlNodeEventArgs e) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 114
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.<.ctor>b__2(Object sender, XmlNodeEventArgs args) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 58
+2014-01-22 21:08:55,105 [9] ERROR EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer - Deserialization error
+System.Runtime.Serialization.SerializationException: Unknown element detected while deserializing a response at 22:45, expected element = :id, :login, :slug, :followed-by-current-user, :avatar-urls, :popup-prefs, :next-mix-prefs, :location, :location-not-nil, :path, :subscribed, :bio-html, :follows-count, :hide-nsfw. Detected element is web-safe-browse=false.
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.serializer_UnknownElement(Object sender, XmlElementEventArgs e) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 125
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.<.ctor>b__1(Object sender, XmlElementEventArgs args) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 47
+2014-01-22 21:08:55,304 [9] ERROR EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer - Deserialization error
+System.Runtime.Serialization.SerializationException: Unknown node detected while deserializing a response at 23:50. Detected node is mobile-safe-browse=.
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.serializer_UnknownNode(Object sender, XmlNodeEventArgs e) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 114
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.<.ctor>b__2(Object sender, XmlNodeEventArgs args) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 58
+2014-01-22 21:08:55,343 [9] ERROR EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer - Deserialization error
+System.Runtime.Serialization.SerializationException: Unknown element detected while deserializing a response at 23:50, expected element = :id, :login, :slug, :followed-by-current-user, :avatar-urls, :popup-prefs, :next-mix-prefs, :location, :location-not-nil, :path, :subscribed, :bio-html, :follows-count, :hide-nsfw. Detected element is mobile-safe-browse=true.
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.serializer_UnknownElement(Object sender, XmlElementEventArgs e) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 125
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.<.ctor>b__1(Object sender, XmlElementEventArgs args) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 47
+2014-01-22 21:08:55,497 [9] ERROR EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer - Deserialization error
+System.Runtime.Serialization.SerializationException: Unknown node detected while deserializing a response at 24:38. Detected node is email=.
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.serializer_UnknownNode(Object sender, XmlNodeEventArgs e) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 114
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.<.ctor>b__2(Object sender, XmlNodeEventArgs args) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 58
+2014-01-22 21:08:55,694 [9] ERROR EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer - Deserialization error
+System.Runtime.Serialization.SerializationException: Unknown element detected while deserializing a response at 24:38, expected element = :id, :login, :slug, :followed-by-current-user, :avatar-urls, :popup-prefs, :next-mix-prefs, :location, :location-not-nil, :path, :subscribed, :bio-html, :follows-count, :hide-nsfw. Detected element is email=matija32@gmail.com.
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.serializer_UnknownElement(Object sender, XmlElementEventArgs e) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 125
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.<.ctor>b__1(Object sender, XmlElementEventArgs args) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 47
+2014-01-22 21:08:55,936 [9] ERROR EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer - Deserialization error
+System.Runtime.Serialization.SerializationException: Unknown node detected while deserializing a response at 25:22. Detected node is bio=.
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.serializer_UnknownNode(Object sender, XmlNodeEventArgs e) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 114
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.<.ctor>b__2(Object sender, XmlNodeEventArgs args) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 58
+2014-01-22 21:08:56,101 [9] ERROR EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer - Deserialization error
+System.Runtime.Serialization.SerializationException: Unknown element detected while deserializing a response at 25:22, expected element = :id, :login, :slug, :followed-by-current-user, :avatar-urls, :popup-prefs, :next-mix-prefs, :location, :location-not-nil, :path, :subscribed, :bio-html, :follows-count, :hide-nsfw. Detected element is bio=.
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.serializer_UnknownElement(Object sender, XmlElementEventArgs e) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 125
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.<.ctor>b__1(Object sender, XmlElementEventArgs args) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 47
+2014-01-22 21:08:56,294 [9] ERROR EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer - Deserialization error
+System.Runtime.Serialization.SerializationException: Unknown node detected while deserializing a response at 26:24. Detected node is admin=.
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.serializer_UnknownNode(Object sender, XmlNodeEventArgs e) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 114
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.<.ctor>b__2(Object sender, XmlNodeEventArgs args) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 58
+2014-01-22 21:08:56,503 [9] ERROR EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer - Deserialization error
+System.Runtime.Serialization.SerializationException: Unknown element detected while deserializing a response at 26:24, expected element = :id, :login, :slug, :followed-by-current-user, :avatar-urls, :popup-prefs, :next-mix-prefs, :location, :location-not-nil, :path, :subscribed, :bio-html, :follows-count, :hide-nsfw. Detected element is admin=.
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.serializer_UnknownElement(Object sender, XmlElementEventArgs e) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 125
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.<.ctor>b__1(Object sender, XmlElementEventArgs args) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 47
+2014-01-22 21:08:56,668 [9] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.

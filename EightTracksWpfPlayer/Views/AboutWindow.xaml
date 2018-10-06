@@ -1,0 +1,43 @@
+﻿<Window x:Class="EightTracksWpfPlayer.Views.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Style="{DynamicResource SkinWindowStyle}"
+        Title="About 8tracks player" Height="277" Width="520"
+        Icon="..\Resources\Icon8tracks.ico"
+        ResizeMode="NoResize" KeyDown="Window_KeyDown"
+        >
+    <Grid Background="{DynamicResource WindowBackgroundBrush}" >
+        <StackPanel Orientation="Vertical" Margin="5">
+            <Label Content="8tracks player for Windows (v1.4)" FontWeight="Bold" FontSize="16" />
+            <Label Content="Copyright © 2013, February" FontSize="14" />
+            
+            <Label Content="Made by Matija Lukic" Margin="0, 10, 0, 0" FontSize="16" />
+
+            <StackPanel Orientation="Horizontal" Height="50">
+                <TextBlock Cursor="Hand" Margin="0, 5, 0, 0" VerticalAlignment="Center">
+				    <Hyperlink NavigateUri="http://www.linkedin.com/profile/view?id=32735992" Foreground="Transparent" RequestNavigate="RequestNavigateHandler">
+					    <Image Source="../Resources/LinkedInLogo.png" Height="36" ToolTip="Visit the author's LinkedIn profile - http://www.linkedin.com/profile/view?id=32735992" Margin="0,0,0,7" />
+				    </Hyperlink>
+			    </TextBlock>
+
+                <TextBlock Cursor="Hand" Width="110" HorizontalAlignment="Center" VerticalAlignment="Center" >
+				    <Hyperlink NavigateUri="mailto://matija32@gmail.com" Foreground="Transparent" RequestNavigate="RequestNavigateHandler">
+                        <Image Source="../Resources/GmailLogo.png" Height="42" Margin="20,0,0,0" ToolTip="Send an email to the author of the application - matija32@gmail.com" HorizontalAlignment="Center" VerticalAlignment="Center" />
+				    </Hyperlink>
+			    </TextBlock>
+            </StackPanel>
+            <TextBlock Text="For bug report, feedback or feature request, please send an email to matija32@gmail.com" Foreground="White" Margin="0, 10, 0, 0"/>
+            <TextBlock Text="For shortcuts, please take a look at the read-me file" Foreground="White" Margin="0, 0, 0, 10"/>
+            
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="This is an unofficial Windows application for " Foreground="White"/>
+                <TextBlock Foreground="White">
+                    <Hyperlink NavigateUri="http://8tracks.com/" RequestNavigate="RequestNavigateHandler" Foreground="Orange">
+                            <Label Content="8tracks" ToolTip="Visit 8tracks website." Foreground="Orange" />
+                    </Hyperlink>
+                </TextBlock>
+            </StackPanel>
+
+        </StackPanel>
+    </Grid>
+</Window>

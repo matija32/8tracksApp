@@ -1,0 +1,1241 @@
+[8t]
+2012-09-20 01:30:14,164 [9] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+2012-09-20 01:31:15,296 [12] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.COMException (0x80010012): The callee (server [not server application]) is not available and disappeared; all connections are invalid. The call did not execute. (Exception from HRESULT: 0x80010012 (RPC_E_SERVER_DIED_DNE))
+   at WMPLib.IWMPControls.get_currentPosition()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+2012-09-20 01:31:15,296 [13] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.COMException (0x80010012): The callee (server [not server application]) is not available and disappeared; all connections are invalid. The call did not execute. (Exception from HRESULT: 0x80010012 (RPC_E_SERVER_DIED_DNE))
+   at WMPLib.IWMPControls.get_currentPosition()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+[8tracks player]
+2012-09-20 02:21:20,895 [10] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+[8tracks player]
+2012-09-20 02:23:03,312 [9] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+2012-09-20 02:23:43,895 [12] ERROR EightTracksPlayer.ViewModels.MixViewModel - Unable to go to the next song
+System.InvalidOperationException: Collection was modified; enumeration operation may not execute.
+
+Server stack trace: 
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   at System.Collections.Generic.List`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.<SelectIterator>d__7`2.MoveNext()
+   at System.Linq.Observable.<>c__DisplayClass2a8`1.<Subscribe>b__2a7(Action self)
+
+Exception rethrown at [0]: 
+   at System.ObservableExtensions.<Subscribe>b__3[TSource](Exception exception)
+   at System.Collections.Generic.AnonymousObserver`1.Error(Exception exception)
+   at System.Collections.Generic.AbstractObserver`1.OnError(Exception exception)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Error(Exception exception)
+   at System.Collections.Generic.AbstractObserver`1.OnError(Exception exception)
+   at System.Linq.Observable.<>c__DisplayClass2a8`1.<Subscribe>b__2a7(Action self)
+   at System.Concurrency.Scheduler.<>c__DisplayClass6.<Schedule>b__3()
+   at System.Concurrency.AsyncLock.Wait(Action action)
+
+Exception rethrown at [1]: 
+   at System.Concurrency.AsyncLock.Wait(Action action)
+   at System.Concurrency.Scheduler.<>c__DisplayClass6.<Schedule>b__2()
+   at System.Concurrency.Scheduler.<>c__DisplayClass6.<>c__DisplayClass8.<Schedule>b__5()
+   at System.Concurrency.CurrentThreadScheduler.Trampoline.Run()
+   at System.Concurrency.CurrentThreadScheduler.Schedule(Action action, TimeSpan dueTime)
+   at System.Concurrency.CurrentThreadScheduler.Schedule(Action action)
+   at System.Concurrency.Scheduler.Schedule(IScheduler scheduler, Action`1 action)
+   at System.ScheduledObserver`1.EnsureActive()
+   at System.Collections.Generic.ReplaySubject`1.OnNext(T value)
+   at EightTracksPlayer.Domain.Entities.Mix.set_CurrentTrackIndex(Int32 value) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Domain\Entities\Mix.cs:line 119
+   at EightTracksPlayer.Domain.Entities.Mix.MoveToNextTrack() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Domain\Entities\Mix.cs:line 174
+   at EightTracksPlayer.Domain.PlaybackController.NextSong(Boolean isUserRequested) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Domain\PlaybackController.cs:line 116
+   at EightTracksPlayer.ViewModels.MixViewModel.<>c__DisplayClass15.<.ctor>b__6(Object _) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\ViewModels\MixViewModel.cs:line 81
+2012-09-20 02:24:06,794 [22] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+2012-09-20 02:24:06,795 [12] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+2012-09-20 02:24:06,795 [11] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+2012-09-20 02:24:06,795 [21] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+2012-09-20 02:24:06,851 [12] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current track duration to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentTrackDuration() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 96
+2012-09-20 02:24:06,883 [11] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+2012-09-20 02:24:07,056 [21] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+2012-09-20 02:24:06,851 [22] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current track duration to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentTrackDuration()
+2012-09-20 02:24:07,098 [12] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+2012-09-20 02:24:07,444 [22] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+2012-09-20 02:24:07,246 [21] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+2012-09-20 02:24:07,237 [11] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+[8tracks player]
+2012-09-20 02:25:49,565 [9] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+2012-09-20 02:26:07,558 [11] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current track duration to 0
+System.Runtime.InteropServices.COMException (0x80010012): The callee (server [not server application]) is not available and disappeared; all connections are invalid. The call did not execute. (Exception from HRESULT: 0x80010012 (RPC_E_SERVER_DIED_DNE))
+   at WMPLib.IWMPControls.get_currentItem()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentTrackDuration()
+2012-09-20 02:26:07,736 [12] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current track duration to 0
+System.Runtime.InteropServices.COMException (0x80010012): The callee (server [not server application]) is not available and disappeared; all connections are invalid. The call did not execute. (Exception from HRESULT: 0x80010012 (RPC_E_SERVER_DIED_DNE))
+   at WMPLib.IWMPControls.get_currentItem()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentTrackDuration()
+[8tracks player]
+2012-09-20 02:40:33,755 [9] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+[8tracks player]
+2012-09-20 02:42:15,028 [10] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+2012-09-20 02:42:40,934 [21] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+2012-09-20 02:42:40,946 [14] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+2012-09-20 02:42:40,946 [12] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+2012-09-20 02:42:40,946 [11] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+2012-09-20 02:42:41,215 [21] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+2012-09-20 02:42:41,215 [14] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current track duration to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentTrackDuration() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 96
+2012-09-20 02:42:41,237 [21] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current track duration to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentTrackDuration()
+2012-09-20 02:42:41,270 [12] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+2012-09-20 02:42:41,472 [14] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+2012-09-20 02:42:41,471 [21] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+2012-09-20 02:42:41,325 [11] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+[8tracks player]
+2012-09-20 02:43:13,507 [10] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+2012-09-20 02:43:28,451 [17] ERROR EightTracksPlayer.ViewModels.MixViewModel - Unable to go to the next song
+System.InvalidOperationException: Collection was modified; enumeration operation may not execute.
+
+Server stack trace: 
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   at System.Collections.Generic.List`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.<SelectIterator>d__7`2.MoveNext()
+   at System.Linq.Observable.<>c__DisplayClass2a8`1.<Subscribe>b__2a7(Action self)
+
+Exception rethrown at [0]: 
+   at System.ObservableExtensions.<Subscribe>b__3[TSource](Exception exception)
+   at System.Collections.Generic.AnonymousObserver`1.Error(Exception exception)
+   at System.Collections.Generic.AbstractObserver`1.OnError(Exception exception)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Error(Exception exception)
+   at System.Collections.Generic.AbstractObserver`1.OnError(Exception exception)
+   at System.Linq.Observable.<>c__DisplayClass2a8`1.<Subscribe>b__2a7(Action self)
+   at System.Concurrency.Scheduler.<>c__DisplayClass6.<Schedule>b__3()
+   at System.Concurrency.AsyncLock.Wait(Action action)
+
+Exception rethrown at [1]: 
+   at System.Concurrency.AsyncLock.Wait(Action action)
+   at System.Concurrency.Scheduler.<>c__DisplayClass6.<Schedule>b__2()
+   at System.Concurrency.Scheduler.<>c__DisplayClass6.<>c__DisplayClass8.<Schedule>b__5()
+   at System.Concurrency.CurrentThreadScheduler.Trampoline.Run()
+   at System.Concurrency.CurrentThreadScheduler.Schedule(Action action, TimeSpan dueTime)
+   at System.Concurrency.CurrentThreadScheduler.Schedule(Action action)
+   at System.Concurrency.Scheduler.Schedule(IScheduler scheduler, Action`1 action)
+   at System.ScheduledObserver`1.EnsureActive()
+   at System.Collections.Generic.ReplaySubject`1.OnNext(T value)
+   at EightTracksPlayer.Domain.Entities.Mix.set_CurrentTrackIndex(Int32 value) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Domain\Entities\Mix.cs:line 119
+   at EightTracksPlayer.Domain.Entities.Mix.MoveToNextTrack() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Domain\Entities\Mix.cs:line 174
+   at EightTracksPlayer.Domain.PlaybackController.NextSong(Boolean isUserRequested) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Domain\PlaybackController.cs:line 116
+   at EightTracksPlayer.ViewModels.MixViewModel.<>c__DisplayClass15.<.ctor>b__6(Object _) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\ViewModels\MixViewModel.cs:line 81
+2012-09-20 02:43:41,212 [24] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+[8tracks player]
+2012-09-20 02:49:37,013 [10] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+2012-09-20 02:50:17,780 [13] ERROR EightTracksPlayer.ViewModels.MixViewModel - Unable to go to the next song
+System.InvalidOperationException: Collection was modified; enumeration operation may not execute.
+
+Server stack trace: 
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   at System.Collections.Generic.List`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.<SelectIterator>d__7`2.MoveNext()
+   at System.Linq.Observable.<>c__DisplayClass2a8`1.<Subscribe>b__2a7(Action self)
+
+Exception rethrown at [0]: 
+   at System.ObservableExtensions.<Subscribe>b__3[TSource](Exception exception)
+   at System.Collections.Generic.AnonymousObserver`1.Error(Exception exception)
+   at System.Collections.Generic.AbstractObserver`1.OnError(Exception exception)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Error(Exception exception)
+   at System.Collections.Generic.AbstractObserver`1.OnError(Exception exception)
+   at System.Linq.Observable.<>c__DisplayClass2a8`1.<Subscribe>b__2a7(Action self)
+   at System.Concurrency.Scheduler.<>c__DisplayClass6.<Schedule>b__3()
+   at System.Concurrency.AsyncLock.Wait(Action action)
+
+Exception rethrown at [1]: 
+   at System.Concurrency.AsyncLock.Wait(Action action)
+   at System.Concurrency.Scheduler.<>c__DisplayClass6.<Schedule>b__2()
+   at System.Concurrency.Scheduler.<>c__DisplayClass6.<>c__DisplayClass8.<Schedule>b__5()
+   at System.Concurrency.CurrentThreadScheduler.Trampoline.Run()
+   at System.Concurrency.CurrentThreadScheduler.Schedule(Action action, TimeSpan dueTime)
+   at System.Concurrency.CurrentThreadScheduler.Schedule(Action action)
+   at System.Concurrency.Scheduler.Schedule(IScheduler scheduler, Action`1 action)
+   at System.ScheduledObserver`1.EnsureActive()
+   at System.Collections.Generic.ReplaySubject`1.OnNext(T value)
+   at EightTracksPlayer.Domain.Entities.Mix.set_CurrentTrackIndex(Int32 value) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Domain\Entities\Mix.cs:line 119
+   at EightTracksPlayer.Domain.Entities.Mix.MoveToNextTrack() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Domain\Entities\Mix.cs:line 174
+   at EightTracksPlayer.Domain.PlaybackController.NextSong(Boolean isUserRequested) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Domain\PlaybackController.cs:line 116
+   at EightTracksPlayer.ViewModels.MixViewModel.<>c__DisplayClass15.<.ctor>b__6(Object _) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\ViewModels\MixViewModel.cs:line 81
+2012-09-20 02:50:19,634 [11] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current track duration to 0
+System.Runtime.InteropServices.COMException (0x8001010A): The message filter indicated that the application is busy. (Exception from HRESULT: 0x8001010A (RPC_E_SERVERCALL_RETRYLATER))
+   at WMPLib.IWMPMedia.get_duration()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentTrackDuration() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 96
+[8tracks player]
+2012-09-20 02:51:48,604 [9] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+[8tracks player]
+2012-09-20 02:53:03,761 [10] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+2012-09-20 02:53:40,414 [12] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current track duration to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used. The COM object was released while it was still in use on another thread.
+   at System.StubHelpers.StubHelpers.GetCOMIPFromRCW(Object objSrc, IntPtr pCPCMD, IntPtr& ppTarget, Boolean& pfNeedsRelease)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentTrackDuration()
+2012-09-20 02:53:40,433 [22] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.COMException (0x80010012): The callee (server [not server application]) is not available and disappeared; all connections are invalid. The call did not execute. (Exception from HRESULT: 0x80010012 (RPC_E_SERVER_DIED_DNE))
+   at WMPLib.IWMPControls.get_currentPosition()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+2012-09-20 02:53:40,435 [14] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+[8tracks player]
+2012-09-20 02:54:16,345 [9] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+2012-09-20 02:55:23,527 [6] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+2012-09-20 02:55:23,800 [13] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+2012-09-20 02:55:23,839 [20] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+2012-09-20 02:55:23,844 [11] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+2012-09-20 02:55:23,844 [6] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+2012-09-20 02:55:24,248 [6] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+2012-09-20 02:55:24,058 [11] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current track duration to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentTrackDuration()
+2012-09-20 02:55:24,044 [13] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+2012-09-20 02:55:24,244 [12] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+2012-09-20 02:55:24,058 [20] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current track duration to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentTrackDuration()
+[8tracks player]
+2012-09-20 03:01:40,450 [9] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+2012-09-20 03:01:54,634 [17] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.COMException (0x8001010A): The message filter indicated that the application is busy. (Exception from HRESULT: 0x8001010A (RPC_E_SERVERCALL_RETRYLATER))
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+2012-09-20 03:01:56,672 [17] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+2012-09-20 03:01:56,710 [15] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+2012-09-20 03:01:56,721 [17] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+[8tracks player]
+2012-09-20 03:02:26,554 [10] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+2012-09-20 03:03:04,303 [14] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+2012-09-20 03:03:04,408 [12] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+2012-09-20 03:03:04,388 [6] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+2012-09-20 03:03:04,586 [14] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+2012-09-20 03:03:04,590 [21] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+[8tracks player]
+2012-09-20 13:06:40,152 [9] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+2012-09-20 13:06:56,148 [19] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.COMException (0x8001010A): The message filter indicated that the application is busy. (Exception from HRESULT: 0x8001010A (RPC_E_SERVERCALL_RETRYLATER))
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+[8tracks player]
+2012-09-20 13:08:26,305 [9] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+[8tracks player]
+2012-09-20 13:20:57,818 [10] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+2012-09-20 13:21:12,533 [15] ERROR EightTracksPlayer.ViewModels.PlaybackViewModel - Unable to go to the next mix
+System.InvalidOperationException: The calling thread cannot access this object because a different thread owns it.
+
+Server stack trace: 
+   at System.Windows.Threading.Dispatcher.VerifyAccess()
+   at System.Windows.DependencyObject.GetValue(DependencyProperty dp)
+   at System.Windows.Controls.Primitives.ButtonBase.get_Command()
+   at System.Windows.Controls.Primitives.ButtonBase.UpdateCanExecute()
+   at System.Windows.Controls.Primitives.ButtonBase.OnCanExecuteChanged(Object sender, EventArgs e)
+   at ReactiveUI.Xaml.ReactiveAsyncCommand.<commonCtor>b__5(Boolean x)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observable.<>c__DisplayClass3bd`2.<>c__DisplayClass3bf.<DistinctUntilChanged>b__3bc(TSource value)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observable.<>c__DisplayClass3e1`1.<>c__DisplayClass3e3.<Do>b__3de(TSource x)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observable.CombineLatestHelper`3.OnNext()
+   at System.Linq.Observable.CombineLatestHelper`3.<>c__DisplayClass586.<.ctor>b__582(Notification`1 left)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observer.<>c__DisplayClass3`1.<ToObserver>b__0(T x)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.Notification`1.OnNext.Accept(IObserver`1 observer)
+   at System.Collections.Generic.BinaryObserver`2.<System.IObserver<System.Either<System.Collections.Generic.Notification<TLeft>,System.Collections.Generic.Notification<TRight>>>.OnNext>b__0(Notification`1 left)
+   at System.Either`2.Left.Switch(Action`1 caseLeft, Action`1 caseRight)
+   at System.Collections.Generic.BinaryObserver`2.System.IObserver<System.Either<System.Collections.Generic.Notification<TLeft>,System.Collections.Generic.Notification<TRight>>>.OnNext(Either`2 value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.SynchronizedObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observable.<>c__DisplayClass43d`2.<>c__DisplayClass43f.<Select>b__43c(TSource x)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observable.<>c__DisplayClass38d`1.<>c__DisplayClass38f.<Materialize>b__38a(TSource value)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.ScheduledObserver`1.<>c__DisplayClassa.<Next>b__8()
+   at System.ScheduledObserver`1.<EnsureActive>b__5(Action self)
+
+Exception rethrown at [0]: 
+   at System.ScheduledObserver`1.<EnsureActive>b__5(Action self)
+   at System.Concurrency.Scheduler.<>c__DisplayClass6.<Schedule>b__3()
+   at System.Concurrency.AsyncLock.Wait(Action action)
+
+Exception rethrown at [1]: 
+   at System.Concurrency.AsyncLock.Wait(Action action)
+   at System.Concurrency.Scheduler.<>c__DisplayClass6.<Schedule>b__2()
+   at System.Concurrency.ImmediateScheduler.Schedule(Action action)
+   at System.Concurrency.Scheduler.Schedule(IScheduler scheduler, Action`1 action)
+   at System.ScheduledObserver`1.EnsureActive()
+   at System.Collections.Generic.Subject`1.OnNext(T value)
+   at System.ScheduledObserver`1.<>c__DisplayClassa.<Next>b__8()
+   at System.ScheduledObserver`1.<EnsureActive>b__5(Action self)
+
+Exception rethrown at [2]: 
+   at System.ScheduledObserver`1.<EnsureActive>b__5(Action self)
+   at System.Concurrency.Scheduler.<>c__DisplayClass6.<Schedule>b__3()
+   at System.Concurrency.AsyncLock.Wait(Action action)
+
+Exception rethrown at [3]: 
+   at System.Concurrency.AsyncLock.Wait(Action action)
+   at System.Concurrency.Scheduler.<>c__DisplayClass6.<Schedule>b__2()
+   at System.Concurrency.CurrentThreadScheduler.Trampoline.Run()
+   at System.Concurrency.CurrentThreadScheduler.Schedule(Action action, TimeSpan dueTime)
+   at System.Concurrency.CurrentThreadScheduler.Schedule(Action action)
+   at System.Concurrency.Scheduler.Schedule(IScheduler scheduler, Action`1 action)
+   at System.ScheduledObserver`1.EnsureActive()
+   at System.Collections.Generic.ReplaySubject`1.OnNext(T value)
+   at EightTracksPlayer.Domain.PlaybackController.Play(Mix mix) in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Domain\PlaybackController.cs:line 87
+   at EightTracksPlayer.Domain.PlaybackController.NextMix() in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Domain\PlaybackController.cs:line 172
+   at EightTracksPlayer.ViewModels.PlaybackViewModel.<>c__DisplayClass1a.<.ctor>b__9(Object _) in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\ViewModels\PlaybackViewModel.cs:line 108
+2012-09-20 13:21:24,486 [13] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current track duration to 0
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentTrackDuration() in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 96
+2012-09-20 13:21:57,664 [25] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current track duration to 0
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentTrackDuration() in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 96
+2012-09-20 13:21:57,664 [22] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current track duration to 0
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentTrackDuration() in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 96
+2012-09-20 13:22:04,741 [25] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current track duration to 0
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentTrackDuration() in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 96
+2012-09-20 13:22:04,750 [13] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current track duration to 0
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentTrackDuration() in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 96
+[8tracks player]
+2012-09-20 13:22:43,931 [10] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+2012-09-20 13:22:54,371 [22] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current track duration to 0
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentTrackDuration() in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 96
+[8tracks player]
+2012-09-20 13:25:41,107 [10] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+2012-09-20 13:25:49,383 [22] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.COMException (0x8001010A): The message filter indicated that the application is busy. (Exception from HRESULT: 0x8001010A (RPC_E_SERVERCALL_RETRYLATER))
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+[8tracks player]
+2012-09-20 13:28:18,618 [9] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+2012-09-20 13:28:54,672 [27] ERROR EightTracksPlayer.ViewModels.PlaybackViewModel - Unable to go to the next mix
+System.InvalidOperationException: The calling thread cannot access this object because a different thread owns it.
+
+Server stack trace: 
+   at System.Windows.Threading.Dispatcher.VerifyAccess()
+   at System.Windows.DependencyObject.GetValue(DependencyProperty dp)
+   at System.Windows.Controls.Primitives.ButtonBase.get_Command()
+   at System.Windows.Controls.Primitives.ButtonBase.UpdateCanExecute()
+   at System.Windows.Controls.Primitives.ButtonBase.OnCanExecuteChanged(Object sender, EventArgs e)
+   at ReactiveUI.Xaml.ReactiveAsyncCommand.<commonCtor>b__5(Boolean x)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observable.<>c__DisplayClass3bd`2.<>c__DisplayClass3bf.<DistinctUntilChanged>b__3bc(TSource value)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observable.<>c__DisplayClass3e1`1.<>c__DisplayClass3e3.<Do>b__3de(TSource x)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observable.CombineLatestHelper`3.OnNext()
+   at System.Linq.Observable.CombineLatestHelper`3.<>c__DisplayClass586.<.ctor>b__582(Notification`1 left)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observer.<>c__DisplayClass3`1.<ToObserver>b__0(T x)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.Notification`1.OnNext.Accept(IObserver`1 observer)
+   at System.Collections.Generic.BinaryObserver`2.<System.IObserver<System.Either<System.Collections.Generic.Notification<TLeft>,System.Collections.Generic.Notification<TRight>>>.OnNext>b__0(Notification`1 left)
+   at System.Either`2.Left.Switch(Action`1 caseLeft, Action`1 caseRight)
+   at System.Collections.Generic.BinaryObserver`2.System.IObserver<System.Either<System.Collections.Generic.Notification<TLeft>,System.Collections.Generic.Notification<TRight>>>.OnNext(Either`2 value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.SynchronizedObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observable.<>c__DisplayClass43d`2.<>c__DisplayClass43f.<Select>b__43c(TSource x)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observable.<>c__DisplayClass38d`1.<>c__DisplayClass38f.<Materialize>b__38a(TSource value)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.ScheduledObserver`1.<>c__DisplayClassa.<Next>b__8()
+   at System.ScheduledObserver`1.<EnsureActive>b__5(Action self)
+
+Exception rethrown at [0]: 
+   at System.ScheduledObserver`1.<EnsureActive>b__5(Action self)
+   at System.Concurrency.Scheduler.<>c__DisplayClass6.<Schedule>b__3()
+   at System.Concurrency.AsyncLock.Wait(Action action)
+
+Exception rethrown at [1]: 
+   at System.Concurrency.AsyncLock.Wait(Action action)
+   at System.Concurrency.Scheduler.<>c__DisplayClass6.<Schedule>b__2()
+   at System.Concurrency.ImmediateScheduler.Schedule(Action action)
+   at System.Concurrency.Scheduler.Schedule(IScheduler scheduler, Action`1 action)
+   at System.ScheduledObserver`1.EnsureActive()
+   at System.Collections.Generic.Subject`1.OnNext(T value)
+   at System.ScheduledObserver`1.<>c__DisplayClassa.<Next>b__8()
+   at System.ScheduledObserver`1.<EnsureActive>b__5(Action self)
+
+Exception rethrown at [2]: 
+   at System.ScheduledObserver`1.<EnsureActive>b__5(Action self)
+   at System.Concurrency.Scheduler.<>c__DisplayClass6.<Schedule>b__3()
+   at System.Concurrency.AsyncLock.Wait(Action action)
+
+Exception rethrown at [3]: 
+   at System.Concurrency.AsyncLock.Wait(Action action)
+   at System.Concurrency.Scheduler.<>c__DisplayClass6.<Schedule>b__2()
+   at System.Concurrency.CurrentThreadScheduler.Trampoline.Run()
+   at System.Concurrency.CurrentThreadScheduler.Schedule(Action action, TimeSpan dueTime)
+   at System.Concurrency.CurrentThreadScheduler.Schedule(Action action)
+   at System.Concurrency.Scheduler.Schedule(IScheduler scheduler, Action`1 action)
+   at System.ScheduledObserver`1.EnsureActive()
+   at System.Collections.Generic.ReplaySubject`1.OnNext(T value)
+   at EightTracksPlayer.Domain.PlaybackController.Play(Mix mix) in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Domain\PlaybackController.cs:line 87
+   at EightTracksPlayer.Domain.PlaybackController.NextMix() in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Domain\PlaybackController.cs:line 172
+   at EightTracksPlayer.ViewModels.PlaybackViewModel.<>c__DisplayClass1a.<.ctor>b__9(Object _) in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\ViewModels\PlaybackViewModel.cs:line 108
+[8tracks player]
+2012-09-20 13:29:17,507 [10] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+[8tracks player]
+2012-09-20 17:17:24,679 [9] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+2012-09-20 17:17:44,704 [23] ERROR EightTracksPlayer.ViewModels.PlaybackViewModel - Unable to go to the next mix
+System.InvalidOperationException: The calling thread cannot access this object because a different thread owns it.
+
+Server stack trace: 
+   at System.Windows.Threading.Dispatcher.VerifyAccess()
+   at System.Windows.DependencyObject.GetValue(DependencyProperty dp)
+   at System.Windows.Controls.Primitives.ButtonBase.get_Command()
+   at System.Windows.Controls.Primitives.ButtonBase.UpdateCanExecute()
+   at System.Windows.Controls.Primitives.ButtonBase.OnCanExecuteChanged(Object sender, EventArgs e)
+   at ReactiveUI.Xaml.ReactiveAsyncCommand.<commonCtor>b__5(Boolean x)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observable.<>c__DisplayClass3bd`2.<>c__DisplayClass3bf.<DistinctUntilChanged>b__3bc(TSource value)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observable.<>c__DisplayClass3e1`1.<>c__DisplayClass3e3.<Do>b__3de(TSource x)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observable.CombineLatestHelper`3.OnNext()
+   at System.Linq.Observable.CombineLatestHelper`3.<>c__DisplayClass586.<.ctor>b__582(Notification`1 left)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observer.<>c__DisplayClass3`1.<ToObserver>b__0(T x)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.Notification`1.OnNext.Accept(IObserver`1 observer)
+   at System.Collections.Generic.BinaryObserver`2.<System.IObserver<System.Either<System.Collections.Generic.Notification<TLeft>,System.Collections.Generic.Notification<TRight>>>.OnNext>b__0(Notification`1 left)
+   at System.Either`2.Left.Switch(Action`1 caseLeft, Action`1 caseRight)
+   at System.Collections.Generic.BinaryObserver`2.System.IObserver<System.Either<System.Collections.Generic.Notification<TLeft>,System.Collections.Generic.Notification<TRight>>>.OnNext(Either`2 value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.SynchronizedObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observable.<>c__DisplayClass43d`2.<>c__DisplayClass43f.<Select>b__43c(TSource x)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observable.<>c__DisplayClass38d`1.<>c__DisplayClass38f.<Materialize>b__38a(TSource value)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.ScheduledObserver`1.<>c__DisplayClassa.<Next>b__8()
+   at System.ScheduledObserver`1.<EnsureActive>b__5(Action self)
+
+Exception rethrown at [0]: 
+   at System.ScheduledObserver`1.<EnsureActive>b__5(Action self)
+   at System.Concurrency.Scheduler.<>c__DisplayClass6.<Schedule>b__3()
+   at System.Concurrency.AsyncLock.Wait(Action action)
+
+Exception rethrown at [1]: 
+   at System.Concurrency.AsyncLock.Wait(Action action)
+   at System.Concurrency.Scheduler.<>c__DisplayClass6.<Schedule>b__2()
+   at System.Concurrency.ImmediateScheduler.Schedule(Action action)
+   at System.Concurrency.Scheduler.Schedule(IScheduler scheduler, Action`1 action)
+   at System.ScheduledObserver`1.EnsureActive()
+   at System.Collections.Generic.Subject`1.OnNext(T value)
+   at System.ScheduledObserver`1.<>c__DisplayClassa.<Next>b__8()
+   at System.ScheduledObserver`1.<EnsureActive>b__5(Action self)
+
+Exception rethrown at [2]: 
+   at System.ScheduledObserver`1.<EnsureActive>b__5(Action self)
+   at System.Concurrency.Scheduler.<>c__DisplayClass6.<Schedule>b__3()
+   at System.Concurrency.AsyncLock.Wait(Action action)
+
+Exception rethrown at [3]: 
+   at System.Concurrency.AsyncLock.Wait(Action action)
+   at System.Concurrency.Scheduler.<>c__DisplayClass6.<Schedule>b__2()
+   at System.Concurrency.CurrentThreadScheduler.Trampoline.Run()
+   at System.Concurrency.CurrentThreadScheduler.Schedule(Action action, TimeSpan dueTime)
+   at System.Concurrency.CurrentThreadScheduler.Schedule(Action action)
+   at System.Concurrency.Scheduler.Schedule(IScheduler scheduler, Action`1 action)
+   at System.ScheduledObserver`1.EnsureActive()
+   at System.Collections.Generic.ReplaySubject`1.OnNext(T value)
+   at EightTracksPlayer.Domain.Entities.Mix.set_CurrentTrackIndex(Int32 value) in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Domain\Entities\Mix.cs:line 119
+   at EightTracksPlayer.Domain.Entities.Mix.ResetTrackIndex() in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Domain\Entities\Mix.cs:line 169
+   at EightTracksPlayer.Domain.PlaybackController.Play(Mix mix) in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Domain\PlaybackController.cs:line 89
+   at EightTracksPlayer.Domain.PlaybackController.NextMix() in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Domain\PlaybackController.cs:line 172
+   at EightTracksPlayer.ViewModels.PlaybackViewModel.<>c__DisplayClass1a.<.ctor>b__9(Object _) in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\ViewModels\PlaybackViewModel.cs:line 108
+[8tracks player]
+2012-09-20 17:21:18,468 [8] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+2012-09-20 17:21:32,553 [13] ERROR EightTracksPlayer.ViewModels.PlaybackViewModel - Unable to go to the next mix
+System.InvalidOperationException: The calling thread cannot access this object because a different thread owns it.
+
+Server stack trace: 
+   at System.Windows.Threading.Dispatcher.VerifyAccess()
+   at System.Windows.DependencyObject.GetValue(DependencyProperty dp)
+   at System.Windows.Controls.Primitives.ButtonBase.get_Command()
+   at System.Windows.Controls.Primitives.ButtonBase.UpdateCanExecute()
+   at System.Windows.Controls.Primitives.ButtonBase.OnCanExecuteChanged(Object sender, EventArgs e)
+   at ReactiveUI.Xaml.ReactiveAsyncCommand.<commonCtor>b__5(Boolean x)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observable.<>c__DisplayClass3bd`2.<>c__DisplayClass3bf.<DistinctUntilChanged>b__3bc(TSource value)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observable.<>c__DisplayClass3e1`1.<>c__DisplayClass3e3.<Do>b__3de(TSource x)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observable.CombineLatestHelper`3.OnNext()
+   at System.Linq.Observable.CombineLatestHelper`3.<>c__DisplayClass586.<.ctor>b__582(Notification`1 left)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observer.<>c__DisplayClass3`1.<ToObserver>b__0(T x)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.Notification`1.OnNext.Accept(IObserver`1 observer)
+   at System.Collections.Generic.BinaryObserver`2.<System.IObserver<System.Either<System.Collections.Generic.Notification<TLeft>,System.Collections.Generic.Notification<TRight>>>.OnNext>b__0(Notification`1 left)
+   at System.Either`2.Left.Switch(Action`1 caseLeft, Action`1 caseRight)
+   at System.Collections.Generic.BinaryObserver`2.System.IObserver<System.Either<System.Collections.Generic.Notification<TLeft>,System.Collections.Generic.Notification<TRight>>>.OnNext(Either`2 value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.SynchronizedObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observable.<>c__DisplayClass43d`2.<>c__DisplayClass43f.<Select>b__43c(TSource x)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observable.<>c__DisplayClass38d`1.<>c__DisplayClass38f.<Materialize>b__38a(TSource value)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.ScheduledObserver`1.<>c__DisplayClassa.<Next>b__8()
+   at System.ScheduledObserver`1.<EnsureActive>b__5(Action self)
+
+Exception rethrown at [0]: 
+   at System.ScheduledObserver`1.<EnsureActive>b__5(Action self)
+   at System.Concurrency.Scheduler.<>c__DisplayClass6.<Schedule>b__3()
+   at System.Concurrency.AsyncLock.Wait(Action action)
+
+Exception rethrown at [1]: 
+   at System.Concurrency.AsyncLock.Wait(Action action)
+   at System.Concurrency.Scheduler.<>c__DisplayClass6.<Schedule>b__2()
+   at System.Concurrency.ImmediateScheduler.Schedule(Action action)
+   at System.Concurrency.Scheduler.Schedule(IScheduler scheduler, Action`1 action)
+   at System.ScheduledObserver`1.EnsureActive()
+   at System.Collections.Generic.Subject`1.OnNext(T value)
+   at System.ScheduledObserver`1.<>c__DisplayClassa.<Next>b__8()
+   at System.ScheduledObserver`1.<EnsureActive>b__5(Action self)
+
+Exception rethrown at [2]: 
+   at System.ScheduledObserver`1.<EnsureActive>b__5(Action self)
+   at System.Concurrency.Scheduler.<>c__DisplayClass6.<Schedule>b__3()
+   at System.Concurrency.AsyncLock.Wait(Action action)
+
+Exception rethrown at [3]: 
+   at System.Concurrency.AsyncLock.Wait(Action action)
+   at System.Concurrency.Scheduler.<>c__DisplayClass6.<Schedule>b__2()
+   at System.Concurrency.CurrentThreadScheduler.Trampoline.Run()
+   at System.Concurrency.CurrentThreadScheduler.Schedule(Action action, TimeSpan dueTime)
+   at System.Concurrency.CurrentThreadScheduler.Schedule(Action action)
+   at System.Concurrency.Scheduler.Schedule(IScheduler scheduler, Action`1 action)
+   at System.ScheduledObserver`1.EnsureActive()
+   at System.Collections.Generic.ReplaySubject`1.OnNext(T value)
+   at EightTracksPlayer.Domain.PlaybackController.Play(Mix mix) in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Domain\PlaybackController.cs:line 87
+   at EightTracksPlayer.Domain.PlaybackController.NextMix() in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Domain\PlaybackController.cs:line 172
+   at EightTracksPlayer.ViewModels.PlaybackViewModel.<>c__DisplayClass1a.<.ctor>b__9(Object _) in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\ViewModels\PlaybackViewModel.cs:line 108
+[8tracks player]
+2012-09-20 17:24:08,482 [9] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+[8tracks player]
+2012-09-20 17:25:41,681 [9] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+[8tracks player]
+2012-09-20 17:27:50,674 [10] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+2012-09-20 17:27:58,947 [22] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.COMException (0x8001010A): The message filter indicated that the application is busy. (Exception from HRESULT: 0x8001010A (RPC_E_SERVERCALL_RETRYLATER))
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+2012-09-20 17:27:58,947 [14] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.COMException (0x8001010A): The message filter indicated that the application is busy. (Exception from HRESULT: 0x8001010A (RPC_E_SERVERCALL_RETRYLATER))
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+2012-09-20 17:27:58,948 [6] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.COMException (0x8001010A): The message filter indicated that the application is busy. (Exception from HRESULT: 0x8001010A (RPC_E_SERVERCALL_RETRYLATER))
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+2012-09-20 17:29:18,381 [6] ERROR EightTracksPlayer.ViewModels.PlaybackViewModel - Unable to go to the next mix
+System.InvalidOperationException: The calling thread cannot access this object because a different thread owns it.
+
+Server stack trace: 
+   at System.Windows.Threading.Dispatcher.VerifyAccess()
+   at System.Windows.DependencyObject.GetValue(DependencyProperty dp)
+   at System.Windows.Controls.Primitives.ButtonBase.get_Command()
+   at System.Windows.Controls.Primitives.ButtonBase.UpdateCanExecute()
+   at System.Windows.Controls.Primitives.ButtonBase.OnCanExecuteChanged(Object sender, EventArgs e)
+   at ReactiveUI.Xaml.ReactiveAsyncCommand.<commonCtor>b__5(Boolean x)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observable.<>c__DisplayClass3bd`2.<>c__DisplayClass3bf.<DistinctUntilChanged>b__3bc(TSource value)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observable.<>c__DisplayClass3e1`1.<>c__DisplayClass3e3.<Do>b__3de(TSource x)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observable.CombineLatestHelper`3.OnNext()
+   at System.Linq.Observable.CombineLatestHelper`3.<>c__DisplayClass586.<.ctor>b__582(Notification`1 left)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observer.<>c__DisplayClass3`1.<ToObserver>b__0(T x)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.Notification`1.OnNext.Accept(IObserver`1 observer)
+   at System.Collections.Generic.BinaryObserver`2.<System.IObserver<System.Either<System.Collections.Generic.Notification<TLeft>,System.Collections.Generic.Notification<TRight>>>.OnNext>b__0(Notification`1 left)
+   at System.Either`2.Left.Switch(Action`1 caseLeft, Action`1 caseRight)
+   at System.Collections.Generic.BinaryObserver`2.System.IObserver<System.Either<System.Collections.Generic.Notification<TLeft>,System.Collections.Generic.Notification<TRight>>>.OnNext(Either`2 value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.SynchronizedObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observable.<>c__DisplayClass43d`2.<>c__DisplayClass43f.<Select>b__43c(TSource x)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observable.<>c__DisplayClass38d`1.<>c__DisplayClass38f.<Materialize>b__38a(TSource value)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.ScheduledObserver`1.<>c__DisplayClassa.<Next>b__8()
+   at System.ScheduledObserver`1.<EnsureActive>b__5(Action self)
+
+Exception rethrown at [0]: 
+   at System.ScheduledObserver`1.<EnsureActive>b__5(Action self)
+   at System.Concurrency.Scheduler.<>c__DisplayClass6.<Schedule>b__3()
+   at System.Concurrency.AsyncLock.Wait(Action action)
+
+Exception rethrown at [1]: 
+   at System.Concurrency.AsyncLock.Wait(Action action)
+   at System.Concurrency.Scheduler.<>c__DisplayClass6.<Schedule>b__2()
+   at System.Concurrency.ImmediateScheduler.Schedule(Action action)
+   at System.Concurrency.Scheduler.Schedule(IScheduler scheduler, Action`1 action)
+   at System.ScheduledObserver`1.EnsureActive()
+   at System.Collections.Generic.Subject`1.OnNext(T value)
+   at System.ScheduledObserver`1.<>c__DisplayClassa.<Next>b__8()
+   at System.ScheduledObserver`1.<EnsureActive>b__5(Action self)
+
+Exception rethrown at [2]: 
+   at System.ScheduledObserver`1.<EnsureActive>b__5(Action self)
+   at System.Concurrency.Scheduler.<>c__DisplayClass6.<Schedule>b__3()
+   at System.Concurrency.AsyncLock.Wait(Action action)
+
+Exception rethrown at [3]: 
+   at System.Concurrency.AsyncLock.Wait(Action action)
+   at System.Concurrency.Scheduler.<>c__DisplayClass6.<Schedule>b__2()
+   at System.Concurrency.CurrentThreadScheduler.Trampoline.Run()
+   at System.Concurrency.CurrentThreadScheduler.Schedule(Action action, TimeSpan dueTime)
+   at System.Concurrency.CurrentThreadScheduler.Schedule(Action action)
+   at System.Concurrency.Scheduler.Schedule(IScheduler scheduler, Action`1 action)
+   at System.ScheduledObserver`1.EnsureActive()
+   at System.Collections.Generic.ReplaySubject`1.OnNext(T value)
+   at EightTracksPlayer.Domain.PlaybackController.Play(Mix mix) in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Domain\PlaybackController.cs:line 87
+   at EightTracksPlayer.Domain.PlaybackController.NextMix() in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Domain\PlaybackController.cs:line 172
+   at EightTracksPlayer.ViewModels.PlaybackViewModel.<>c__DisplayClass1a.<.ctor>b__9(Object _) in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\ViewModels\PlaybackViewModel.cs:line 108
+2012-09-20 17:29:23,931 [22] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis, IntPtr pThread)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+2012-09-20 17:29:23,942 [23] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis, IntPtr pThread)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+2012-09-20 17:29:23,951 [24] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis, IntPtr pThread)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+2012-09-20 17:29:24,047 [24] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis, IntPtr pThread)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+2012-09-20 17:29:24,164 [24] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current track duration to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis, IntPtr pThread)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentTrackDuration()
+2012-09-20 17:29:24,059 [14] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis, IntPtr pThread)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+[8tracks player]
+2012-09-20 17:29:30,506 [9] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+2012-09-20 17:29:42,105 [20] ERROR EightTracksPlayer.ViewModels.PlaybackViewModel - Unable to go to the next mix
+System.InvalidOperationException: The calling thread cannot access this object because a different thread owns it.
+
+Server stack trace: 
+   at System.Windows.Threading.Dispatcher.VerifyAccess()
+   at System.Windows.DependencyObject.GetValue(DependencyProperty dp)
+   at System.Windows.Controls.Primitives.ButtonBase.get_Command()
+   at System.Windows.Controls.Primitives.ButtonBase.UpdateCanExecute()
+   at System.Windows.Controls.Primitives.ButtonBase.OnCanExecuteChanged(Object sender, EventArgs e)
+   at ReactiveUI.Xaml.ReactiveAsyncCommand.<commonCtor>b__5(Boolean x)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observable.<>c__DisplayClass3bd`2.<>c__DisplayClass3bf.<DistinctUntilChanged>b__3bc(TSource value)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observable.<>c__DisplayClass3e1`1.<>c__DisplayClass3e3.<Do>b__3de(TSource x)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observable.CombineLatestHelper`3.OnNext()
+   at System.Linq.Observable.CombineLatestHelper`3.<>c__DisplayClass586.<.ctor>b__582(Notification`1 left)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observer.<>c__DisplayClass3`1.<ToObserver>b__0(T x)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.Notification`1.OnNext.Accept(IObserver`1 observer)
+   at System.Collections.Generic.BinaryObserver`2.<System.IObserver<System.Either<System.Collections.Generic.Notification<TLeft>,System.Collections.Generic.Notification<TRight>>>.OnNext>b__0(Notification`1 left)
+   at System.Either`2.Left.Switch(Action`1 caseLeft, Action`1 caseRight)
+   at System.Collections.Generic.BinaryObserver`2.System.IObserver<System.Either<System.Collections.Generic.Notification<TLeft>,System.Collections.Generic.Notification<TRight>>>.OnNext(Either`2 value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.SynchronizedObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observable.<>c__DisplayClass43d`2.<>c__DisplayClass43f.<Select>b__43c(TSource x)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observable.<>c__DisplayClass38d`1.<>c__DisplayClass38f.<Materialize>b__38a(TSource value)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.ScheduledObserver`1.<>c__DisplayClassa.<Next>b__8()
+   at System.ScheduledObserver`1.<EnsureActive>b__5(Action self)
+
+Exception rethrown at [0]: 
+   at System.ScheduledObserver`1.<EnsureActive>b__5(Action self)
+   at System.Concurrency.Scheduler.<>c__DisplayClass6.<Schedule>b__3()
+   at System.Concurrency.AsyncLock.Wait(Action action)
+
+Exception rethrown at [1]: 
+   at System.Concurrency.AsyncLock.Wait(Action action)
+   at System.Concurrency.Scheduler.<>c__DisplayClass6.<Schedule>b__2()
+   at System.Concurrency.ImmediateScheduler.Schedule(Action action)
+   at System.Concurrency.Scheduler.Schedule(IScheduler scheduler, Action`1 action)
+   at System.ScheduledObserver`1.EnsureActive()
+   at System.Collections.Generic.Subject`1.OnNext(T value)
+   at System.ScheduledObserver`1.<>c__DisplayClassa.<Next>b__8()
+   at System.ScheduledObserver`1.<EnsureActive>b__5(Action self)
+
+Exception rethrown at [2]: 
+   at System.ScheduledObserver`1.<EnsureActive>b__5(Action self)
+   at System.Concurrency.Scheduler.<>c__DisplayClass6.<Schedule>b__3()
+   at System.Concurrency.AsyncLock.Wait(Action action)
+
+Exception rethrown at [3]: 
+   at System.Concurrency.AsyncLock.Wait(Action action)
+   at System.Concurrency.Scheduler.<>c__DisplayClass6.<Schedule>b__2()
+   at System.Concurrency.CurrentThreadScheduler.Trampoline.Run()
+   at System.Concurrency.CurrentThreadScheduler.Schedule(Action action, TimeSpan dueTime)
+   at System.Concurrency.CurrentThreadScheduler.Schedule(Action action)
+   at System.Concurrency.Scheduler.Schedule(IScheduler scheduler, Action`1 action)
+   at System.ScheduledObserver`1.EnsureActive()
+   at System.Collections.Generic.ReplaySubject`1.OnNext(T value)
+   at EightTracksPlayer.Domain.PlaybackController.Play(Mix mix) in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Domain\PlaybackController.cs:line 87
+   at EightTracksPlayer.Domain.PlaybackController.NextMix() in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Domain\PlaybackController.cs:line 172
+   at EightTracksPlayer.ViewModels.PlaybackViewModel.<>c__DisplayClass1a.<.ctor>b__9(Object _) in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\ViewModels\PlaybackViewModel.cs:line 108
+[8tracks player]
+2012-09-20 17:34:34,274 [10] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+[8tracks player]
+2012-09-20 17:37:37,467 [9] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+[8tracks player]
+2012-09-20 17:40:45,320 [10] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+2012-09-20 17:41:06,212 [7] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis, IntPtr pThread)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+[8tracks player]
+2012-09-20 17:49:31,429 [10] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+[8tracks player]
+2012-09-20 17:56:19,054 [9] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+2012-09-20 17:56:49,929 [28] ERROR EightTracksPlayer.ViewModels.PlaybackViewModel - Unable to go to the next mix
+System.InvalidOperationException: The calling thread cannot access this object because a different thread owns it.
+
+Server stack trace: 
+   at System.Windows.Threading.Dispatcher.VerifyAccess()
+   at System.Windows.DependencyObject.GetValue(DependencyProperty dp)
+   at System.Windows.Controls.Primitives.ButtonBase.get_Command()
+   at System.Windows.Controls.Primitives.ButtonBase.UpdateCanExecute()
+   at System.Windows.Controls.Primitives.ButtonBase.OnCanExecuteChanged(Object sender, EventArgs e)
+   at ReactiveUI.Xaml.ReactiveAsyncCommand.<commonCtor>b__5(Boolean x)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observable.<>c__DisplayClass3bd`2.<>c__DisplayClass3bf.<DistinctUntilChanged>b__3bc(TSource value)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observable.<>c__DisplayClass3e1`1.<>c__DisplayClass3e3.<Do>b__3de(TSource x)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observable.CombineLatestHelper`3.OnNext()
+   at System.Linq.Observable.CombineLatestHelper`3.<>c__DisplayClass586.<.ctor>b__582(Notification`1 left)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observer.<>c__DisplayClass3`1.<ToObserver>b__0(T x)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.Notification`1.OnNext.Accept(IObserver`1 observer)
+   at System.Collections.Generic.BinaryObserver`2.<System.IObserver<System.Either<System.Collections.Generic.Notification<TLeft>,System.Collections.Generic.Notification<TRight>>>.OnNext>b__0(Notification`1 left)
+   at System.Either`2.Left.Switch(Action`1 caseLeft, Action`1 caseRight)
+   at System.Collections.Generic.BinaryObserver`2.System.IObserver<System.Either<System.Collections.Generic.Notification<TLeft>,System.Collections.Generic.Notification<TRight>>>.OnNext(Either`2 value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.SynchronizedObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observable.<>c__DisplayClass43d`2.<>c__DisplayClass43f.<Select>b__43c(TSource x)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observable.<>c__DisplayClass38d`1.<>c__DisplayClass38f.<Materialize>b__38a(TSource value)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.ScheduledObserver`1.<>c__DisplayClassa.<Next>b__8()
+   at System.ScheduledObserver`1.<EnsureActive>b__5(Action self)
+
+Exception rethrown at [0]: 
+   at System.ScheduledObserver`1.<EnsureActive>b__5(Action self)
+   at System.Concurrency.Scheduler.<>c__DisplayClass6.<Schedule>b__3()
+   at System.Concurrency.AsyncLock.Wait(Action action)
+
+Exception rethrown at [1]: 
+   at System.Concurrency.AsyncLock.Wait(Action action)
+   at System.Concurrency.Scheduler.<>c__DisplayClass6.<Schedule>b__2()
+   at System.Concurrency.ImmediateScheduler.Schedule(Action action)
+   at System.Concurrency.Scheduler.Schedule(IScheduler scheduler, Action`1 action)
+   at System.ScheduledObserver`1.EnsureActive()
+   at System.Collections.Generic.Subject`1.OnNext(T value)
+   at System.ScheduledObserver`1.<>c__DisplayClassa.<Next>b__8()
+   at System.ScheduledObserver`1.<EnsureActive>b__5(Action self)
+
+Exception rethrown at [2]: 
+   at System.ScheduledObserver`1.<EnsureActive>b__5(Action self)
+   at System.Concurrency.Scheduler.<>c__DisplayClass6.<Schedule>b__3()
+   at System.Concurrency.AsyncLock.Wait(Action action)
+
+Exception rethrown at [3]: 
+   at System.Concurrency.AsyncLock.Wait(Action action)
+   at System.Concurrency.Scheduler.<>c__DisplayClass6.<Schedule>b__2()
+   at System.Concurrency.CurrentThreadScheduler.Trampoline.Run()
+   at System.Concurrency.CurrentThreadScheduler.Schedule(Action action, TimeSpan dueTime)
+   at System.Concurrency.CurrentThreadScheduler.Schedule(Action action)
+   at System.Concurrency.Scheduler.Schedule(IScheduler scheduler, Action`1 action)
+   at System.ScheduledObserver`1.EnsureActive()
+   at System.Collections.Generic.ReplaySubject`1.OnNext(T value)
+   at EightTracksPlayer.Domain.Entities.Mix.set_CurrentTrackIndex(Int32 value) in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Domain\Entities\Mix.cs:line 119
+   at EightTracksPlayer.Domain.Entities.Mix.ResetTrackIndex() in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Domain\Entities\Mix.cs:line 169
+   at EightTracksPlayer.Domain.PlaybackController.Play(Mix mix) in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Domain\PlaybackController.cs:line 89
+   at EightTracksPlayer.Domain.PlaybackController.NextMix() in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Domain\PlaybackController.cs:line 172
+   at EightTracksPlayer.ViewModels.PlaybackViewModel.<>c__DisplayClass1c.<.ctor>b__a(Object _) in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\ViewModels\PlaybackViewModel.cs:line 112
+[8tracks player]
+2012-09-20 17:57:10,205 [10] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+2012-09-20 17:57:20,127 [6] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current track duration to 0
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentTrackDuration() in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 96
+2012-09-20 17:57:32,871 [21] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.COMException (0x8001010A): The message filter indicated that the application is busy. (Exception from HRESULT: 0x8001010A (RPC_E_SERVERCALL_RETRYLATER))
+   at WMPLib.IWMPControls.get_currentPosition()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+[8tracks player]
+2012-09-20 17:58:06,394 [10] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+2012-09-20 17:58:27,279 [14] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.COMException (0x8001010A): The message filter indicated that the application is busy. (Exception from HRESULT: 0x8001010A (RPC_E_SERVERCALL_RETRYLATER))
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+[8tracks player]
+2012-09-20 17:59:47,392 [8] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+2012-09-20 18:00:37,758 [23] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.COMException (0x8001010A): The message filter indicated that the application is busy. (Exception from HRESULT: 0x8001010A (RPC_E_SERVERCALL_RETRYLATER))
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+2012-09-20 18:00:37,768 [11] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current track duration to 0
+System.Runtime.InteropServices.COMException (0x8001010A): The message filter indicated that the application is busy. (Exception from HRESULT: 0x8001010A (RPC_E_SERVERCALL_RETRYLATER))
+   at WMPLib.IWMPControls.get_currentItem()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentTrackDuration() in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 96
+2012-09-20 18:00:41,021 [20] ERROR EightTracksPlayer.ViewModels.PlaybackViewModel - Unable to go to the next mix
+System.InvalidOperationException: The calling thread cannot access this object because a different thread owns it.
+
+Server stack trace: 
+   at System.Windows.Threading.Dispatcher.VerifyAccess()
+   at System.Windows.DependencyObject.GetValue(DependencyProperty dp)
+   at System.Windows.Controls.Primitives.ButtonBase.get_Command()
+   at System.Windows.Controls.Primitives.ButtonBase.UpdateCanExecute()
+   at System.Windows.Controls.Primitives.ButtonBase.OnCanExecuteChanged(Object sender, EventArgs e)
+   at ReactiveUI.Xaml.ReactiveAsyncCommand.<commonCtor>b__5(Boolean x)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observable.<>c__DisplayClass3bd`2.<>c__DisplayClass3bf.<DistinctUntilChanged>b__3bc(TSource value)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observable.<>c__DisplayClass3e1`1.<>c__DisplayClass3e3.<Do>b__3de(TSource x)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observable.CombineLatestHelper`3.OnNext()
+   at System.Linq.Observable.CombineLatestHelper`3.<>c__DisplayClass586.<.ctor>b__582(Notification`1 left)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observer.<>c__DisplayClass3`1.<ToObserver>b__0(T x)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.Notification`1.OnNext.Accept(IObserver`1 observer)
+   at System.Collections.Generic.BinaryObserver`2.<System.IObserver<System.Either<System.Collections.Generic.Notification<TLeft>,System.Collections.Generic.Notification<TRight>>>.OnNext>b__0(Notification`1 left)
+   at System.Either`2.Left.Switch(Action`1 caseLeft, Action`1 caseRight)
+   at System.Collections.Generic.BinaryObserver`2.System.IObserver<System.Either<System.Collections.Generic.Notification<TLeft>,System.Collections.Generic.Notification<TRight>>>.OnNext(Either`2 value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.SynchronizedObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observable.<>c__DisplayClass43d`2.<>c__DisplayClass43f.<Select>b__43c(TSource x)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Linq.Observable.<>c__DisplayClass38d`1.<>c__DisplayClass38f.<Materialize>b__38a(TSource value)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.Collections.Generic.AnonymousObserver`1.Next(T value)
+   at System.Collections.Generic.AbstractObserver`1.OnNext(T value)
+   at System.ScheduledObserver`1.<>c__DisplayClassa.<Next>b__8()
+   at System.ScheduledObserver`1.<EnsureActive>b__5(Action self)
+
+Exception rethrown at [0]: 
+   at System.ScheduledObserver`1.<EnsureActive>b__5(Action self)
+   at System.Concurrency.Scheduler.<>c__DisplayClass6.<Schedule>b__3()
+   at System.Concurrency.AsyncLock.Wait(Action action)
+
+Exception rethrown at [1]: 
+   at System.Concurrency.AsyncLock.Wait(Action action)
+   at System.Concurrency.Scheduler.<>c__DisplayClass6.<Schedule>b__2()
+   at System.Concurrency.ImmediateScheduler.Schedule(Action action)
+   at System.Concurrency.Scheduler.Schedule(IScheduler scheduler, Action`1 action)
+   at System.ScheduledObserver`1.EnsureActive()
+   at System.Collections.Generic.Subject`1.OnNext(T value)
+   at System.ScheduledObserver`1.<>c__DisplayClassa.<Next>b__8()
+   at System.ScheduledObserver`1.<EnsureActive>b__5(Action self)
+
+Exception rethrown at [2]: 
+   at System.ScheduledObserver`1.<EnsureActive>b__5(Action self)
+   at System.Concurrency.Scheduler.<>c__DisplayClass6.<Schedule>b__3()
+   at System.Concurrency.AsyncLock.Wait(Action action)
+
+Exception rethrown at [3]: 
+   at System.Concurrency.AsyncLock.Wait(Action action)
+   at System.Concurrency.Scheduler.<>c__DisplayClass6.<Schedule>b__2()
+   at System.Concurrency.CurrentThreadScheduler.Trampoline.Run()
+   at System.Concurrency.CurrentThreadScheduler.Schedule(Action action, TimeSpan dueTime)
+   at System.Concurrency.CurrentThreadScheduler.Schedule(Action action)
+   at System.Concurrency.Scheduler.Schedule(IScheduler scheduler, Action`1 action)
+   at System.ScheduledObserver`1.EnsureActive()
+   at System.Collections.Generic.ReplaySubject`1.OnNext(T value)
+   at EightTracksPlayer.Domain.PlaybackController.Play(Mix mix) in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Domain\PlaybackController.cs:line 87
+   at EightTracksPlayer.Domain.PlaybackController.NextMix() in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Domain\PlaybackController.cs:line 172
+   at EightTracksPlayer.ViewModels.PlaybackViewModel.<>c__DisplayClass1c.<.ctor>b__a(Object _) in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\ViewModels\PlaybackViewModel.cs:line 112
+2012-09-20 18:02:29,767 [12] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current track duration to 0
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentTrackDuration() in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 96
+[8tracks player]
+2012-09-20 18:03:31,209 [8] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+2012-09-20 18:03:58,609 [12] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current track duration to 0
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentTrackDuration() in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 96
+2012-09-20 18:04:16,106 [21] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current track duration to 0
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentTrackDuration() in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 96
+2012-09-20 18:05:54,640 [19] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current track duration to 0
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentTrackDuration() in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 96
+2012-09-20 18:05:54,658 [9] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current track duration to 0
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentTrackDuration() in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 96
+2012-09-20 18:05:57,078 [12] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current track duration to 0
+System.Runtime.InteropServices.COMException (0x8001010A): The message filter indicated that the application is busy. (Exception from HRESULT: 0x8001010A (RPC_E_SERVERCALL_RETRYLATER))
+   at WMPLib.IWMPMedia.get_duration()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentTrackDuration() in C:\Users\mlukic\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 96
+[8tracks player]
+2012-09-20 18:07:33,454 [9] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.

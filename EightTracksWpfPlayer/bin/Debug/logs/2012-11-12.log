@@ -1,0 +1,125 @@
+[8tracks player]
+2012-11-12 00:23:05,479 [9] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+2012-11-12 00:24:52,511 [12] ERROR EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer - Deserialization error
+System.Runtime.Serialization.SerializationException: Unknown node detected while deserializing a response at 12:13. Detected node is mix-set=.
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.serializer_UnknownNode(Object sender, XmlNodeEventArgs e) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 114
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.<.ctor>b__2(Object sender, XmlNodeEventArgs args) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 58
+2012-11-12 00:24:52,549 [12] ERROR EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer - Deserialization error
+System.Runtime.Serialization.SerializationException: Unknown element detected while deserializing a response at 12:13, expected element = :errors, :notices, :api-warning, :status, :api-version, :Status, :id, :path, :restful-url, :total-entries, :page, :per-page, :next-page, :total-pages, :canonical-path, :name, :logged-in, :previous-page, :mixes. Detected element is mix-set=
+    <id>50060243</id>
+    <path>/mix_sets/50060243</path>
+    <restful-url>http://8tracks.com/mix_sets/50060243</restful-url>
+    <total-entries>322</total-entries>
+    <page>1</page>
+    <per-page>10</per-page>
+    <canonical-path>/mix_sets/50060243</canonical-path>
+    <browse-type>Listened</browse-type>
+  .
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.serializer_UnknownElement(Object sender, XmlElementEventArgs e) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 125
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.<.ctor>b__1(Object sender, XmlElementEventArgs args) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 47
+2012-11-12 00:25:30,922 [19] ERROR EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer - Deserialization error
+System.Runtime.Serialization.SerializationException: Unknown node detected while deserializing a response at 12:13. Detected node is mix-set=.
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.serializer_UnknownNode(Object sender, XmlNodeEventArgs e) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 114
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.<.ctor>b__2(Object sender, XmlNodeEventArgs args) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 58
+2012-11-12 00:25:30,939 [19] ERROR EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer - Deserialization error
+System.Runtime.Serialization.SerializationException: Unknown element detected while deserializing a response at 12:13, expected element = :errors, :notices, :api-warning, :status, :api-version, :Status, :id, :path, :restful-url, :total-entries, :page, :per-page, :next-page, :total-pages, :canonical-path, :name, :logged-in, :previous-page, :mixes. Detected element is mix-set=
+    <id>71446240</id>
+    <path>/mix_sets/71446240</path>
+    <restful-url>http://8tracks.com/mix_sets/71446240</restful-url>
+    <total-entries>29</total-entries>
+    <page>1</page>
+    <per-page>10</per-page>
+    <canonical-path>/mix_sets/71446240</canonical-path>
+    <browse-type>Recommended</browse-type>
+  .
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.serializer_UnknownElement(Object sender, XmlElementEventArgs e) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 125
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.<.ctor>b__1(Object sender, XmlElementEventArgs args) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 47
+[8tracks player]
+2012-11-12 00:28:53,250 [9] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+2012-11-12 00:29:30,663 [17] ERROR EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer - Deserialization error
+System.Runtime.Serialization.SerializationException: Unknown node detected while deserializing a response at 12:13. Detected node is mix-set=.
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.serializer_UnknownNode(Object sender, XmlNodeEventArgs e) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 114
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.<.ctor>b__2(Object sender, XmlNodeEventArgs args) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 58
+2012-11-12 00:29:30,689 [17] ERROR EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer - Deserialization error
+System.Runtime.Serialization.SerializationException: Unknown element detected while deserializing a response at 12:13, expected element = :errors, :notices, :api-warning, :status, :api-version, :Status, :id, :path, :restful-url, :total-entries, :page, :per-page, :next-page, :total-pages, :canonical-path, :name, :logged-in, :previous-page, :mixes. Detected element is mix-set=
+    <id>50060243</id>
+    <path>/mix_sets/50060243</path>
+    <restful-url>http://8tracks.com/mix_sets/50060243</restful-url>
+    <total-entries>322</total-entries>
+    <page>1</page>
+    <per-page>10</per-page>
+    <canonical-path>/mix_sets/50060243</canonical-path>
+    <browse-type>Listened</browse-type>
+  .
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.serializer_UnknownElement(Object sender, XmlElementEventArgs e) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 125
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.<.ctor>b__1(Object sender, XmlElementEventArgs args) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 47
+2012-11-12 00:29:35,338 [17] ERROR EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer - Deserialization error
+System.Runtime.Serialization.SerializationException: Unknown node detected while deserializing a response at 12:13. Detected node is mix-set=.
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.serializer_UnknownNode(Object sender, XmlNodeEventArgs e) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 114
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.<.ctor>b__2(Object sender, XmlNodeEventArgs args) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 58
+2012-11-12 00:29:35,360 [17] ERROR EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer - Deserialization error
+System.Runtime.Serialization.SerializationException: Unknown element detected while deserializing a response at 12:13, expected element = :errors, :notices, :api-warning, :status, :api-version, :Status, :id, :path, :restful-url, :total-entries, :page, :per-page, :next-page, :total-pages, :canonical-path, :name, :logged-in, :previous-page, :mixes. Detected element is mix-set=
+    <id>71446240</id>
+    <path>/mix_sets/71446240</path>
+    <restful-url>http://8tracks.com/mix_sets/71446240</restful-url>
+    <total-entries>29</total-entries>
+    <page>1</page>
+    <per-page>10</per-page>
+    <canonical-path>/mix_sets/71446240</canonical-path>
+    <browse-type>Recommended</browse-type>
+  .
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.serializer_UnknownElement(Object sender, XmlElementEventArgs e) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 125
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.<.ctor>b__1(Object sender, XmlElementEventArgs args) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 47
+[8tracks player]
+2012-11-12 00:32:24,476 [8] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+2012-11-12 00:32:34,082 [11] ERROR EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer - Deserialization error
+System.Runtime.Serialization.SerializationException: Unknown node detected while deserializing a response at 12:13. Detected node is mix-set=.
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.serializer_UnknownNode(Object sender, XmlNodeEventArgs e) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 114
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.<.ctor>b__2(Object sender, XmlNodeEventArgs args) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 58
+2012-11-12 00:32:34,127 [11] ERROR EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer - Deserialization error
+System.Runtime.Serialization.SerializationException: Unknown element detected while deserializing a response at 12:13, expected element = :errors, :notices, :api-warning, :status, :api-version, :Status, :id, :path, :restful-url, :total-entries, :page, :per-page, :next-page, :total-pages, :canonical-path, :name, :logged-in, :previous-page, :mixes. Detected element is mix-set=
+    <id>50060243</id>
+    <path>/mix_sets/50060243</path>
+    <restful-url>http://8tracks.com/mix_sets/50060243</restful-url>
+    <total-entries>322</total-entries>
+    <page>1</page>
+    <per-page>10</per-page>
+    <canonical-path>/mix_sets/50060243</canonical-path>
+    <browse-type>Listened</browse-type>
+  .
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.serializer_UnknownElement(Object sender, XmlElementEventArgs e) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 125
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.<.ctor>b__1(Object sender, XmlElementEventArgs args) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 47
+2012-11-12 00:32:44,553 [10] ERROR EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer - Deserialization error
+System.Runtime.Serialization.SerializationException: Unknown node detected while deserializing a response at 12:13. Detected node is mix-set=.
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.serializer_UnknownNode(Object sender, XmlNodeEventArgs e) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 114
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.<.ctor>b__2(Object sender, XmlNodeEventArgs args) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 58
+2012-11-12 00:32:44,571 [10] ERROR EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer - Deserialization error
+System.Runtime.Serialization.SerializationException: Unknown element detected while deserializing a response at 12:13, expected element = :errors, :notices, :api-warning, :status, :api-version, :Status, :id, :path, :restful-url, :total-entries, :page, :per-page, :next-page, :total-pages, :canonical-path, :name, :logged-in, :previous-page, :mixes. Detected element is mix-set=
+    <id>50060243</id>
+    <path>/mix_sets/50060243</path>
+    <restful-url>http://8tracks.com/mix_sets/50060243</restful-url>
+    <total-entries>322</total-entries>
+    <page>1</page>
+    <per-page>10</per-page>
+    <canonical-path>/mix_sets/50060243</canonical-path>
+    <browse-type>Listened</browse-type>
+  .
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.serializer_UnknownElement(Object sender, XmlElementEventArgs e) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 125
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.<.ctor>b__1(Object sender, XmlElementEventArgs args) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 47
+2012-11-12 00:32:48,348 [11] ERROR EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer - Deserialization error
+System.Runtime.Serialization.SerializationException: Unknown node detected while deserializing a response at 12:13. Detected node is mix-set=.
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.serializer_UnknownNode(Object sender, XmlNodeEventArgs e) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 114
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.<.ctor>b__2(Object sender, XmlNodeEventArgs args) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 58
+2012-11-12 00:32:48,371 [11] ERROR EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer - Deserialization error
+System.Runtime.Serialization.SerializationException: Unknown element detected while deserializing a response at 12:13, expected element = :errors, :notices, :api-warning, :status, :api-version, :Status, :id, :path, :restful-url, :total-entries, :page, :per-page, :next-page, :total-pages, :canonical-path, :name, :logged-in, :previous-page, :mixes. Detected element is mix-set=
+    <id>71446240</id>
+    <path>/mix_sets/71446240</path>
+    <restful-url>http://8tracks.com/mix_sets/71446240</restful-url>
+    <total-entries>29</total-entries>
+    <page>1</page>
+    <per-page>10</per-page>
+    <canonical-path>/mix_sets/71446240</canonical-path>
+    <browse-type>Recommended</browse-type>
+  .
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.serializer_UnknownElement(Object sender, XmlElementEventArgs e) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 125
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.<.ctor>b__1(Object sender, XmlElementEventArgs args) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 47

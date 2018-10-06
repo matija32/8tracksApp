@@ -1,0 +1,8 @@
+<Modules>
+  <Module PersistentId="CD88B115-F42C-4721-BFDD-D51378B464A3" ModuleId="Sandbox" />
+  <Module PersistentId="759539D8-A3F0-4369-B01C-0CC55FF0A052" ModuleId="EightTracksAppTests" />
+  <Module PersistentId="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC" ModuleId="EightTracksPlayer" />
+  <Module PersistentId="d:Miscellaneous Files" ModuleId="System.Windows.Forms" />
+  <Module PersistentId="EB805A31-9271-469E-B2F3-F17516D7FEE0" ModuleId="EightTracksWpfPlayer" />
+  <Module PersistentId="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="System.Windows.Forms_1" />
+</Modules>

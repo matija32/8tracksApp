@@ -1,0 +1,21 @@
+﻿<Application x:Class="EightTracksWpfPlayer.App" 
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+             xmlns:utils="clr-namespace:EightTracksPlayer.Utils;assembly=EightTracksPlayer" 
+             StartupUri="Views\MainWindow.xaml">
+	<Application.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+
+				<!-- Set default skin -->
+				<ResourceDictionary Source="Views\Themes\Skins\ExpressionDark.xaml" />
+				<ResourceDictionary Source="Views\Themes\WindowStyle.xaml" />
+
+			</ResourceDictionary.MergedDictionaries>
+
+			<utils:SettingConverter x:Key="SettingConv"></utils:SettingConverter>
+
+
+		</ResourceDictionary>
+	</Application.Resources>
+</Application>

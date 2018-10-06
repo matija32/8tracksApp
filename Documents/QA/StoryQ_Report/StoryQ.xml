@@ -1,0 +1,1853 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="StoryQ-html.xslt" type="text/xsl"?>
+<StoryQRun>
+  <Project Name="EightTracksTests">
+    <Namespace Name="EightTracksTests">
+      <Class Name="AuthenticatorTests">
+        <Method Name="TestDoesNotLogInTheUserWithInvalidCredentials">
+          <Story Name="Authenticating an user">
+            <Result IndentLevel="0" Prefix="Story is" Text="Authenticating an user" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="keep my settings and preferences protected and synchronized with the 8tracks service" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to use the application with my user credentials" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="logging in a user with invalid user credentials" Type="NotExecutable">
+              <Tag>Domain</Tag>
+              <Tag>Authentication</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the user provides inorrect username and password" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application issues a command to log in the user" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the authenticator executes a login request" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the user should not be logged in" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the user token does not exist" Type="Passed" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="logging in a user with no credentials" Type="NotExecutable">
+              <Tag>Domain</Tag>
+              <Tag>Authentication</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="any conditions" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application does not set the password" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the application issues a command to log in the user" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the user should not be logged in" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the user token does not exist" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestLogsInTheUserWithTheValidCredentials">
+          <Story Name="Authenticating an user">
+            <Result IndentLevel="0" Prefix="Story is" Text="Authenticating an user" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="keep my settings and preferences protected and synchronized with the 8tracks service" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to use the application with my user credentials" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="logging in a user with valid user credentials" Type="NotExecutable">
+              <Tag>Domain</Tag>
+              <Tag>Authentication</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the user provides correct username and password" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application issues a command to log in the user" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the authenticator executes a login request" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the user should be logged in" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the user token is aUserToken" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestLogsOutTheUser">
+          <Story Name="Authenticating an user">
+            <Result IndentLevel="0" Prefix="Story is" Text="Authenticating an user" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="keep my settings and preferences protected and synchronized with the 8tracks service" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to use the application with my user credentials" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="logging out a user" Type="NotExecutable">
+              <Tag>Domain</Tag>
+              <Tag>Authentication</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="any conditions" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application issues a command to log out the user" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the user should not be logged in" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the user token does not exist" Type="Passed" />
+          </Story>
+        </Method>
+      </Class>
+      <Class Name="LoginFormViewModelTests">
+        <Method Name="TestAllowsLoggingInOnlyIfTheUserIsLoggedOut">
+          <Story Name="Authenticating an user">
+            <Result IndentLevel="0" Prefix="Story is" Text="Authenticating an user" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="keep my settings and preferences protected and synchronized with the 8tracks service" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to use the application with my user credentials" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="enable logging out when user is logged in" Type="NotExecutable">
+              <Tag>Application</Tag>
+              <Tag>Authentication</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the user is currently logged in" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the user logs in" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the user will be able to log out" Type="Passed" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="disable logging out when user is logged out" Type="NotExecutable">
+              <Tag>Application</Tag>
+              <Tag>Authentication</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the user is currently logged in" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the user logs out" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the user will not be able to log out" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestAllowsLoggingOutOnlyIfTheUserIsLoggedIn">
+          <Story Name="Authenticating an user">
+            <Result IndentLevel="0" Prefix="Story is" Text="Authenticating an user" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="keep my settings and preferences protected and synchronized with the 8tracks service" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to use the application with my user credentials" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="enable logging in when user is logged out" Type="NotExecutable">
+              <Tag>Application</Tag>
+              <Tag>Authentication</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the user is currently logged in" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the user logs out" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the user will be able to log in" Type="Passed" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="disable logging in when user is logged in" Type="NotExecutable">
+              <Tag>Application</Tag>
+              <Tag>Authentication</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the user is not currently logged in" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the user logs in" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the user will not be able to log in" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestDoesNotLogInTheUserWithInvalidCredentials">
+          <Story Name="Authenticating an user">
+            <Result IndentLevel="0" Prefix="Story is" Text="Authenticating an user" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="keep my settings and preferences protected and synchronized with the 8tracks service" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to use the application with my user credentials" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="logging in with invalid user credentials" Type="NotExecutable">
+              <Tag>Application</Tag>
+              <Tag>Authentication</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the user is not currently logged in" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the credentials the user entered are not valid" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the user issues a comand to log in" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the command is processed" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the user sould not be logged in the system" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the login form should be expanded" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the user identifier sould not be shown on the login form" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the username field should be focused" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestFocusesOnUsernameFieldUponExpansion">
+          <Story Name="Authenticating an user">
+            <Result IndentLevel="0" Prefix="Story is" Text="Authenticating an user" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="keep my settings and preferences protected and synchronized with the 8tracks service" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to use the application with my user credentials" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="seeting the form focus to username field upon expansion" Type="NotExecutable">
+              <Tag>Application</Tag>
+              <Tag>Authentication</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the form is not currently expanded" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the user expands the form" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the focus should be set on the username field" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestLogsInTheUserWithValidCredentials">
+          <Story Name="Authenticating an user">
+            <Result IndentLevel="0" Prefix="Story is" Text="Authenticating an user" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="keep my settings and preferences protected and synchronized with the 8tracks service" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to use the application with my user credentials" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="logging in with valid user credentials" Type="NotExecutable">
+              <Tag>Application</Tag>
+              <Tag>Authentication</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the user is not currently logged in" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the credentials the user entered are valid" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the user issues a comand to log in" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the command is processed" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the user should be logged in the system" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the login form sould not be expanded" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the user identifier should be shown on the login form" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestLogsOutTheUser">
+          <Story Name="Authenticating an user">
+            <Result IndentLevel="0" Prefix="Story is" Text="Authenticating an user" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="keep my settings and preferences protected and synchronized with the 8tracks service" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to use the application with my user credentials" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="logging out" Type="NotExecutable">
+              <Tag>Application</Tag>
+              <Tag>Authentication</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the user is currently logged in" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the user issues a comand to log out" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the command is processed" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the user sould not be logged in the system" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the login form sould not be expanded" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the user identifier sould not be shown on the login form" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the password field should be focused" Type="Passed" />
+          </Story>
+        </Method>
+      </Class>
+      <Class Name="MediaBrowserViewModelTests">
+        <Method Name="TestAllowsGettingLikedAndFeedMixesOnlyIfUserIsLoggedIn">
+          <Story Name="Browsing available mixes">
+            <Result IndentLevel="0" Prefix="Story is" Text="Browsing available mixes" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="select the mix I want to listen to" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="the system to provide me with an overview of mixes in several categories" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="enabling getting liked and feed mixes if the user is logged in" Type="NotExecutable">
+              <Tag>Application</Tag>
+              <Tag>Media library browsing</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the user is not logged in" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the user logs in" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the user will be able to get liked mixes" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the user will be able to get feed mixes" Type="Passed" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="disabling getting liked and feed mixes if the user is not logged in" Type="NotExecutable">
+              <Tag>Application</Tag>
+              <Tag>Media library browsing</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the user is logged in" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the user logs out" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the user will not be able to get liked mixes" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the user will not be able to get feed mixes" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestDisplaysFeedMixes">
+          <Story Name="Browsing available mixes">
+            <Result IndentLevel="0" Prefix="Story is" Text="Browsing available mixes" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="select the mix I want to listen to" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="the system to provide me with an overview of mixes in several categories" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="displaying feed mixes" Type="NotExecutable">
+              <Tag>Application</Tag>
+              <Tag>Media library browsing</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the user is logged in" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the user has a feed mix called mixName1" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the user has a feed mix called mixName2" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the user issues a command to display feed mixes" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the command is processed" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="a mix called mixName1 will be shown" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="a mix called mixName2 will be shown" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestDisplaysFilteredMixesByTagsAndKeywords">
+          <Story Name="Browsing available mixes">
+            <Result IndentLevel="0" Prefix="Story is" Text="Browsing available mixes" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="select the mix I want to listen to" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="the system to provide me with an overview of mixes in several categories" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="displaying popular mixes filtered by tags and keywords" Type="NotExecutable">
+              <Tag>Application</Tag>
+              <Tag>Media library browsing</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the mix filter is [jazz][hiphop][cover] summer hit" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the user issues a command to display popular mixes" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the command is processed" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="a list of mixes will be shown" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the mix browsing message should be Displaying 3 of Popular mixes, tagged: jazz hiphop cover, including &quot;summer hit&quot;" Type="Passed" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="displaying popular mixes filtered by keywords" Type="NotExecutable">
+              <Tag>Application</Tag>
+              <Tag>Media library browsing</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the mix filter is summer hit" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the user issues a command to display popular mixes" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the command is processed" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="a list of mixes will be shown" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the mix browsing message should be Displaying 3 of Popular mixes, including &quot;summer hit&quot;" Type="Passed" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="displaying popular mixes filtered by tags" Type="NotExecutable">
+              <Tag>Application</Tag>
+              <Tag>Media library browsing</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the mix filter is [jazz][hiphop][cover]" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the user issues a command to display popular mixes" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the command is processed" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="a list of mixes will be shown" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the mix browsing message should be Displaying 3 of Popular mixes, tagged: jazz hiphop cover" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestDisplaysHotMixes">
+          <Story Name="Browsing available mixes">
+            <Result IndentLevel="0" Prefix="Story is" Text="Browsing available mixes" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="select the mix I want to listen to" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="the system to provide me with an overview of mixes in several categories" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="displaying liked mixes" Type="NotExecutable">
+              <Tag>Application</Tag>
+              <Tag>Media library browsing</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="any conditions" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the user issues a command to display hot mixes" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the command is processed" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="a list of mixes will be shown" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestDisplaysLikedMixes">
+          <Story Name="Browsing available mixes">
+            <Result IndentLevel="0" Prefix="Story is" Text="Browsing available mixes" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="select the mix I want to listen to" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="the system to provide me with an overview of mixes in several categories" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="displaying liked mixes" Type="NotExecutable">
+              <Tag>Application</Tag>
+              <Tag>Media library browsing</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the user is logged in" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the user liked a mix called mixName1" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the user liked a mix called mixName2" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the user issues a command to display liked mixes" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the command is processed" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="a mix called mixName1 will be shown" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="a mix called mixName2 will be shown" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestDisplaysPopularMixes">
+          <Story Name="Browsing available mixes">
+            <Result IndentLevel="0" Prefix="Story is" Text="Browsing available mixes" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="select the mix I want to listen to" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="the system to provide me with an overview of mixes in several categories" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="displaying popular mixes" Type="NotExecutable">
+              <Tag>Application</Tag>
+              <Tag>Media library browsing</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="any conditions" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the user issues a command to display popular mixes" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the command is processed" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="a list of mixes will be shown" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestDisplaysRecentlyMadeMixes">
+          <Story Name="Browsing available mixes">
+            <Result IndentLevel="0" Prefix="Story is" Text="Browsing available mixes" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="select the mix I want to listen to" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="the system to provide me with an overview of mixes in several categories" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="displaying liked mixes" Type="NotExecutable">
+              <Tag>Application</Tag>
+              <Tag>Media library browsing</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="any conditions" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the user issues a command to display recently made mixes" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the command is processed" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="a list of mixes will be shown" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestGetsMoreThanOnePageOfMixes">
+          <Story Name="Browsing available mixes">
+            <Result IndentLevel="0" Prefix="Story is" Text="Browsing available mixes" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="select the mix I want to listen to" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="the system to provide me with an overview of mixes in several categories" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="getting more then one 'page' of mixes " Type="NotExecutable">
+              <Tag>Application</Tag>
+              <Tag>Media library browsing</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the application loaded 3 hot mixes" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the user issues a command to display more mixes" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the command is processed" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="a list of 6 mixes will be shown" Type="Passed" />
+          </Story>
+        </Method>
+      </Class>
+      <Class Name="MediaLibraryBrowserTests">
+        <Method Name="TestGetsFeedMixes">
+          <Story Name="Browsing available mixes">
+            <Result IndentLevel="0" Prefix="Story is" Text="Browsing available mixes" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="select the mix I want to listen to" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="the system to provide me with an overview of mixes in several categories" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="getting mixes from the feed" Type="NotExecutable">
+              <Tag>Media library browsing</Tag>
+              <Tag>Domain</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="any conditions" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application issues a command to get the feed mixes" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the media library browser executes a EightTracksPlayer.Communication.Requests.MixesRequest" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the request queries for Feed mixes" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the media library browser returns a list of mixes" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestGetsHotMixes">
+          <Story Name="Browsing available mixes">
+            <Result IndentLevel="0" Prefix="Story is" Text="Browsing available mixes" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="select the mix I want to listen to" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="the system to provide me with an overview of mixes in several categories" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="getting hot mixes" Type="NotExecutable">
+              <Tag>Media library browsing</Tag>
+              <Tag>Domain</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="any conditions" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application issues a command to get the hot mixes" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the media library browser executes a EightTracksPlayer.Communication.Requests.MixesRequest" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the request queries for Hot mixes" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the media library browser returns a list of mixes" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestGetsLatestMixes">
+          <Story Name="Browsing available mixes">
+            <Result IndentLevel="0" Prefix="Story is" Text="Browsing available mixes" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="select the mix I want to listen to" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="the system to provide me with an overview of mixes in several categories" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="getting recent mixes" Type="NotExecutable">
+              <Tag>Media library browsing</Tag>
+              <Tag>Domain</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="any conditions" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application issues a command to get the recent mixes" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the media library browser executes a EightTracksPlayer.Communication.Requests.MixesRequest" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the request queries for Recent mixes" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the media library browser returns a list of mixes" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestGetsLikedMixes">
+          <Story Name="Browsing available mixes">
+            <Result IndentLevel="0" Prefix="Story is" Text="Browsing available mixes" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="select the mix I want to listen to" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="the system to provide me with an overview of mixes in several categories" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="getting liked mixes" Type="NotExecutable">
+              <Tag>Media library browsing</Tag>
+              <Tag>Domain</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="any conditions" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application issues a command to get the liked mixes" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the media library browser executes a EightTracksPlayer.Communication.Requests.MixesRequest" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the request queries for Liked mixes" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the media library browser returns a list of mixes" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestGetsPopularMixes">
+          <Story Name="Browsing available mixes">
+            <Result IndentLevel="0" Prefix="Story is" Text="Browsing available mixes" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="select the mix I want to listen to" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="the system to provide me with an overview of mixes in several categories" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="getting popular mixes" Type="NotExecutable">
+              <Tag>Media library browsing</Tag>
+              <Tag>Domain</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="any conditions" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application issues a command to get the popular mixes" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the media library browser executes a EightTracksPlayer.Communication.Requests.MixesRequest" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the request queries for Popular mixes" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the media library browser returns a list of mixes" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestGetsTheNextSetOfMixResults">
+          <Story Name="Browsing available mixes">
+            <Result IndentLevel="0" Prefix="Story is" Text="Browsing available mixes" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="select the mix I want to listen to" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="the system to provide me with an overview of mixes in several categories" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="getting the next set of mix results" Type="NotExecutable" />
+            <Result IndentLevel="4" Prefix="Given" Text="the media library browser had at some point retrieved 3 most recent mixes" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="after that it retrieved 3 most hot mixes" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application issues a comand to get the next set of mixes" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the media library browser executes a EightTracksPlayer.Communication.Requests.MixesRequest" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the request queries for page 2 of Hot mixes" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the media library browser returns a list of mixes" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestLikesACertainMix">
+          <Story Name="Favoriting items in the media library">
+            <Result IndentLevel="0" Prefix="Story is" Text="Favoriting items in the media library" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="find items in the media library easily" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to be able to star/unstar items in the media library" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="Liking a mix" Type="NotExecutable" />
+            <Result IndentLevel="4" Prefix="Given" Text="a mix is not liked by current user" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application issues a command to toggle liking a mix" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the media library browser executes a EightTracksPlayer.Communication.Requests.ToggleMixLikeRequest" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the mix should be liked by the current user" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestUnlikesACertainMix">
+          <Story Name="Favoriting items in the media library">
+            <Result IndentLevel="0" Prefix="Story is" Text="Favoriting items in the media library" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="find items in the media library easily" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to be able to star/unstar items in the media library" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="Unliking a mix" Type="NotExecutable" />
+            <Result IndentLevel="4" Prefix="Given" Text="a mix is  liked by current user" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application issues a command to toggle liking a mix" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the media library browser executes a EightTracksPlayer.Communication.Requests.ToggleMixLikeRequest" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the mix should not be liked by the current user" Type="Passed" />
+          </Story>
+        </Method>
+      </Class>
+      <Class Name="MixViewModelTests">
+        <Method Name="TestAllowsTogglingLikeOnlyIfUserIsLoggedIn">
+          <Story Name="Favoriting items in the media library">
+            <Result IndentLevel="0" Prefix="Story is" Text="Favoriting items in the media library" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="find items in the media library easily" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to be able to star/unstar items in the media library" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="disable toggling liking a mix if the user is not logged in" Type="NotExecutable">
+              <Tag>Application</Tag>
+              <Tag>Media library browsing</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the user is  logged in" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the user logs out" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the user should not be able to toggle like mix" Type="Passed" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="enabling toggling liking a mix if the user is logged in" Type="NotExecutable">
+              <Tag>Application</Tag>
+              <Tag>Media library browsing</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the user is not logged in" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the user logs in" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the user should  be able to toggle like mix" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestLikesAMix">
+          <Story Name="Favoriting items in the media library">
+            <Result IndentLevel="0" Prefix="Story is" Text="Favoriting items in the media library" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="find items in the media library easily" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to be able to star/unstar items in the media library" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="the user likes a mix" Type="NotExecutable">
+              <Tag>Application</Tag>
+              <Tag>Media library browsing</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the user is  logged in" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the mix is not liked by the user" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the user issues a command to toggle like the mix" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the command is processed" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the mix now should be liked by the user" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestPlayAMix">
+          <Story Name="Playing a mix">
+            <Result IndentLevel="0" Prefix="Story is" Text="Playing a mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="enjoy the music of a certain mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to play a mix" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="the user plays a mix" Type="NotExecutable">
+              <Tag>Application</Tag>
+              <Tag>Audio playback</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="any conditions" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the user issues a command to play the mix" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the command is processed" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the current track should be number 1" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the audio playback should start" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestPlaysTheNextSongInTheMix">
+          <Story Name="Playing a mix">
+            <Result IndentLevel="0" Prefix="Story is" Text="Playing a mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="enjoy the music of a certain mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to play a mix" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="playing the next song in the mix" Type="NotExecutable">
+              <Tag>Application</Tag>
+              <Tag>Audio playback</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the mix is playing" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the current track is number 1" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the user issues a command to go to next track" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the command is processed" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the current track should be number 2" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the audio playback should start" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestUnlikesAMix">
+          <Story Name="Favoriting items in the media library">
+            <Result IndentLevel="0" Prefix="Story is" Text="Favoriting items in the media library" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="find items in the media library easily" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to be able to star/unstar items in the media library" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="the user likes a mix" Type="NotExecutable">
+              <Tag>Application</Tag>
+              <Tag>Media library browsing</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the user is  logged in" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the mix is  liked by the user" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the user issues a command to toggle like the mix" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the command is processed" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the mix now should not be liked by the user" Type="Passed" />
+          </Story>
+        </Method>
+      </Class>
+      <Class Name="PlaybackControllerTests">
+        <Method Name="TestAddsNewTracksToTheMix">
+          <Story Name="Playing a mix">
+            <Result IndentLevel="0" Prefix="Story is" Text="Playing a mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="enjoy the music of a certain mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to play a mix" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="adding new tracks to the mix" Type="NotExecutable">
+              <Tag>Audio playback</Tag>
+              <Tag>Domain</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="a mix is being played" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application issues a command to play the same mix" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the controller should not send additional requests" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestAutomaticallyGoesToTheNextMix">
+          <Story Name="Maintaining continuous audio playback">
+            <Result IndentLevel="0" Prefix="Story is" Text="Maintaining continuous audio playback" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="avoid manually switching to the next track" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="to enjoy music with the least amount of interaction" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="the system to automaticallly start playing the next track, once a track is over" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="to play a similar mix, once a mix ends" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="going to the next mix upon finishing playing a mix" Type="NotExecutable">
+              <Tag>Audio playback</Tag>
+              <Tag>Domain</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="a mix is being played" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the song is the last one of the mix" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the song finishes" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the controller executes a NextMixRequest" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the controller plays the song number 1 of the mix" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the current mix contains 1 song" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the current mix has id 5061" Type="Passed" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="going to the next mix when trying to skip over the last song of the mix" Type="NotExecutable">
+              <Tag>Audio playback</Tag>
+              <Tag>Domain</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="a mix is being played" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the song is the last one of the mix" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application issues a command to go to next track" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the controller executes a NextMixRequest" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the controller plays the song number 1 of the mix" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the current mix contains 1 song" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the current mix has id 5062" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestAutomaticallyPlaysNextSongOfATrack">
+          <Story Name="Maintaining continuous audio playback">
+            <Result IndentLevel="0" Prefix="Story is" Text="Maintaining continuous audio playback" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="avoid manually switching to the next track" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="to enjoy music with the least amount of interaction" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="the system to automaticallly start playing the next track, once a track is over" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="to play a similar mix, once a mix ends" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="going to the next song upon finishing playing a song" Type="NotExecutable">
+              <Tag>Audio playback</Tag>
+              <Tag>Domain</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="a mix is being played" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the song being played is number 1 of the mix" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the song finishes" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the controller executes a NextSongRequest" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the controller plays the song number 2 of the mix" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the current mix contains 2 song" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestChangesTheVolume">
+          <Story Name="Controlling playback">
+            <Result IndentLevel="0" Prefix="Story is" Text="Controlling playback" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="avoid listening to the (parts of the) song I don't like" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="adjust the playback properties such as volume suiting my preferences and environment" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="initiate / stop the playback, etc." Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to have a control over the playback by doing fast-forward, rewind, play/stop/pause, increase/decrease volume..." Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="changing the volume" Type="NotExecutable">
+              <Tag>Audio playback</Tag>
+              <Tag>Domain</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="a mix is being played" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the volume is set at 50 percent" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application issues a command to change the volume to 80 percent" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the volume should become 80 percent" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestContinuesThePlayback">
+          <Story Name="Controlling playback">
+            <Result IndentLevel="0" Prefix="Story is" Text="Controlling playback" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="avoid listening to the (parts of the) song I don't like" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="adjust the playback properties such as volume suiting my preferences and environment" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="initiate / stop the playback, etc." Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to have a control over the playback by doing fast-forward, rewind, play/stop/pause, increase/decrease volume..." Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="continues the playback if it's paused" Type="NotExecutable">
+              <Tag>Audio playback</Tag>
+              <Tag>Domain</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="a mix is being played" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="a mix is paused" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application issues a command to continue the mix" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the audio player should unpause the playback" Type="Passed" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="continues the playback if it's stopped" Type="NotExecutable">
+              <Tag>Audio playback</Tag>
+              <Tag>Domain</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="a mix is being played" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="a mix is stopped" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application issues a command to continue the mix" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the audio player should play the playback" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestPausesThePlayback">
+          <Story Name="Controlling playback">
+            <Result IndentLevel="0" Prefix="Story is" Text="Controlling playback" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="avoid listening to the (parts of the) song I don't like" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="adjust the playback properties such as volume suiting my preferences and environment" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="initiate / stop the playback, etc." Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to have a control over the playback by doing fast-forward, rewind, play/stop/pause, increase/decrease volume..." Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="pausing the playback" Type="NotExecutable">
+              <Tag>Audio playback</Tag>
+              <Tag>Domain</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="a mix is being played" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application issues a command to pause the mix" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the audio player should pause the playback" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestPlaysAMix">
+          <Story Name="Playing a mix">
+            <Result IndentLevel="0" Prefix="Story is" Text="Playing a mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="enjoy the music of a certain mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to play a mix" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="playing a mix" Type="NotExecutable">
+              <Tag>Audio playback</Tag>
+              <Tag>Domain</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="a certain mix to be played" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application issues a command to play the mix" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the controller executes a PlayMixRequest" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the controller plays the song number 1 of the mix" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the current mix contains 1 song" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestPlaysNextSongInAMix">
+          <Story Name="Controlling playback">
+            <Result IndentLevel="0" Prefix="Story is" Text="Controlling playback" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="avoid listening to the (parts of the) song I don't like" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="adjust the playback properties such as volume suiting my preferences and environment" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="initiate / stop the playback, etc." Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to have a control over the playback by doing fast-forward, rewind, play/stop/pause, increase/decrease volume..." Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="skipping to the next song in the current mix" Type="NotExecutable">
+              <Tag>Audio playback</Tag>
+              <Tag>Domain</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="a mix is being played" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the song being played is number 1 of the mix" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application issues a command to go to next track" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the controller executes a NextSongRequest" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the controller plays the song number 2 of the mix" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the current mix contains 2 song" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestPlaysTheNextMixInTheSet">
+          <Story Name="Maintaining continuous audio playback">
+            <Result IndentLevel="0" Prefix="Story is" Text="Maintaining continuous audio playback" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="avoid manually switching to the next track" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="to enjoy music with the least amount of interaction" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="the system to automaticallly start playing the next track, once a track is over" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="to play a similar mix, once a mix ends" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="going to the next mix upon finishing playing a mix" Type="NotExecutable">
+              <Tag>Audio playback</Tag>
+              <Tag>Domain</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="a mix is being played" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application issues a command to get a similar mix" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the controller executes a NextMixRequest" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the controller plays the song number 1 of the mix" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the current mix contains 1 song" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the current mix has id 5060" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestSkipsToPosition">
+          <Story Name="Controlling playback">
+            <Result IndentLevel="0" Prefix="Story is" Text="Controlling playback" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="avoid listening to the (parts of the) song I don't like" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="adjust the playback properties such as volume suiting my preferences and environment" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="initiate / stop the playback, etc." Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to have a control over the playback by doing fast-forward, rewind, play/stop/pause, increase/decrease volume..." Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="skipping to a position" Type="NotExecutable">
+              <Tag>Audio playback</Tag>
+              <Tag>Domain</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="a mix is being played" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the track duration is 300 seconds" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the position at 100 seconds" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application issues a command to skip to 200 second" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the current position of the playback should be 200" Type="Passed" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="Not skipping to an invalid positon" Type="NotExecutable">
+              <Tag>Audio playback</Tag>
+              <Tag>Domain</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="a mix is being played" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the track duration is 300 seconds" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the position at 100 seconds" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application issues a command to skip to 400 second" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the current position of the playback should be 400" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestStopsThePlayback">
+          <Story Name="Controlling playback">
+            <Result IndentLevel="0" Prefix="Story is" Text="Controlling playback" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="avoid listening to the (parts of the) song I don't like" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="adjust the playback properties such as volume suiting my preferences and environment" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="initiate / stop the playback, etc." Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to have a control over the playback by doing fast-forward, rewind, play/stop/pause, increase/decrease volume..." Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="stopping the playback" Type="NotExecutable">
+              <Tag>Audio playback</Tag>
+              <Tag>Domain</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="a mix is being played" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application issues a command to stop the mix" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the audio player should stop the playback" Type="Passed" />
+          </Story>
+        </Method>
+      </Class>
+      <Class Name="PlaybackViewModelTests">
+        <Method Name="TestChangesTheTrackPosition">
+          <Story Name="Maintaining continuous audio playback">
+            <Result IndentLevel="0" Prefix="Story is" Text="Maintaining continuous audio playback" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="avoid manually switching to the next track" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="to enjoy music with the least amount of interaction" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="the system to automaticallly start playing the next track, once a track is over" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="to play a similar mix, once a mix ends" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="changing the position" Type="NotExecutable">
+              <Tag>Application</Tag>
+              <Tag>Audio playback</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="a mix is played" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="a mix starts playing" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the current track is 240 seconds long" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the user issues a command to change the position to 30 seconds" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="a bit of time passes" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the audio playback should be at 30 seconds" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestChangesTheVolume">
+          <Story Name="Maintaining continuous audio playback">
+            <Result IndentLevel="0" Prefix="Story is" Text="Maintaining continuous audio playback" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="avoid manually switching to the next track" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="to enjoy music with the least amount of interaction" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="the system to automaticallly start playing the next track, once a track is over" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="to play a similar mix, once a mix ends" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="changing the volume" Type="NotExecutable">
+              <Tag>Application</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="any conditions" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the user issues a command to change the volume to 80 percent" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="a bit of time passes" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the audio volume should be at 80 percent" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestDisplaysInfoAboutTheCurrentMix">
+          <Story Name="Playing a mix">
+            <Result IndentLevel="0" Prefix="Story is" Text="Playing a mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="enjoy the music of a certain mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to play a mix" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="displaying information about the current mix" Type="NotExecutable">
+              <Tag>Application</Tag>
+              <Tag>Audio playback</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="no mixes are played" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="a mix starts playing" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="a bit of time passes" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the cover image of the mix is shown" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the name of the mix is shown" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestDisplaysNoInfoInCaseOfInvalidMix">
+          <Story Name="Playing a mix">
+            <Result IndentLevel="0" Prefix="Story is" Text="Playing a mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="enjoy the music of a certain mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to play a mix" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="not displaying information in case of an invalid mix" Type="NotExecutable">
+              <Tag>Application</Tag>
+              <Tag>Audio playback</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="a mix does not have a opening song uri" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="no mixes are played" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="a mix starts playing" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="a bit of time passes" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="still no mixes should be played" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestPausesTheMix">
+          <Story Name="Maintaining continuous audio playback">
+            <Result IndentLevel="0" Prefix="Story is" Text="Maintaining continuous audio playback" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="avoid manually switching to the next track" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="to enjoy music with the least amount of interaction" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="the system to automaticallly start playing the next track, once a track is over" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="to play a similar mix, once a mix ends" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="pausing the current mix" Type="NotExecutable">
+              <Tag>Application</Tag>
+              <Tag>Audio playback</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="a mix is played" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="a mix starts playing" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the user issues a command to pause the mix" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the command is processed" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the playback should be paused" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestPlaysAStoppedMix">
+          <Story Name="Maintaining continuous audio playback">
+            <Result IndentLevel="0" Prefix="Story is" Text="Maintaining continuous audio playback" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="avoid manually switching to the next track" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="to enjoy music with the least amount of interaction" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="the system to automaticallly start playing the next track, once a track is over" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="to play a similar mix, once a mix ends" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="playing a stopped current mix" Type="NotExecutable">
+              <Tag>Application</Tag>
+              <Tag>Audio playback</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="a mix is played" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the second track is being played" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="a mix is stopped" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the user issues a command to continue the mix" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the command is processed" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the playback should be opened" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the second track should be played" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestStopsTheMix">
+          <Story Name="Maintaining continuous audio playback">
+            <Result IndentLevel="0" Prefix="Story is" Text="Maintaining continuous audio playback" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="avoid manually switching to the next track" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="to enjoy music with the least amount of interaction" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="the system to automaticallly start playing the next track, once a track is over" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="to play a similar mix, once a mix ends" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="stopping the current mix" Type="NotExecutable">
+              <Tag>Application</Tag>
+              <Tag>Audio playback</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="a mix is played" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="a mix starts playing" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the user issues a command to stop the mix" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the command is processed" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the playback should be stopped" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestUnpausesTheMix">
+          <Story Name="Maintaining continuous audio playback">
+            <Result IndentLevel="0" Prefix="Story is" Text="Maintaining continuous audio playback" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="avoid manually switching to the next track" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="to enjoy music with the least amount of interaction" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="the system to automaticallly start playing the next track, once a track is over" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="to play a similar mix, once a mix ends" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="unpausing the current mix" Type="NotExecutable">
+              <Tag>Application</Tag>
+              <Tag>Audio playback</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="a mix is played" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="a mix is paused" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the user issues a command to continue the mix" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the command is processed" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the playback should be unpaused" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestUpdatesControlAvailability">
+          <Story Name="Maintaining continuous audio playback">
+            <Result IndentLevel="0" Prefix="Story is" Text="Maintaining continuous audio playback" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="avoid manually switching to the next track" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="to enjoy music with the least amount of interaction" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="the system to automaticallly start playing the next track, once a track is over" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="to play a similar mix, once a mix ends" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="updates the availability of the controls when no mix is played" Type="NotExecutable">
+              <Tag>Application</Tag>
+              <Tag>Audio playback</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="no mixes are played" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the user is idle" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the user shouldn't be able to stop the mix" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the user shouldn't be able to pause the mix" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the user shouldn't be able to go to next mix" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the user shouldn't be able to go to next song" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the user shouldn't be able to continue the mix" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the user shouldn't be able to record the mix" Type="Passed" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="updates the availability of the controls when the playback is ongoing" Type="NotExecutable">
+              <Tag>Application</Tag>
+              <Tag>Audio playback</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="a mix is played" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="a mix starts playing" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the user is idle" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the user should be able to stop the mix" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the user should be able to pause the mix" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the user should be able to go to next mix" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the user should be able to go to next song" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the user shouldn't be able to continue the mix" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the user should be able to record the mix" Type="Passed" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="updates the availability of the controls when the playback is paused" Type="NotExecutable">
+              <Tag>Application</Tag>
+              <Tag>Audio playback</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="a mix is paused" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the user is idle" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the user should be able to stop the mix" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the user shouldn't be able to pause the mix" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the user should be able to go to next mix" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the user should be able to go to next song" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the user should be able to continue the mix" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the user should be able to record the mix" Type="Passed" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="updates the availability of the controls when the playback is stopped" Type="NotExecutable">
+              <Tag>Application</Tag>
+              <Tag>Audio playback</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="a mix is stopped" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the user is idle" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the user shouldn't be able to stop the mix" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the user shouldn't be able to pause the mix" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the user should be able to go to next mix" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the user should be able to go to next song" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the user should be able to continue the mix" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the user should be able to record the mix" Type="Passed" />
+          </Story>
+        </Method>
+      </Class>
+      <Class Name="RequestFactoryTests">
+        <Method Name="TestCreateFilteredMixesRequest">
+          <Story Name="Browsing available mixes">
+            <Result IndentLevel="0" Prefix="Story is" Text="Browsing available mixes" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="select the mix I want to listen to" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="the system to provide me with an overview of mixes in several categories" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="filtering available mixes by tags and other keywords" Type="NotExecutable">
+              <Tag>HTTP web requests</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the view type is Recent" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the tags are jazz and hiphop and cover" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the query is summer hit" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application issues a command to create mixes request" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the GET request should be properly created" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the uri should be http://8tracks.com/mixes.xml?api_key=ABC123&amp;sort=recent&amp;per_page=20&amp;page=1&amp;tags=jazz hiphop cover&amp;q=summer hit" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestCreatesLoginRequest">
+          <Story Name="Authenticating an user">
+            <Result IndentLevel="0" Prefix="Story is" Text="Authenticating an user" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="keep my settings and preferences protected and synchronized with the 8tracks service" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to use the application with my user credentials" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="creating a request to log in" Type="NotExecutable">
+              <Tag>HTTP web requests</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="api key is ABC123" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application issues a command to create a login request with username myUsername and password myPassword" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the POST request should be properly created" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the uri should be http://8tracks.com/sessions.xml?api_key=ABC123" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the post data should be login=myUsername&amp;password=myPassword" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestCreatesMixesRequest">
+          <Story Name="Browsing available mixes">
+            <Result IndentLevel="0" Prefix="Story is" Text="Browsing available mixes" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="select the mix I want to listen to" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="the system to provide me with an overview of mixes in several categories" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="creating a request for obtaining latest mixes when no user is logged in" Type="NotExecutable">
+              <Tag>HTTP web requests</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="api key is ABC123" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the user token is &quot;&quot;" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the view type is Recent" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application issues a command to create mixes request" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the GET request should be properly created" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the uri should be http://8tracks.com/mixes.xml?api_key=ABC123&amp;sort=recent&amp;per_page=20&amp;page=1" Type="Passed" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="creating a request for obtaining latest mixes when a user is logged in" Type="NotExecutable">
+              <Tag>HTTP web requests</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="api key is ABC123" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the user token is abcdefg" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the view type is Recent" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application issues a command to create mixes request" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the GET request should be properly created" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the uri should be http://8tracks.com/mixes.xml?api_key=ABC123&amp;sort=recent&amp;user_token=abcdefg&amp;per_page=20&amp;page=1" Type="Passed" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="creating a request for obtaining second set of mixes" Type="NotExecutable">
+              <Tag>HTTP web requests</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="api key is ABC123" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the user token is abcdefg" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the view type is Recent" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the page numer is 3 with 15 mixes per page" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application issues a command to create mixes request" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the GET request should be properly created" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the uri should be http://8tracks.com/mixes.xml?api_key=ABC123&amp;sort=recent&amp;user_token=abcdefg&amp;per_page=15&amp;page=3" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestCreatesNewPlayToken">
+          <Story Name="Playing a mix">
+            <Result IndentLevel="0" Prefix="Story is" Text="Playing a mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="enjoy the music of a certain mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to play a mix" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="creating a request for obtaining the play token needed to start streaming music" Type="NotExecutable">
+              <Tag>HTTP web requests</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="api key is ABC123" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application issues a command to create new play token request" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the GET request should be properly created" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the uri should be http://8tracks.com/sets/new.xml?api_key=ABC123" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestCreatesNextMixRequest">
+          <Story Name="Maintaining continuous audio playback">
+            <Result IndentLevel="0" Prefix="Story is" Text="Maintaining continuous audio playback" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="avoid manually switching to the next track" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="to enjoy music with the least amount of interaction" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="the system to automaticallly start playing the next track, once a track is over" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="to play a similar mix, once a mix ends" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="creating a request to get the next mix in the mix set" Type="NotExecutable">
+              <Tag>HTTP web requests</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="api key is ABC123" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application issues a command to create next song request for mix with id 500 within a set 150000 using a token 1234509876" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the GET request should be properly created" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the uri should be http://8tracks.com/sets/1234509876/next_mix.xml?mix_id=500&amp;api_key=ABC123&amp;mix_set_id=150000" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestCreatesNextSongRequest">
+          <Story Name="Playing a mix">
+            <Result IndentLevel="0" Prefix="Story is" Text="Playing a mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="enjoy the music of a certain mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to play a mix" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="creating a request to play the next song in the mix" Type="NotExecutable">
+              <Tag>HTTP web requests</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="api key is ABC123" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application issues a command to create next song request for mix with id 500 using a token 1234509876" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the GET request should be properly created" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the uri should be http://8tracks.com/sets/1234509876/next.xml?mix_id=500&amp;api_key=ABC123" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestCreatesPlayMixRequest">
+          <Story Name="Playing a mix">
+            <Result IndentLevel="0" Prefix="Story is" Text="Playing a mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="enjoy the music of a certain mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to play a mix" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="creating a request to start playing a certain mix" Type="NotExecutable">
+              <Tag>HTTP web requests</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="api key is ABC123" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application issues a command to create play mix request for mix with id 500 using a token 1234509876" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the GET request should be properly created" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the uri should be http://8tracks.com/sets/1234509876/play.xml?mix_id=500&amp;api_key=ABC123" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestCreateToggleMixLikeRequest">
+          <Story Name="Favoriting items in the media library">
+            <Result IndentLevel="0" Prefix="Story is" Text="Favoriting items in the media library" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="find items in the media library easily" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to be able to star/unstar items in the media library" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="Creating a request to toggle liking a mix" Type="NotExecutable">
+              <Tag>HTTP web requests</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="api key is ABC123" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the user token is abcdefg" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application issues a command to create a toggle like mix request for mix id 500" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the POST request should be properly created" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the uri should be http://8tracks.com/mixes/500/toggle_like.xml?user_token=abcdefg&amp;api_key=ABC123" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the post data should be &quot;&quot;" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestCreateUserMixesRequest">
+          <Story Name="Browsing available mixes">
+            <Result IndentLevel="0" Prefix="Story is" Text="Browsing available mixes" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="select the mix I want to listen to" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="the system to provide me with an overview of mixes in several categories" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="creating a request for obtaining latest liked mixes of an user" Type="NotExecutable">
+              <Tag>HTTP web requests</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="api key is ABC123" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the user token is abcdefg" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the user identifier is MrJohnDoe" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the view type is Liked" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application issues a command to create a user Liked mixes request for user MrJohnDoe" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the GET request should be properly created" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the uri should be http://8tracks.com/users/MrJohnDoe/mixes.xml?api_key=ABC123&amp;user_token=abcdefg&amp;view=liked&amp;per_page=20&amp;page=1" Type="Passed" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="creating a request for obtaining second set of mixes" Type="NotExecutable">
+              <Tag>HTTP web requests</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="api key is ABC123" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the user token is abcdefg" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the view type is Liked" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the user identifier is MrJohnDoe" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the page numer is 1 with 20 mixes per page" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application issues a command to create more mixes request" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the GET request should be properly created" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the uri should be http://8tracks.com/users/MrJohnDoe/mixes.xml?api_key=ABC123&amp;user_token=abcdefg&amp;view=liked&amp;per_page=20&amp;page=2" Type="Passed" />
+          </Story>
+        </Method>
+      </Class>
+      <Class Name="ResponseDeserializersMappingTests">
+        <Method Name="TestRetrievesLoginResponseDeserializerForLoginRequest">
+          <Story Name="Authenticating an user">
+            <Result IndentLevel="0" Prefix="Story is" Text="Authenticating an user" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="keep my settings and preferences protected and synchronized with the 8tracks service" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to use the application with my user credentials" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="selecting a deserializer for the login request" Type="NotExecutable">
+              <Tag>XML deserialization</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="any conditions" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application requests a serializer that matches LoginRequest" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the serializer is obtained" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the serializer will support LoginResponse" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestRetrievesMixesRequestDeserializerForMixesRequest">
+          <Story Name="Playing a mix">
+            <Result IndentLevel="0" Prefix="Story is" Text="Playing a mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="enjoy the music of a certain mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to play a mix" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="selecting a deserializer for the request for mixes" Type="NotExecutable">
+              <Tag>XML deserialization</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="any conditions" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application requests a serializer that matches MixesRequest" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the serializer is obtained" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the serializer will support MixesResponse" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestRetrievesNewPlayTokenResponseDeserializerForNewPlayTokenRequest">
+          <Story Name="Playing a mix">
+            <Result IndentLevel="0" Prefix="Story is" Text="Playing a mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="enjoy the music of a certain mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to play a mix" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="selecting a deserializer for the mixes request" Type="NotExecutable">
+              <Tag>XML deserialization</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="any conditions" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application requests a serializer that matches NewPlayTokenRequest" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the serializer is obtained" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the serializer will support NewPlayTokenResponse" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestRetrievesNextMixResponseRequestDeserializerForNextMixRequest">
+          <Story Name="Playing a mix">
+            <Result IndentLevel="0" Prefix="Story is" Text="Playing a mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="enjoy the music of a certain mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to play a mix" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="selecting a deserializer for the request for the next mix in a mix set" Type="NotExecutable">
+              <Tag>XML deserialization</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="any conditions" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application requests a serializer that matches NextMixRequest" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the serializer is obtained" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the serializer will support NextMixResponse" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestRetrievesPlaySongResponseRequestDeserializerForNextSongRequest">
+          <Story Name="Playing a mix">
+            <Result IndentLevel="0" Prefix="Story is" Text="Playing a mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="enjoy the music of a certain mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to play a mix" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="selecting a deserializer for the request for playing the next song in a mix" Type="NotExecutable">
+              <Tag>XML deserialization</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="any conditions" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application requests a serializer that matches NextSongRequest" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the serializer is obtained" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the serializer will support PlaySongResponse" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestRetrievesPlaySongResponseRequestDeserializerForPlayMixRequest">
+          <Story Name="Playing a mix">
+            <Result IndentLevel="0" Prefix="Story is" Text="Playing a mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="enjoy the music of a certain mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to play a mix" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="selecting a deserializer for the request for playing a certain mix" Type="NotExecutable">
+              <Tag>XML deserialization</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="any conditions" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application requests a serializer that matches PlayMixRequest" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the serializer is obtained" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the serializer will support PlaySongResponse" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestRetrievesToggleMixLikeResponseDeserializerForToggleMixLikeRequest">
+          <Story Name="Favoriting items in the media library">
+            <Result IndentLevel="0" Prefix="Story is" Text="Favoriting items in the media library" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="find items in the media library easily" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to be able to star/unstar items in the media library" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="selecting a deserializer for toggle mix like request" Type="NotExecutable">
+              <Tag>XML deserialization</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="any conditions" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application requests a serializer that matches ToggleMixLikeRequest" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the serializer is obtained" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the serializer will support ToggleMixLikeResponse" Type="Passed" />
+          </Story>
+        </Method>
+      </Class>
+      <Class Name="ResponseDeserializersTests">
+        <Method Name="TestFailsToDeserializeAnInvalidLoginResponse">
+          <Story Name="Authenticating an user">
+            <Result IndentLevel="0" Prefix="Story is" Text="Authenticating an user" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="keep my settings and preferences protected and synchronized with the 8tracks service" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to use the application with my user credentials" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="deserializing an invalid XML response - one that is not a response for login" Type="NotExecutable">
+              <Tag>XML deserialization</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the application has received an invalid xml response" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application deserializes the login response" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the login response should not be created" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="a deserialization exception should be thrown" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestFailsToDeserializeAnInvalidMixesResponse">
+          <Story Name="Playing a mix">
+            <Result IndentLevel="0" Prefix="Story is" Text="Playing a mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="enjoy the music of a certain mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to play a mix" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="deserializing an invalid XML response - one that is not containing a list of mixes" Type="NotExecutable">
+              <Tag>XML deserialization</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the application has received an invalid xml response" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application deserializes the mixes response" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the mixes response should not be created" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="a deserialization exception should be thrown" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestFailsToDeserializeAnInvalidNewPlayTokenResponse">
+          <Story Name="Playing a mix">
+            <Result IndentLevel="0" Prefix="Story is" Text="Playing a mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="enjoy the music of a certain mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to play a mix" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="deserializing an invalid XML response - one that is not containing a token for playing the mixes" Type="NotExecutable">
+              <Tag>XML deserialization</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the application has received an invalid xml response" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application deserializes the new play token response" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the new play token response should not be created" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="a deserialization exception should be thrown" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestFailsToDeserializeAnInvalidNextMixResponse">
+          <Story Name="Playing a mix">
+            <Result IndentLevel="0" Prefix="Story is" Text="Playing a mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="enjoy the music of a certain mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to play a mix" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="deserializing an invalid XML response - one that is not containing next mix in the set" Type="NotExecutable">
+              <Tag>XML deserialization</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the application has received an invalid xml response" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application deserializes the next mix response" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the next mix response should not be created" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="a deserialization exception should be thrown" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestFailsToDeserializeAnInvalidPlaySongResponse">
+          <Story Name="Playing a mix">
+            <Result IndentLevel="0" Prefix="Story is" Text="Playing a mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="enjoy the music of a certain mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to play a mix" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="deserializing an invalid XML response - one that is not a response for playing a song" Type="NotExecutable">
+              <Tag>XML deserialization</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the application has received an invalid xml response" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application deserializes the play song response" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the play song response should not be created" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="a deserialization exception should be thrown" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestFailsToDeserializeAnInvalidToggleLikedMixResponse">
+          <Story Name="Maintaining continuous audio playback">
+            <Result IndentLevel="0" Prefix="Story is" Text="Maintaining continuous audio playback" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="avoid manually switching to the next track" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="to enjoy music with the least amount of interaction" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="the system to automaticallly start playing the next track, once a track is over" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="to play a similar mix, once a mix ends" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="deserializing an invalid XML response - one that is not containing like-toggled mix" Type="NotExecutable">
+              <Tag>XML deserialization</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the application has received an invalid xml response" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application deserializes the toggle liked mix response" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the toggle liked mix response should not be created" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="a deserialization exception should be thrown" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestFailsToDeserializeANonXmlAsLoginResponse">
+          <Story Name="Authenticating an user">
+            <Result IndentLevel="0" Prefix="Story is" Text="Authenticating an user" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="keep my settings and preferences protected and synchronized with the 8tracks service" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to use the application with my user credentials" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="deserializing a non-XML response" Type="NotExecutable">
+              <Tag>XML deserialization</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the application has received a non xml response" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application deserializes the login response" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the login response should not be created" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="a deserialization exception should be thrown" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestFailsToDeserializeANonXmlAsMixesResponse">
+          <Story Name="Playing a mix">
+            <Result IndentLevel="0" Prefix="Story is" Text="Playing a mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="enjoy the music of a certain mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to play a mix" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="deserializing a non-XML response" Type="NotExecutable">
+              <Tag>XML deserialization</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the application has received a non xml response" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application deserializes the mixes response" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the mixes response should not be created" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="a deserialization exception should be thrown" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestFailsToDeserializeANonXmlAsNewPlayTokenResponse">
+          <Story Name="Playing a mix">
+            <Result IndentLevel="0" Prefix="Story is" Text="Playing a mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="enjoy the music of a certain mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to play a mix" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="deserializing a non-XML response" Type="NotExecutable">
+              <Tag>XML deserialization</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the application has received a non xml response" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application deserializes the new play token response" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the new play token response should not be created" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="a deserialization exception should be thrown" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestFailsToDeserializeANonXmlAsNextMixResponse">
+          <Story Name="Playing a mix">
+            <Result IndentLevel="0" Prefix="Story is" Text="Playing a mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="enjoy the music of a certain mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to play a mix" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="deserializing a non-XML response" Type="NotExecutable">
+              <Tag>XML deserialization</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the application has received a non xml response" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application deserializes the next mix response" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the next mix response should not be created" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="a deserialization exception should be thrown" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestFailsToDeserializeANonXmlAsPlaySongResponse">
+          <Story Name="Playing a mix">
+            <Result IndentLevel="0" Prefix="Story is" Text="Playing a mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="enjoy the music of a certain mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to play a mix" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="deserializing a non-XML response" Type="NotExecutable">
+              <Tag>XML deserialization</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the application has received a non xml response" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application deserializes the play song response" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the play song response should not be created" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="a deserialization exception should be thrown" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestFailsToDeserializeANonXmlAsToggleLikedMixResponse">
+          <Story Name="Playing a mix">
+            <Result IndentLevel="0" Prefix="Story is" Text="Playing a mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="enjoy the music of a certain mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to play a mix" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="deserializing a non-XML response" Type="NotExecutable">
+              <Tag>XML deserialization</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the application has received a non xml response" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application deserializes the toggle liked mix response" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the toggle liked mix response should not be created" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="a deserialization exception should be thrown" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestProperlyDeserializeToggleMixMixResponse">
+          <Story Name="Maintaining continuous audio playback">
+            <Result IndentLevel="0" Prefix="Story is" Text="Maintaining continuous audio playback" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="avoid manually switching to the next track" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="to enjoy music with the least amount of interaction" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="the system to automaticallly start playing the next track, once a track is over" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="to play a similar mix, once a mix ends" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="deserializing a valid XML response containing like-toggled mix" Type="NotExecutable">
+              <Tag>XML deserialization</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the application has received valid toggle liked mix xml response" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application deserializes the toggle liked mix response" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the toggle liked mix response should be created" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="a deserialization exception should not be thrown" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestProperlyDeserializeValidMixesResponse">
+          <Story Name="Playing a mix">
+            <Result IndentLevel="0" Prefix="Story is" Text="Playing a mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="enjoy the music of a certain mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to play a mix" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="deserializing a valid XML response containing a list of mixes" Type="NotExecutable">
+              <Tag>XML deserialization</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the application has received valid xml mixes response" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application deserializes the mixes response" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the mixes response should be created" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="a deserialization exception should not be thrown" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestProperlyDeserializeValidMixesResponseContainingLikedMixes">
+          <Story Name="Playing a mix">
+            <Result IndentLevel="0" Prefix="Story is" Text="Playing a mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="enjoy the music of a certain mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to play a mix" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="deserializing a valid XML response containing a list of liked mixes" Type="NotExecutable">
+              <Tag>XML deserialization</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the application has received valid xml mixes response containing liked mixes" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application deserializes the mixes response" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the mixes response should be created" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="a deserialization exception should not be thrown" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestProperlyDeserializeValidMixesResponseContainingOnlyOneLikedMixes">
+          <Story Name="Playing a mix">
+            <Result IndentLevel="0" Prefix="Story is" Text="Playing a mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="enjoy the music of a certain mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to play a mix" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="deserializing a valid XML response containing only one liked mixes" Type="NotExecutable">
+              <Tag>XML deserialization</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the application has received valid xml mixes response containing only one liked mixes" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application deserializes the mixes response" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the mixes response should be created" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="a deserialization exception should not be thrown" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestProperlyDeserializeValidNewPlayTokenResponse">
+          <Story Name="Playing a mix">
+            <Result IndentLevel="0" Prefix="Story is" Text="Playing a mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="enjoy the music of a certain mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to play a mix" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="deserializing a valid XML response containing a token for playing the mixes" Type="NotExecutable">
+              <Tag>XML deserialization</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the application has received valid new play token xml response" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application deserializes the new play token response" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the new play token response should be created" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="a deserialization exception should not be thrown" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestProperlyDeserializeValidNextMixResponse">
+          <Story Name="Playing a mix">
+            <Result IndentLevel="0" Prefix="Story is" Text="Playing a mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="enjoy the music of a certain mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to play a mix" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="deserializing a valid XML response containing next mix in the set" Type="NotExecutable">
+              <Tag>XML deserialization</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the application has received valid next mix xml response" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application deserializes the next mix response" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the next mix response should be created" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="a deserialization exception should not be thrown" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestProperlyDeserializeValidPlaySongResponse">
+          <Story Name="Playing a mix">
+            <Result IndentLevel="0" Prefix="Story is" Text="Playing a mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="enjoy the music of a certain mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to play a mix" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="deserializing a valid XML response for playing a song" Type="NotExecutable">
+              <Tag>XML deserialization</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the application has received valid play song xml response" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application deserializes the play song response" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the play song response should be created" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="a deserialization exception should not be thrown" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestProperlyDeserializeValidPlaySongResponseForEndOfMix">
+          <Story Name="Playing a mix">
+            <Result IndentLevel="0" Prefix="Story is" Text="Playing a mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="enjoy the music of a certain mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to play a mix" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="deserializing a valid XML response for playing a song, when the end of mix is reached" Type="NotExecutable">
+              <Tag>XML deserialization</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the application has received valid play song xml response end of mix" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application deserializes the play song response" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the play song response should be created" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="a deserialization exception should not be thrown" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestProperlyDeserializeValidPlaySongResponseThatDoesNotContainYear">
+          <Story Name="Playing a mix">
+            <Result IndentLevel="0" Prefix="Story is" Text="Playing a mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="enjoy the music of a certain mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to play a mix" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="deserializing a valid XML response for playing a song, year value missing" Type="NotExecutable">
+              <Tag>XML deserialization</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the application has received valid play song xml response with no year" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application deserializes the play song response" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the play song response should be created" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="a deserialization exception should not be thrown" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestProperlyDeserializeValidSuccessfulLoginResponse">
+          <Story Name="Authenticating an user">
+            <Result IndentLevel="0" Prefix="Story is" Text="Authenticating an user" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="keep my settings and preferences protected and synchronized with the 8tracks service" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to use the application with my user credentials" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="deserializing a valid XML response about successful user login" Type="NotExecutable">
+              <Tag>XML deserialization</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the application has received valid xml successful login response" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application deserializes the login response" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the login response should be created" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="a deserialization exception should not be thrown" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestProperlyDeserializeValidUnsuccessfulLoginResponse">
+          <Story Name="Authenticating an user">
+            <Result IndentLevel="0" Prefix="Story is" Text="Authenticating an user" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="keep my settings and preferences protected and synchronized with the 8tracks service" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to use the application with my user credentials" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="deserializing a valid XML response about unsuccessful user login" Type="NotExecutable">
+              <Tag>XML deserialization</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the application has received valid xml unsuccessful login response" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application deserializes the login response" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the login response should be created" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="a deserialization exception should not be thrown" Type="Passed" />
+          </Story>
+        </Method>
+      </Class>
+      <Class Name="StatefullAudioPlayerTests">
+        <Method Name="TestChangesTheVolume">
+          <Story Name="Controlling playback">
+            <Result IndentLevel="0" Prefix="Story is" Text="Controlling playback" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="avoid listening to the (parts of the) song I don't like" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="adjust the playback properties such as volume suiting my preferences and environment" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="initiate / stop the playback, etc." Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to have a control over the playback by doing fast-forward, rewind, play/stop/pause, increase/decrease volume..." Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="Changing the volume" Type="NotExecutable">
+              <Tag>Audio playback</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="there is an ongoing playback" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the volume is at 50 percent" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application issues a command to change the volume to 80 percent" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the volume should become 80 percent" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestPausesPlayback">
+          <Story Name="Controlling playback">
+            <Result IndentLevel="0" Prefix="Story is" Text="Controlling playback" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="avoid listening to the (parts of the) song I don't like" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="adjust the playback properties such as volume suiting my preferences and environment" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="initiate / stop the playback, etc." Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to have a control over the playback by doing fast-forward, rewind, play/stop/pause, increase/decrease volume..." Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="Pausing the playback" Type="NotExecutable">
+              <Tag>Audio playback</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="there is an ongoing playback" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application issues a command to pause the playback" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the state of the player should be Paused" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestPlaysMusicFromAnAudioFile">
+          <Story Name="Playing a mix">
+            <Result IndentLevel="0" Prefix="Story is" Text="Playing a mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="enjoy the music of a certain mix" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to play a mix" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="Playing audio" Type="NotExecutable">
+              <Tag>Audio playback</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="a proper path to an audio file" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application issues a command to open a file" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the state of the player should be Running" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestSkipsToPosition">
+          <Story Name="Controlling playback">
+            <Result IndentLevel="0" Prefix="Story is" Text="Controlling playback" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="avoid listening to the (parts of the) song I don't like" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="adjust the playback properties such as volume suiting my preferences and environment" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="initiate / stop the playback, etc." Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to have a control over the playback by doing fast-forward, rewind, play/stop/pause, increase/decrease volume..." Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="Skipping to a position" Type="NotExecutable">
+              <Tag>Audio playback</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="there is an ongoing playback" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the track duration is 300 seconds" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the position at 100 seconds" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application issues a command to skip to 200 second" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the current position of the playback should be 200" Type="Passed" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="Not skipping to an invalid positon" Type="NotExecutable">
+              <Tag>Audio playback</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="there is an ongoing playback" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the track duration is 300 seconds" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the position at 100 seconds" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application issues a command to skip to 400 second" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the current position of the playback should be 400" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestStopsPlayback">
+          <Story Name="Controlling playback">
+            <Result IndentLevel="0" Prefix="Story is" Text="Controlling playback" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="avoid listening to the (parts of the) song I don't like" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="adjust the playback properties such as volume suiting my preferences and environment" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="initiate / stop the playback, etc." Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to have a control over the playback by doing fast-forward, rewind, play/stop/pause, increase/decrease volume..." Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="Stopping the playback" Type="NotExecutable">
+              <Tag>Audio playback</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="there is an ongoing playback" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application issues a command to stop the playback" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the state of the player should be Stopped" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the current position of the playback should be 0" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestUnpausesPlayback">
+          <Story Name="Controlling playback">
+            <Result IndentLevel="0" Prefix="Story is" Text="Controlling playback" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="avoid listening to the (parts of the) song I don't like" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="adjust the playback properties such as volume suiting my preferences and environment" Type="NotExecutable" />
+            <Result IndentLevel="2" Prefix="And" Text="initiate / stop the playback, etc." Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="to have a control over the playback by doing fast-forward, rewind, play/stop/pause, increase/decrease volume..." Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="Unpausing the playback" Type="NotExecutable">
+              <Tag>Audio playback</Tag>
+              <Tag>Infrastructure</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="there is an ongoing playback" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the playback has been paused" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application issues a command to unpause the playback" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the state of the player should be Running" Type="Passed" />
+          </Story>
+        </Method>
+      </Class>
+      <Class Name="TrackViewModelTests">
+        <Method Name="TestDoesNotAllowMoreThanOneOngoingTrackDownload">
+          <Story Name="Downloading media content">
+            <Result IndentLevel="0" Prefix="Story is" Text="Downloading media content" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="enjoy the music offline" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="I want to save the songs or a whole playlist to external memory" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="enables downloading a track if the track is not currently being downloaded" Type="NotExecutable">
+              <Tag>Application</Tag>
+              <Tag>Downloading media content</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the track not downloaded" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the track download process starts" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the application can not download the track" Type="Passed" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="enables downloading a track if the track is not currently being downloaded" Type="NotExecutable">
+              <Tag>Application</Tag>
+              <Tag>Downloading media content</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the track download is ongoing" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the track download process finishes" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the application can download the track" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="TestDownloadsATrack">
+          <Story Name="Downloading media content">
+            <Result IndentLevel="0" Prefix="Story is" Text="Downloading media content" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="enjoy the music offline" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="listener" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="I want to save the songs or a whole playlist to external memory" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="downloading a song" Type="NotExecutable">
+              <Tag>Application</Tag>
+              <Tag>Downloading media content</Tag>
+            </Result>
+            <Result IndentLevel="4" Prefix="Given" Text="the track uri is domain.org/subdomain/some-track.mp3" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the track name is some-track-name" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the track performer is some-track-performer" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="the application issues a command to download the track" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the command is processed" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the default filename is some-track-performer - some-track-name.mp3" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the track should be downloaded from domain.org/subdomain/some-track.mp3 to anArtist - aName.ext" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the location of the track is Downloaded" Type="Passed" />
+          </Story>
+        </Method>
+      </Class>
+    </Namespace>
+  </Project>
+</StoryQRun>

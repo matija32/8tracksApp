@@ -1,0 +1,56 @@
+== Goal ==
+Problem: 8tracks service is available only through a browser, which is sometimes unconvenient (e.g. a browser has to be open always).
+Solution: make a convenient way of listening to mixes from 8tracks without using the browser, covering as much of the set of features provided by 8tracks as possible.
+
+== Stakeholders ==
+8tracks - because it's an application that promotes them and uses their services, build ontop of their API... but also they lose the oportunity to show ads.
+Listener - because they will be using the application to listen to mixes.
+Maintainers (me) - because the application should "live" also after it's being released.
+Music industry - because they want to keep track of the songs that are being listened to (for free).
+
+== User ==
+The listener listening to mixes.
+
+== User stories ==
+
+** In backlog **
+[done] As a listener, I want to play a mix, in order to enjoy the music of a certain mix.
+	[done] As a listener, I want the system to automatically go to the next song, in order to avoid manually switching to the next song and to enjoy music with the least amount of interaction.
+	[done] As a listener, I want to skip tracks, in order to avoid listening to the songs I don't like.
+	[done] As a listener, I want to FF, RW, pause/play a song, volume up/down, in order to listen to the parts of songs I like and so on.
+	
+[done] As a listener, I want to browse through the newest / popular mixes, in order to get to know the latest hits.
+	[done] As a listener, I want to be shown only a portion of all mixes at the time, in order to avoid getting overwhelmed with mixes. (pagination)
+	
+[done] As a listener, I want to search for mixes (per tags), in order to listen to / discover the ones I like the most.
+[done] As a listener, I want to mark a mix I like, in order to be able to find it later easily and replay it.
+
+[done] As a listener, I want to be able to log on to the system, in order to keep my settings and preferences protected and synchronized with the 8tracks service.
+	[done] As a listener, I want the system to be able to log me in automatically, in order to aboid doing it myself every time.
+	[done] As a listener, I want the create a new account, so that I can use all user-related features such as liked mixes.
+
+[done] As a listener, I want to be able to quickly access similar mixes, in order to keep playing the same type of music.
+
+[done] As a listener, I want the system to go to the next mix, in order to to avoid having to do it manually myself.
+
+[done] As a listener, I want to save the songs or a whole playlist to external memory, in order to listen to it later offline.
+	
+** Not in the backlog **
+As a listener, I want to be able to read comments, in order to see what others thought about a particular mix.
+As a listener, I want to be able to leave comments about a mix, in order to give feedback to the person that made the mix.
+As a listener, I want to see information about other users, in order to contact them or to listen through the mixes they made.
+	As a listener, I want to be able to follow other users, in order to be continuously updated on their newest mixes because I found their previous mixes entertaining.
+=> The social networking (comments, users) doesn't add really to the music listening experience and is used very very rarely. The UI should be as lean as possible, less is more :).
+
+	
+	As a listener, I want the system to save the songs in the MP3 format, in order for me to play it later with other, for me more convenient players or devices.
+		=> converting audio format is unnecessary and an overkill - let the media players take care of playing all the formats
+
+	As a listener, I want to save the whole mix to a WMP playlist, in order to port the mix to other devices.
+		http://social.msdn.microsoft.com/Forums/en/csharpgeneral/thread/87d0b59b-0fe4-4201-9b6d-07eca7bae0cd
+		=> let other tools make playlists for themselves, it's an overkill to conform to their format when there is no control over it.
+		
+	As a music industry, I want the system to report to me each songs that reaches 30s mark, in order to assure that the 8track service is legal.
+	=> since everything else is illegal, no need for implementing this now
+	
+	As a listener, I want to "fav" a song, in order to be able to find the particular songs I like quickly.

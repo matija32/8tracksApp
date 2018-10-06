@@ -1,0 +1,364 @@
+[8t]
+2012-09-19 00:28:30,177 [9] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+[8t]
+2012-09-19 00:36:38,111 [9] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+2012-09-19 00:37:18,745 [21] INFO  EightTracksPlayer.Communication.HttpRequestExecutor - Error received while executing a request
+System.Net.WebException: The remote server returned an error: (404) Not Found.
+   at System.Net.HttpWebRequest.GetResponse()
+   at EightTracksPlayer.Communication.HttpRequestExecutor.Execute(IRequest request) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\HttpRequestExecutor.cs:line 24
+[8t]
+2012-09-19 00:42:55,717 [8] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+2012-09-19 00:43:15,440 [10] INFO  EightTracksPlayer.Communication.HttpRequestExecutor - Error received while executing a request
+System.Net.WebException: The remote server returned an error: (404) Not Found.
+   at System.Net.HttpWebRequest.GetResponse()
+   at EightTracksPlayer.Communication.HttpRequestExecutor.Execute(IRequest request) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\HttpRequestExecutor.cs:line 24
+2012-09-19 00:43:15,592 [10] ERROR EightTracksPlayer.Communication.RequestExecutionAdapter - Error while executing a certain EightTracksPlayer.Communication.Requests.ReportMixRequest
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.Deserialize(Type requestType, String xmlResponse) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 56
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.Deserialize(Type requestType, HttpWebResponse httpWebResponse) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 67
+   at EightTracksPlayer.Communication.HttpRequestExecutor.Execute(IRequest request) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\HttpRequestExecutor.cs:line 32
+   at EightTracksPlayer.Communication.RequestExecutionAdapter.Execute(IRequest request) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\RequestExecutorAdapter.cs:line 24
+2012-09-19 00:43:57,240 [11] INFO  EightTracksPlayer.Communication.HttpRequestExecutor - Error received while executing a request
+System.Net.WebException: The remote server returned an error: (404) Not Found.
+   at System.Net.HttpWebRequest.GetResponse()
+   at EightTracksPlayer.Communication.HttpRequestExecutor.Execute(IRequest request) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\HttpRequestExecutor.cs:line 24
+[8t]
+2012-09-19 00:47:18,373 [8] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+2012-09-19 00:48:20,942 [11] ERROR EightTracksPlayer.Communication.RequestExecutionAdapter - Error while executing a certain EightTracksPlayer.Communication.Requests.ReportMixRequest
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.Deserialize(Type requestType, String xmlResponse) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 56
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.Deserialize(Type requestType, HttpWebResponse httpWebResponse) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 67
+   at EightTracksPlayer.Communication.HttpRequestExecutor.Execute(IRequest request) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\HttpRequestExecutor.cs:line 32
+   at EightTracksPlayer.Communication.RequestExecutionAdapter.Execute(IRequest request) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\RequestExecutorAdapter.cs:line 24
+[8t]
+2012-09-19 00:52:07,486 [10] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+2012-09-19 00:55:59,704 [17] ERROR EightTracksPlayer.Communication.RequestExecutionAdapter - Error while executing a certain EightTracksPlayer.Communication.Requests.ReportMixRequest
+System.Xml.XmlException: Unable to deserialize ResponseBase from the response <?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <status>200 OK</status>
+  <errors nil="true"/>
+  <notices nil="true"/>
+  <api-warning>
+    <api-warning>You didn't pass an API version, defaulting to api_version=2.</api-warning>
+  </api-warning>
+  <api-version>2</api-version>
+</response>
+ ---> System.InvalidOperationException: There is an error in XML document (2, 2). ---> System.InvalidOperationException: <response xmlns=''> was not expected.
+   at Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderResponseBase.Read7_ResponseBase()
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader)
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.Deserialize(Type requestType, String xmlResponse) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 52
+   --- End of inner exception stack trace ---
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.Deserialize(Type requestType, String xmlResponse) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 58
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.Deserialize(Type requestType, HttpWebResponse httpWebResponse) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 68
+   at EightTracksPlayer.Communication.HttpRequestExecutor.Execute(IRequest request) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\HttpRequestExecutor.cs:line 32
+   at EightTracksPlayer.Communication.RequestExecutionAdapter.Execute(IRequest request) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\RequestExecutorAdapter.cs:line 24
+2012-09-19 00:57:21,671 [23] ERROR EightTracksPlayer.Communication.RequestExecutionAdapter - Error while executing a certain EightTracksPlayer.Communication.Requests.ReportMixRequest
+System.Xml.XmlException: Unable to deserialize ResponseBase from the response <?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <status>200 OK</status>
+  <errors nil="true"/>
+  <notices nil="true"/>
+  <api-warning>
+    <api-warning>You didn't pass an API version, defaulting to api_version=2.</api-warning>
+  </api-warning>
+  <api-version>2</api-version>
+</response>
+ ---> System.InvalidOperationException: There is an error in XML document (2, 2). ---> System.InvalidOperationException: <response xmlns=''> was not expected.
+   at Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderResponseBase.Read7_ResponseBase()
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader)
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.Deserialize(Type requestType, String xmlResponse) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 52
+   --- End of inner exception stack trace ---
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.Deserialize(Type requestType, String xmlResponse) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 58
+   at EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer.Deserialize(Type requestType, HttpWebResponse httpWebResponse) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\Serialization\AggregatedResponseDeserializer.cs:line 68
+   at EightTracksPlayer.Communication.HttpRequestExecutor.Execute(IRequest request) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\HttpRequestExecutor.cs:line 32
+   at EightTracksPlayer.Communication.RequestExecutionAdapter.Execute(IRequest request) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Communication\RequestExecutorAdapter.cs:line 24
+[8t]
+2012-09-19 00:59:01,903 [10] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+[8t]
+2012-09-19 01:21:03,783 [9] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+[8t]
+2012-09-19 01:24:12,109 [9] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+[8t]
+2012-09-19 01:25:21,861 [10] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+[8t]
+2012-09-19 01:27:38,278 [9] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+[8t]
+2012-09-19 01:35:31,228 [9] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+[8t]
+2012-09-19 01:36:51,560 [9] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+[8t]
+2012-09-19 02:11:01,406 [9] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+[8t]
+2012-09-19 02:12:24,266 [9] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+[8t]
+2012-09-19 10:21:32,570 [9] INFO  EightTracksPlayer.Domain.Authenticator - User matija32@gmail.com is now logged in.
+[8t]
+2012-09-19 10:33:22,510 [9] INFO  EightTracksPlayer.Domain.Authenticator - User matija32@gmail.com is now logged in.
+[8t]
+2012-09-19 10:44:41,857 [9] INFO  EightTracksPlayer.Domain.Authenticator - User matija32@gmail.com is now logged in.
+2012-09-19 10:44:48,700 [13] INFO  EightTracksPlayer.Domain.Authenticator - User matija32@gmail.com is now logged out.
+[8t]
+[8t]
+[8t]
+[8t]
+[8t]
+[8t]
+2012-09-19 21:52:53,762 [9] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+2012-09-19 21:53:21,826 [23] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.COMException (0x80010012): The callee (server [not server application]) is not available and disappeared; all connections are invalid. The call did not execute. (Exception from HRESULT: 0x80010012 (RPC_E_SERVER_DIED_DNE))
+   at WMPLib.IWMPControls.get_currentPosition()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+2012-09-19 21:53:21,826 [21] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.COMException (0x80010012): The callee (server [not server application]) is not available and disappeared; all connections are invalid. The call did not execute. (Exception from HRESULT: 0x80010012 (RPC_E_SERVER_DIED_DNE))
+   at WMPLib.IWMPControls.get_currentPosition()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+2012-09-19 21:53:21,897 [22] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.COMException (0x80010012): The callee (server [not server application]) is not available and disappeared; all connections are invalid. The call did not execute. (Exception from HRESULT: 0x80010012 (RPC_E_SERVER_DIED_DNE))
+   at WMPLib.IWMPControls.get_currentPosition()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+2012-09-19 21:53:21,898 [16] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.COMException (0x80010012): The callee (server [not server application]) is not available and disappeared; all connections are invalid. The call did not execute. (Exception from HRESULT: 0x80010012 (RPC_E_SERVER_DIED_DNE))
+   at WMPLib.IWMPControls.get_currentPosition()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+2012-09-19 21:53:22,317 [23] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current track duration to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentTrackDuration()
+2012-09-19 21:53:22,344 [21] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+2012-09-19 21:53:22,334 [22] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+[8t]
+2012-09-19 22:03:19,060 [10] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+2012-09-19 22:03:44,046 [12] ERROR EightTracksPlayer.ViewModels.MixViewModel - Unable to go to the next song
+System.InvalidOperationException: Collection was modified; enumeration operation may not execute.
+
+Server stack trace: 
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   at System.Collections.Generic.List`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.<SelectIterator>d__7`2.MoveNext()
+   at System.Linq.Observable.<>c__DisplayClass2a8`1.<Subscribe>b__2a7(Action self)
+
+Exception rethrown at [0]: 
+   at System.ObservableExtensions.<Subscribe>b__3[TSource](Exception exception)
+   at System.Collections.Generic.AnonymousObserver`1.Error(Exception exception)
+   at System.Collections.Generic.AbstractObserver`1.OnError(Exception exception)
+   at System.Collections.Generic.AnonymousObservable`1.AutoDetachObserver.Error(Exception exception)
+   at System.Collections.Generic.AbstractObserver`1.OnError(Exception exception)
+   at System.Linq.Observable.<>c__DisplayClass2a8`1.<Subscribe>b__2a7(Action self)
+   at System.Concurrency.Scheduler.<>c__DisplayClass6.<Schedule>b__3()
+   at System.Concurrency.AsyncLock.Wait(Action action)
+
+Exception rethrown at [1]: 
+   at System.Concurrency.AsyncLock.Wait(Action action)
+   at System.Concurrency.Scheduler.<>c__DisplayClass6.<Schedule>b__2()
+   at System.Concurrency.Scheduler.<>c__DisplayClass6.<>c__DisplayClass8.<Schedule>b__5()
+   at System.Concurrency.CurrentThreadScheduler.Trampoline.Run()
+   at System.Concurrency.CurrentThreadScheduler.Schedule(Action action, TimeSpan dueTime)
+   at System.Concurrency.CurrentThreadScheduler.Schedule(Action action)
+   at System.Concurrency.Scheduler.Schedule(IScheduler scheduler, Action`1 action)
+   at System.ScheduledObserver`1.EnsureActive()
+   at System.Collections.Generic.ReplaySubject`1.OnNext(T value)
+   at EightTracksPlayer.Domain.Entities.Mix.set_CurrentTrackIndex(Int32 value) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Domain\Entities\Mix.cs:line 119
+   at EightTracksPlayer.Domain.Entities.Mix.MoveToNextTrack() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Domain\Entities\Mix.cs:line 174
+   at EightTracksPlayer.Domain.PlaybackController.NextSong() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Domain\PlaybackController.cs:line 114
+   at EightTracksPlayer.ViewModels.MixViewModel.<>c__DisplayClass13.<.ctor>b__5(Object _) in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\ViewModels\MixViewModel.cs:line 71
+2012-09-19 22:03:49,902 [22] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.COMException (0x8001010A): The message filter indicated that the application is busy. (Exception from HRESULT: 0x8001010A (RPC_E_SERVERCALL_RETRYLATER))
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+[8t]
+2012-09-19 22:06:53,621 [9] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+2012-09-19 22:07:39,001 [11] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+2012-09-19 22:07:39,043 [21] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+2012-09-19 22:07:39,026 [13] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+2012-09-19 22:07:39,043 [10] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+2012-09-19 22:07:39,002 [20] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 75
+2012-09-19 22:07:39,405 [11] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current track duration to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentTrackDuration() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 96
+2012-09-19 22:07:39,575 [20] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current track duration to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentTrackDuration() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 96
+2012-09-19 22:07:39,575 [21] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+2012-09-19 22:07:39,625 [11] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+2012-09-19 22:07:39,600 [22] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+2012-09-19 22:07:39,575 [13] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+2012-09-19 22:07:39,823 [11] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+2012-09-19 22:07:39,977 [24] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+2012-09-19 22:07:39,823 [23] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+2012-09-19 22:07:39,994 [22] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+2012-09-19 22:07:40,011 [10] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+[8t]
+2012-09-19 22:09:07,641 [9] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+2012-09-19 22:09:28,064 [21] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.COMException (0x80010012): The callee (server [not server application]) is not available and disappeared; all connections are invalid. The call did not execute. (Exception from HRESULT: 0x80010012 (RPC_E_SERVER_DIED_DNE))
+   at WMPLib.IWMPControls.get_currentPosition()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+2012-09-19 22:09:28,076 [22] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+2012-09-19 22:09:28,076 [12] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+[8t]
+2012-09-19 22:27:28,068 [10] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+2012-09-19 22:27:51,927 [13] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+2012-09-19 22:27:51,980 [21] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+2012-09-19 22:27:51,936 [11] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+2012-09-19 22:27:51,965 [12] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+2012-09-19 22:27:51,979 [14] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+2012-09-19 22:27:52,082 [12] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current track duration to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentTrackDuration()
+2012-09-19 22:27:52,061 [13] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current track duration to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentTrackDuration()
+[8t]
+2012-09-19 22:28:37,475 [9] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+2012-09-19 22:29:17,106 [14] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current track duration to 0
+System.Runtime.InteropServices.COMException (0x80010012): The callee (server [not server application]) is not available and disappeared; all connections are invalid. The call did not execute. (Exception from HRESULT: 0x80010012 (RPC_E_SERVER_DIED_DNE))
+   at WMPLib.IWMPControls.get_currentItem()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentTrackDuration()
+[8t]
+2012-09-19 22:30:17,433 [9] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+2012-09-19 22:30:47,394 [14] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current track duration to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used. The COM object was released while it was still in use on another thread.
+   at System.StubHelpers.StubHelpers.GetCOMIPFromRCW(Object objSrc, IntPtr pCPCMD, IntPtr& ppTarget, Boolean& pfNeedsRelease)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentTrackDuration()
+2012-09-19 22:30:47,422 [17] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+2012-09-19 22:30:47,422 [11] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.COMException (0x80010012): The callee (server [not server application]) is not available and disappeared; all connections are invalid. The call did not execute. (Exception from HRESULT: 0x80010012 (RPC_E_SERVER_DIED_DNE))
+   at WMPLib.IWMPControls.get_currentPosition()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+2012-09-19 22:30:47,422 [12] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+2012-09-19 22:30:47,669 [13] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()
+2012-09-19 22:30:47,669 [11] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current track duration to 0
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.StubHelpers.StubHelpers.StubRegisterRCW(Object pThis)
+   at WMPLib.IWMPPlayer4.get_controls()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentTrackDuration()
+[8t]
+2012-09-19 22:32:22,156 [10] INFO  EightTracksPlayer.Domain.Authenticator - User matija32 is now logged in.
+2012-09-19 22:32:35,339 [12] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current track duration to 0
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentTrackDuration() in C:\Users\Matija\Desktop\Dropbox\8tracksApp\8tracks Windows App\EightTracksPlayer\Media\WmpAudioPlayerAdapter.cs:line 96
+2012-09-19 22:32:52,095 [14] INFO  EightTracksPlayer.Media.WmpAudioPlayerAdapter - Error received from the underlying windows media player, setting the current position to 0
+System.Runtime.InteropServices.COMException (0x80010012): The callee (server [not server application]) is not available and disappeared; all connections are invalid. The call did not execute. (Exception from HRESULT: 0x80010012 (RPC_E_SERVER_DIED_DNE))
+   at WMPLib.IWMPControls.get_currentPosition()
+   at EightTracksPlayer.Media.WmpAudioPlayerAdapter.get_CurrentPosition()

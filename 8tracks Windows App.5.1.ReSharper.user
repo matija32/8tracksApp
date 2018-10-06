@@ -1,0 +1,2587 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC/d:Utils/d:Browsing/f:FileSystemBrowser.cs" caret="591" fromTop="0" />
+      <File id="759539D8-A3F0-4369-B01C-0CC55FF0A052/d:Stubs/f:WebAccessProxyStub.cs" caret="530" fromTop="10" />
+      <File id="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC/d:Domain/d:Entities/f:MixFilter.cs" caret="102" fromTop="4" />
+      <File id="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC/d:Communication/f:RequestFactory.cs" caret="1495" fromTop="1" />
+      <File id="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC/d:Utils/f:StringUtils.cs" caret="1740" fromTop="10" />
+      <File id="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC/d:Utils/f:Settings.cs" caret="3819" fromTop="16" />
+      <File id="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC/d:Utils/d:ViewExtensions/f:WatermarkHelper.cs" caret="572" fromTop="16" />
+      <File id="EB805A31-9271-469E-B2F3-F17516D7FEE0/d:Views/f:MainWindow.xaml.cs" caret="517" fromTop="17" />
+      <File id="EB805A31-9271-469E-B2F3-F17516D7FEE0/d:Views/d:Themes/f:WindowStyle.xaml.cs" caret="2544" fromTop="10" />
+      <File id="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC/d:Communication/d:Requests/f:MixesRequest.cs" caret="2215" fromTop="45" />
+      <File id="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC/d:Communication/d:Responses/f:MixesResponse.cs" caret="625" fromTop="19" />
+      <File id="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC/d:ViewModels/f:PlaybackViewModel.cs" caret="9374" fromTop="174" />
+      <File id="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC/d:Communication/d:Responses/d:SupportingElements/f:MixElement.cs" caret="1265" fromTop="12" />
+      <File id="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC/d:Communication/d:Serialization/f:AggregatedResponseDeserializer.cs" caret="3957" fromTop="18" />
+      <File id="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC/d:Domain/d:Entities/f:Mix.cs" caret="2437" fromTop="15" />
+      <File id="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC/d:Domain/f:MediaLibraryBrowser.cs" caret="3734" fromTop="13" />
+      <File id="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC/d:Utils/d:Browsing/f:IWebAccessProxy.cs" caret="316" fromTop="9" />
+      <File id="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC/d:Utils/d:Browsing/f:FileLocation.cs" caret="92" fromTop="4" />
+      <File id="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC/d:Communication/d:Requests/f:ReportMixRequest.cs" caret="547" fromTop="15" />
+      <File id="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC/d:ViewModels/f:MainWindowViewModel.cs" caret="0" fromTop="0" />
+      <File id="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC/d:ViewModels/f:MediaBrowserViewModel.cs" caret="5023" fromTop="0" />
+      <File id="759539D8-A3F0-4369-B01C-0CC55FF0A052/f:MediaBrowserViewModelTests.cs" caret="0" fromTop="0" />
+      <File id="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC/d:ViewModels/f:MixViewModel.cs" caret="3280" fromTop="20" />
+      <File id="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC/d:ViewModels/f:TrackViewModel.cs" caret="3083" fromTop="38" />
+      <File id="EB805A31-9271-469E-B2F3-F17516D7FEE0/d:Views/f:AboutWindow.xaml" caret="605" fromTop="10" />
+      <File id="EB805A31-9271-469E-B2F3-F17516D7FEE0/d:Views/f:MainWindow.xaml" caret="541" fromTop="9" />
+      <File id="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC/d:Communication/f:HttpRequestExecutor.cs" caret="1212" fromTop="21" />
+      <File id="EB805A31-9271-469E-B2F3-F17516D7FEE0/f:app.config" caret="1669" fromTop="20" />
+      <File id="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC/d:Communication/f:RequestExecutorAdapter.cs" caret="836" fromTop="21" />
+      <File id="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC/d:Utils/d:Browsing/f:WebAccessProxy.cs" caret="1028" fromTop="7" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="EB805A31-9271-469E-B2F3-F17516D7FEE0/d:Views/f:MainWindow.xaml" caret="9381" fromTop="4" />
+      <File id="EB805A31-9271-469E-B2F3-F17516D7FEE0/d:Views/f:MainWindow.xaml" caret="9234" fromTop="3" />
+      <File id="EB805A31-9271-469E-B2F3-F17516D7FEE0/d:Views/f:MainWindow.xaml" caret="26447" fromTop="5" />
+      <File id="EB805A31-9271-469E-B2F3-F17516D7FEE0/d:Views/f:AboutWindow.xaml" caret="2145" fromTop="5" />
+      <File id="EB805A31-9271-469E-B2F3-F17516D7FEE0/d:Views/f:AboutWindow.xaml" caret="2706" fromTop="6" />
+      <File id="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC/d:Utils/d:Browsing/f:WebAccessProxy.cs" caret="3144" fromTop="35" />
+      <File id="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC/d:Utils/d:Browsing/f:WebAccessProxy.cs" caret="3396" fromTop="27" />
+      <File id="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC/d:Utils/d:Browsing/f:WebAccessProxy.cs" caret="3569" fromTop="34" />
+      <File id="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC/d:Utils/d:Browsing/f:WebAccessProxy.cs" caret="784" fromTop="19" />
+      <File id="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC/d:Utils/d:Browsing/f:WebAccessProxy.cs" caret="1953" fromTop="22" />
+      <File id="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC/d:Utils/d:Browsing/f:WebAccessProxy.cs" caret="2812" fromTop="11" />
+      <File id="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC/d:Communication/d:Requests/f:ReportMixRequest.cs" caret="768" fromTop="29" />
+      <File id="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC/d:Communication/d:Requests/f:ReportMixRequest.cs" caret="431" fromTop="15" />
+      <File id="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC/d:Communication/d:Requests/f:ReportMixRequest.cs" caret="222" fromTop="8" />
+      <File id="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC/d:ViewModels/f:TrackViewModel.cs" caret="1537" fromTop="6" />
+      <File id="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC/d:ViewModels/f:TrackViewModel.cs" caret="1496" fromTop="6" />
+      <File id="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC/d:ViewModels/f:TrackViewModel.cs" caret="2107" fromTop="17" />
+      <File id="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC/d:ViewModels/f:MixViewModel.cs" caret="11238" fromTop="18" />
+      <File id="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC/d:ViewModels/f:TrackViewModel.cs" caret="3099" fromTop="38" />
+      <File id="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC/d:ViewModels/f:TrackViewModel.cs" caret="3362" fromTop="40" />
+      <File id="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC/d:ViewModels/f:MixViewModel.cs" caret="11361" fromTop="22" />
+      <File id="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC/d:ViewModels/f:TrackViewModel.cs" caret="2441" fromTop="17" />
+      <File id="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC/d:ViewModels/f:TrackViewModel.cs" caret="2985" fromTop="30" />
+      <File id="EB805A31-9271-469E-B2F3-F17516D7FEE0/d:Views/f:AboutWindow.xaml" caret="605" fromTop="10" />
+      <File id="EB805A31-9271-469E-B2F3-F17516D7FEE0/d:Views/f:MainWindow.xaml" caret="541" fromTop="9" />
+      <File id="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC/d:Communication/f:HttpRequestExecutor.cs" caret="1280" fromTop="21" />
+      <File id="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC/d:Communication/f:HttpRequestExecutor.cs" caret="970" fromTop="18" />
+      <File id="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC/d:Communication/f:HttpRequestExecutor.cs" caret="1211" fromTop="21" />
+      <File id="A96049BF-CA52-4124-B6D6-BAD5FF73D9AC/d:Communication/f:HttpRequestExecutor.cs" caret="1246" fromTop="23" />
+      <File id="EB805A31-9271-469E-B2F3-F17516D7FEE0/f:app.config" caret="1630" fromTop="18" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir>C:\Program Files (x86)\NUnit 2.6\bin\net-2.0\</NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="Console`0" priority="50" />
+      <Item value="string" priority="198" />
+      <Item value="response" priority="19" />
+      <Item value="Services" priority="0" />
+      <Item value="Util" priority="0" />
+      <Item value="using" priority="21" />
+      <Item value="System" priority="15" />
+      <Item value="Runtime" priority="0" />
+      <Item value="Serialization" priority="1" />
+      <Item value="private" priority="219" />
+      <Item value="public" priority="257" />
+      <Item value="static" priority="15" />
+      <Item value="void" priority="99" />
+      <Item value="Get`0" priority="1" />
+      <Item value="return" priority="173" />
+      <Item value="PlayAudioFileProgram`0" priority="2" />
+      <Item value="program" priority="1" />
+      <Item value="new" priority="309" />
+      <Item value="PlayAudioFileProgram" priority="0" />
+      <Item value="Media" priority="3" />
+      <Item value="SoundPlayer`0" priority="0" />
+      <Item value="player" priority="7" />
+      <Item value="SoundPlayer" priority="0" />
+      <Item value="DllImport" priority="0" />
+      <Item value="file" priority="0" />
+      <Item value="AudioFileReader`0" priority="1" />
+      <Item value="Mp3FileReader`0" priority="0" />
+      <Item value="response`0" priority="2" />
+      <Item value="TextReader`0" priority="2" />
+      <Item value="re" priority="3" />
+      <Item value="null" priority="56" />
+      <Item value="Xml" priority="0" />
+      <Item value="ApiWarnings" priority="1" />
+      <Item value="bool" priority="62" />
+      <Item value="AttributeName" priority="0" />
+      <Item value="OptionalElement`0" priority="0" />
+      <Item value="NilableElement`0" priority="0" />
+      <Item value="AvatarUrls`0" priority="1" />
+      <Item value="User`0" priority="1" />
+      <Item value="CoverUrls`0" priority="0" />
+      <Item value="int" priority="77" />
+      <Item value="Mix`0" priority="45" />
+      <Item value="Errors`0" priority="1" />
+      <Item value="Notices`0" priority="0" />
+      <Item value="ApiWarning`0" priority="2" />
+      <Item value="typeof" priority="14" />
+      <Item value="TypeName" priority="0" />
+      <Item value="XmlAttribute" priority="1" />
+      <Item value="XmlElement" priority="0" />
+      <Item value="value" priority="25" />
+      <Item value="PageNumber" priority="2" />
+      <Item value="String`0" priority="55" />
+      <Item value="MixesResponse`0" priority="14" />
+      <Item value="Notice`0" priority="0" />
+      <Item value="Error`0" priority="1" />
+      <Item value="errorsField" priority="0" />
+      <Item value="Length" priority="3" />
+      <Item value="noticesField" priority="0" />
+      <Item value="Notices" priority="0" />
+      <Item value="enum" priority="1" />
+      <Item value="ResponseStatusEnum`0" priority="11" />
+      <Item value="switch" priority="1" />
+      <Item value="statusString" priority="0" />
+      <Item value="case" priority="4" />
+      <Item value="default" priority="0" />
+      <Item value="ResponseStatuses`0" priority="0" />
+      <Item value="XmlTypeMapping`0" priority="0" />
+      <Item value="StatusEncoder`0" priority="0" />
+      <Item value="ResponseStatusEncoder`0" priority="0" />
+      <Item value="statusField" priority="1" />
+      <Item value="TestFixture" priority="0" />
+      <Item value="Test" priority="5" />
+      <Item value="StoryQ" priority="0" />
+      <Item value="Story`0" priority="1" />
+      <Item value="BaseResponse`0" priority="2" />
+      <Item value="true" priority="57" />
+      <Item value="false" priority="74" />
+      <Item value="ADeserializationException_Thrown`0" priority="0" />
+      <Item value="Environment`0" priority="2" />
+      <Item value="TestFixtureSetUp" priority="1" />
+      <Item value="properMixedXmlResponse" priority="3" />
+      <Item value="properNewPlayTokenResponse" priority="3" />
+      <Item value="playingAMixStory" priority="0" />
+      <Item value="Feature`0" priority="21" />
+      <Item value="Assert`0" priority="52" />
+      <Item value="isCreated" priority="1" />
+      <Item value="mixes" priority="0" />
+      <Item value="mixesResponse" priority="23" />
+      <Item value="SetUp" priority="1" />
+      <Item value="SetUpFixture" priority="0" />
+      <Item value="responseString" priority="10" />
+      <Item value="newPlayTokenResponse" priority="10" />
+      <Item value="Is`0" priority="45" />
+      <Item value="playingAMix" priority="8" />
+      <Item value="Exception`0" priority="12" />
+      <Item value="exception" priority="3" />
+      <Item value="NewPlayTokenResponse`0" priority="9" />
+      <Item value="try" priority="10" />
+      <Item value="this" priority="137" />
+      <Item value="StreamReader`0" priority="0" />
+      <Item value="streamReader" priority="2" />
+      <Item value="playMixResponse" priority="4" />
+      <Item value="PlayMixResponse`0" priority="7" />
+      <Item value="properPlayMixResponse" priority="2" />
+      <Item value="throw" priority="5" />
+      <Item value="Exception" priority="1" />
+      <Item value="IsNullable" priority="11" />
+      <Item value="XmlAttributeOverrides`0" priority="0" />
+      <Item value="DefaultValue" priority="1" />
+      <Item value="XmlSchemaValidator`0" priority="0" />
+      <Item value="xmlDeserializationEvents" priority="2" />
+      <Item value="XmlDeserializationEvents" priority="0" />
+      <Item value="ResponseDeserializer`0" priority="0" />
+      <Item value="serializer" priority="7" />
+      <Item value="Responses" priority="1" />
+      <Item value="SerializationException" priority="0" />
+      <Item value="e" priority="37" />
+      <Item value="newPlayTokenSerializer" priority="0" />
+      <Item value="serializer_UnknownAttribute`0" priority="1" />
+      <Item value="playMixSerializer" priority="0" />
+      <Item value="mixesSerializer" priority="1" />
+      <Item value="Errors" priority="0" />
+      <Item value="if" priority="72" />
+      <Item value="double" priority="10" />
+      <Item value="Track`0" priority="16" />
+      <Item value="SettingsBindableAttribute`0" priority="1" />
+      <Item value="Set`0" priority="0" />
+      <Item value="set" priority="1" />
+      <Item value="PairwiseAttribute`0" priority="1" />
+      <Item value="httpWebResponse" priority="7" />
+      <Item value="responseSteam" priority="0" />
+      <Item value="deserializeMixes`0" priority="3" />
+      <Item value="deserializeMixesInternal`0" priority="0" />
+      <Item value="Stream`0" priority="2" />
+      <Item value="ResponseSerializerBase`0" priority="2" />
+      <Item value="protected" priority="16" />
+      <Item value="XmlReader`0" priority="2" />
+      <Item value="reader" priority="6" />
+      <Item value="deserializePlayMixResponse`0" priority="2" />
+      <Item value="deserializeNewPlayToken`0" priority="1" />
+      <Item value="request" priority="32" />
+      <Item value="playingAMixFeature" priority="1" />
+      <Item value="Tags`0" priority="21" />
+      <Item value="xmlDeserializationTag" priority="2" />
+      <Item value="const" priority="19" />
+      <Item value="httpWebRequests" priority="0" />
+      <Item value="infrastructureTag" priority="2" />
+      <Item value="as" priority="3" />
+      <Item value="requestFactory" priority="32" />
+      <Item value="RequestFactory`0" priority="4" />
+      <Item value="apiKey" priority="14" />
+      <Item value="readonly" priority="2" />
+      <Item value="apiKeyValue" priority="11" />
+      <Item value="Condition`0" priority="0" />
+      <Item value="isProperlyCreated" priority="1" />
+      <Item value="HttpWebRequest`0" priority="5" />
+      <Item value="method" priority="0" />
+      <Item value="assertRequestCreated`0" priority="0" />
+      <Item value="AnyConditions`0" priority="3" />
+      <Item value="NewPlayTokenCreationTest`0" priority="0" />
+      <Item value="playToken" priority="13" />
+      <Item value="mixId" priority="13" />
+      <Item value="expectedUri" priority="3" />
+      <Item value="baseUrl" priority="1" />
+      <Item value="webRequest" priority="4" />
+      <Item value="HttpWebRequest" priority="0" />
+      <Item value="url" priority="4" />
+      <Item value="webReq" priority="0" />
+      <Item value="ToStringParameterFormat" priority="1" />
+      <Item value="Int32`0" priority="10" />
+      <Item value="ParameterFormatAttribute`0" priority="1" />
+      <Item value="number" priority="0" />
+      <Item value="object" priority="10" />
+      <Item value="httpWebRequest" priority="9" />
+      <Item value="IRequest`0" priority="9" />
+      <Item value="RequestBase`0" priority="11" />
+      <Item value="host" priority="6" />
+      <Item value="MixesRequest`0" priority="17" />
+      <Item value="NewPlayTokenRequest`0" priority="5" />
+      <Item value="PlayMixRequest`0" priority="4" />
+      <Item value="PlayMixRequest" priority="0" />
+      <Item value="IResponse`0" priority="10" />
+      <Item value="mixesRequest" priority="10" />
+      <Item value="webResponse" priority="1" />
+      <Item value="HttpWebResponse" priority="0" />
+      <Item value="WebResponse`0" priority="1" />
+      <Item value="Type`0" priority="6" />
+      <Item value="XmlSerializer`0" priority="1" />
+      <Item value="Dictionary&lt;Type,XmlSerializer&gt;" priority="0" />
+      <Item value="ResponseDeserializersRepository`0" priority="1" />
+      <Item value="serializers" priority="3" />
+      <Item value="foreach" priority="2" />
+      <Item value="requestType" priority="3" />
+      <Item value="StringResponseDeserializer`0" priority="0" />
+      <Item value="repository" priority="1" />
+      <Item value="IRequestHandler`0" priority="0" />
+      <Item value="IRequestExecutor`0" priority="7" />
+      <Item value="AggregatedResponseDeserializer`0" priority="2" />
+      <Item value="AggregatedResponseDeserializer" priority="0" />
+      <Item value="deserializer" priority="2" />
+      <Item value="xmlResponse" priority="2" />
+      <Item value="TypifiedRequestExecutorWrapper`0" priority="1" />
+      <Item value="requestExecutor" priority="55" />
+      <Item value="HttpWebResponse`0" priority="1" />
+      <Item value="newPlayTokenRequest" priority="4" />
+      <Item value="playMixRequest" priority="3" />
+      <Item value="NextSongRequest`0" priority="6" />
+      <Item value="PlaySongResponse`0" priority="9" />
+      <Item value="nextSongRequest" priority="2" />
+      <Item value="ResponseDeserializersRepositoryTests`0" priority="0" />
+      <Item value="ResponseDeserializersRepository" priority="0" />
+      <Item value="Features`0" priority="23" />
+      <Item value="xmlWriter" priority="0" />
+      <Item value="XmlWriter`0" priority="0" />
+      <Item value="StringWriter`0" priority="0" />
+      <Item value="stringWriter" priority="0" />
+      <Item value="StringWriter" priority="0" />
+      <Item value="StringBuilder" priority="0" />
+      <Item value="Dictionary&lt;string,IResponse&gt;" priority="0" />
+      <Item value="responses" priority="4" />
+      <Item value="TestDelegate`0" priority="1" />
+      <Item value="testDelegate" priority="1" />
+      <Item value="TestDelegate" priority="0" />
+      <Item value="aggregatedResponseDeserializer" priority="0" />
+      <Item value="playSongResponse" priority="8" />
+      <Item value="Playback" priority="0" />
+      <Item value="x" priority="60" />
+      <Item value="is" priority="6" />
+      <Item value="cmd" priority="5" />
+      <Item value="Event`0" priority="0" />
+      <Item value="a" priority="2" />
+      <Item value="_" priority="0" />
+      <Item value="RxApp`0" priority="12" />
+      <Item value="RxBlogTest" priority="0" />
+      <Item value="ReactiveUI" priority="3" />
+      <Item value="Windows" priority="1" />
+      <Item value="Threading" priority="1" />
+      <Item value="WpfApplication1" priority="0" />
+      <Item value="Xaml" priority="0" />
+      <Item value="i" priority="1" />
+      <Item value="Routing" priority="0" />
+      <Item value="IAudioPlayer`0" priority="6" />
+      <Item value="filgraphManager" priority="4" />
+      <Item value="SetPlayerCollaborators`0" priority="1" />
+      <Item value="DxAudioPlayerTests`0" priority="0" />
+      <Item value="override" priority="4" />
+      <Item value="virtual" priority="0" />
+      <Item value="basicAudio" priority="6" />
+      <Item value="DynamicMock" priority="1" />
+      <Item value="dynamicMock" priority="0" />
+      <Item value="Mockery" priority="1" />
+      <Item value="mockery" priority="2" />
+      <Item value="IMediaControl`0" priority="1" />
+      <Item value="IMediaPosition`0" priority="3" />
+      <Item value="IBasicAudio`0" priority="3" />
+      <Item value="SetUpAttribute`0" priority="1" />
+      <Item value="DxAudioPlayerStub`0" priority="0" />
+      <Item value="dxAudioPlayer" priority="11" />
+      <Item value="DxAudioPlayer" priority="0" />
+      <Item value="audioPlaybackTag" priority="3" />
+      <Item value="MediaStatus`0" priority="8" />
+      <Item value="properAudioFilePath" priority="2" />
+      <Item value="audioFilePath" priority="2" />
+      <Item value="mediaControl" priority="16" />
+      <Item value="MediaPosition" priority="0" />
+      <Item value="mediaPosition" priority="6" />
+      <Item value="media" priority="0" />
+      <Item value="mediaStatus" priority="3" />
+      <Item value="Is" priority="5" />
+      <Item value="exceptionThrown" priority="3" />
+      <Item value="catch" priority="11" />
+      <Item value="DxAudioPlayer`0" priority="2" />
+      <Item value="Mockery`0" priority="0" />
+      <Item value="TearDownAttribute`0" priority="0" />
+      <Item value="MediaControlStub`0" priority="1" />
+      <Item value="runIssued" priority="1" />
+      <Item value="Run`0" priority="0" />
+      <Item value="pauseIssued" priority="0" />
+      <Item value="Stop`0" priority="0" />
+      <Item value="stopIssued" priority="0" />
+      <Item value="shouldPlayNew" priority="0" />
+      <Item value="else" priority="17" />
+      <Item value="position" priority="1" />
+      <Item value="MediaPositionStub" priority="0" />
+      <Item value="controllingPlayback" priority="8" />
+      <Item value="ThereIsAnOngoingPlayback`0" priority="3" />
+      <Item value="TheApplicationIssuesACommandToStopThePlayback`0" priority="1" />
+      <Item value="ThePlayer_StopPlaybackViaDirectX`0" priority="1" />
+      <Item value="TheStateOfThePlayerShouldBe_`0" priority="1" />
+      <Item value="IMediaEvent`0" priority="0" />
+      <Item value="IMediaEventEx`0" priority="0" />
+      <Item value="mediaEvent" priority="1" />
+      <Item value="mediaEventEx" priority="5" />
+      <Item value="WinMessageEventArgs`0" priority="0" />
+      <Item value="DxMessageEventArgs`0" priority="1" />
+      <Item value="MS" priority="0" />
+      <Item value="message" priority="2" />
+      <Item value="DxMessageHandler" priority="1" />
+      <Item value="messageHandler" priority="2" />
+      <Item value="IntPtr`0" priority="0" />
+      <Item value="base" priority="5" />
+      <Item value="audio" priority="2" />
+      <Item value="Audio" priority="0" />
+      <Item value="EventHandler" priority="0" />
+      <Item value="Unknown" priority="1" />
+      <Item value="NewPlayTokenRequest" priority="0" />
+      <Item value="RequestFactory" priority="2" />
+      <Item value="HttpRequestExecutor`0" priority="6" />
+      <Item value="SongEnded" priority="1" />
+      <Item value="SongEndedEventArgs" priority="0" />
+      <Item value="mixesRequst" priority="0" />
+      <Item value="PlayNextSong`0" priority="0" />
+      <Item value="playSongReponse" priority="6" />
+      <Item value="mixesId" priority="0" />
+      <Item value="Nullable" priority="0" />
+      <Item value="properPlaySongResponse2" priority="0" />
+      <Item value="DefaultValueAttribute`0" priority="0" />
+      <Item value="year" priority="0" />
+      <Item value="audioUri" priority="3" />
+      <Item value="wplayer" priority="0" />
+      <Item value="Thread`0" priority="16" />
+      <Item value="WmpAudioPlayer`0" priority="0" />
+      <Item value="windowsMediaPlayer" priority="15" />
+      <Item value="Play`0" priority="2" />
+      <Item value="status" priority="5" />
+      <Item value="Paused" priority="4" />
+      <Item value="Stopped" priority="2" />
+      <Item value="positionInSeconds" priority="6" />
+      <Item value="List&lt;Track&gt;" priority="0" />
+      <Item value="track" priority="27" />
+      <Item value="tracks" priority="5" />
+      <Item value="trackMarker" priority="1" />
+      <Item value="Status" priority="7" />
+      <Item value="audioPlayer" priority="30" />
+      <Item value="Running" priority="2" />
+      <Item value="currentPosition" priority="2" />
+      <Item value="currentPositionObservable" priority="4" />
+      <Item value="CurrentPosition" priority="4" />
+      <Item value="DxAudioPlayerAdapter`0" priority="2" />
+      <Item value="NUnit" priority="0" />
+      <Item value="Framework" priority="0" />
+      <Item value="var" priority="13" />
+      <Item value="EventLoopScheduler`0" priority="0" />
+      <Item value="origSched" priority="0" />
+      <Item value="IEnableLogger`0" priority="1" />
+      <Item value="trackIndex" priority="5" />
+      <Item value="ReactiveValidatedObject`0" priority="1" />
+      <Item value="CurrentTrackIndex" priority="12" />
+      <Item value="GetTrack`0" priority="0" />
+      <Item value="DateTime`0" priority="8" />
+      <Item value="MainWindowViewModel`0" priority="4" />
+      <Item value="IPlaybackController`0" priority="2" />
+      <Item value="interface" priority="1" />
+      <Item value="PlaybackController`0" priority="10" />
+      <Item value="AudioPlayerStateMonitor`0" priority="0" />
+      <Item value="AudioPlayerStateMonitor" priority="0" />
+      <Item value="WmpAudioPlayerAdapter`0" priority="4" />
+      <Item value="mixesResponses" priority="0" />
+      <Item value="ReactiveCollection&lt;MixElement&gt;" priority="0" />
+      <Item value="mixesElements" priority="2" />
+      <Item value="Linq" priority="3" />
+      <Item value="Author" priority="2" />
+      <Item value="MixElement`0" priority="2" />
+      <Item value="Created" priority="0" />
+      <Item value="mixElement" priority="15" />
+      <Item value="Name" priority="12" />
+      <Item value="MixId" priority="2" />
+      <Item value="IEnumerable" priority="1" />
+      <Item value="mix" priority="35" />
+      <Item value="Track" priority="3" />
+      <Item value="Uri" priority="4" />
+      <Item value="audioPlayerProxy" priority="11" />
+      <Item value="PlayCurrentTrack`0" priority="1" />
+      <Item value="currentMix" priority="40" />
+      <Item value="CoverUri" priority="2" />
+      <Item value="Required" priority="8" />
+      <Item value="Start" priority="7" />
+      <Item value="ReactiveCommand" priority="3" />
+      <Item value="playbackController" priority="72" />
+      <Item value="ObservableCollectionMixin`0" priority="2" />
+      <Item value="_CurrentMix" priority="6" />
+      <Item value="ReactiveCommand`0" priority="9" />
+      <Item value="PlaybackController" priority="3" />
+      <Item value="Mix" priority="9" />
+      <Item value="IObservable" priority="13" />
+      <Item value="CurrentMix" priority="12" />
+      <Item value="ThreadStaticAttribute`0" priority="1" />
+      <Item value="_AppDomain`0" priority="2" />
+      <Item value="ListObservable" priority="0" />
+      <Item value="Subject" priority="5" />
+      <Item value="Subject&lt;int&gt;" priority="1" />
+      <Item value="TimeoutException`0" priority="0" />
+      <Item value="endOfStream" priority="0" />
+      <Item value="SkipTo`0" priority="0" />
+      <Item value="_WMPOCXEvents_PlayStateChangeEventHandler`0" priority="0" />
+      <Item value="EndOfStreamReached" priority="3" />
+      <Item value="EndOfStreamReachedEventArgs" priority="2" />
+      <Item value="Management.Instrumentation" priority="0" />
+      <Item value="CurrentPositionObservable" priority="0" />
+      <Item value="_TimeRemaining" priority="3" />
+      <Item value="TimeSpan`0" priority="8" />
+      <Item value="BaseAudioPlayer" priority="2" />
+      <Item value="CurrentTrackDuration" priority="3" />
+      <Item value="statefullAudioPlayer" priority="4" />
+      <Item value="AudioPlayerStub`0" priority="3" />
+      <Item value="TestScheduler`0" priority="3" />
+      <Item value="IsPlayIssued" priority="0" />
+      <Item value="IsStopIssued" priority="0" />
+      <Item value="StatefullAudioPlayer`0" priority="0" />
+      <Item value="RequestExecutorStub`0" priority="1" />
+      <Item value="requestExecutorStub" priority="0" />
+      <Item value="AudioPlayerStub" priority="1" />
+      <Item value="RequestExecutorStub" priority="0" />
+      <Item value="Performer" priority="5" />
+      <Item value="Uri`0" priority="3" />
+      <Item value="aMix" priority="15" />
+      <Item value="List" priority="6" />
+      <Item value="Response" priority="0" />
+      <Item value="index" priority="4" />
+      <Item value="EnvironmentVariableTarget`0" priority="0" />
+      <Item value="SetElement" priority="9" />
+      <Item value="TrackElement" priority="10" />
+      <Item value="Url" priority="8" />
+      <Item value="prop" priority="0" />
+      <Item value="propg" priority="0" />
+      <Item value="GoToNextTrack" priority="5" />
+      <Item value="canExecute" priority="1" />
+      <Item value="scheduler" priority="1" />
+      <Item value="timeRemaining" priority="1" />
+      <Item value="TimestampAttribute`0" priority="0" />
+      <Item value="Observable`0" priority="9" />
+      <Item value="IndexOutOfRangeException`0" priority="1" />
+      <Item value="ReactiveAsyncCommand`0" priority="12" />
+      <Item value="domainTag" priority="2" />
+      <Item value="PresentationTraceLevel`0" priority="0" />
+      <Item value="WindowState`0" priority="0" />
+      <Item value="WindowState" priority="0" />
+      <Item value="browsingMixes" priority="4" />
+      <Item value="mixesList" priority="1" />
+      <Item value="MixesElement" priority="1" />
+      <Item value="MixElement" priority="15" />
+      <Item value="CoverUrls" priority="1" />
+      <Item value="CoverUrlsElement" priority="2" />
+      <Item value="UserElement" priority="5" />
+      <Item value="Properties" priority="4" />
+      <Item value="Resources`0" priority="3" />
+      <Item value="notifyIcon" priority="4" />
+      <Item value="Info" priority="1" />
+      <Item value="p" priority="0" />
+      <Item value="mixesObservable" priority="0" />
+      <Item value="XmlWriterTraceListener`0" priority="7" />
+      <Item value="thisInstance" priority="0" />
+      <Item value="StopwatchScheduler`0" priority="0" />
+      <Item value="ReactiveCollection" priority="0" />
+      <Item value="_CurrentTracks" priority="2" />
+      <Item value="CurrentTracks" priority="0" />
+      <Item value="char" priority="3" />
+      <Item value="ReactiveCollectionMixins`0" priority="0" />
+      <Item value="Scheduler`0" priority="2" />
+      <Item value="ReactiveObjectTestMixin`0" priority="0" />
+      <Item value="ICloneable`0" priority="2" />
+      <Item value="GetLatestMixes" priority="4" />
+      <Item value="ReactiveAsyncCommand" priority="16" />
+      <Item value="_LatestMixes" priority="0" />
+      <Item value="WrapWithOverflow" priority="0" />
+      <Item value="Binding`0" priority="2" />
+      <Item value="ItemContainerStyle" priority="0" />
+      <Item value="ContentTemplate" priority="2" />
+      <Item value="IsMouseDirectlyOver" priority="0" />
+      <Item value="T`0" priority="0" />
+      <Item value="Icon" priority="0" />
+      <Item value="Application" priority="0" />
+      <Item value="CanResizeWithGrip" priority="0" />
+      <Item value="Manual" priority="0" />
+      <Item value="SemiBold" priority="1" />
+      <Item value="Play64.png" priority="0" />
+      <Item value="Background" priority="0" />
+      <Item value="Transparent" priority="0" />
+      <Item value="PlayMix" priority="2" />
+      <Item value="selectedMixIndex" priority="1" />
+      <Item value="selectedMix" priority="2" />
+      <Item value="Window" priority="1" />
+      <Item value="selectedMixObj" priority="0" />
+      <Item value="MixViewModel`0" priority="13" />
+      <Item value="HoveredMixItemButtonTemplate" priority="0" />
+      <Item value="Content" priority="2" />
+      <Item value="Model" priority="25" />
+      <Item value="mixModel" priority="7" />
+      <Item value="IReactiveCommand`0" priority="5" />
+      <Item value="Play" priority="5" />
+      <Item value="Like" priority="0" />
+      <Item value="Unlike" priority="0" />
+      <Item value="Auto" priority="0" />
+      <Item value="ToogleLike" priority="1" />
+      <Item value="XamlGeneratedNamespace" priority="1" />
+      <Item value="UnlikeMix" priority="0" />
+      <Item value="currentMixObservable" priority="7" />
+      <Item value="Subject&lt;Mix&gt;" priority="0" />
+      <Item value="Visible" priority="1" />
+      <Item value="mediaLibraryBrowsingTag" priority="0" />
+      <Item value="MediaLibraryBrowser`0" priority="1" />
+      <Item value="IMediaLibraryBrowser`0" priority="4" />
+      <Item value="mediaLibraryBrowser" priority="34" />
+      <Item value="MediaLibraryBrowser" priority="4" />
+      <Item value="IAuthenticator`0" priority="3" />
+      <Item value="Autheticator`0" priority="4" />
+      <Item value="username" priority="14" />
+      <Item value="password" priority="11" />
+      <Item value="TypifiedRequestExecutor" priority="1" />
+      <Item value="loginResponse" priority="11" />
+      <Item value="httpWebRequestsTag" priority="0" />
+      <Item value="LoginRequest" priority="1" />
+      <Item value="baseUri" priority="4" />
+      <Item value="LoginRequest`0" priority="5" />
+      <Item value="loginRequest" priority="4" />
+      <Item value="ref" priority="0" />
+      <Item value="XmlSerializer" priority="0" />
+      <Item value="type" priority="0" />
+      <Item value="LoginResponseBase`0" priority="0" />
+      <Item value="ResponseBase`0" priority="5" />
+      <Item value="WebException`0" priority="0" />
+      <Item value="webException" priority="2" />
+      <Item value="loggedIn" priority="0" />
+      <Item value="UserElement`0" priority="0" />
+      <Item value="writer" priority="1" />
+      <Item value="StringReader" priority="0" />
+      <Item value="BufferedStream`0" priority="0" />
+      <Item value="requestStream" priority="0" />
+      <Item value="authenticatingAnUser" priority="0" />
+      <Item value="LoginResponse`0" priority="5" />
+      <Item value="properSuccessfulLoginResponse" priority="0" />
+      <Item value="properUnsuccessfulLoginResponse" priority="1" />
+      <Item value="NoticesElement" priority="0" />
+      <Item value="LoginResponse" priority="0" />
+      <Item value="LoggedIn" priority="3" />
+      <Item value="UserToken" priority="3" />
+      <Item value="unsucessfulLoginResponse" priority="2" />
+      <Item value="isLogged" priority="0" />
+      <Item value="authenticator" priority="27" />
+      <Item value="userLoggedIn" priority="5" />
+      <Item value="userToken" priority="24" />
+      <Item value="userName" priority="1" />
+      <Item value="Login" priority="0" />
+      <Item value="authenticateAnUser" priority="3" />
+      <Item value="LogIn" priority="1" />
+      <Item value="txtPassWord" priority="2" />
+      <Item value="LostFocus" priority="0" />
+      <Item value="Username" priority="4" />
+      <Item value="UserLoggedIn" priority="7" />
+      <Item value="LoginFormViewModel`0" priority="12" />
+      <Item value="userTokens" priority="3" />
+      <Item value="LoginFormViewModel" priority="7" />
+      <Item value="Debug`0" priority="9" />
+      <Item value="LoginFormStyle" priority="0" />
+      <Item value="TemplatedParent" priority="0" />
+      <Item value="_Username" priority="1" />
+      <Item value="Expressions" priority="0" />
+      <Item value="IsMouseOver" priority="0" />
+      <Item value="LoginFormBodyStyle" priority="0" />
+      <Item value="DataContext" priority="1" />
+      <Item value="Self" priority="0" />
+      <Item value="PreviousData" priority="0" />
+      <Item value="DisplayName" priority="3" />
+      <Item value="loginFormViewModel" priority="43" />
+      <Item value="listener" priority="1" />
+      <Item value="LikedByCurrentUser" priority="3" />
+      <Item value="AMixIs_LikedByCurrentUser`0" priority="0" />
+      <Item value="shouldBeLikedByTheUser" priority="0" />
+      <Item value="MixViewModel" priority="0" />
+      <Item value="IReactiveAsyncCommand`0" priority="0" />
+      <Item value="ToggleLike" priority="2" />
+      <Item value="NextSong" priority="1" />
+      <Item value="CurrentMixViewModel" priority="6" />
+      <Item value="_CurrentTrackIndex" priority="0" />
+      <Item value="ObservableAsPropertyHelper" priority="6" />
+      <Item value="ObservableAsPropertyHelper&lt;int&gt;" priority="0" />
+      <Item value="LikedByTheCurrentUser" priority="0" />
+      <Item value="toggleLikeRequest" priority="0" />
+      <Item value="toggleMixLikeReponse" priority="2" />
+      <Item value="ToggleMixLikeRequest" priority="0" />
+      <Item value="ToggleMixLikeRequest`0" priority="3" />
+      <Item value="factory" priority="4" />
+      <Item value="mixField" priority="0" />
+      <Item value="ToggleMixLikeResponse`0" priority="4" />
+      <Item value="Execute`0" priority="0" />
+      <Item value="toggleMixLikeRequest" priority="0" />
+      <Item value="LatestMixes" priority="0" />
+      <Item value="tag" priority="0" />
+      <Item value="ApiKeyIs_`0" priority="0" />
+      <Item value="favoritingItemsInTheMediaLibrary" priority="0" />
+      <Item value="expectedUriNotLoggedIn" priority="0" />
+      <Item value="OneWay" priority="0" />
+      <Item value="PropertyChanged" priority="0" />
+      <Item value="IsSelected" priority="0" />
+      <Item value="DarkOrchid" priority="0" />
+      <Item value="DarkSlateBlue" priority="1" />
+      <Item value="Focusable" priority="1" />
+      <Item value="GetLikedMixes" priority="1" />
+      <Item value="List&lt;IRequest&gt;" priority="0" />
+      <Item value="requests" priority="0" />
+      <Item value="TypeLoadException`0" priority="0" />
+      <Item value="TypeParameterFormatAttribute`0" priority="0" />
+      <Item value="userSlug" priority="17" />
+      <Item value="View" priority="0" />
+      <Item value="UserSpecificMixesRequest`0" priority="0" />
+      <Item value="GetMixes`0" priority="3" />
+      <Item value="mixesRequset" priority="0" />
+      <Item value="UserLikedMixesRequest`0" priority="3" />
+      <Item value="likedMixesRequest" priority="1" />
+      <Item value="userLikedMixesRequest" priority="1" />
+      <Item value="BrowsedMixes" priority="8" />
+      <Item value="currentUserToken" priority="0" />
+      <Item value="userLoggedInProperty" priority="1" />
+      <Item value="browser" priority="0" />
+      <Item value="CreateMixViewModel`0" priority="2" />
+      <Item value="_CurrentMixViewModel" priority="0" />
+      <Item value="_UserLoggedIn" priority="3" />
+      <Item value="get" priority="1" />
+      <Item value="UserData" priority="2" />
+      <Item value="UserData`0" priority="17" />
+      <Item value="noUser" priority="0" />
+      <Item value="userSlub" priority="0" />
+      <Item value="UserSlug" priority="0" />
+      <Item value="displayName" priority="0" />
+      <Item value="userData" priority="4" />
+      <Item value="logicSuccessful" priority="0" />
+      <Item value="_UserData" priority="3" />
+      <Item value="_UserDataLogin" priority="1" />
+      <Item value="_UserDataLogout" priority="1" />
+      <Item value="shouldBeLogged" priority="1" />
+      <Item value="UserDataObservable" priority="2" />
+      <Item value="userDataLogoutObservable" priority="1" />
+      <Item value="userDataLoginObservable" priority="0" />
+      <Item value="subject" priority="10" />
+      <Item value="obs" priority="3" />
+      <Item value="PageElement`0" priority="2" />
+      <Item value="logger" priority="4" />
+      <Item value="TypifiedRequestExecutor`0" priority="0" />
+      <Item value="PageElement" priority="1" />
+      <Item value="ErrorElement" priority="0" />
+      <Item value="NoticeElement" priority="0" />
+      <Item value="ApiWarningElement" priority="0" />
+      <Item value="Activator`0" priority="1" />
+      <Item value="Dictionary" priority="2" />
+      <Item value="Dictionary&lt;Type,Type&gt;" priority="0" />
+      <Item value="messageMapping" priority="0" />
+      <Item value="responseType" priority="0" />
+      <Item value="XmlException" priority="1" />
+      <Item value="IFormatProvider`0" priority="1" />
+      <Item value="ExtractMixes`0" priority="0" />
+      <Item value="applicationTag" priority="8" />
+      <Item value="mixViewModel" priority="26" />
+      <Item value="mixUnlikedResponse" priority="0" />
+      <Item value="userLoggedInObservable" priority="1" />
+      <Item value="ableToExecute" priority="0" />
+      <Item value="TheCurrentTrackIndexShouldBe_`0" priority="0" />
+      <Item value="while" priority="1" />
+      <Item value="toggleLike" priority="0" />
+      <Item value="command" priority="0" />
+      <Item value="Action`0" priority="0" />
+      <Item value="Action" priority="0" />
+      <Item value="testScheduler" priority="12" />
+      <Item value="Testing" priority="0" />
+      <Item value="valueIsSet" priority="0" />
+      <Item value="ManualResetEvent`0" priority="2" />
+      <Item value="lockObject" priority="6" />
+      <Item value="TheCommandIsProcessed`0" priority="5" />
+      <Item value="ManualResetEvent" priority="0" />
+      <Item value="ImmediateScheduler`0" priority="1" />
+      <Item value="ImmediateScheduler" priority="0" />
+      <Item value="AuthenticatorTests`0" priority="0" />
+      <Item value="userLoggedInSubject" priority="1" />
+      <Item value="isCurrentlyLoggedIn" priority="2" />
+      <Item value="Slug" priority="1" />
+      <Item value="areCredentialsValid" priority="0" />
+      <Item value="isLoggedIn" priority="1" />
+      <Item value="isFormExpanded" priority="0" />
+      <Item value="canLogIn" priority="0" />
+      <Item value="isGoingToLogIn" priority="2" />
+      <Item value="SilentAttribute`0" priority="3" />
+      <Item value="passwordBox" priority="0" />
+      <Item value="unsafe" priority="0" />
+      <Item value="SecureString`0" priority="0" />
+      <Item value="PasswordHelper`0" priority="0" />
+      <Item value="PasswordField" priority="0" />
+      <Item value="Equals`0" priority="0" />
+      <Item value="isCommandAsync" priority="0" />
+      <Item value="isIdentifierShown" priority="0" />
+      <Item value="Test`0" priority="1" />
+      <Item value="Authenticator" priority="1" />
+      <Item value="browsingAvailableMixes" priority="3" />
+      <Item value="mixName1" priority="4" />
+      <Item value="audioPlayerStub" priority="6" />
+      <Item value="mainWindowViewModel" priority="10" />
+      <Item value="coverUri1" priority="0" />
+      <Item value="TheUser_LoggedIn`0" priority="1" />
+      <Item value="BooleanParameterFormatAttribute`0" priority="2" />
+      <Item value="likedMixesResponse" priority="1" />
+      <Item value="obj" priority="8" />
+      <Item value="mixName" priority="2" />
+      <Item value="PlaySongResponse" priority="0" />
+      <Item value="NewPlayTokenResponse" priority="0" />
+      <Item value="TheApplicationIssuesACommandToGetTheLikedMixes`0" priority="0" />
+      <Item value="TheApplicationIssuesACommandToGetTheLatestMixes`0" priority="0" />
+      <Item value="tagList" priority="0" />
+      <Item value="TheMediaLibraryBrowserReturnsAListOfMixes`0" priority="0" />
+      <Item value="TheRequestQueriesFor_Mixes" priority="0" />
+      <Item value="MixesSortEnum`0" priority="3" />
+      <Item value="sorting" priority="5" />
+      <Item value="Popular" priority="0" />
+      <Item value="sortingType" priority="3" />
+      <Item value="MixesViewTypes`0" priority="2" />
+      <Item value="lock" priority="0" />
+      <Item value="PaginationRequestDecorator`0" priority="1" />
+      <Item value="baseRequest" priority="4" />
+      <Item value="pageNumber" priority="16" />
+      <Item value="pageSize" priority="18" />
+      <Item value="UserMixesRequest`0" priority="1" />
+      <Item value="viewType" priority="13" />
+      <Item value="viewTypes" priority="0" />
+      <Item value="MixesViewType`0" priority="7" />
+      <Item value="Feed" priority="1" />
+      <Item value="expectedUriLoggedIn" priority="0" />
+      <Item value="currentPageNumber" priority="0" />
+      <Item value="MixesSortingType`0" priority="3" />
+      <Item value="MixesRequest" priority="2" />
+      <Item value="lastMixesRequest" priority="4" />
+      <Item value="List&lt;Mix&gt;" priority="0" />
+      <Item value="Liked" priority="2" />
+      <Item value="userMixesRequest" priority="0" />
+      <Item value="abstract" priority="0" />
+      <Item value="PaginatedRequest`0" priority="3" />
+      <Item value="PageSize" priority="1" />
+      <Item value="BaseUri" priority="0" />
+      <Item value="ApiKey" priority="0" />
+      <Item value="paginatedRequest" priority="0" />
+      <Item value="NotImplementedException" priority="0" />
+      <Item value="lastRequest" priority="1" />
+      <Item value="userAuthenticationFeature" priority="0" />
+      <Item value="GetHotMixes" priority="2" />
+      <Item value="GetPopularMixes" priority="1" />
+      <Item value="GetFeedMixes" priority="1" />
+      <Item value="TheUser_BeAbleToGetLikedMixes`0" priority="0" />
+      <Item value="TheUserIssuesACommandToDisplayFeedMixes`0" priority="0" />
+      <Item value="totalNumberOfMixes" priority="0" />
+      <Item value="nextPage" priority="1" />
+      <Item value="mixViewModels" priority="6" />
+      <Item value="SetBrowsedMixes`0" priority="6" />
+      <Item value="DispatchedReactiveCollection&lt;MixViewModel&gt;" priority="0" />
+      <Item value="properPlaySongResponse" priority="0" />
+      <Item value="PlayCount" priority="0" />
+      <Item value="tagListCache" priority="1" />
+      <Item value="vc_attributes" priority="0" />
+      <Item value="RemoveEmptyEntries" priority="0" />
+      <Item value="Select`2" priority="1" />
+      <Item value="decodedTagString" priority="0" />
+      <Item value="mixSetId" priority="3" />
+      <Item value="BrowsingSessionData`0" priority="2" />
+      <Item value="browsingSessionData" priority="6" />
+      <Item value="BrowsingSessionData" priority="0" />
+      <Item value="LastMixesRequest" priority="0" />
+      <Item value="MixSetId" priority="0" />
+      <Item value="nextMixRequest" priority="3" />
+      <Item value="NextMixRequest`0" priority="6" />
+      <Item value="NextMixResponse`0" priority="3" />
+      <Item value="continuousAudioPlayback" priority="0" />
+      <Item value="toggleMixLikeResponse" priority="0" />
+      <Item value="similarMix" priority="0" />
+      <Item value="NextMix" priority="0" />
+      <Item value="Id" priority="0" />
+      <Item value="MidpointRounding`0" priority="0" />
+      <Item value="AMixIsBeingPlayed`0" priority="2" />
+      <Item value="TheControllerExecutesA_`0" priority="0" />
+      <Item value="long" priority="1" />
+      <Item value="IsLast" priority="2" />
+      <Item value="NextMix`0" priority="1" />
+      <Item value="NextMixRequest" priority="0" />
+      <Item value="nextMixResponse" priority="2" />
+      <Item value="SetId" priority="0" />
+      <Item value="List&lt;string&gt;" priority="3" />
+      <Item value="PlayToken" priority="1" />
+      <Item value="TheApplicationIssuesACommandToGoToNextTrack`0" priority="0" />
+      <Item value="trackElement" priority="4" />
+      <Item value="UserNotLoggedInDataTemplate" priority="0" />
+      <Item value="Stretch" priority="0" />
+      <Item value="Detailed" priority="0" />
+      <Item value="MixDisplayMode`0" priority="1" />
+      <Item value="SetMixDisplayMode" priority="0" />
+      <Item value="count" priority="1" />
+      <Item value="ReplaySubject" priority="0" />
+      <Item value="ReplaySubject&lt;bool&gt;" priority="0" />
+      <Item value="browsedMixesExistObservable" priority="2" />
+      <Item value="DateTimeConverter`0" priority="0" />
+      <Item value="Description" priority="2" />
+      <Item value="TagList" priority="0" />
+      <Item value="TagListCache" priority="2" />
+      <Item value="tagStringList" priority="1" />
+      <Item value="nextTag" priority="0" />
+      <Item value="curr" priority="0" />
+      <Item value="next" priority="0" />
+      <Item value="TrackViewModel`0" priority="3" />
+      <Item value="Download" priority="3" />
+      <Item value="AddBrowsedMixes`0" priority="0" />
+      <Item value="ACertainMixToBePlayed`0" priority="0" />
+      <Item value="TheApplicationIssuesACommandToPlayTheMix`0" priority="2" />
+      <Item value="IDownloader`0" priority="0" />
+      <Item value="sourceUri" priority="5" />
+      <Item value="destinationUri" priority="4" />
+      <Item value="sq250" priority="0" />
+      <Item value="_MixesViewTypeAsString" priority="2" />
+      <Item value="MixesViewTypeAsString" priority="4" />
+      <Item value="Settings`0" priority="4" />
+      <Item value="Settings" priority="7" />
+      <Item value="settings" priority="11" />
+      <Item value="usernameKey" priority="1" />
+      <Item value="passwordKey" priority="1" />
+      <Item value="Login`0" priority="1" />
+      <Item value="userDataSubject" priority="0" />
+      <Item value="UsernameField" priority="0" />
+      <Item value="WebAccessProxy`0" priority="15" />
+      <Item value="utils" priority="0" />
+      <Item value="WebAccessProxy" priority="9" />
+      <Item value="instance" priority="2" />
+      <Item value="nguid" priority="0" />
+      <Item value="EventHandler`0" priority="0" />
+      <Item value="OpenWebBrowser`0" priority="0" />
+      <Item value="RequestNavigateHandler" priority="0" />
+      <Item value="RequestBringIntoViewEventArgs`0" priority="0" />
+      <Item value="sender" priority="1" />
+      <Item value="IsLoginFormExpanded" priority="2" />
+      <Item value="IsPasswordFieldFocused" priority="0" />
+      <Item value="IsUsernameFieldFocused" priority="1" />
+      <Item value="Application`0" priority="0" />
+      <Item value="extension" priority="5" />
+      <Item value="SettingsStub`0" priority="1" />
+      <Item value="TheApplicationIssuesACommandToLogInTheUser`0" priority="0" />
+      <Item value="duration" priority="5" />
+      <Item value="LikesCount" priority="0" />
+      <Item value="PlaysCount" priority="0" />
+      <Item value="RestfulUri" priority="0" />
+      <Item value="WindowBackgroundBrush" priority="0" />
+      <Item value="LocalDataStoreSlot`0" priority="0" />
+      <Item value="ItemCollection`0" priority="0" />
+      <Item value="MixDisplayMode" priority="3" />
+      <Item value="Enum`0" priority="0" />
+      <Item value="_Tracks" priority="0" />
+      <Item value="DurationAsString" priority="0" />
+      <Item value="FileSystemBrowser" priority="5" />
+      <Item value="IFileSystemBrowser" priority="0" />
+      <Item value="IFileSystemBrowser`0" priority="0" />
+      <Item value="FolderBrowserDialog`0" priority="1" />
+      <Item value="destinationFolder" priority="8" />
+      <Item value="Path`0" priority="4" />
+      <Item value="destinationPath" priority="9" />
+      <Item value="saveFileDialog" priority="1" />
+      <Item value="defaultFilename" priority="1" />
+      <Item value="filter" priority="0" />
+      <Item value="FileLocation`0" priority="16" />
+      <Item value="ReplaySubject&lt;FileLocation&gt;" priority="0" />
+      <Item value="fileLocationObservable" priority="1" />
+      <Item value="IsEnabled" priority="0" />
+      <Item value="LightSkyBlue" priority="0" />
+      <Item value="TrackViewModelTests`0" priority="0" />
+      <Item value="FileSystemBrowser`0" priority="2" />
+      <Item value="fileSystemBrowser" priority="4" />
+      <Item value="Filename" priority="0" />
+      <Item value="fileLocation" priority="3" />
+      <Item value="webAccessProxy" priority="6" />
+      <Item value="TheTrackNameIs_" priority="0" />
+      <Item value="trackUri" priority="0" />
+      <Item value="trackViewModel" priority="10" />
+      <Item value="downloadingMediaContent" priority="1" />
+      <Item value="canDownload" priority="0" />
+      <Item value="WebAccessProxyStub`0" priority="2" />
+      <Item value="ResetFileLocation`0" priority="0" />
+      <Item value="IWebAccessProxy`0" priority="0" />
+      <Item value="model" priority="0" />
+      <Item value="mixViewModelFactory" priority="5" />
+      <Item value="MixViewModelFactory" priority="3" />
+      <Item value="MediaBrowserViewModel" priority="0" />
+      <Item value="IMixViewModelFactory`0" priority="1" />
+      <Item value="PlaybackViewModel`0" priority="2" />
+      <Item value="playbackViewModel" priority="16" />
+      <Item value="mediaBrowserViewModel" priority="2" />
+      <Item value="MediaBrowserViewModel`0" priority="0" />
+      <Item value="mixDisplayMode" priority="0" />
+      <Item value="CurrentUserElement" priority="0" />
+      <Item value="ReplaySubject&lt;double&gt;" priority="0" />
+      <Item value="durationObservable" priority="0" />
+      <Item value="_Duration" priority="0" />
+      <Item value="currentTrackDurationObservable" priority="0" />
+      <Item value="currentDurationObservable" priority="0" />
+      <Item value="Tracks" priority="9" />
+      <Item value="Reactive" priority="1" />
+      <Item value="DispatchedReactiveCollection&lt;TrackViewModel&gt;" priority="0" />
+      <Item value="openingTrack" priority="2" />
+      <Item value="ToggleLikeMix" priority="4" />
+      <Item value="audioPlayerPaused" priority="1" />
+      <Item value="audioPlayerRunning" priority="1" />
+      <Item value="RecordMix" priority="0" />
+      <Item value="ReplaySubject&lt;MediaStatus&gt;" priority="0" />
+      <Item value="_CurrentPosition" priority="1" />
+      <Item value="DurationToString`0" priority="0" />
+      <Item value="_IsPositionSliderEnabled" priority="0" />
+      <Item value="OneWayToSource" priority="0" />
+      <Item value="volume" priority="4" />
+      <Item value="_Volume" priority="4" />
+      <Item value="volumeKey" priority="0" />
+      <Item value="SetElement`0" priority="0" />
+      <Item value="NoMixesArePlayed`0" priority="2" />
+      <Item value="AMixStartsPlaying`0" priority="1" />
+      <Item value="TheCurrentPositionOfThePlaybackIs_`0" priority="1" />
+      <Item value="ABitOfTimePasses`0" priority="0" />
+      <Item value="TheAudioVolumeShouldBeAt_Percent`0" priority="0" />
+      <Item value="newPosition" priority="3" />
+      <Item value="TheUser_BeAbleToPauseTheMix" priority="0" />
+      <Item value="TheUserIsIdle`0" priority="0" />
+      <Item value="AMixIsPaused`0" priority="0" />
+      <Item value="aTrack" priority="0" />
+      <Item value="folderBrowserDialog" priority="4" />
+      <Item value="FolderBrowserDialog" priority="0" />
+      <Item value="fileName" priority="7" />
+      <Item value="File`0" priority="1" />
+      <Item value="FontWeight" priority="1" />
+      <Item value="_SelectedTrackIndex" priority="0" />
+      <Item value="GoToTrack" priority="1" />
+      <Item value="_CurrentMixViewModelPresent" priority="2" />
+      <Item value="SelectedTrackIndex" priority="0" />
+      <Item value="allTracks" priority="0" />
+      <Item value="DarkSlateGray" priority="0" />
+      <Item value="UpdateCurrentTrackIndicator`0" priority="0" />
+      <Item value="KeyValuePair" priority="1" />
+      <Item value="pair" priority="2" />
+      <Item value="Bold" priority="0" />
+      <Item value="FontStyle" priority="0" />
+      <Item value="FontFamily" priority="0" />
+      <Item value="listBoxItems" priority="0" />
+      <Item value="listBox" priority="1" />
+      <Item value="MixFilter`0" priority="4" />
+      <Item value="mixFilter" priority="13" />
+      <Item value="MixFilter" priority="2" />
+      <Item value="filterText" priority="3" />
+      <Item value="result" priority="1" />
+      <Item value="FilterQuery" priority="1" />
+      <Item value="ViewModels" priority="0" />
+      <Item value="StringUtils`0" priority="0" />
+      <Item value="MixBrowsingMessage" priority="0" />
+      <Item value="path" priority="1" />
+      <Item value="Directory`0" priority="2" />
+      <Item value="directory" priority="0" />
+      <Item value="query" priority="1" />
+      <Item value="TheViewTypeIs_`0" priority="0" />
+      <Item value="TheApplicationIssuesACommandToCreateMixesRequest`0" priority="0" />
+      <Item value="TheMixHasATrackNamed_MadeBy_WithUrl_" priority="0" />
+      <Item value="TheMixNameIs_" priority="0" />
+      <Item value="trackName1" priority="2" />
+      <Item value="url2" priority="0" />
+      <Item value="location1" priority="0" />
+      <Item value="performer1" priority="0" />
+      <Item value="trackName" priority="0" />
+      <Item value="performer" priority="1" />
+      <Item value="fileSystemBrowserStub" priority="1" />
+      <Item value="FileSystemBrowserStub`0" priority="0" />
+      <Item value="filepath" priority="0" />
+      <Item value="TestFixtureAttribute`0" priority="0" />
+      <Item value="authenticationTag" priority="0" />
+      <Item value="ConsoleTraceListener`0" priority="1" />
+      <Item value="mediaBrowsingTag" priority="2" />
+      <Item value="downloadingMediaContentTag" priority="0" />
+      <Item value="X" priority="0" />
+      <Item value="TemplateBindingExpression`0" priority="0" />
+      <Item value="FocusedItemProperty" priority="1" />
+      <Item value="GetItemFocused`0" priority="0" />
+      <Item value="focusedItem" priority="2" />
+      <Item value="B" priority="0" />
+      <Item value="Binding" priority="0" />
+      <Item value="fiBinding" priority="1" />
+      <Item value="BindingOperations`0" priority="0" />
+      <Item value="Target" priority="2" />
+      <Item value="ItemsSource" priority="2" />
+      <Item value="IEnumerable`0" priority="0" />
+      <Item value="for" priority="1" />
+      <Item value="break" priority="2" />
+      <Item value="d" priority="0" />
+      <Item value="ListBox`0" priority="0" />
+      <Item value="ListBoxExtensions`0" priority="0" />
+      <Item value="Skip" priority="1" />
+      <Item value="audioPlayerRunningOrPaused" priority="0" />
+      <Item value="Volume" priority="2" />
+      <Item value="ChangeVolume" priority="1" />
+      <Item value="Double`0" priority="0" />
+      <Item value="newVolume" priority="2" />
+      <Item value="RangeAttribute`0" priority="0" />
+      <Item value="refocused" priority="0" />
+      <Item value="Visibility" priority="0" />
+      <Item value="Hidden" priority="0" />
+      <Item value="ApplyFilter" priority="1" />
+      <Item value="Filter" priority="1" />
+      <Item value="GetRecentlyMadeMixes" priority="0" />
+      <Item value="EightTracksPlayer" priority="1" />
+      <Item value="TrackReporter`0" priority="3" />
+      <Item value="trackId" priority="1" />
+      <Item value="TrackId" priority="0" />
+      <Item value="ITrackReporter`0" priority="1" />
+      <Item value="trackReporter" priority="5" />
+      <Item value="position1" priority="0" />
+      <Item value="reportingMark" priority="2" />
+      <Item value="position2" priority="0" />
+      <Item value="reportingMarkReached" priority="0" />
+      <Item value="reportTrack" priority="1" />
+      <Item value="PlaybackViewModel" priority="1" />
+      <Item value="ReportMixRequest`0" priority="0" />
+      <Item value="Ok" priority="0" />
+      <Item value="RequestExecutionAdapter`0" priority="1" />
+      <Item value="AboutWindow`0" priority="0" />
+      <Item value="aboutWindow" priority="5" />
+      <Item value="AboutWindow" priority="0" />
+      <Item value="Escape" priority="0" />
+      <Item value="Close`0" priority="0" />
+      <Item value="ToolWindow" priority="0" />
+      <Item value="Visibility`0" priority="2" />
+      <Item value="debugModeOn" priority="1" />
+      <Item value="Width" priority="0" />
+      <Item value="DebugModeOn" priority="0" />
+      <Item value="log" priority="1" />
+      <Item value="currentMixViewModelObservable" priority="0" />
+      <Item value="args" priority="1" />
+      <Item value="serializer_UnknownElement" priority="0" />
+      <Item value="GetRecommendedMixes" priority="1" />
+      <Item value="GetHistoryMixes" priority="0" />
+      <Item value="view" priority="0" />
+      <Item value="History" priority="0" />
+      <Item value="Dictionary&lt;string,string&gt;" priority="0" />
+      <Item value="id3Tags" priority="0" />
+      <Item value="paramters" priority="1" />
+      <Item value="f" priority="0" />
+      <Item value="TagListToString`0" priority="0" />
+      <Item value="list" priority="0" />
+      <Item value="tagSeparator" priority="1" />
+      <Item value=".." priority="0" />
+      <Item value="Resources" priority="0" />
+      <Item value="Icon8tracks.ico" priority="0" />
+      <Item value="window" priority="0" />
+      <Item value="invalidChars" priority="3" />
+      <Item value="Subscribe`1" priority="0" />
+      <Item value="c" priority="2" />
+      <Item value="ToObservable`1" priority="0" />
+      <Item value="ToList`1" priority="0" />
+      <Item value="Char`0" priority="0" />
+      <Item value="RemoveInvalidCharacters`0" priority="0" />
+      <Item value="resultFilename" priority="2" />
+      <Item value="TotalNumberOfTracks" priority="0" />
+      <Item value="DateTime" priority="0" />
+      <Item value="webClient" priority="1" />
+      <Item value="GetFileName`0" priority="0" />
+      <Item value="isProxyDefined" priority="0" />
+      <Item value="proxyDefined" priority="0" />
+      <Item value="proxy" priority="0" />
+      <Item value="NetworkCredential`0" priority="0" />
+      <Item value="WebRequest`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Console">
+      <Item value="WriteLine`0" priority="46" />
+      <Item value="ReadLine`0" priority="9" />
+      <Item value="Out" priority="2" />
+      <Item value="Read`0" priority="0" />
+      <Item value="Write`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="Substring`0" priority="1" />
+      <Item value="IndexOf`0" priority="1" />
+      <Item value="Length" priority="16" />
+      <Item value="Equals`0" priority="3" />
+      <Item value="ToLower`0" priority="1" />
+      <Item value="Split`0" priority="1" />
+      <Item value="Trim`0" priority="1" />
+      <Item value="ToString`0" priority="1" />
+      <Item value="Contains`0" priority="0" />
+      <Item value="Replace`0" priority="4" />
+      <Item value="ToCharArray`0" priority="0" />
+      <Item value="Select`2" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Sandbox.PlayAudioFileProgram">
+      <Item value="RunProgram`0" priority="0" />
+      <Item value="RunProgramMCI`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Media.SoundPlayer">
+      <Item value="Play`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Alvas.Audio.Player">
+      <Item value="IsPlaying" priority="0" />
+      <Item value="FileName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Xml.Schema.XmlSchemaForm">
+      <Item value="Unqualified" priority="3" />
+      <Item value="None" priority="0" />
+      <Item value="Qualified" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksApp.Communication.Responses.SupportingElements.Mix">
+      <Item value="playsCountField" priority="0" />
+      <Item value="likesCountField" priority="1" />
+      <Item value="restfulUrlField" priority="0" />
+      <Item value="tagListCacheField" priority="0" />
+      <Item value="firstPublishedAtField" priority="0" />
+      <Item value="likedByCurrentUserField" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksApp.Communication.Responses.MixesResponse">
+      <Item value="restfulUrlField" priority="0" />
+      <Item value="totalEntriesField" priority="0" />
+      <Item value="perPageField" priority="0" />
+      <Item value="nextPageField" priority="0" />
+      <Item value="totalPagesField" priority="0" />
+      <Item value="canonicalPathField" priority="0" />
+      <Item value="loggedInField" priority="0" />
+      <Item value="apiwarningField" priority="0" />
+      <Item value="apiVersionField" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Type">
+      <Item value="ToString`0" priority="1" />
+      <Item value="Name" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Int32">
+      <Item value="Parse`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="IsNullOrEmpty`0" priority="5" />
+      <Item value="Format`0" priority="21" />
+      <Item value="Empty" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EightTracksApp.Communication.Responses.ResponseStatusEnum">
+      <Item value="Unknown" priority="1" />
+      <Item value="Ok" priority="1" />
+      <Item value="Moved" priority="1" />
+      <Item value="Unauthorized" priority="1" />
+      <Item value="Forbidden" priority="1" />
+      <Item value="NotFound" priority="1" />
+      <Item value="InternalServerError" priority="1" />
+      <Item value="MovedPermanently" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EightTracksApp.Communication.Responses.ResponseStatuses">
+      <Item value="DecodeStatus`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EightTracksApp.Communication.Responses.ResponseStatusEncoder">
+      <Item value="Decode`0" priority="0" />
+      <Item value="Encode`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:StoryQ.Story">
+      <Item value="Tag`0" priority="1" />
+      <Item value="InOrderTo`0" priority="5" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:StoryQ.Benefit">
+      <Item value="AsA`0" priority="6" />
+      <Item value="And`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:StoryQ.Role">
+      <Item value="IWant`0" priority="5" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:StoryQ.Feature">
+      <Item value="WithScenario`0" priority="44" />
+      <Item value="And`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:StoryQ.Scenario">
+      <Item value="Given`4" priority="47" />
+      <Item value="Tag`0" priority="33" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:StoryQ.Condition">
+      <Item value="When`4" priority="48" />
+      <Item value="And`4" priority="35" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:StoryQ.Operation">
+      <Item value="Then`4" priority="47" />
+      <Item value="And`4" priority="16" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:StoryQ.Outcome">
+      <Item value="And`4" priority="40" />
+      <Item value="ExecuteWithReport`0" priority="43" />
+      <Item value="WithScenario`0" priority="9" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.StreamReader">
+      <Item value="ReadToEnd`0" priority="5" />
+      <Item value="Close`0" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@NUnit.Framework.Assert">
+      <Item value="AreEqual`0" priority="0" />
+      <Item value="That`0" priority="58" />
+      <Item value="IsTrue`0" priority="0" />
+      <Item value="DoesNotThrow`0" priority="0" />
+      <Item value="IsNotNull`0" priority="0" />
+      <Item value="True`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@NUnit.Framework.Is">
+      <Item value="EqualTo`0" priority="46" />
+      <Item value="Not" priority="3" />
+      <Item value="TypeOf`1" priority="1" />
+      <Item value="True" priority="7" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksApp.Communication.ResponseHandler">
+      <Item value="deserializeMixes`0" priority="0" />
+      <Item value="deserializeNewPlayToken`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksAppTests.ResponseDeserializationTests">
+      <Item value="exception" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksApp.Communication.ResponseDeserializer">
+      <Item value="deserializePlayMixResponse`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.Serialization.XmlDeserializationEvents">
+      <Item value="OnUnknownAttribute" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.Serialization.XmlSerializer">
+      <Item value="UnknownAttribute" priority="1" />
+      <Item value="UnknownElement" priority="1" />
+      <Item value="UnknownNode" priority="1" />
+      <Item value="Deserialize`0" priority="0" />
+      <Item value="CanDeserialize`0" priority="0" />
+      <Item value="ToString`0" priority="0" />
+      <Item value="Serialize`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.Serialization.XmlAttributeEventArgs">
+      <Item value="ExpectedAttributes" priority="1" />
+      <Item value="Attr" priority="4" />
+      <Item value="LineNumber" priority="0" />
+      <Item value="LinePosition" priority="0" />
+      <Item value="ObjectBeingDeserialized" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="ToString`0" priority="1" />
+      <Item value="GetType`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.Serialization.XmlElementEventArgs">
+      <Item value="ExpectedElements" priority="0" />
+      <Item value="Element" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.Serialization.XmlNodeEventArgs">
+      <Item value="Text" priority="1" />
+      <Item value="LocalName" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.XmlAttribute">
+      <Item value="Name" priority="0" />
+      <Item value="LocalName" priority="1" />
+      <Item value="Value" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.XmlElement">
+      <Item value="LocalName" priority="1" />
+      <Item value="InnerXml" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Net.HttpWebResponse">
+      <Item value="GetResponseStream`0" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EightTracksAppTests.Tags">
+      <Item value="Infrastructure" priority="2" />
+      <Item value="XmlDeserialization" priority="1" />
+      <Item value="HttpWebRequests" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Net.HttpWebRequest">
+      <Item value="Method" priority="1" />
+      <Item value="RequestUri" priority="0" />
+      <Item value="GetResponse`0" priority="0" />
+      <Item value="GetRequestStream`0" priority="0" />
+      <Item value="ContentLength" priority="1" />
+      <Item value="Timeout" priority="0" />
+      <Item value="Proxy" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Uri">
+      <Item value="OriginalString" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksApp.Communication.RequestFactory">
+      <Item value="ApiKey" priority="0" />
+      <Item value="createPlayMixRequest`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Int32">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksApp.Communication.Requests.IRequest">
+      <Item value="toHttpWebRequest`0" priority="0" />
+      <Item value="GetType`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksApp.Communication.Requests.MixesRequest">
+      <Item value="toHttpWebRequest`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksApp.Communication.Responses.IResponse">
+      <Item value="GetType`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.Dictionary`2">
+      <Item value="Add`0" priority="9" />
+      <Item value="Values" priority="0" />
+      <Item value="Indexer" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksApp.Communication.ResponseDeserializersRepository">
+      <Item value="getResponseDeserializer`0" priority="0" />
+      <Item value="GetResponseDeserializer`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Net.WebResponse">
+      <Item value="GetResponseStream`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.StringReader">
+      <Item value="ReadToEnd`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksApp.Communication.AggregatedResponseDeserializer">
+      <Item value="deserialize`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksApp.Communication.IRequestExecutor">
+      <Item value="execute`0" priority="0" />
+      <Item value="Execute`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EightTracksAppTests.Features">
+      <Item value="PlayingAMix" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Xml.XmlWriter">
+      <Item value="Create`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Reflection.MethodBase">
+      <Item value="GetCurrentMethod`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@ReactiveUI.Xaml.ReactiveCommand">
+      <Item value="Create`0" priority="7" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ReactiveUI.Xaml.ReactiveCommand">
+      <Item value="Where`1" priority="1" />
+      <Item value="Execute`0" priority="4" />
+      <Item value="CanExecute`0" priority="0" />
+      <Item value="Subscribe`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IObservable`1">
+      <Item value="Subscribe`0" priority="70" />
+      <Item value="Timestamp`1" priority="0" />
+      <Item value="Where`1" priority="14" />
+      <Item value="And`2" priority="0" />
+      <Item value="Select`2" priority="21" />
+      <Item value="DistinctUntilChanged`1" priority="3" />
+      <Item value="ToProperty`2" priority="22" />
+      <Item value="ObserveOnDispatcher`1" priority="4" />
+      <Item value="SubscribeOnDispatcher`1" priority="6" />
+      <Item value="ToList`1" priority="0" />
+      <Item value="CreateCollection`2" priority="0" />
+      <Item value="SubscribeOn`1" priority="0" />
+      <Item value="Publish`2" priority="0" />
+      <Item value="Repeat`1" priority="2" />
+      <Item value="Merge`1" priority="0" />
+      <Item value="TakeLast`1" priority="0" />
+      <Item value="Replay`2" priority="1" />
+      <Item value="TakeUntil`2" priority="0" />
+      <Item value="GetAwaiter`1" priority="0" />
+      <Item value="First`1" priority="0" />
+      <Item value="Next`1" priority="1" />
+      <Item value="BufferWithCount`1" priority="2" />
+      <Item value="BindTo`2" priority="0" />
+      <Item value="CombineLatest`3" priority="0" />
+      <Item value="Single`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Linq.Timestamped`1">
+      <Item value="Value" priority="0" />
+      <Item value="Timestamp" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@ReactiveUI.RxApp">
+      <Item value="DeferredScheduler" priority="6" />
+      <Item value="TaskpoolScheduler" priority="2" />
+      <Item value="MessageBus" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Threading.Thread">
+      <Item value="Sleep`0" priority="20" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EightTracksTests.Features">
+      <Item value="PlayingAMix" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NUnit.Mocks.DynamicMock">
+      <Item value="MockInstance" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksTests.DxAudioPlayerStub">
+      <Item value="mediaControl" priority="1" />
+      <Item value="mediaPosition" priority="1" />
+      <Item value="basicAudio" priority="1" />
+      <Item value="MediaControl" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NMock2.Mockery">
+      <Item value="NewMock`0" priority="1" />
+      <Item value="VerifyAllExpectationsHaveBeenMet`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EightTracksTests.Tags">
+      <Item value="AudioPlayback" priority="0" />
+      <Item value="Infrastructure" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EightTracks.Media.MediaStatus">
+      <Item value="Running" priority="3" />
+      <Item value="Stopped" priority="6" />
+      <Item value="Paused" priority="0" />
+      <Item value="Unknown" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracks.Media.DxAudioPlayer">
+      <Item value="Open`0" priority="2" />
+      <Item value="Status" priority="0" />
+      <Item value="Stop`0" priority="0" />
+      <Item value="SongEnded" priority="0" />
+      <Item value="SkipTo`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@NMock2.Expect">
+      <Item value="Once" priority="1" />
+      <Item value="Never" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NMock2.Syntax.IReceiverSyntax">
+      <Item value="On`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NMock2.Syntax.IMethodSyntax">
+      <Item value="Method`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NUnit.Framework.Constraints.ConstraintExpression">
+      <Item value="EqualTo`0" priority="1" />
+      <Item value="StringMatching`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NMock2.Syntax.IArgumentSyntax">
+      <Item value="WithNoArguments`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksTests.Stubs.DxAudioPlayerStub">
+      <Item value="MediaControl" priority="0" />
+      <Item value="AssignPlayerCollaborators`0" priority="0" />
+      <Item value="Stop`0" priority="0" />
+      <Item value="CurrentPosition" priority="0" />
+      <Item value="MediaPosition" priority="0" />
+      <Item value="Pause`0" priority="0" />
+      <Item value="Play`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:QuartzTypeLib.IMediaPosition">
+      <Item value="CurrentPosition" priority="1" />
+      <Item value="Duration" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksTests.Stubs.MediaControlStub">
+      <Item value="IsPauseIssued" priority="0" />
+      <Item value="IsRunIssued" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracks.Media.DxMessaging.DxMessageHandler">
+      <Item value="Handle" priority="0" />
+      <Item value="MediaEventEx" priority="0" />
+      <Item value="MessageReceived" priority="0" />
+      <Item value="PlaybackStopped" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IntPtr">
+      <Item value="Zero" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:QuartzTypeLib.IMediaEventEx">
+      <Item value="SetNotifyWindow`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Microsoft.DirectX.AudioVideoPlayback.Audio">
+      <Item value="Play`0" priority="0" />
+      <Item value="Ending" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.TimeSpan">
+      <Item value="Zero" priority="3" />
+      <Item value="FromSeconds`0" priority="5" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.Label">
+      <Item value="Binding`0" priority="0" />
+      <Item value="DockPanel`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracks.Communication.RequestFactory">
+      <Item value="CreateNewPlayTokenRequest`0" priority="0" />
+      <Item value="CreateMixesRequest`0" priority="0" />
+      <Item value="CreatePlayMixRequest`0" priority="0" />
+      <Item value="CreateNextSongRequest`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracks.Communication.IRequestExecutor">
+      <Item value="Execute`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracks.Communication.Responses.NewPlayTokenResponse">
+      <Item value="PlayToken" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracks.Communication.Responses.MixesResponse">
+      <Item value="Mixes" priority="0" />
+      <Item value="MixsElement" priority="0" />
+      <Item value="MixesElement" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracks.Communication.Responses.SupportingElements.Mix">
+      <Item value="Id" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracks.Communication.Responses.PlaySongResponse">
+      <Item value="Set" priority="0" />
+      <Item value="SetElement" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracks.Communication.Responses.SupportingElements.Set">
+      <Item value="Track" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracks.Communication.Responses.SupportingElements.Track">
+      <Item value="Url" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WMPLib.WindowsMediaPlayer">
+      <Item value="controls" priority="10" />
+      <Item value="URL" priority="1" />
+      <Item value="EndOfStream" priority="1" />
+      <Item value="PlayStateChange" priority="0" />
+      <Item value="currentMedia" priority="0" />
+      <Item value="settings" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WMPLib.IWMPControls">
+      <Item value="currentPosition" priority="2" />
+      <Item value="pause`0" priority="0" />
+      <Item value="stop`0" priority="0" />
+      <Item value="currentItem" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Add`0" priority="15" />
+      <Item value="Indexer" priority="0" />
+      <Item value="Count" priority="7" />
+      <Item value="Select`2" priority="3" />
+      <Item value="AddRange`0" priority="0" />
+      <Item value="Subscribe`1" priority="1" />
+      <Item value="Aggregate`3" priority="1" />
+      <Item value="AggregateEnumerable`1" priority="0" />
+      <Item value="Contains`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WMPLib.IWMPMedia">
+      <Item value="duration" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracks.Media.Players.IAudioPlayer">
+      <Item value="Open`0" priority="0" />
+      <Item value="Pause`0" priority="0" />
+      <Item value="Play`0" priority="0" />
+      <Item value="Stop`0" priority="0" />
+      <Item value="SkipTo`0" priority="1" />
+      <Item value="CurrentTrackDuration" priority="3" />
+      <Item value="CurrentPosition" priority="2" />
+      <Item value="EndOfStreamReached" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracks.Media.Players.AudioPlayerStateMonitor">
+      <Item value="AudioPlayer" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ReactiveUI.ReactiveCollection`1">
+      <Item value="Where`1" priority="0" />
+      <Item value="Select`2" priority="0" />
+      <Item value="CollectionCountChanged" priority="0" />
+      <Item value="Count" priority="1" />
+      <Item value="CreateDerivedCollection`2" priority="2" />
+      <Item value="Add`0" priority="1" />
+      <Item value="ToObservable`1" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracks.Communication.Responses.SupportingElements.MixElement">
+      <Item value="UserElement" priority="0" />
+      <Item value="Published" priority="0" />
+      <Item value="Name" priority="0" />
+      <Item value="Id" priority="0" />
+      <Item value="FirstPublishedAt" priority="0" />
+      <Item value="coverurls" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracks.Communication.Responses.SupportingElements.UserElement">
+      <Item value="Slug" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="ToArray`1" priority="1" />
+      <Item value="ToList`1" priority="3" />
+      <Item value="Subscribe`1" priority="7" />
+      <Item value="ToObservable`1" priority="5" />
+      <Item value="Select`2" priority="0" />
+      <Item value="Equals`0" priority="0" />
+      <Item value="Do`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracks.Mix">
+      <Item value="MixId" priority="1" />
+      <Item value="AddTrack`0" priority="0" />
+      <Item value="ResetTrackIndex`0" priority="0" />
+      <Item value="GetCurrentTrack`0" priority="0" />
+      <Item value="MoveMarkerToNextTrack`0" priority="0" />
+      <Item value="CoverUri" priority="0" />
+      <Item value="Name" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracks.Communication.Responses.SupportingElements.SetElement">
+      <Item value="TrackElement" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracks.Communication.Responses.SupportingElements.TrackElement">
+      <Item value="Performer" priority="0" />
+      <Item value="Name" priority="0" />
+      <Item value="Url" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracks.AudioPlayerStateMonitor">
+      <Item value="Open`0" priority="0" />
+      <Item value="EndOfStreamReached" priority="0" />
+      <Item value="BaseAudioPlayer" priority="2" />
+      <Item value="CurrentPosition" priority="0" />
+      <Item value="CurrentPositionObservable" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracks.Track">
+      <Item value="Uri" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracks.Communication.Responses.SupportingElements.CoverUrlsElement">
+      <Item value="Max200" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracks.PlaybackController">
+      <Item value="GetMixes`0" priority="4" />
+      <Item value="PlayMix`0" priority="0" />
+      <Item value="audioPlayerProxy" priority="0" />
+      <Item value="TimeRemainingObservable" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ReactiveUI.ObservableAsPropertyHelper`1">
+      <Item value="Subscribe`0" priority="6" />
+      <Item value="Select`2" priority="4" />
+      <Item value="Start`1" priority="0" />
+      <Item value="Value" priority="12" />
+      <Item value="DistinctUntilChanged`1" priority="0" />
+      <Item value="AsObservable`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ReactiveUI.Xaml.IReactiveCommand">
+      <Item value="Subscribe`0" priority="6" />
+      <Item value="Execute`0" priority="3" />
+      <Item value="Where`1" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Reactive.Linq.Observable">
+      <Item value="Create`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Reactive.Observer">
+      <Item value="Create`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracks.IPlaybackController">
+      <Item value="GetMixes`0" priority="0" />
+      <Item value="PlayMix`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Data.Binding">
+      <Item value="CurrentMix" priority="0" />
+      <Item value="LatestMixes" priority="0" />
+      <Item value="ElementName" priority="0" />
+      <Item value="BrowsedMixes" priority="0" />
+      <Item value="MixesViewTypeAsString" priority="0" />
+      <Item value="RequestNavigateEventArgs`0" priority="0" />
+      <Item value="CurrentMixViewModel" priority="5" />
+      <Item value="Source" priority="0" />
+      <Item value="PlaybackViewModel" priority="0" />
+      <Item value="MediaBrowserViewModel" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Linq.Observable">
+      <Item value="Create`1" priority="6" />
+      <Item value="Return`1" priority="2" />
+      <Item value="Merge`1" priority="2" />
+      <Item value="Never`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.Subject`1">
+      <Item value="Subscribe`0" priority="3" />
+      <Item value="OnNext`0" priority="9" />
+      <Item value="Select`2" priority="0" />
+      <Item value="ObserveOn`1" priority="0" />
+      <Item value="ToProperty`2" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Linq.Observer">
+      <Item value="Create`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracks.Media.Players.DxMessaging.DxMessageHandler">
+      <Item value="MediaEventEx" priority="0" />
+      <Item value="PlaybackStopped" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.StatefullAudioPlayer">
+      <Item value="BaseAudioPlayer" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Media.Players.WmpAudioPlayerAdapter">
+      <Item value="Log`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ReactiveUI.ILog">
+      <Item value="Error`0" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Mix">
+      <Item value="AddTrack`0" priority="0" />
+      <Item value="CurrentTrackIndex" priority="0" />
+      <Item value="Tracks" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.IPlaybackController">
+      <Item value="PlayMix`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksTests.Stubs.AudioPlayerStub">
+      <Item value="InvokeEndOfStreamReachedEvent`0" priority="0" />
+      <Item value="IsPlayIssued" priority="2" />
+      <Item value="IsOpenIssued" priority="1" />
+      <Item value="IsPauseIssued" priority="3" />
+      <Item value="IsStopIssued" priority="1" />
+      <Item value="Volume" priority="1" />
+      <Item value="CurrentTrackDuration" priority="1" />
+      <Item value="CurrentPosition" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksTests.Stubs.RequestExecutorStub">
+      <Item value="Response" priority="0" />
+      <Item value="Responses" priority="9" />
+      <Item value="Requests" priority="6" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Communication.Responses.PlaySongResponse">
+      <Item value="SetElement" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.ScrollViewer">
+      <Item value="HorizontalScrollBarVisibility" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Playback.IPlaybackController">
+      <Item value="TimeRemainingObservable" priority="2" />
+      <Item value="NextSong`0" priority="0" />
+      <Item value="GetMixes`0" priority="0" />
+      <Item value="PlayMix`0" priority="0" />
+      <Item value="CurrentMixObservable" priority="0" />
+      <Item value="LikeMix`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ReactiveUI.Xaml.ReactiveAsyncCommand">
+      <Item value="RegisterAsyncObservable`1" priority="0" />
+      <Item value="RegisterAsyncAction`0" priority="9" />
+      <Item value="RegisterAsyncFunction`1" priority="5" />
+      <Item value="SubscribeOnDispatcher`1" priority="2" />
+      <Item value="RegisterMemoizedFunction`1" priority="0" />
+      <Item value="Subscribe`0" priority="8" />
+      <Item value="Execute`0" priority="17" />
+      <Item value="CanExecute`0" priority="5" />
+      <Item value="AsyncCompletedNotification" priority="3" />
+      <Item value="AsyncStartedNotification" priority="0" />
+      <Item value="Where`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.MainWindowViewModel">
+      <Item value="WhenAny`14" priority="1" />
+      <Item value="CurrentMix" priority="6" />
+      <Item value="playbackController" priority="1" />
+      <Item value="_CurrentMix" priority="0" />
+      <Item value="RaiseAndSetIfChanged`2" priority="0" />
+      <Item value="ObservableForProperty`3" priority="0" />
+      <Item value="CurrentTracks" priority="0" />
+      <Item value="LatestMixes" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ReactiveUI.IObservedChange`2">
+      <Item value="Value" priority="5" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@ReactiveUI.Xaml.ReactiveAsyncCommand">
+      <Item value="Create`1" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="JetBrains.ReSharper.Feature.Services.Xaml.CodeCompletion.XamlBasicCompletionContext">
+      <Item value="ctx" priority="5" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.NotifyIcon">
+      <Item value="Visible" priority="0" />
+      <Item value="Text" priority="0" />
+      <Item value="ShowBalloonTip`0" priority="1" />
+      <Item value="BalloonTipTitle" priority="0" />
+      <Item value="BalloonTipText" priority="0" />
+      <Item value="DoubleClick" priority="0" />
+      <Item value="BalloonTipIcon" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EightTracksTests.TestUtils.Features">
+      <Item value="ContinuousAudioPlayback" priority="5" />
+      <Item value="BrowsingAvailableMixes" priority="2" />
+      <Item value="AuthenticatingAnUser" priority="2" />
+      <Item value="FavoritingItemsInTheMediaLibrary" priority="2" />
+      <Item value="PlayingAMix" priority="1" />
+      <Item value="DownloadingMediaContent" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EightTracksTests.TestUtils.Tags">
+      <Item value="EightTracksServiceCommunication" priority="0" />
+      <Item value="XmlDeserialization" priority="1" />
+      <Item value="Infrastructure" priority="1" />
+      <Item value="Application" priority="2" />
+      <Item value="Authentication" priority="1" />
+      <Item value="MediaLibraryBrowsing" priority="1" />
+      <Item value="AudioPlayback" priority="1" />
+      <Item value="DownloadingMediaContent" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EightTracksPlayer.Properties.Resources">
+      <Item value="systemTrayIcon" priority="0" />
+      <Item value="SystemTrayIcon" priority="0" />
+      <Item value="_8tracks_icon" priority="2" />
+      <Item value="ResourceManager" priority="0" />
+      <Item value="icon8" priority="0" />
+      <Item value="Icon8tracks" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Playback.Entities.Mix">
+      <Item value="Tracks" priority="6" />
+      <Item value="LikedByCurrentUser" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@ReactiveUI.ReactiveCollectionMixins">
+      <Item value="CreateCollection`2" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Concurrency.Scheduler">
+      <Item value="Dispatcher" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Playback.Entities.Track">
+      <Item value="Name" priority="2" />
+      <Item value="Performer" priority="0" />
+      <Item value="Uri" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.TextBlock">
+      <Item value="VerticalAlignment" priority="0" />
+      <Item value="TextTrimming" priority="0" />
+      <Item value="Foreground" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Media.Imaging.BitmapFrame">
+      <Item value="Create`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Application">
+      <Item value="GetResourceStream`0" priority="0" />
+      <Item value="ResourceAssembly" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Resources.ResourceManager">
+      <Item value="GetStream`0" priority="0" />
+      <Item value="GetObject`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.StackPanel">
+      <Item value="Visibility" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.Button">
+      <Item value="BorderThickness" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.ListBox">
+      <Item value="FocusedItem" priority="2" />
+      <Item value="LastActionItem" priority="0" />
+      <Item value="SelectedValue" priority="0" />
+      <Item value="ViewExtensions" priority="0" />
+      <Item value="SelectionMode" priority="0" />
+      <Item value="ScrollIntoView`0" priority="1" />
+      <Item value="ItemsSource" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.MainWindow">
+      <Item value="ViewModel" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Shapes.Path">
+      <Item value="x" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.MixViewModel">
+      <Item value="Model" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Communication.Responses.SupportingElements.CoverUrlsElement">
+      <Item value="Sq100" priority="0" />
+      <Item value="Sq133" priority="0" />
+      <Item value="sq250" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Communication.Responses.SupportingElements.MixElement">
+      <Item value="LikedByCurrentUser" priority="1" />
+      <Item value="Name" priority="0" />
+      <Item value="LikesCount" priority="0" />
+      <Item value="PlaysCount" priority="0" />
+      <Item value="TagListCache" priority="1" />
+      <Item value="Id" priority="0" />
+      <Item value="Description" priority="0" />
+      <Item value="RestfulUrl" priority="0" />
+      <Item value="TracksCount" priority="0" />
+      <Item value="Duration" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Controls.ScrollViewer">
+      <Item value="VerticalScrollBarVisibility" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Diagnostics.Debug">
+      <Item value="Print`0" priority="3" />
+      <Item value="WriteLine`0" priority="12" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Communication.IRequestExecutor">
+      <Item value="Execute`0" priority="6" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Communication.TypifiedRequestExecutor">
+      <Item value="ExecutePlayMixRequest`0" priority="1" />
+      <Item value="ExecuteNextSongRequest`0" priority="0" />
+      <Item value="ExecuteNewPlayTokenRequest`0" priority="0" />
+      <Item value="ExecuteMixesRequest`0" priority="0" />
+      <Item value="Execute`0" priority="0" />
+      <Item value="ExecuteLoginRequest`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Communication.Requests.IRequest">
+      <Item value="ToHttpWebRequest`0" priority="0" />
+      <Item value="GetType`0" priority="0" />
+      <Item value="BaseUri" priority="2" />
+      <Item value="ApiKey" priority="1" />
+      <Item value="GetHttpWebRequest`0" priority="0" />
+      <Item value="Url" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Communication.RequestFactory">
+      <Item value="CreateLoginRequest`0" priority="0" />
+      <Item value="CreateToggleMixLikeRequest`0" priority="1" />
+      <Item value="UserToken" priority="2" />
+      <Item value="CreateUserLikedMixesRequest`0" priority="0" />
+      <Item value="CreateMixesRequest`0" priority="2" />
+      <Item value="PageSize" priority="3" />
+      <Item value="CreateMoreMixesRequest`0" priority="0" />
+      <Item value="CreateNextMixRequest`0" priority="2" />
+      <Item value="CreateNewPlayTokenRequest`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Net.WebException">
+      <Item value="Response" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EightTracksPlayer.Communication.Responses.ResponseStatusEnum">
+      <Item value="UnprocessableEntity" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Communication.HttpRequestExecutor">
+      <Item value="Log`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.Stream">
+      <Item value="Flush`0" priority="0" />
+      <Item value="Close`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Communication.Requests.LoginRequest">
+      <Item value="username" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Communication.Responses.SupportingElements.ErrorElement">
+      <Item value="Value" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Communication.Responses.LoginResponse">
+      <Item value="LoggedIn" priority="2" />
+      <Item value="UserToken" priority="2" />
+      <Item value="UserElement" priority="0" />
+      <Item value="CurrentUserElement" priority="2" />
+      <Item value="NoticesElement" priority="0" />
+      <Item value="ErrorsElement" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Domain.IAuthenticator">
+      <Item value="Login`0" priority="1" />
+      <Item value="Logout`0" priority="0" />
+      <Item value="UserLoggedIn" priority="2" />
+      <Item value="UserToken" priority="0" />
+      <Item value="UserData" priority="9" />
+      <Item value="TryLoginFromStoredCredentials`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Communication.Responses.SupportingElements.CurrentUserElement">
+      <Item value="Login" priority="1" />
+      <Item value="Slug" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.ViewModels.MainWindowViewModel">
+      <Item value="LoginFormViewModel" priority="2" />
+      <Item value="playbackController" priority="0" />
+      <Item value="mediaLibraryBrowser" priority="1" />
+      <Item value="WhenAny`14" priority="1" />
+      <Item value="BrowsedMixes" priority="2" />
+      <Item value="CurrentMixViewModel" priority="3" />
+      <Item value="Log`0" priority="1" />
+      <Item value="GetLikedMixes" priority="2" />
+      <Item value="GetLatestMixes" priority="1" />
+      <Item value="GetFeedMixes" priority="1" />
+      <Item value="GetHotMixes" priority="0" />
+      <Item value="MediaBrowserViewModel" priority="0" />
+      <Item value="PlaybackViewModel" priority="1" />
+      <Item value="trackReporter" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.ViewModels.LoginFormViewModel">
+      <Item value="UserLoggedIn" priority="13" />
+      <Item value="WhenAny`14" priority="1" />
+      <Item value="authenticator" priority="0" />
+      <Item value="UserData" priority="5" />
+      <Item value="UserDataObservable" priority="4" />
+      <Item value="UserLoggedInObservable" priority="11" />
+      <Item value="LogIn" priority="5" />
+      <Item value="IsLoginFormExpanded" priority="3" />
+      <Item value="IsUsernameFieldFocused" priority="1" />
+      <Item value="IsPasswordFieldFocused" priority="0" />
+      <Item value="UsernameField" priority="0" />
+      <Item value="PasswordField" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Domain.Entities.Mix">
+      <Item value="LikedByCurrentUser" priority="6" />
+      <Item value="CoverUri" priority="0" />
+      <Item value="Tracks" priority="6" />
+      <Item value="CurrentTrackIndexObservable" priority="4" />
+      <Item value="MixId" priority="5" />
+      <Item value="CurrentTrackIndex" priority="4" />
+      <Item value="LikedByCurrentUserObservable" priority="2" />
+      <Item value="GetCurrentTrack`0" priority="5" />
+      <Item value="SetId" priority="1" />
+      <Item value="FirstPublishedAt" priority="1" />
+      <Item value="PlaysCount" priority="0" />
+      <Item value="TagListCache" priority="1" />
+      <Item value="GoToTrack`0" priority="0" />
+      <Item value="Name" priority="1" />
+      <Item value="AddTrack`0" priority="0" />
+      <Item value="RestfulUri" priority="0" />
+      <Item value="TotalNumberOfTracks" priority="0" />
+      <Item value="TotalDuration" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Domain.IMediaLibraryBrowser">
+      <Item value="ToggleLike`0" priority="1" />
+      <Item value="GetLikedMixes`0" priority="0" />
+      <Item value="UserToken" priority="0" />
+      <Item value="GetHotMixes`0" priority="1" />
+      <Item value="GetPopularMixes`0" priority="0" />
+      <Item value="GetFeedMixes`0" priority="0" />
+      <Item value="GetMoreMixes`0" priority="1" />
+      <Item value="GetRecentlyMadeMixes`0" priority="2" />
+      <Item value="PageSize" priority="0" />
+      <Item value="SessionData" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Domain.IPlaybackController">
+      <Item value="NextSong`0" priority="0" />
+      <Item value="Play`0" priority="0" />
+      <Item value="CurrentMixObservable" priority="1" />
+      <Item value="CurrentDurationObservable" priority="0" />
+      <Item value="Pause`0" priority="3" />
+      <Item value="Unpause`0" priority="1" />
+      <Item value="NextMix`0" priority="0" />
+      <Item value="Stop`0" priority="1" />
+      <Item value="Continue`0" priority="0" />
+      <Item value="SkipTo`0" priority="1" />
+      <Item value="GoToTrack`0" priority="0" />
+      <Item value="CurrentPositionObservable" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.ViewModels.MixViewModel">
+      <Item value="NextSong" priority="3" />
+      <Item value="RaiseAndSetIfChanged`2" priority="0" />
+      <Item value="Model" priority="6" />
+      <Item value="CurrentTrackIndex" priority="5" />
+      <Item value="LikedByCurrentUser" priority="3" />
+      <Item value="Play" priority="2" />
+      <Item value="ToggleLike" priority="5" />
+      <Item value="Name" priority="1" />
+      <Item value="CoverUri" priority="0" />
+      <Item value="CurrentTrackDuration" priority="0" />
+      <Item value="Tracks" priority="6" />
+      <Item value="Description" priority="0" />
+      <Item value="Download" priority="2" />
+      <Item value="FileSystemBrowser" priority="1" />
+      <Item value="WebAccessProxy" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Communication.Responses.ToggleMixLikeResponse">
+      <Item value="Mix" priority="0" />
+      <Item value="LoggedIn" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Activator">
+      <Item value="CreateInstance`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Domain.Autheticator">
+      <Item value="userSlug" priority="0" />
+      <Item value="userData" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Communication.Requests.LikedMixesRequest">
+      <Item value="userSlug" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Communication.Responses.IResponse">
+      <Item value="Status" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EightTracksPlayer.Domain.Entities.UserData">
+      <Item value="NoUser" priority="10" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Domain.Entities.UserData">
+      <Item value="DisplayName" priority="1" />
+      <Item value="UserSlug" priority="2" />
+      <Item value="UserToken" priority="2" />
+      <Item value="Username" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.ReplaySubject`1">
+      <Item value="OnCompleted`0" priority="0" />
+      <Item value="OnError`0" priority="0" />
+      <Item value="OnErrorResumeNext`1" priority="0" />
+      <Item value="Catch`1" priority="1" />
+      <Item value="OnNext`0" priority="10" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IConnectableObservable`1">
+      <Item value="Connect`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NLog.Logger">
+      <Item value="ErrorException`0" priority="0" />
+      <Item value="Fatal`0" priority="1" />
+      <Item value="Error`0" priority="3" />
+      <Item value="Info`0" priority="3" />
+      <Item value="Warn`0" priority="0" />
+      <Item value="Trace`0" priority="0" />
+      <Item value="Debug`0" priority="0" />
+      <Item value="InfoException`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Communication.Responses.SupportingElements.NoticeElement">
+      <Item value="Value" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Communication.RequestExecutorAdapter">
+      <Item value="ExecuteMixesRequest`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Linq.ObservableAwaiter`1">
+      <Item value="BeginAwait`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Concurrency.TestScheduler">
+      <Item value="RunTo`0" priority="0" />
+      <Item value="RunToMilliseconds`0" priority="3" />
+      <Item value="Sleep`0" priority="1" />
+      <Item value="With`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Threading.ManualResetEvent">
+      <Item value="Reset`0" priority="2" />
+      <Item value="WaitOne`0" priority="1" />
+      <Item value="Set`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Domain.PlaybackController">
+      <Item value="TimeRemainingObservable" priority="0" />
+      <Item value="Play`0" priority="2" />
+      <Item value="Pause`0" priority="0" />
+      <Item value="PlayerStateObservable" priority="0" />
+      <Item value="Stop`0" priority="2" />
+      <Item value="NextSong`0" priority="0" />
+      <Item value="playToken" priority="0" />
+      <Item value="Continue`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksTests.LoginFormViewModelTests">
+      <Item value="successfulLoginResponse" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.PasswordBox">
+      <Item value="Password" priority="1" />
+      <Item value="SecurePassword" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Security.SecureString">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.TimeSpan">
+      <Item value="Milliseconds" priority="0" />
+      <Item value="ToString`0" priority="1" />
+      <Item value="TotalMinutes" priority="0" />
+      <Item value="Seconds" priority="0" />
+      <Item value="Hours" priority="1" />
+      <Item value="Minutes" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Communication.Responses.MixesResponse">
+      <Item value="MixesElement" priority="2" />
+      <Item value="Id" priority="3" />
+      <Item value="TotalEntries" priority="0" />
+      <Item value="TotalPages" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.ISubject`1">
+      <Item value="Subscribe`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EightTracksPlayer.Communication.Requests.MixesSortEnum">
+      <Item value="Recent" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Communication.Requests.MixesSortEnum">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksTests.RequestFactoryTests">
+      <Item value="TheSortingTypeIs_`0" priority="0" />
+      <Item value="pageSize" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Communication.Requests.RequestBase">
+      <Item value="Url" priority="1" />
+      <Item value="BaseUri" priority="0" />
+      <Item value="ApiKey" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EightTracksPlayer.Communication.Requests.UserAuthorized.MixesViewTypes">
+      <Item value="Liked" priority="0" />
+      <Item value="Feed" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EightTracksPlayer.Communication.Requests.UserAuthorized.MixesViewType">
+      <Item value="Liked" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EightTracksPlayer.Communication.Requests.MixesSortingType">
+      <Item value="Recent" priority="0" />
+      <Item value="Popular" priority="0" />
+      <Item value="Hot" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Communication.Requests.MixesRequest">
+      <Item value="MemberwiseClone`0" priority="0" />
+      <Item value="pageNumber" priority="0" />
+      <Item value="sortingType" priority="0" />
+      <Item value="GetRequestForNextPage`0" priority="0" />
+      <Item value="GetNextPageRequest`0" priority="0" />
+      <Item value="userSlug" priority="0" />
+      <Item value="PageSize" priority="0" />
+      <Item value="ViewType" priority="1" />
+      <Item value="PageNumber" priority="0" />
+      <Item value="MixFilter" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Communication.Requests.UserAuthorized.UserMixesRequest">
+      <Item value="userToken" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Communication.RequestExecutionAdapter">
+      <Item value="ExecuteMixesRequest`0" priority="0" />
+      <Item value="ExecuteNextSongRequest`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EightTracksPlayer.Communication.Requests.MixesViewType">
+      <Item value="Liked" priority="2" />
+      <Item value="Feed" priority="0" />
+      <Item value="Popular" priority="0" />
+      <Item value="Hot" priority="0" />
+      <Item value="Recent" priority="0" />
+      <Item value="Recommended" priority="2" />
+      <Item value="History" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Communication.Requests.MixesViewType">
+      <Item value="ToString`0" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Utils.DispatchedReactiveCollection`1">
+      <Item value="Add`0" priority="1" />
+      <Item value="Clear`0" priority="0" />
+      <Item value="CollectionCountChanged" priority="1" />
+      <Item value="Count" priority="4" />
+      <Item value="Select`2" priority="1" />
+      <Item value="Where`1" priority="3" />
+      <Item value="IndexOf`0" priority="0" />
+      <Item value="Contains`0" priority="0" />
+      <Item value="Subscribe`1" priority="1" />
+      <Item value="ToObservable`1" priority="2" />
+      <Item value="ItemsAdded" priority="1" />
+      <Item value="CollectionChanged" priority="0" />
+      <Item value="CollectionCountChanging" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Web.HttpUtility">
+      <Item value="HtmlDecode`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Domain.Entities.BrowsingSessionData">
+      <Item value="NotEmpty" priority="0" />
+      <Item value="LastMixesRequest" priority="4" />
+      <Item value="MixSetId" priority="2" />
+      <Item value="TotalEntries" priority="0" />
+      <Item value="TotalPages" priority="0" />
+      <Item value="Update`0" priority="0" />
+      <Item value="IsEmpty" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Communication.Serialization.AggregatedResponseDeserializer">
+      <Item value="Deserialize`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Domain.Entities.Track">
+      <Item value="IsLast" priority="3" />
+      <Item value="Name" priority="3" />
+      <Item value="Performer" priority="3" />
+      <Item value="Uri" priority="9" />
+      <Item value="PlayDuration" priority="0" />
+      <Item value="DurationObservable" priority="1" />
+      <Item value="Duration" priority="1" />
+      <Item value="Id" priority="0" />
+      <Item value="IsReported" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Communication.Responses.NextMixResponse">
+      <Item value="NextMix" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Communication.Responses.SupportingElements.SetElement">
+      <Item value="AtLastTrack" priority="1" />
+      <Item value="TrackElement" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.DateTime">
+      <Item value="ToLocalTime`0" priority="0" />
+      <Item value="ToString`0" priority="1" />
+      <Item value="ToShortTimeString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.ViewModels.TrackViewModel">
+      <Item value="Model" priority="2" />
+      <Item value="Download" priority="2" />
+      <Item value="TrackLocation" priority="3" />
+      <Item value="Duration" priority="0" />
+      <Item value="Performer" priority="0" />
+      <Item value="Save`0" priority="1" />
+      <Item value="IsCurrentlyPlayed" priority="7" />
+      <Item value="IsLast" priority="0" />
+      <Item value="FileSystemBrowser" priority="2" />
+      <Item value="WebAccessProxy" priority="2" />
+      <Item value="GetFileName`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Communication.Responses.SupportingElements.TrackElement">
+      <Item value="PlayDuration" priority="0" />
+      <Item value="Url" priority="0" />
+      <Item value="Id" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.ObjectModel.ObservableCollection`1">
+      <Item value="Count" priority="0" />
+      <Item value="CreateDerivedCollection`2" priority="0" />
+      <Item value="Subscribe`1" priority="0" />
+      <Item value="ToObservable`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EightTracksPlayer.Domain.Entities.Mix">
+      <Item value="NoMixAvailable" priority="6" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Domain.MediaLibraryBrowser">
+      <Item value="browsingSessionData" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Markup.StaticExtension">
+      <Item value="utils" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.StaticResourceExtension">
+      <Item value="WebAccessProxy" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Utils.WebAccessProxy">
+      <Item value="Instance" priority="0" />
+      <Item value="RequestNavigateHandler" priority="0" />
+      <Item value="Download`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EightTracksPlayer.Utils.WebAccessProxy">
+      <Item value="Instance" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Reflection.Assembly">
+      <Item value="GetName`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Reflection.AssemblyName">
+      <Item value="Name" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Utils.Settings">
+      <Item value="mSubkeyPath" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Domain.Authenticator">
+      <Item value="settings" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.Image">
+      <Item value="ActualWidth" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Markup.TypeExtension">
+      <Item value="DataGridRow`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Double">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Utils.MixDisplayMode">
+      <Item value="Thumbs" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Enum">
+      <Item value="Parse`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Utils.IFileSystemBrowser">
+      <Item value="GetSaveToLocation`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.Path">
+      <Item value="PathSeparator" priority="0" />
+      <Item value="GetExtension`0" priority="0" />
+      <Item value="DirectorySeparatorChar" priority="1" />
+      <Item value="GetInvalidPathChars`0" priority="1" />
+      <Item value="GetInvalidFileNameChars`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.SaveFileDialog">
+      <Item value="Title" priority="0" />
+      <Item value="FileName" priority="0" />
+      <Item value="Filter" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EightTracksPlayer.Utils.Browsing.FileLocation">
+      <Item value="Online" priority="8" />
+      <Item value="Downloaded" priority="4" />
+      <Item value="Downloading" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Utils.Browsing.WebAccessProxy">
+      <Item value="FileLocationObservable" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Utils.Browsing.FileLocation">
+      <Item value="ToString`0" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksTests.Stubs.FileSystemBrowserStub">
+      <Item value="SourceFilename" priority="1" />
+      <Item value="DestinationFilename" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksTests.Stubs.WebAccessProxyStub">
+      <Item value="SourceUri" priority="0" />
+      <Item value="DestinationUri" priority="0" />
+      <Item value="PushNewFileLocation`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Media.StatefullAudioPlayer">
+      <Item value="CurrentTrackDuration" priority="4" />
+      <Item value="CurrentPosition" priority="1" />
+      <Item value="Pause`0" priority="0" />
+      <Item value="Play`0" priority="0" />
+      <Item value="Stop`0" priority="0" />
+      <Item value="Status" priority="0" />
+      <Item value="SkipTo`0" priority="1" />
+      <Item value="SetVolume`0" priority="0" />
+      <Item value="BaseAudioPlayer" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.ViewModels.Factories.IMixViewModelFactory">
+      <Item value="CreateMixViewModel`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.ViewModels.MixDisplayMode">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.ViewModels.PlaybackViewModel">
+      <Item value="CurrentTrackDuration" priority="0" />
+      <Item value="WhenAny`14" priority="0" />
+      <Item value="CurrentMixViewModel" priority="8" />
+      <Item value="ToggleLikeMix" priority="1" />
+      <Item value="CurrentTrackDurationAsString" priority="0" />
+      <Item value="IsPositionSliderEnabled" priority="1" />
+      <Item value="Pause" priority="2" />
+      <Item value="Continue" priority="2" />
+      <Item value="Stop" priority="1" />
+      <Item value="Volume" priority="0" />
+      <Item value="CurrentPosition" priority="1" />
+      <Item value="NextMix" priority="3" />
+      <Item value="RecordMix" priority="0" />
+      <Item value="NextSong" priority="3" />
+      <Item value="RaiseAndSetIfChanged`2" priority="0" />
+      <Item value="loginFormViewModel" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EightTracksPlayer.Media.MediaStatus">
+      <Item value="Running" priority="3" />
+      <Item value="Stopped" priority="1" />
+      <Item value="Paused" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Style">
+      <Item value="BasedOn" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WMPLib.IWMPSettings">
+      <Item value="volume" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:QuartzTypeLib.IBasicAudio">
+      <Item value="Volume" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Double">
+      <Item value="Parse`0" priority="1" />
+      <Item value="TryParse`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Media.IAudioPlayer">
+      <Item value="SkipTo`0" priority="0" />
+      <Item value="CurrentTrackDuration" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Environment+SpecialFolder">
+      <Item value="Recent" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.FolderBrowserDialog">
+      <Item value="ShowDialog`0" priority="0" />
+      <Item value="Description" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Utils.Browsing.FileSystemBrowser">
+      <Item value="GetSaveToDirectory`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.File">
+      <Item value="Exists`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Views.MainWindow">
+      <Item value="ViewModel" priority="0" />
+      <Item value="Top" priority="0" />
+      <Item value="Left" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.KeyValuePair`2">
+      <Item value="Key" priority="0" />
+      <Item value="Value" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Setter">
+      <Item value="Property" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Domain.Entities.MixFilter">
+      <Item value="Tags" priority="6" />
+      <Item value="Query" priority="5" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EightTracksPlayer.Utils.StringUtils">
+      <Item value="TagListToString`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.Directory">
+      <Item value="CreateDirectory`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.ViewModels.MediaBrowserViewModel">
+      <Item value="MixBrowsingMessage" priority="0" />
+      <Item value="FilterQuery" priority="0" />
+      <Item value="GetFeedMixes" priority="0" />
+      <Item value="GetMoreMixes" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Utils.Browsing.IWebAccessProxy">
+      <Item value="Clone`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Exception">
+      <Item value="PrepareForRethrow`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Utils.ViewExtensions.AutoScrollHandler">
+      <Item value="focusedItem" priority="0" />
+      <Item value="Collection_CollectionChanged`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Data.BindingOperations">
+      <Item value="SetBinding`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.IEnumerable">
+      <Item value="GetEnumerator`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Specialized.NotifyCollectionChangedEventArgs">
+      <Item value="NewItems" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.DependencyPropertyChangedEventArgs">
+      <Item value="NewValue" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.TrackReporter">
+      <Item value="requestFactory" priority="1" />
+      <Item value="requestExecutor" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Domain.ITrackReporter">
+      <Item value="Report`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Communication.Responses.ResponseBase">
+      <Item value="Status" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EightTracksPlayer.Views.AboutWindow">
+      <Item value="Show`0" priority="0" />
+      <Item value="Top" priority="0" />
+      <Item value="Left" priority="0" />
+      <Item value="Style" priority="0" />
+      <Item value="WindowStyle" priority="0" />
+      <Item value="AllowsTransparency" priority="0" />
+      <Item value="Parent" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Input.KeyEventArgs">
+      <Item value="Key" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Visibility">
+      <Item value="Visible" priority="0" />
+      <Item value="Hidden" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:log4net.ILog">
+      <Item value="Error`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EightTracksPlayer.Communication.RequestFactory">
+      <Item value="Instance" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Window">
+      <Item value="Width" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ComponentModel.AsyncCompletedEventArgs">
+      <Item value="UserState" priority="2" />
+      <Item value="Error" priority="1" />
+      <Item value="Cancelled" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:TagLib.Tag">
+      <Item value="Performers" priority="0" />
+      <Item value="Title" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:TagLib.File">
+      <Item value="Tag" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Char">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Net.WebProxy">
+      <Item value="Credentials" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Net.WebRequest">
+      <Item value="GetSystemWebProxy`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Boolean">
+      <Item value="TryParse`0" priority="0" />
+      <Item value="Parse`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>
